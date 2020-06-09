@@ -336,18 +336,8 @@
     <div class="reward-content">
         
         <div class="reward-code">
-            <img id="rewardCode" src="/img/wechat.jpg" alt="打赏二维码">
+            <img id="rewardCode" src="/false" alt="打赏二维码">
         </div>
-        
-        <label class="reward-toggle">
-            <input id="rewardToggle" type="checkbox" class="reward-toggle-check"
-                data-wechat="/img/wechat.jpg" data-alipay="/img/alipay.jpg">
-            <div class="reward-toggle-ctrol">
-                <span class="reward-toggle-item wechat">微信</span>
-                <span class="reward-toggle-label"></span>
-                <span class="reward-toggle-item alipay">支付宝</span>
-            </div>
-        </label>
         
     </div>
 </div>
@@ -480,10 +470,10 @@ var BLOG = { ROOT: '/', SHARE: true, REWARD: true };
     var OriginTitile = document.title, titleTime;
     document.addEventListener('visibilitychange', function() {
         if (document.hidden) {
-            document.title = '你去哪了?!';
+            document.title = '你要离开了吗?';
             clearTimeout(titleTime);
         } else {
-            document.title = 'SvyJ';
+            document.title = '欢迎回来！';
             titleTime = setTimeout(function() {
                 document.title = OriginTitile;
             },2000);

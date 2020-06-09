@@ -291,10 +291,10 @@ var BLOG = { ROOT: '/', SHARE: true, REWARD: false };
     var OriginTitile = document.title, titleTime;
     document.addEventListener('visibilitychange', function() {
         if (document.hidden) {
-            document.title = '你去哪了?!';
+            document.title = '你要离开了吗?';
             clearTimeout(titleTime);
         } else {
-            document.title = 'SvyJ';
+            document.title = '欢迎回来！';
             titleTime = setTimeout(function() {
                 document.title = OriginTitile;
             },2000);
