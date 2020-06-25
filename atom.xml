@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
-  <title>~~~一个算法研究生的主页~~~</title>
+  <title>一个算法研究生的主页</title>
   
   
   <link href="/atom.xml" rel="self"/>
@@ -30,29 +30,6 @@
       
       
         &lt;h2 id=&quot;Mnist数据集介绍&quot;&gt;&lt;a href=&quot;#Mnist数据集介绍&quot; class=&quot;headerlink&quot; title=&quot;Mnist数据集介绍&quot;&gt;&lt;/a&gt;Mnist数据集介绍&lt;/h2&gt;&lt;p&gt;数据集的内容：包含0-9的手写数字&lt;br&gt;数据集的数量：60000个训练集/
-      
-    
-    </summary>
-    
-    
-    
-  </entry>
-  
-  <entry>
-    <title>Hello</title>
-    <link href="http://yoursite.com/2020/06/07/hello/"/>
-    <id>http://yoursite.com/2020/06/07/hello/</id>
-    <published>2020-06-07T15:11:35.789Z</published>
-    <updated>2020-06-10T08:52:45.175Z</updated>
-    
-    <content type="html"><![CDATA[<h2 id="First"><a href="#First" class="headerlink" title="First"></a>First</h2><p>内容1</p><h2 id="Second"><a href="#Second" class="headerlink" title="Second"></a>Second</h2><p>内容2</p><h2 id="Third"><a href="#Third" class="headerlink" title="Third"></a>Third</h2><p>内容3</p>]]></content>
-    
-    <summary type="html">
-    
-      
-      
-        &lt;h2 id=&quot;First&quot;&gt;&lt;a href=&quot;#First&quot; class=&quot;headerlink&quot; title=&quot;First&quot;&gt;&lt;/a&gt;First&lt;/h2&gt;&lt;p&gt;内容1&lt;/p&gt;
-&lt;h2 id=&quot;Second&quot;&gt;&lt;a href=&quot;#Second&quot; class=&quot;headerlin
       
     
     </summary>
