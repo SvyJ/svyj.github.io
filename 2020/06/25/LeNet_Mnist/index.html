@@ -1,0 +1,496 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+
+    
+
+    
+
+
+
+    <meta charset="utf-8">
+    
+    
+    
+    
+    <title>人工智能算法中的Hello-World：用LeNet模型实现手写数字识别 | Hexo</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    
+    <meta name="theme-color" content="#3F51B5">
+    
+    
+    <meta name="keywords" content="">
+    <meta name="description" content="Mnist数据集介绍数据集的内容：包含0-9的手写数字数据集的数量：60000个训练集&#x2F;10000个测试集数据集的格式：28*28数据集通道数：灰度图（单通道通道） LeNet七层模型C1卷积层：6个卷积核，大小为5*5，激活函数ReLumodel.add(Conv2D(6, kernel_size &#x3D; (5,5), activation &#x3D; ‘relu’, input_shape &#x3D; (28,2">
+<meta property="og:type" content="article">
+<meta property="og:title" content="人工智能算法中的Hello-World：用LeNet模型实现手写数字识别">
+<meta property="og:url" content="http://yoursite.com/2020/06/25/LeNet_Mnist/index.html">
+<meta property="og:site_name" content="Hexo">
+<meta property="og:description" content="Mnist数据集介绍数据集的内容：包含0-9的手写数字数据集的数量：60000个训练集&#x2F;10000个测试集数据集的格式：28*28数据集通道数：灰度图（单通道通道） LeNet七层模型C1卷积层：6个卷积核，大小为5*5，激活函数ReLumodel.add(Conv2D(6, kernel_size &#x3D; (5,5), activation &#x3D; ‘relu’, input_shape &#x3D; (28,2">
+<meta property="og:locale" content="en_US">
+<meta property="og:image" content="http://yoursite.com/images/LeNet_Mnist_result.png">
+<meta property="article:published_time" content="2020-06-25T07:00:09.953Z">
+<meta property="article:modified_time" content="2020-06-25T07:34:51.815Z">
+<meta property="article:author" content="SvyJ">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="http://yoursite.com/images/LeNet_Mnist_result.png">
+    
+        <link rel="alternate" type="application/atom+xml" title="Hexo" href="/atom.xml">
+    
+    <link rel="shortcut icon" href="/favicon.ico">
+    <link rel="stylesheet" href="//unpkg.com/hexo-theme-material-indigo@latest/css/style.css">
+    <script>window.lazyScripts=[]</script>
+
+    <!-- custom head -->
+    
+
+<meta name="generator" content="Hexo 4.2.1"></head>
+
+<body>
+    <div id="loading" class="active"></div>
+
+    <aside id="menu" class="hide" >
+  <div class="inner flex-row-vertical">
+    <a href="javascript:;" class="header-icon waves-effect waves-circle waves-light" id="menu-off">
+        <i class="icon icon-lg icon-close"></i>
+    </a>
+    <div class="brand-wrap" style="background-image:url(/img/warriors.jpg)">
+      <div class="brand">
+        <a href="/" class="avatar waves-effect waves-circle waves-light">
+          <img src="/img/Curry.png">
+        </a>
+        <hgroup class="introduce">
+          <h5 class="nickname">SvyJ</h5>
+          <a href="mailto:准研一，1746772378@qq.com" title="准研一，1746772378@qq.com" class="mail">准研一，1746772378@qq.com</a>
+        </hgroup>
+      </div>
+    </div>
+    <div class="scroll-wrap flex-col">
+      <ul class="nav">
+        
+            <li class="waves-block waves-effect">
+              <a href="/"  >
+                <i class="icon icon-lg icon-home"></i>
+                主页
+              </a>
+            </li>
+        
+            <li class="waves-block waves-effect">
+              <a href="/archives"  >
+                <i class="icon icon-lg icon-archives"></i>
+                归档
+              </a>
+            </li>
+        
+            <li class="waves-block waves-effect">
+              <a href="/tags"  >
+                <i class="icon icon-lg icon-tags"></i>
+                标签
+              </a>
+            </li>
+        
+            <li class="waves-block waves-effect">
+              <a href="/categories"  >
+                <i class="icon icon-lg icon-th-list"></i>
+                分类
+              </a>
+            </li>
+        
+            <li class="waves-block waves-effect">
+              <a href="https://github.com/SvyJ" target="_blank" >
+                <i class="icon icon-lg icon-github"></i>
+                Github
+              </a>
+            </li>
+        
+            <li class="waves-block waves-effect">
+              <a href="https://blog.csdn.net/qq_37350078" target="_blank" >
+                <i class="icon icon-lg icon-csdn"></i>
+                Csdn
+              </a>
+            </li>
+        
+      </ul>
+    </div>
+  </div>
+</aside>
+
+    <main id="main">
+        <header class="top-header" id="header">
+    <div class="flex-row">
+        <a href="javascript:;" class="header-icon waves-effect waves-circle waves-light on" id="menu-toggle">
+          <i class="icon icon-lg icon-navicon"></i>
+        </a>
+        <div class="flex-col header-title ellipsis">人工智能算法中的Hello-World：用LeNet模型实现手写数字识别</div>
+        
+        <div class="search-wrap" id="search-wrap">
+            <a href="javascript:;" class="header-icon waves-effect waves-circle waves-light" id="back">
+                <i class="icon icon-lg icon-chevron-left"></i>
+            </a>
+            <input type="text" id="key" class="search-input" autocomplete="off" placeholder="Search">
+            <a href="javascript:;" class="header-icon waves-effect waves-circle waves-light" id="search">
+                <i class="icon icon-lg icon-search"></i>
+            </a>
+        </div>
+        
+        
+        <a href="javascript:;" class="header-icon waves-effect waves-circle waves-light" id="menuShare">
+            <i class="icon icon-lg icon-share-alt"></i>
+        </a>
+        
+    </div>
+</header>
+<header class="content-header post-header">
+
+    <div class="container fade-scale">
+        <h1 class="title">人工智能算法中的Hello-World：用LeNet模型实现手写数字识别</h1>
+        <h5 class="subtitle">
+            
+                <time datetime="2020-06-25T07:00:09.953Z" itemprop="datePublished" class="page-time">
+  2020-06-25
+</time>
+
+
+            
+        </h5>
+    </div>
+
+    
+
+
+</header>
+
+
+<div class="container body-wrap">
+    
+    <aside class="post-widget">
+        <nav class="post-toc-wrap post-toc-shrink" id="post-toc">
+            <h4>TOC</h4>
+            <ol class="post-toc"><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#Mnist数据集介绍"><span class="post-toc-number">1.</span> <span class="post-toc-text">Mnist数据集介绍</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#LeNet七层模型"><span class="post-toc-number">2.</span> <span class="post-toc-text">LeNet七层模型</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#C1卷积层：6个卷积核，大小为5-5，激活函数ReLu"><span class="post-toc-number">2.1.</span> <span class="post-toc-text">C1卷积层：6个卷积核，大小为5*5，激活函数ReLu</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#S2池化层：最大池化"><span class="post-toc-number">2.2.</span> <span class="post-toc-text">S2池化层：最大池化</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#C3卷积层：16个卷积核，大小为5-5，激活函数ReLu"><span class="post-toc-number">2.3.</span> <span class="post-toc-text">C3卷积层：16个卷积核，大小为5*5，激活函数ReLu</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#S4池化层：最大池化"><span class="post-toc-number">2.4.</span> <span class="post-toc-text">S4池化层：最大池化</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#C5全连接层：参数扁平化，在LeNet5称之为卷积层，实际上这一层是一维向量，和全连接层一样"><span class="post-toc-number">2.5.</span> <span class="post-toc-text">C5全连接层：参数扁平化，在LeNet5称之为卷积层，实际上这一层是一维向量，和全连接层一样</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#F6全连接层：输出节点为84个"><span class="post-toc-number">2.6.</span> <span class="post-toc-text">F6全连接层：输出节点为84个</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#Output输出层：用softmax激活函数计算分类概率"><span class="post-toc-number">2.7.</span> <span class="post-toc-text">Output输出层：用softmax激活函数计算分类概率</span></a></li></ol></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#模型训练"><span class="post-toc-number">3.</span> <span class="post-toc-text">模型训练</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#数据加载"><span class="post-toc-number">3.1.</span> <span class="post-toc-text">数据加载</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#输入数据为mnist数据集"><span class="post-toc-number">3.2.</span> <span class="post-toc-text">输入数据为mnist数据集</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#设置损失函数和优化器配置"><span class="post-toc-number">3.3.</span> <span class="post-toc-text">设置损失函数和优化器配置</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#传入训练数据进行训练"><span class="post-toc-number">3.4.</span> <span class="post-toc-text">传入训练数据进行训练</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#对结果进行评估"><span class="post-toc-number">3.5.</span> <span class="post-toc-text">对结果进行评估</span></a></li></ol></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#训练结果及准确率"><span class="post-toc-number">4.</span> <span class="post-toc-text">训练结果及准确率</span></a></li></ol>
+        </nav>
+    </aside>
+
+
+<article id="post-LeNet_Mnist"
+  class="post-article article-type-post fade" itemprop="blogPost">
+
+    <div class="post-card">
+        <h1 class="post-card-title">人工智能算法中的Hello-World：用LeNet模型实现手写数字识别</h1>
+        <div class="post-meta">
+            <time class="post-time" title="2020-06-25 15:00:09" datetime="2020-06-25T07:00:09.953Z"  itemprop="datePublished">2020-06-25</time>
+
+            
+
+
+            
+<span id="busuanzi_container_page_pv" title="文章总阅读量" style='display:none'>
+    <i class="icon icon-eye icon-pr"></i><span id="busuanzi_value_page_pv"></span>
+</span>
+
+
+        </div>
+        <div class="post-content" id="post-content" itemprop="postContent">
+            <h2 id="Mnist数据集介绍"><a href="#Mnist数据集介绍" class="headerlink" title="Mnist数据集介绍"></a>Mnist数据集介绍</h2><p>数据集的内容：包含0-9的手写数字<br>数据集的数量：60000个训练集/10000个测试集<br>数据集的格式：28*28<br>数据集通道数：灰度图（单通道通道）</p>
+<h2 id="LeNet七层模型"><a href="#LeNet七层模型" class="headerlink" title="LeNet七层模型"></a>LeNet七层模型</h2><h3 id="C1卷积层：6个卷积核，大小为5-5，激活函数ReLu"><a href="#C1卷积层：6个卷积核，大小为5-5，激活函数ReLu" class="headerlink" title="C1卷积层：6个卷积核，大小为5*5，激活函数ReLu"></a>C1卷积层：6个卷积核，大小为5*5，激活函数ReLu</h3><p>model.add(Conv2D(6, kernel_size = (5,5), activation = ‘relu’, input_shape = (28,28,1)))</p>
+<h3 id="S2池化层：最大池化"><a href="#S2池化层：最大池化" class="headerlink" title="S2池化层：最大池化"></a>S2池化层：最大池化</h3><p>model.add(MaxPooling2D(pool_size = (2,2)))</p>
+<h3 id="C3卷积层：16个卷积核，大小为5-5，激活函数ReLu"><a href="#C3卷积层：16个卷积核，大小为5-5，激活函数ReLu" class="headerlink" title="C3卷积层：16个卷积核，大小为5*5，激活函数ReLu"></a>C3卷积层：16个卷积核，大小为5*5，激活函数ReLu</h3><p>model.add(Conv2D(16, kernel_size = (5,5), activation = ‘relu’))</p>
+<h3 id="S4池化层：最大池化"><a href="#S4池化层：最大池化" class="headerlink" title="S4池化层：最大池化"></a>S4池化层：最大池化</h3><p>model.add(MaxPooling2D(pool_size = (2,2)))</p>
+<h3 id="C5全连接层：参数扁平化，在LeNet5称之为卷积层，实际上这一层是一维向量，和全连接层一样"><a href="#C5全连接层：参数扁平化，在LeNet5称之为卷积层，实际上这一层是一维向量，和全连接层一样" class="headerlink" title="C5全连接层：参数扁平化，在LeNet5称之为卷积层，实际上这一层是一维向量，和全连接层一样"></a>C5全连接层：参数扁平化，在LeNet5称之为卷积层，实际上这一层是一维向量，和全连接层一样</h3><p>model.add(Flatten())<br>model.add(Dense(120, activation = ‘relu’))</p>
+<h3 id="F6全连接层：输出节点为84个"><a href="#F6全连接层：输出节点为84个" class="headerlink" title="F6全连接层：输出节点为84个"></a>F6全连接层：输出节点为84个</h3><p>model.add(Dense(84, activation = ‘relu’))</p>
+<h3 id="Output输出层：用softmax激活函数计算分类概率"><a href="#Output输出层：用softmax激活函数计算分类概率" class="headerlink" title="Output输出层：用softmax激活函数计算分类概率"></a>Output输出层：用softmax激活函数计算分类概率</h3><p>model.add(Dense(10, activation = ‘softmax’))</p>
+<h2 id="模型训练"><a href="#模型训练" class="headerlink" title="模型训练"></a>模型训练</h2><h3 id="数据加载"><a href="#数据加载" class="headerlink" title="数据加载"></a>数据加载</h3><p>(train_x,train_y),(test_x,test_y) = mnist.load_data()</p>
+<h3 id="输入数据为mnist数据集"><a href="#输入数据为mnist数据集" class="headerlink" title="输入数据为mnist数据集"></a>输入数据为mnist数据集</h3><p>train_x = train_x.reshape(train_x.shape[0], 28, 28, 1) / 255<br>test_x = test_x.reshape(test_x.shape[0], 28, 28, 1) / 255<br>train_y = keras.utils.to_categorical(train_y, 10)<br>test_y = keras.utils.to_categorical(test_y, 10)</p>
+<h3 id="设置损失函数和优化器配置"><a href="#设置损失函数和优化器配置" class="headerlink" title="设置损失函数和优化器配置"></a>设置损失函数和优化器配置</h3><p>model.compile(loss = keras.metrics.categorical_crossentropy, optimizer = keras.optimizers.Adam(), metrics = [‘accuracy’])</p>
+<h3 id="传入训练数据进行训练"><a href="#传入训练数据进行训练" class="headerlink" title="传入训练数据进行训练"></a>传入训练数据进行训练</h3><p>model.fit(train_x, train_y, batch_size = 128, epochs = 5, verbose = 1, validation_data = (test_x,test_y))</p>
+<h3 id="对结果进行评估"><a href="#对结果进行评估" class="headerlink" title="对结果进行评估"></a>对结果进行评估</h3><p>score = model.evaluate(test_x, test_y)</p>
+<h2 id="训练结果及准确率"><a href="#训练结果及准确率" class="headerlink" title="训练结果及准确率"></a>训练结果及准确率</h2><figure class="image-bubble">
+                <div class="img-lightbox">
+                    <div class="overlay"></div>
+                    <img src="/images/LeNet_Mnist_result.png" alt="" title="">
+                </div>
+                <div class="image-caption"></div>
+            </figure>
+        </div>
+
+        <blockquote class="post-copyright">
+    
+    <div class="content">
+        
+<span class="post-time">
+    Last updated: <time datetime="2020-06-25T07:34:51.815Z" itemprop="dateUpdated">2020-06-25 15:34:51</time>
+</span><br>
+
+
+        
+        如果该文章对你有用，不如点个赞或者打赏一下~~~
+        
+    </div>
+    
+    <footer>
+        <a href="http://yoursite.com">
+            <img src="/img/Curry.png" alt="SvyJ">
+            SvyJ
+        </a>
+    </footer>
+</blockquote>
+
+        
+<div class="page-reward">
+    <a id="rewardBtn" href="javascript:;" class="page-reward-btn waves-effect waves-circle waves-light">赏</a>
+</div>
+
+
+
+        <div class="post-footer">
+            
+
+            
+<div class="page-share-wrap">
+    
+
+<div class="page-share" id="pageShare">
+    <ul class="reset share-icons">
+      <li>
+        <a class="weibo share-sns" target="_blank" href="http://service.weibo.com/share/share.php?url=http://yoursite.com/2020/06/25/LeNet_Mnist/&title=《人工智能算法中的Hello-World：用LeNet模型实现手写数字识别》 — Hexo&pic=http://yoursite.com/img/Curry.png" data-title="微博">
+          <i class="icon icon-weibo"></i>
+        </a>
+      </li>
+      <li>
+        <a class="weixin share-sns wxFab" href="javascript:;" data-title="微信">
+          <i class="icon icon-weixin"></i>
+        </a>
+      </li>
+      <li>
+        <a class="qq share-sns" target="_blank" href="http://connect.qq.com/widget/shareqq/index.html?url=http://yoursite.com/2020/06/25/LeNet_Mnist/&title=《人工智能算法中的Hello-World：用LeNet模型实现手写数字识别》 — Hexo&source=" data-title=" QQ">
+          <i class="icon icon-qq"></i>
+        </a>
+      </li>
+      <li>
+        <a class="facebook share-sns" target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=http://yoursite.com/2020/06/25/LeNet_Mnist/" data-title=" Facebook">
+          <i class="icon icon-facebook"></i>
+        </a>
+      </li>
+      <li>
+        <a class="twitter share-sns" target="_blank" href="https://twitter.com/intent/tweet?text=《人工智能算法中的Hello-World：用LeNet模型实现手写数字识别》 — Hexo&url=http://yoursite.com/2020/06/25/LeNet_Mnist/&via=http://yoursite.com" data-title=" Twitter">
+          <i class="icon icon-twitter"></i>
+        </a>
+      </li>
+      <li>
+        <a class="google share-sns" target="_blank" href="https://plus.google.com/share?url=http://yoursite.com/2020/06/25/LeNet_Mnist/" data-title=" Google+">
+          <i class="icon icon-google-plus"></i>
+        </a>
+      </li>
+    </ul>
+ </div>
+
+
+
+    <a href="javascript:;" id="shareFab" class="page-share-fab waves-effect waves-circle">
+        <i class="icon icon-share-alt icon-lg"></i>
+    </a>
+</div>
+
+
+
+        </div>
+    </div>
+
+    
+<nav class="post-nav flex-row flex-justify-between flex-row-reverse">
+  
+
+  
+    <div class="waves-block waves-effect next">
+      <a href="/2020/06/07/hello/" id="post-next" class="post-nav-link">
+        <div class="tips">Next <i class="icon icon-angle-right icon-lg icon-pl"></i></div>
+        <h4 class="title">Hello</h4>
+      </a>
+    </div>
+  
+</nav>
+
+
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</article>
+
+<div id="reward" class="page-modal reward-lay">
+    <a class="close" href="javascript:;"><i class="icon icon-close"></i></a>
+    <h3 class="reward-title">
+        <i class="icon icon-quote-left"></i>
+        谢谢大爷~
+        <i class="icon icon-quote-right"></i>
+    </h3>
+    <div class="reward-content">
+        
+        <div class="reward-code">
+            <img id="rewardCode" src="/false" alt="打赏二维码">
+        </div>
+        
+    </div>
+</div>
+
+
+
+</div>
+
+        <footer class="footer">
+    <div class="top">
+        
+<p>
+    <span id="busuanzi_container_site_uv" style='display:none'>
+        站点总访客数：<span id="busuanzi_value_site_uv"></span>
+    </span>
+    <span id="busuanzi_container_site_pv" style='display:none'>
+        站点总访问量：<span id="busuanzi_value_site_pv"></span>
+    </span>
+</p>
+
+
+        <p>
+            
+                <span><a href="/atom.xml" target="_blank" class="rss" title="rss"><i class="icon icon-lg icon-rss"></i></a></span>
+            
+            <span>This blog is licensed under a <a rel="license noopener" href="https://creativecommons.org/licenses/by/4.0/" target="_blank">Creative Commons Attribution 4.0 International License</a>.</span>
+        </p>
+    </div>
+    <div class="bottom">
+        <p><span>SvyJ &copy; 2020</span>
+            <span>
+                
+                Power by <a href="http://hexo.io/" target="_blank">Hexo</a> Theme <a href="https://github.com/yscoder/hexo-theme-indigo" target="_blank">indigo</a>
+            </span>
+        </p>
+    </div>
+</footer>
+
+    </main>
+    <div class="mask" id="mask"></div>
+<a href="javascript:;" id="gotop" class="waves-effect waves-circle waves-light"><span class="icon icon-lg icon-chevron-up"></span></a>
+
+
+
+<div class="global-share" id="globalShare">
+    <ul class="reset share-icons">
+      <li>
+        <a class="weibo share-sns" target="_blank" href="http://service.weibo.com/share/share.php?url=http://yoursite.com/2020/06/25/LeNet_Mnist/&title=《人工智能算法中的Hello-World：用LeNet模型实现手写数字识别》 — Hexo&pic=http://yoursite.com/img/Curry.png" data-title="微博">
+          <i class="icon icon-weibo"></i>
+        </a>
+      </li>
+      <li>
+        <a class="weixin share-sns wxFab" href="javascript:;" data-title="微信">
+          <i class="icon icon-weixin"></i>
+        </a>
+      </li>
+      <li>
+        <a class="qq share-sns" target="_blank" href="http://connect.qq.com/widget/shareqq/index.html?url=http://yoursite.com/2020/06/25/LeNet_Mnist/&title=《人工智能算法中的Hello-World：用LeNet模型实现手写数字识别》 — Hexo&source=" data-title=" QQ">
+          <i class="icon icon-qq"></i>
+        </a>
+      </li>
+      <li>
+        <a class="facebook share-sns" target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=http://yoursite.com/2020/06/25/LeNet_Mnist/" data-title=" Facebook">
+          <i class="icon icon-facebook"></i>
+        </a>
+      </li>
+      <li>
+        <a class="twitter share-sns" target="_blank" href="https://twitter.com/intent/tweet?text=《人工智能算法中的Hello-World：用LeNet模型实现手写数字识别》 — Hexo&url=http://yoursite.com/2020/06/25/LeNet_Mnist/&via=http://yoursite.com" data-title=" Twitter">
+          <i class="icon icon-twitter"></i>
+        </a>
+      </li>
+      <li>
+        <a class="google share-sns" target="_blank" href="https://plus.google.com/share?url=http://yoursite.com/2020/06/25/LeNet_Mnist/" data-title=" Google+">
+          <i class="icon icon-google-plus"></i>
+        </a>
+      </li>
+    </ul>
+ </div>
+
+
+<div class="page-modal wx-share" id="wxShare">
+    <a class="close" href="javascript:;"><i class="icon icon-close"></i></a>
+    <p>扫一扫，分享到微信</p>
+    <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAMYAAADGCAAAAACs8KCBAAACIElEQVR42u3ay26EMAwFUP7/p6nUPeBrQ1XCyWrUqQInC0/82Lby2n/X0efKt+f/ebTbzQsDA+O1jP10nT/g6JFH+0yee7EnBgbGBxiVIFt5zPmek/B98c4YGBgY5a17ITg9DgwMDIzKq9cx6V8wMDAwJklsPXTWi3HplfSGXBwDA+OFjHlj4LnPf9rfwMDA+JeMPVy9QNkrwAVvhYGBsTRjUtzvBcr5VEhww8XAwFiOkSarla3TcY3JgWJgYKzKmIfaetuyDkt3wMDAwOg9plLK742dYWBgfJPRC6B1dq9FWtlt691nMTAwXs7opab3Hkq8MwYGxgcY51vU25b1ZmS6w0WhEAMDY2lGPYFMU830WpleKONhCwwMjCUY6YWs17CcDJNdNDAwMDA+yZgEynpZf54GY2BgrM3ojUHUS/zp6GqPioGBsTaj/tLpiFhaXEuHNi5ycQwMjOUYkwZA/fHpKFha8sPAwPgCI70I3pWs1i+IpUPHwMBYjpFe6SbnlIbaIHxjYGB8hjEppcXtxvIqJa4YGBhLM+qF+wmvlyTXDwsDA2Ntxh6uCq9epOsV8uK+BAYGxssZ6RWtVxqbNwaC3w0MDIxFGb3S/2TYq8cb/XpgYGAswYiz3kLBLj2mXgEOAwMDo3eNeyIQX8RYDAwMjMEoxl3sBwMuBgbGSxj1JDYtt02ukvU3xMDAWJsxaQxMQmccUlvDGRgYGC9n/ACGFFvRtagAFgAAAABJRU5ErkJggg==" alt="微信分享二维码">
+</div>
+
+
+
+
+    <script src="//cdn.bootcss.com/node-waves/0.7.4/waves.min.js"></script>
+<script>
+var BLOG = { ROOT: '/', SHARE: true, REWARD: true };
+
+
+</script>
+
+<script src="//unpkg.com/hexo-theme-material-indigo@latest/js/main.min.js"></script>
+
+
+<div class="search-panel" id="search-panel">
+    <ul class="search-result" id="search-result"></ul>
+</div>
+<template id="search-tpl">
+<li class="item">
+    <a href="{path}" class="waves-block waves-effect">
+        <div class="title ellipsis" title="{title}">{title}</div>
+        <div class="flex-row flex-middle">
+            <div class="tags ellipsis">
+                {tags}
+            </div>
+            <time class="flex-col time">{date}</time>
+        </div>
+    </a>
+</li>
+</template>
+
+<script src="//unpkg.com/hexo-theme-material-indigo@latest/js/search.min.js" async></script>
+
+
+
+
+
+
+<script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+
+
+
+<script>
+(function() {
+    var OriginTitile = document.title, titleTime;
+    document.addEventListener('visibilitychange', function() {
+        if (document.hidden) {
+            document.title = '你要离开了吗?';
+            clearTimeout(titleTime);
+        } else {
+            document.title = '欢迎回来！';
+            titleTime = setTimeout(function() {
+                document.title = OriginTitile;
+            },2000);
+        }
+    });
+})();
+</script>
+
+
+
+</body>
+</html>
