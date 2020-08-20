@@ -1,0 +1,550 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+
+    
+
+    
+
+
+
+    <meta charset="utf-8">
+    
+    
+    
+    
+    <title>经典分类模型的Pytorch实现 | SvyJ&#39;s HomePage | 研究方向：智能医学影像、计算机视觉</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    
+    <meta name="theme-color" content="#3F51B5">
+    
+    
+    <meta name="keywords" content="">
+    <meta name="description" content="以下所有模型输入为224*224的图片，输出层为2个神经元（即可实现二分类问题, 更改输出神经元个数以实现多分类） LeNet(1998)12345678910111213141516171819202122232425262728293031323334353637import torchimport torch.nn as nnclass LeNet(nn.Module):    def __">
+<meta property="og:type" content="article">
+<meta property="og:title" content="经典分类模型的Pytorch实现">
+<meta property="og:url" content="http://yoursite.com/2020/08/09/DeepLearning_Models_Classification/index.html">
+<meta property="og:site_name" content="SvyJ&#39;s HomePage">
+<meta property="og:description" content="以下所有模型输入为224*224的图片，输出层为2个神经元（即可实现二分类问题, 更改输出神经元个数以实现多分类） LeNet(1998)12345678910111213141516171819202122232425262728293031323334353637import torchimport torch.nn as nnclass LeNet(nn.Module):    def __">
+<meta property="og:locale" content="en_US">
+<meta property="article:published_time" content="2020-08-09T01:08:01.497Z">
+<meta property="article:modified_time" content="2020-08-20T03:23:29.106Z">
+<meta property="article:author" content="SvyJ">
+<meta name="twitter:card" content="summary">
+    
+        <link rel="alternate" type="application/atom+xml" title="SvyJ&#39;s HomePage" href="/atom.xml">
+    
+    <link rel="shortcut icon" href="/favicon.ico">
+    <link rel="stylesheet" href="//unpkg.com/hexo-theme-material-indigo@latest/css/style.css">
+    <script>window.lazyScripts=[]</script>
+
+    <!-- custom head -->
+    
+
+<meta name="generator" content="Hexo 4.2.1"></head>
+
+<body>
+    <div id="loading" class="active"></div>
+
+    <aside id="menu" class="hide" >
+  <div class="inner flex-row-vertical">
+    <a href="javascript:;" class="header-icon waves-effect waves-circle waves-light" id="menu-off">
+        <i class="icon icon-lg icon-close"></i>
+    </a>
+    <div class="brand-wrap" style="background-image:url(/img/warriors.jpg)">
+      <div class="brand">
+        <a href="/" class="avatar waves-effect waves-circle waves-light">
+          <img src="/img/Curry.png">
+        </a>
+        <hgroup class="introduce">
+          <h5 class="nickname">SvyJ</h5>
+          <a href="mailto:研一，1746772378@qq.com" title="研一，1746772378@qq.com" class="mail">研一，1746772378@qq.com</a>
+        </hgroup>
+      </div>
+    </div>
+    <div class="scroll-wrap flex-col">
+      <ul class="nav">
+        
+            <li class="waves-block waves-effect">
+              <a href="/"  >
+                <i class="icon icon-lg icon-home"></i>
+                主页
+              </a>
+            </li>
+        
+            <li class="waves-block waves-effect">
+              <a href="/archives"  >
+                <i class="icon icon-lg icon-archives"></i>
+                归档
+              </a>
+            </li>
+        
+            <li class="waves-block waves-effect">
+              <a href="/tags"  >
+                <i class="icon icon-lg icon-tags"></i>
+                标签
+              </a>
+            </li>
+        
+            <li class="waves-block waves-effect">
+              <a href="/categories"  >
+                <i class="icon icon-lg icon-th-list"></i>
+                分类
+              </a>
+            </li>
+        
+            <li class="waves-block waves-effect">
+              <a href="https://github.com/SvyJ" target="_blank" >
+                <i class="icon icon-lg icon-github"></i>
+                Github
+              </a>
+            </li>
+        
+            <li class="waves-block waves-effect">
+              <a href="https://blog.csdn.net/qq_37350078" target="_blank" >
+                <i class="icon icon-lg icon-csdn"></i>
+                Csdn
+              </a>
+            </li>
+        
+      </ul>
+    </div>
+  </div>
+</aside>
+
+    <main id="main">
+        <header class="top-header" id="header">
+    <div class="flex-row">
+        <a href="javascript:;" class="header-icon waves-effect waves-circle waves-light on" id="menu-toggle">
+          <i class="icon icon-lg icon-navicon"></i>
+        </a>
+        <div class="flex-col header-title ellipsis">经典分类模型的Pytorch实现</div>
+        
+        <div class="search-wrap" id="search-wrap">
+            <a href="javascript:;" class="header-icon waves-effect waves-circle waves-light" id="back">
+                <i class="icon icon-lg icon-chevron-left"></i>
+            </a>
+            <input type="text" id="key" class="search-input" autocomplete="off" placeholder="Search">
+            <a href="javascript:;" class="header-icon waves-effect waves-circle waves-light" id="search">
+                <i class="icon icon-lg icon-search"></i>
+            </a>
+        </div>
+        
+        
+        <a href="javascript:;" class="header-icon waves-effect waves-circle waves-light" id="menuShare">
+            <i class="icon icon-lg icon-share-alt"></i>
+        </a>
+        
+    </div>
+</header>
+<header class="content-header post-header">
+
+    <div class="container fade-scale">
+        <h1 class="title">经典分类模型的Pytorch实现</h1>
+        <h5 class="subtitle">
+            
+                <time datetime="2020-08-09T01:08:01.497Z" itemprop="datePublished" class="page-time">
+  2020-08-09
+</time>
+
+
+            
+        </h5>
+    </div>
+
+    
+
+
+</header>
+
+
+<div class="container body-wrap">
+    
+    <aside class="post-widget">
+        <nav class="post-toc-wrap post-toc-shrink" id="post-toc">
+            <h4>TOC</h4>
+            <ol class="post-toc"><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#LeNet-1998"><span class="post-toc-number">1.</span> <span class="post-toc-text">
+LeNet(1998)
+</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#AlexNet-2012"><span class="post-toc-number">2.</span> <span class="post-toc-text">
+AlexNet(2012)
+</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#VGG-2014"><span class="post-toc-number">3.</span> <span class="post-toc-text">
+VGG(2014)
+</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#InceptionV1-2014"><span class="post-toc-number">4.</span> <span class="post-toc-text">
+InceptionV1(2014)
+</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#ResNet-18-34-50-101-152-2015"><span class="post-toc-number">5.</span> <span class="post-toc-text">
+ResNet-18&#x2F;34&#x2F;50&#x2F;101&#x2F;152(2015)
+</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#MobileNetV1-2017"><span class="post-toc-number">6.</span> <span class="post-toc-text">
+MobileNetV1(2017)
+</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#MobileNetV2-2018"><span class="post-toc-number">7.</span> <span class="post-toc-text">
+MobileNetV2(2018)
+</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#MobileNetV3-2019"><span class="post-toc-number">8.</span> <span class="post-toc-text">
+MobileNetV3(2019)
+</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#ShuffleNetV2-2019"><span class="post-toc-number">9.</span> <span class="post-toc-text">
+ShuffleNetV2(2019)
+</span></a></li></ol>
+        </nav>
+    </aside>
+
+
+<article id="post-DeepLearning_Models_Classification"
+  class="post-article article-type-post fade" itemprop="blogPost">
+
+    <div class="post-card">
+        <h1 class="post-card-title">经典分类模型的Pytorch实现</h1>
+        <div class="post-meta">
+            <time class="post-time" title="2020-08-09 09:08:01" datetime="2020-08-09T01:08:01.497Z"  itemprop="datePublished">2020-08-09</time>
+
+            
+
+
+            
+<span id="busuanzi_container_page_pv" title="文章总阅读量" style='display:none'>
+    <i class="icon icon-eye icon-pr"></i><span id="busuanzi_value_page_pv"></span>
+</span>
+
+
+        </div>
+        <div class="post-content" id="post-content" itemprop="postContent">
+            <p>以下所有模型输入为224*224的图片，输出层为2个神经元（即可实现二分类问题, 更改输出神经元个数以实现多分类）</p>
+<h2 id="LeNet-1998"><a href="#LeNet-1998" class="headerlink" title="LeNet(1998)"></a><br>LeNet(1998)</br></h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br></pre></td><td class="code"><pre><span class="line">import torch</span><br><span class="line">import torch.nn as nn</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">class LeNet(nn.Module):</span><br><span class="line"></span><br><span class="line">    def __init__(self):</span><br><span class="line">        super(LeNet,self).__init__()</span><br><span class="line">        self.conv1 &#x3D; nn.Sequential(</span><br><span class="line">            nn.Conv2d(1, 6, 5, 1, 2),</span><br><span class="line">            nn.ReLU(),</span><br><span class="line">            nn.MaxPool2d(kernel_size&#x3D;2, stride&#x3D;2)</span><br><span class="line">        )</span><br><span class="line">        self.conv2 &#x3D; nn.Sequential(</span><br><span class="line">            nn.Conv2d(6, 16, 5),                  </span><br><span class="line">            nn.ReLU(),</span><br><span class="line">            nn.MaxPool2d(kernel_size&#x3D;2, stride&#x3D;2)</span><br><span class="line">        )</span><br><span class="line">        self.conv3 &#x3D; nn.Sequential(</span><br><span class="line">            nn.Linear(16*5*5, 120),</span><br><span class="line">            nn.ReLU()</span><br><span class="line">        )</span><br><span class="line">        self.fc2 &#x3D; nn.Sequential(</span><br><span class="line">            nn.Linear(120, 84),</span><br><span class="line">            nn.ReLU()</span><br><span class="line">        )</span><br><span class="line">        self.fc3 &#x3D; nn.Linear(84, 10)</span><br><span class="line"></span><br><span class="line">    def forward(self,x):</span><br><span class="line">        x &#x3D; self.conv1(x)</span><br><span class="line">        x &#x3D; self.conv2(x)</span><br><span class="line"> </span><br><span class="line">        x &#x3D; x.view(x.size(0), -1)</span><br><span class="line">        x &#x3D; self.conv3(x)</span><br><span class="line">        x &#x3D; self.fc2(x)</span><br><span class="line">        x &#x3D; self.fc3(x)</span><br><span class="line">        return x</span><br></pre></td></tr></table></figure>
+
+<h2 id="AlexNet-2012"><a href="#AlexNet-2012" class="headerlink" title="AlexNet(2012)"></a><br>AlexNet(2012)</br></h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br></pre></td><td class="code"><pre><span class="line">import torch</span><br><span class="line">import torch.nn as nn</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">class AlexNet(nn.Module):</span><br><span class="line"></span><br><span class="line">    def __init__(self):</span><br><span class="line">        super(AlexNet, self).__init__()</span><br><span class="line">        self.features &#x3D; nn.Sequential(</span><br><span class="line">            nn.Conv2d(in_channels&#x3D;3, out_channels&#x3D;96, kernel_size&#x3D;11, stride&#x3D;4, padding&#x3D;3),</span><br><span class="line">            nn.ReLU(inplace&#x3D;True),</span><br><span class="line">            nn.MaxPool2d(kernel_size&#x3D;3, stride&#x3D;2),</span><br><span class="line">            </span><br><span class="line">            nn.Conv2d(in_channels&#x3D;96, out_channels&#x3D;256, kernel_size&#x3D;5, stride&#x3D;1, padding&#x3D;2),</span><br><span class="line">            nn.ReLU(inplace&#x3D;True),</span><br><span class="line">            nn.MaxPool2d(kernel_size&#x3D;3, stride&#x3D;2),</span><br><span class="line">            </span><br><span class="line">            nn.Conv2d(in_channels&#x3D;256, out_channels&#x3D;384, kernel_size&#x3D;3, stride&#x3D;1, padding&#x3D;1),</span><br><span class="line">            nn.ReLU(inplace&#x3D;True),</span><br><span class="line"></span><br><span class="line">            nn.Conv2d(in_channels&#x3D;384, out_channels&#x3D;384, kernel_size&#x3D;3, stride&#x3D;1, padding&#x3D;1),</span><br><span class="line">            nn.ReLU(inplace&#x3D;True),</span><br><span class="line"></span><br><span class="line">            nn.Conv2d(in_channels&#x3D;384, out_channels&#x3D;256, kernel_size&#x3D;3, stride&#x3D;1, padding&#x3D;1),</span><br><span class="line">            nn.ReLU(inplace&#x3D;True),</span><br><span class="line">            nn.MaxPool2d(kernel_size&#x3D;3, stride&#x3D;2)</span><br><span class="line">        )</span><br><span class="line"></span><br><span class="line">        self.classifier &#x3D; nn.Sequential(</span><br><span class="line">            nn.Dropout(),</span><br><span class="line">            nn.Linear(256*6*6, 4096),</span><br><span class="line">            nn.ReLU(inplace&#x3D;True),</span><br><span class="line"></span><br><span class="line">            nn.Dropout(),</span><br><span class="line">            nn.Linear(4096, 1024),</span><br><span class="line">            nn.ReLU(inplace&#x3D;True),</span><br><span class="line"></span><br><span class="line">            nn.Linear(1024, 2)</span><br><span class="line">        )</span><br><span class="line"></span><br><span class="line">    def forward(self, x): </span><br><span class="line">        # print(x.size())</span><br><span class="line">        x &#x3D; self.features(x) </span><br><span class="line">        # print(x.size())</span><br><span class="line">        x &#x3D; x.view(x.size(0), 256*6*6)</span><br><span class="line">        x &#x3D; self.classifier(x)</span><br><span class="line">        return x</span><br></pre></td></tr></table></figure>
+
+<h2 id="VGG-2014"><a href="#VGG-2014" class="headerlink" title="VGG(2014)"></a><br>VGG(2014)</br></h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br></pre></td><td class="code"><pre><span class="line">import torch</span><br><span class="line">import torch.nn as nn</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">class VGG16(nn.Module):</span><br><span class="line"></span><br><span class="line">    def __init__(self):</span><br><span class="line">        super(VGG16, self).__init__()</span><br><span class="line">        self.features &#x3D; nn.Sequential(</span><br><span class="line">            nn.Conv2d(in_channels&#x3D;3, out_channels&#x3D;64, kernel_size&#x3D;3, stride&#x3D;1),</span><br><span class="line">            nn.ReLU(inplace&#x3D;True),</span><br><span class="line">            nn.Conv2d(in_channels&#x3D;64, out_channels&#x3D;64, kernel_size&#x3D;3, stride&#x3D;1),</span><br><span class="line">            nn.ReLU(inplace&#x3D;True),</span><br><span class="line">            nn.MaxPool2d(kernel_size&#x3D;2, stride&#x3D;2),</span><br><span class="line"></span><br><span class="line">            nn.Conv2d(in_channels&#x3D;64, out_channels&#x3D;128, kernel_size&#x3D;3, stride&#x3D;1),</span><br><span class="line">            nn.ReLU(inplace&#x3D;True),</span><br><span class="line">            nn.Conv2d(in_channels&#x3D;128, out_channels&#x3D;128, kernel_size&#x3D;3, stride&#x3D;1),</span><br><span class="line">            nn.ReLU(inplace&#x3D;True),</span><br><span class="line">            nn.MaxPool2d(kernel_size&#x3D;2, stride&#x3D;2),</span><br><span class="line"></span><br><span class="line">            nn.Conv2d(in_channels&#x3D;128, out_channels&#x3D;256, kernel_size&#x3D;3, stride&#x3D;1),</span><br><span class="line">            nn.ReLU(inplace&#x3D;True),</span><br><span class="line">            nn.Conv2d(in_channels&#x3D;256, out_channels&#x3D;256, kernel_size&#x3D;3, stride&#x3D;1),</span><br><span class="line">            nn.ReLU(inplace&#x3D;True),</span><br><span class="line">            nn.Conv2d(in_channels&#x3D;256, out_channels&#x3D;256, kernel_size&#x3D;1, stride&#x3D;1),</span><br><span class="line">            nn.ReLU(inplace&#x3D;True),</span><br><span class="line">            nn.MaxPool2d(kernel_size&#x3D;2, stride&#x3D;2),</span><br><span class="line"></span><br><span class="line">            nn.Conv2d(in_channels&#x3D;256, out_channels&#x3D;512, kernel_size&#x3D;3, stride&#x3D;1),</span><br><span class="line">            nn.ReLU(inplace&#x3D;True),</span><br><span class="line">            nn.Conv2d(in_channels&#x3D;512, out_channels&#x3D;512, kernel_size&#x3D;3, stride&#x3D;1),</span><br><span class="line">            nn.ReLU(inplace&#x3D;True),</span><br><span class="line">            nn.Conv2d(in_channels&#x3D;512, out_channels&#x3D;512, kernel_size&#x3D;1, stride&#x3D;1),</span><br><span class="line">            nn.ReLU(inplace&#x3D;True),</span><br><span class="line">            nn.MaxPool2d(kernel_size&#x3D;2, stride&#x3D;2),</span><br><span class="line"></span><br><span class="line">            nn.Conv2d(in_channels&#x3D;512, out_channels&#x3D;512, kernel_size&#x3D;3, stride&#x3D;1),</span><br><span class="line">            nn.ReLU(inplace&#x3D;True),</span><br><span class="line">            nn.Conv2d(in_channels&#x3D;512, out_channels&#x3D;512, kernel_size&#x3D;3, stride&#x3D;1),</span><br><span class="line">            nn.ReLU(inplace&#x3D;True),</span><br><span class="line">            nn.Conv2d(in_channels&#x3D;512, out_channels&#x3D;512, kernel_size&#x3D;1, stride&#x3D;1),</span><br><span class="line">            nn.ReLU(inplace&#x3D;True),</span><br><span class="line">            nn.MaxPool2d(kernel_size&#x3D;2, stride&#x3D;2)</span><br><span class="line">        )</span><br><span class="line">        self.classifier &#x3D; nn.Sequential(</span><br><span class="line">            nn.Dropout(),</span><br><span class="line">            nn.Linear(512*3*3, 4096),</span><br><span class="line">            nn.ReLU(inplace&#x3D;True),</span><br><span class="line"></span><br><span class="line">            nn.Dropout(),</span><br><span class="line">            nn.Linear(4096, 4096),</span><br><span class="line">            nn.ReLU(inplace&#x3D;True),</span><br><span class="line"></span><br><span class="line">            nn.Linear(4096, 2)</span><br><span class="line">        )</span><br><span class="line"></span><br><span class="line">    def forward(self, x): </span><br><span class="line">        # print(x.size())</span><br><span class="line">        x &#x3D; self.features(x) </span><br><span class="line">        # print(x.size())</span><br><span class="line">        x &#x3D; x.view(x.size(0), 512*3*3)</span><br><span class="line">        x &#x3D; self.classifier(x)</span><br><span class="line">        return x</span><br></pre></td></tr></table></figure>
+
+<h2 id="InceptionV1-2014"><a href="#InceptionV1-2014" class="headerlink" title="InceptionV1(2014)"></a><br>InceptionV1(2014)</br></h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br><span class="line">73</span><br><span class="line">74</span><br><span class="line">75</span><br><span class="line">76</span><br><span class="line">77</span><br><span class="line">78</span><br><span class="line">79</span><br><span class="line">80</span><br><span class="line">81</span><br><span class="line">82</span><br><span class="line">83</span><br><span class="line">84</span><br><span class="line">85</span><br><span class="line">86</span><br><span class="line">87</span><br><span class="line">88</span><br><span class="line">89</span><br><span class="line">90</span><br><span class="line">91</span><br><span class="line">92</span><br><span class="line">93</span><br><span class="line">94</span><br></pre></td><td class="code"><pre><span class="line">import torch</span><br><span class="line">import torch.nn as nn</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">class InceptionModule(nn.Module):</span><br><span class="line"></span><br><span class="line">    def __init__(self, in_channels, out_channels_1, reduce_3, out_channels_3, reduce_5, out_channels_5, pool_proj):</span><br><span class="line">        super(InceptionModule, self).__init__()</span><br><span class="line">        self.branch_1 &#x3D; nn.Sequential(</span><br><span class="line">            nn.Conv2d(in_channels, out_channels_1, kernel_size&#x3D;1, stride&#x3D;1, bias&#x3D;False),</span><br><span class="line">            nn.BatchNorm2d(out_channels_1),</span><br><span class="line">            nn.ReLU(inplace&#x3D;True)</span><br><span class="line">        )</span><br><span class="line">        self.branch_2 &#x3D; nn.Sequential(</span><br><span class="line">            nn.Conv2d(in_channels, reduce_3, kernel_size&#x3D;1, stride&#x3D;1, bias&#x3D;False),</span><br><span class="line">            nn.BatchNorm2d(reduce_3),</span><br><span class="line">            nn.ReLU(inplace&#x3D;True),</span><br><span class="line">            nn.Conv2d(reduce_3, out_channels_3, kernel_size&#x3D;3, stride&#x3D;1, padding&#x3D;1, bias&#x3D;False),</span><br><span class="line">            nn.BatchNorm2d(out_channels_3),</span><br><span class="line">            nn.ReLU(inplace&#x3D;True)</span><br><span class="line">        )</span><br><span class="line">        self.branch_3 &#x3D; nn.Sequential(</span><br><span class="line">            nn.Conv2d(in_channels, reduce_5, kernel_size&#x3D;1, stride&#x3D;1, bias&#x3D;False),</span><br><span class="line">            nn.BatchNorm2d(reduce_5),</span><br><span class="line">            nn.ReLU(inplace&#x3D;True),</span><br><span class="line">            nn.Conv2d(reduce_5, out_channels_5, kernel_size&#x3D;5, stride&#x3D;1, padding&#x3D;2, bias&#x3D;False),</span><br><span class="line">            nn.BatchNorm2d(out_channels_5),</span><br><span class="line">            nn.ReLU(inplace&#x3D;True)</span><br><span class="line">        )</span><br><span class="line">        self.branch_4 &#x3D; nn.Sequential(</span><br><span class="line">            nn.MaxPool2d(kernel_size&#x3D;3, stride&#x3D;1, padding&#x3D;1),</span><br><span class="line">            nn.Conv2d(in_channels, pool_proj, kernel_size&#x3D;1, stride&#x3D;1, bias&#x3D;False),</span><br><span class="line">            nn.BatchNorm2d(pool_proj),</span><br><span class="line">            nn.ReLU(inplace&#x3D;True)</span><br><span class="line">        )</span><br><span class="line">    </span><br><span class="line">    def forward(self, x):</span><br><span class="line">        # print(self.branch_1(x).shape, self.branch_2(x).shape, self.branch_3(x).shape, self.branch_4(x).shape)</span><br><span class="line">        return torch.cat([self.branch_1(x), self.branch_2(x), self.branch_3(x), self.branch_4(x)], dim&#x3D;1)</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">class InceptionV1(nn.Module):</span><br><span class="line"></span><br><span class="line">    def __init__(self, num_classes&#x3D;2):</span><br><span class="line">        super(InceptionV1, self).__init__()</span><br><span class="line">        self.stage1 &#x3D; nn.Sequential(</span><br><span class="line">            nn.Conv2d(in_channels&#x3D;3, out_channels&#x3D;64, kernel_size&#x3D;7, stride&#x3D;2, padding&#x3D;3, bias&#x3D;False),</span><br><span class="line">            nn.BatchNorm2d(64),</span><br><span class="line">            nn.ReLU(inplace&#x3D;True),</span><br><span class="line">            nn.MaxPool2d(kernel_size&#x3D;3, stride&#x3D;2, padding&#x3D;1),</span><br><span class="line">            nn.Conv2d(in_channels&#x3D;64, out_channels&#x3D;64, kernel_size&#x3D;1, stride&#x3D;1, bias&#x3D;False),</span><br><span class="line">            nn.BatchNorm2d(64),</span><br><span class="line">            nn.ReLU(inplace&#x3D;True)</span><br><span class="line">        )</span><br><span class="line">        self.stage2 &#x3D; nn.Sequential(</span><br><span class="line">            nn.Conv2d(in_channels&#x3D;64, out_channels&#x3D;192, kernel_size&#x3D;3, stride&#x3D;1, padding&#x3D;1, bias&#x3D;False),</span><br><span class="line">            nn.BatchNorm2d(192),</span><br><span class="line">            nn.ReLU(inplace&#x3D;True),</span><br><span class="line">            nn.MaxPool2d(kernel_size&#x3D;3, stride&#x3D;2, padding&#x3D;1)</span><br><span class="line">        )</span><br><span class="line">        self.stage3 &#x3D; nn.Sequential(</span><br><span class="line">            # InceptionModule(in_channels, out_channels_1, reduce_3, out_channels_3, reduce_5, out_channels_5, pool_proj)</span><br><span class="line">            InceptionModule(192, 64, 96, 128, 16, 32, 32),</span><br><span class="line">            InceptionModule(256, 128, 128, 192, 32, 96, 64),</span><br><span class="line">            nn.MaxPool2d(kernel_size&#x3D;3, stride&#x3D;2, padding&#x3D;1)</span><br><span class="line">        )</span><br><span class="line">        self.stage4 &#x3D; nn.Sequential(</span><br><span class="line">            InceptionModule(480, 192, 96, 208, 16, 48, 64),</span><br><span class="line">            InceptionModule(512, 160, 112, 224, 24, 64, 64),</span><br><span class="line">            InceptionModule(512, 128, 128, 256, 24, 64, 64),</span><br><span class="line">            InceptionModule(512, 112, 144, 288, 32, 64, 64),</span><br><span class="line">            InceptionModule(528, 256, 160, 320, 32, 128, 128),</span><br><span class="line">            nn.MaxPool2d(kernel_size&#x3D;3, stride&#x3D;2, padding&#x3D;1)</span><br><span class="line">        )</span><br><span class="line">        self.stage5 &#x3D; nn.Sequential(</span><br><span class="line">            InceptionModule(832, 256, 160, 320, 32, 128, 128),</span><br><span class="line">            InceptionModule(832, 384, 192, 384, 48, 128, 128),</span><br><span class="line">        )</span><br><span class="line">        self.avg_pool &#x3D; nn.AvgPool2d(kernel_size&#x3D;7)</span><br><span class="line">        self.classifier &#x3D; nn.Sequential(</span><br><span class="line">            nn.Dropout(0.4),</span><br><span class="line">            nn.Linear(1024, num_classes)</span><br><span class="line">        )</span><br><span class="line"></span><br><span class="line">    def forward(self, x):</span><br><span class="line">        x &#x3D; self.stage1(x)</span><br><span class="line">        x &#x3D; self.stage2(x)</span><br><span class="line">        x &#x3D; self.stage3(x)</span><br><span class="line">        x &#x3D; self.stage4(x)</span><br><span class="line">        x &#x3D; self.stage5(x)</span><br><span class="line">        x &#x3D; self.avg_pool(x)</span><br><span class="line">        x &#x3D; x.view(x.size(0), -1)</span><br><span class="line">        x &#x3D; self.classifier(x)</span><br><span class="line">        return x</span><br></pre></td></tr></table></figure>
+
+<h2 id="ResNet-18-34-50-101-152-2015"><a href="#ResNet-18-34-50-101-152-2015" class="headerlink" title="ResNet-18/34/50/101/152(2015)"></a><br>ResNet-18/34/50/101/152(2015)</br></h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br><span class="line">73</span><br><span class="line">74</span><br><span class="line">75</span><br><span class="line">76</span><br><span class="line">77</span><br><span class="line">78</span><br><span class="line">79</span><br><span class="line">80</span><br><span class="line">81</span><br></pre></td><td class="code"><pre><span class="line">import torch</span><br><span class="line">from torch import nn</span><br><span class="line">from torch.nn import functional as F</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">class ResidualBlock(nn.Module):</span><br><span class="line"></span><br><span class="line">    def __init__(self, inchannel, outchannel, stride&#x3D;1, shortcut&#x3D;None):</span><br><span class="line">        super(ResidualBlock, self).__init__()</span><br><span class="line"></span><br><span class="line">        # left_2 for ResNet-18&#x2F;34, left_3 for ResNet-50&#x2F;101&#x2F;152 </span><br><span class="line">        self.left_2 &#x3D; nn.Sequential(</span><br><span class="line">            nn.Conv2d(inchannel, outchannel, 3, stride, 1, bias&#x3D;False),</span><br><span class="line">            nn.BatchNorm2d(outchannel),</span><br><span class="line">            nn.ReLU(inplace&#x3D;True),</span><br><span class="line">            nn.Conv2d(outchannel, outchannel, 3, 1, 1, bias&#x3D;False),</span><br><span class="line">            nn.BatchNorm2d(outchannel)</span><br><span class="line">        )</span><br><span class="line">        self.left_3 &#x3D; nn.Sequential(</span><br><span class="line">            nn.Conv2d(inchannel, outchannel, 1, 1, bias&#x3D;False),</span><br><span class="line">            nn.BatchNorm2d(outchannel),</span><br><span class="line">            nn.ReLU(inplace&#x3D;True),</span><br><span class="line">            nn.Conv2d(outchannel, outchannel, 3, stride, 1, bias&#x3D;False),</span><br><span class="line">            nn.BatchNorm2d(outchannel),</span><br><span class="line">            nn.ReLU(inplace&#x3D;True),</span><br><span class="line">            nn.Conv2d(outchannel, outchannel, 1, 1, bias&#x3D;False),</span><br><span class="line">            nn.BatchNorm2d(outchannel)</span><br><span class="line">        )</span><br><span class="line">        self.right &#x3D; shortcut</span><br><span class="line"></span><br><span class="line">    def forward(self, x):</span><br><span class="line">        out &#x3D; self.left_2(x)</span><br><span class="line">        print(out.shape)</span><br><span class="line">        resisdual &#x3D; x if self.right is None else self.right(x)</span><br><span class="line">        out +&#x3D; resisdual</span><br><span class="line">        return F.relu(out)</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">class ResNet34(nn.Module):</span><br><span class="line"></span><br><span class="line">    def __init__(self, num_classes&#x3D;2):</span><br><span class="line">        super(ResNet34, self).__init__()</span><br><span class="line">        self.layer1 &#x3D; nn.Sequential(</span><br><span class="line">            nn.Conv2d(3, 64, 7, 2, 3, bias&#x3D;False),</span><br><span class="line">            nn.BatchNorm2d(64),</span><br><span class="line">            nn.ReLU(inplace&#x3D;True),</span><br><span class="line">            nn.MaxPool2d(3, 2, 1)</span><br><span class="line">        )</span><br><span class="line">        # ResNet-18: 2,2,2,2  ResNet-34:  3,4,6,3</span><br><span class="line">        # ResNet-50: 3,4,6,3  ResNet-101: 3,4,23,3  ResNet-152: 3,8,36,3</span><br><span class="line">        self.layer2 &#x3D; self._make_layer(64, 128, 3)</span><br><span class="line">        self.layer3 &#x3D; self._make_layer(128, 256, 4, stride&#x3D;2)</span><br><span class="line">        self.layer4 &#x3D; self._make_layer(256, 512, 6, stride&#x3D;2)</span><br><span class="line">        self.layer5 &#x3D; self._make_layer(512, 512, 3, stride&#x3D;2)</span><br><span class="line">        self.avg_pool &#x3D; nn.AvgPool2d(kernel_size&#x3D;7)</span><br><span class="line">        self.classifier &#x3D; nn.Linear(512, num_classes)</span><br><span class="line"></span><br><span class="line">    def _make_layer(self, inchannel, outchannel, block_num, stride&#x3D;1):</span><br><span class="line">        # 1*1 Conv Projection</span><br><span class="line">        shortcut &#x3D; nn.Sequential(</span><br><span class="line">            nn.Conv2d(inchannel, outchannel, 1, stride, bias&#x3D;False),</span><br><span class="line">            nn.BatchNorm2d(outchannel)</span><br><span class="line">        )</span><br><span class="line"></span><br><span class="line">        layers &#x3D; []</span><br><span class="line">        layers.append(ResidualBlock(inchannel, outchannel, stride, shortcut))</span><br><span class="line"></span><br><span class="line">        for i in range(1, block_num):</span><br><span class="line">            layers.append(ResidualBlock(outchannel, outchannel))</span><br><span class="line">        return nn.Sequential(*layers)</span><br><span class="line"></span><br><span class="line">    def forward(self, x):</span><br><span class="line">        x &#x3D; self.layer1(x)</span><br><span class="line">        x &#x3D; self.layer2(x)</span><br><span class="line">        x &#x3D; self.layer3(x)</span><br><span class="line">        x &#x3D; self.layer4(x)</span><br><span class="line">        x &#x3D; self.layer5(x)</span><br><span class="line">        x &#x3D; self.avg_pool(x)</span><br><span class="line">        x &#x3D; x.view(x.size(0), -1)</span><br><span class="line">        x &#x3D; self.classifier(x)</span><br><span class="line">        return x</span><br></pre></td></tr></table></figure>
+
+<h2 id="MobileNetV1-2017"><a href="#MobileNetV1-2017" class="headerlink" title="MobileNetV1(2017)"></a><br>MobileNetV1(2017)</br></h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br></pre></td><td class="code"><pre><span class="line">import torch</span><br><span class="line">import torch.nn as nn</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">class MobileNetV1(nn.Module):</span><br><span class="line"></span><br><span class="line">    def __init__(self):</span><br><span class="line">        super(MobileNetV1, self).__init__()</span><br><span class="line">        def conv_bn(inp, oup, stride):</span><br><span class="line">            return nn.Sequential(</span><br><span class="line">                nn.Conv2d(inp, oup, 3, stride, 1, bias&#x3D;False),</span><br><span class="line">                nn.BatchNorm2d(oup),</span><br><span class="line">                nn.ReLU(inplace&#x3D;True)</span><br><span class="line">            )</span><br><span class="line">        def conv_dw(inp, oup, stride):</span><br><span class="line">            return nn.Sequential(</span><br><span class="line">                nn.Conv2d(inp, inp, 3, stride, 1, groups&#x3D;inp, bias&#x3D;False),</span><br><span class="line">                nn.BatchNorm2d(inp),</span><br><span class="line">                nn.ReLU(inplace&#x3D;True),</span><br><span class="line">    </span><br><span class="line">                nn.Conv2d(inp, oup, 1, 1, 0, bias&#x3D;False),</span><br><span class="line">                nn.BatchNorm2d(oup),</span><br><span class="line">                nn.ReLU(inplace&#x3D;True),</span><br><span class="line">            )</span><br><span class="line">        self.model &#x3D; nn.Sequential(</span><br><span class="line">            conv_bn(3, 32, 2),</span><br><span class="line">            conv_dw(32, 64, 1),</span><br><span class="line">            conv_dw(64, 128, 2),</span><br><span class="line">            conv_dw(128, 128, 1),</span><br><span class="line">            conv_dw(128, 256, 2),</span><br><span class="line">            conv_dw(256, 256, 1),</span><br><span class="line">            conv_dw(256, 512, 2),</span><br><span class="line">            conv_dw(512, 512, 1),</span><br><span class="line">            conv_dw(512, 512, 1),</span><br><span class="line">            conv_dw(512, 512, 1),</span><br><span class="line">            conv_dw(512, 512, 1),</span><br><span class="line">            conv_dw(512, 512, 1),</span><br><span class="line">            conv_dw(512, 1024, 2),</span><br><span class="line">            conv_dw(1024, 1024, 1),</span><br><span class="line">            nn.AvgPool2d(7),</span><br><span class="line">        )</span><br><span class="line">        self.fc &#x3D; nn.Linear(1024, 2)</span><br><span class="line"> </span><br><span class="line">    def forward(self, x):</span><br><span class="line">        x &#x3D; self.model(x)</span><br><span class="line">        x &#x3D; x.view(-1, 1024)</span><br><span class="line">        x &#x3D; self.fc(x)</span><br><span class="line">        return x</span><br></pre></td></tr></table></figure>
+
+<h2 id="MobileNetV2-2018"><a href="#MobileNetV2-2018" class="headerlink" title="MobileNetV2(2018)"></a><br>MobileNetV2(2018)</br></h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br><span class="line">73</span><br><span class="line">74</span><br><span class="line">75</span><br><span class="line">76</span><br><span class="line">77</span><br><span class="line">78</span><br><span class="line">79</span><br><span class="line">80</span><br><span class="line">81</span><br><span class="line">82</span><br><span class="line">83</span><br><span class="line">84</span><br><span class="line">85</span><br><span class="line">86</span><br><span class="line">87</span><br><span class="line">88</span><br><span class="line">89</span><br><span class="line">90</span><br><span class="line">91</span><br><span class="line">92</span><br><span class="line">93</span><br><span class="line">94</span><br><span class="line">95</span><br><span class="line">96</span><br><span class="line">97</span><br><span class="line">98</span><br><span class="line">99</span><br><span class="line">100</span><br><span class="line">101</span><br><span class="line">102</span><br><span class="line">103</span><br><span class="line">104</span><br><span class="line">105</span><br><span class="line">106</span><br><span class="line">107</span><br><span class="line">108</span><br><span class="line">109</span><br><span class="line">110</span><br><span class="line">111</span><br><span class="line">112</span><br><span class="line">113</span><br><span class="line">114</span><br><span class="line">115</span><br><span class="line">116</span><br><span class="line">117</span><br><span class="line">118</span><br><span class="line">119</span><br><span class="line">120</span><br><span class="line">121</span><br><span class="line">122</span><br><span class="line">123</span><br><span class="line">124</span><br><span class="line">125</span><br><span class="line">126</span><br><span class="line">127</span><br><span class="line">128</span><br><span class="line">129</span><br><span class="line">130</span><br><span class="line">131</span><br></pre></td><td class="code"><pre><span class="line">import torch.nn as nn</span><br><span class="line">import math</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">def conv_bn(inp, oup, stride):</span><br><span class="line">    return nn.Sequential(</span><br><span class="line">        nn.Conv2d(inp, oup, 3, stride, 1, bias&#x3D;False),</span><br><span class="line">        nn.BatchNorm2d(oup),</span><br><span class="line">        nn.ReLU6(inplace&#x3D;True)</span><br><span class="line">    )</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">def conv_1x1_bn(inp, oup):</span><br><span class="line">    return nn.Sequential(</span><br><span class="line">        nn.Conv2d(inp, oup, 1, 1, 0, bias&#x3D;False),</span><br><span class="line">        nn.BatchNorm2d(oup),</span><br><span class="line">        nn.ReLU6(inplace&#x3D;True)</span><br><span class="line">    )</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">def make_divisible(x, divisible_by&#x3D;8):</span><br><span class="line">    import numpy as np</span><br><span class="line">    return int(np.ceil(x * 1. &#x2F; divisible_by) * divisible_by)</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">class InvertedResidual(nn.Module):</span><br><span class="line"></span><br><span class="line">    def __init__(self, inp, oup, stride, expand_ratio):</span><br><span class="line">        super(InvertedResidual, self).__init__()</span><br><span class="line">        self.stride &#x3D; stride</span><br><span class="line">        assert stride in [1, 2]</span><br><span class="line"></span><br><span class="line">        hidden_dim &#x3D; int(inp * expand_ratio)</span><br><span class="line">        self.use_res_connect &#x3D; self.stride &#x3D;&#x3D; 1 and inp &#x3D;&#x3D; oup</span><br><span class="line"></span><br><span class="line">        if expand_ratio &#x3D;&#x3D; 1:</span><br><span class="line">            self.conv &#x3D; nn.Sequential(</span><br><span class="line">                # dw</span><br><span class="line">                nn.Conv2d(hidden_dim, hidden_dim, 3, stride, 1, groups&#x3D;hidden_dim, bias&#x3D;False),</span><br><span class="line">                nn.BatchNorm2d(hidden_dim),</span><br><span class="line">                nn.ReLU6(inplace&#x3D;True),</span><br><span class="line">                # pw-linear</span><br><span class="line">                nn.Conv2d(hidden_dim, oup, 1, 1, 0, bias&#x3D;False),</span><br><span class="line">                nn.BatchNorm2d(oup),</span><br><span class="line">            )</span><br><span class="line">        else:</span><br><span class="line">            self.conv &#x3D; nn.Sequential(</span><br><span class="line">                # pw</span><br><span class="line">                nn.Conv2d(inp, hidden_dim, 1, 1, 0, bias&#x3D;False),</span><br><span class="line">                nn.BatchNorm2d(hidden_dim),</span><br><span class="line">                nn.ReLU6(inplace&#x3D;True),</span><br><span class="line">                # dw</span><br><span class="line">                nn.Conv2d(hidden_dim, hidden_dim, 3, stride, 1, groups&#x3D;hidden_dim, bias&#x3D;False),</span><br><span class="line">                nn.BatchNorm2d(hidden_dim),</span><br><span class="line">                nn.ReLU6(inplace&#x3D;True),</span><br><span class="line">                # pw-linear</span><br><span class="line">                nn.Conv2d(hidden_dim, oup, 1, 1, 0, bias&#x3D;False),</span><br><span class="line">                nn.BatchNorm2d(oup),</span><br><span class="line">            )</span><br><span class="line"></span><br><span class="line">    def forward(self, x):</span><br><span class="line">        if self.use_res_connect:</span><br><span class="line">            return x + self.conv(x)</span><br><span class="line">        else:</span><br><span class="line">            return self.conv(x)</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">class MobileNetV2(nn.Module):</span><br><span class="line"></span><br><span class="line">    def __init__(self, n_class&#x3D;2, input_size&#x3D;224, width_mult&#x3D;1.):</span><br><span class="line">        super(MobileNetV2, self).__init__()</span><br><span class="line">        block &#x3D; InvertedResidual</span><br><span class="line">        input_channel &#x3D; 32</span><br><span class="line">        last_channel &#x3D; 1280</span><br><span class="line">        interverted_residual_setting &#x3D; [</span><br><span class="line">            # t, c, n, s</span><br><span class="line">            [1, 16, 1, 1],</span><br><span class="line">            [6, 24, 2, 2],</span><br><span class="line">            [6, 32, 3, 2],</span><br><span class="line">            [6, 64, 4, 2],</span><br><span class="line">            [6, 96, 3, 1],</span><br><span class="line">            [6, 160, 3, 2],</span><br><span class="line">            [6, 320, 1, 1],</span><br><span class="line">        ]</span><br><span class="line"></span><br><span class="line">        # building first layer</span><br><span class="line">        assert input_size % 32 &#x3D;&#x3D; 0</span><br><span class="line">        # input_channel &#x3D; make_divisible(input_channel * width_mult)  # first channel is always 32!</span><br><span class="line">        self.last_channel &#x3D; make_divisible(last_channel * width_mult) if width_mult &gt; 1.0 else last_channel</span><br><span class="line">        self.features &#x3D; [conv_bn(3, input_channel, 2)]</span><br><span class="line"></span><br><span class="line">        # building inverted residual blocks</span><br><span class="line">        for t, c, n, s in interverted_residual_setting:</span><br><span class="line">            output_channel &#x3D; make_divisible(c * width_mult) if t &gt; 1 else c</span><br><span class="line">            for i in range(n):</span><br><span class="line">                if i &#x3D;&#x3D; 0:</span><br><span class="line">                    self.features.append(block(input_channel, output_channel, s, expand_ratio&#x3D;t))</span><br><span class="line">                else:</span><br><span class="line">                    self.features.append(block(input_channel, output_channel, 1, expand_ratio&#x3D;t))</span><br><span class="line">                input_channel &#x3D; output_channel</span><br><span class="line">                </span><br><span class="line">        # building last several layers</span><br><span class="line">        self.features.append(conv_1x1_bn(input_channel, self.last_channel))</span><br><span class="line"></span><br><span class="line">        # make it nn.Sequential</span><br><span class="line">        self.features &#x3D; nn.Sequential(*self.features)</span><br><span class="line"></span><br><span class="line">        # building classifier</span><br><span class="line">        self.classifier &#x3D; nn.Linear(self.last_channel, n_class)</span><br><span class="line">        self._initialize_weights()</span><br><span class="line"></span><br><span class="line">    def forward(self, x):</span><br><span class="line">        x &#x3D; self.features(x)</span><br><span class="line">        x &#x3D; x.mean(3).mean(2)</span><br><span class="line">        x &#x3D; self.classifier(x)</span><br><span class="line">        return x</span><br><span class="line"></span><br><span class="line">    def _initialize_weights(self):</span><br><span class="line">        for m in self.modules():</span><br><span class="line">            if isinstance(m, nn.Conv2d):</span><br><span class="line">                n &#x3D; m.kernel_size[0] * m.kernel_size[1] * m.out_channels</span><br><span class="line">                m.weight.data.normal_(0, math.sqrt(2. &#x2F; n))</span><br><span class="line">                if m.bias is not None:</span><br><span class="line">                    m.bias.data.zero_()</span><br><span class="line">            elif isinstance(m, nn.BatchNorm2d):</span><br><span class="line">                m.weight.data.fill_(1)</span><br><span class="line">                m.bias.data.zero_()</span><br><span class="line">            elif isinstance(m, nn.Linear):</span><br><span class="line">                n &#x3D; m.weight.size(1)</span><br><span class="line">                m.weight.data.normal_(0, 0.01)</span><br><span class="line">                m.bias.data.zero_()</span><br></pre></td></tr></table></figure>
+
+<h2 id="MobileNetV3-2019"><a href="#MobileNetV3-2019" class="headerlink" title="MobileNetV3(2019)"></a><br>MobileNetV3(2019)</br></h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br><span class="line">73</span><br><span class="line">74</span><br><span class="line">75</span><br><span class="line">76</span><br><span class="line">77</span><br><span class="line">78</span><br><span class="line">79</span><br><span class="line">80</span><br><span class="line">81</span><br><span class="line">82</span><br><span class="line">83</span><br><span class="line">84</span><br><span class="line">85</span><br><span class="line">86</span><br><span class="line">87</span><br><span class="line">88</span><br><span class="line">89</span><br><span class="line">90</span><br><span class="line">91</span><br><span class="line">92</span><br><span class="line">93</span><br><span class="line">94</span><br><span class="line">95</span><br><span class="line">96</span><br><span class="line">97</span><br><span class="line">98</span><br><span class="line">99</span><br><span class="line">100</span><br><span class="line">101</span><br><span class="line">102</span><br><span class="line">103</span><br><span class="line">104</span><br><span class="line">105</span><br><span class="line">106</span><br><span class="line">107</span><br><span class="line">108</span><br><span class="line">109</span><br><span class="line">110</span><br><span class="line">111</span><br><span class="line">112</span><br><span class="line">113</span><br><span class="line">114</span><br><span class="line">115</span><br><span class="line">116</span><br><span class="line">117</span><br><span class="line">118</span><br><span class="line">119</span><br><span class="line">120</span><br><span class="line">121</span><br><span class="line">122</span><br><span class="line">123</span><br><span class="line">124</span><br><span class="line">125</span><br><span class="line">126</span><br><span class="line">127</span><br><span class="line">128</span><br><span class="line">129</span><br><span class="line">130</span><br><span class="line">131</span><br><span class="line">132</span><br><span class="line">133</span><br><span class="line">134</span><br><span class="line">135</span><br><span class="line">136</span><br><span class="line">137</span><br><span class="line">138</span><br><span class="line">139</span><br><span class="line">140</span><br><span class="line">141</span><br><span class="line">142</span><br><span class="line">143</span><br><span class="line">144</span><br><span class="line">145</span><br><span class="line">146</span><br><span class="line">147</span><br><span class="line">148</span><br><span class="line">149</span><br><span class="line">150</span><br><span class="line">151</span><br><span class="line">152</span><br><span class="line">153</span><br><span class="line">154</span><br><span class="line">155</span><br><span class="line">156</span><br><span class="line">157</span><br><span class="line">158</span><br><span class="line">159</span><br><span class="line">160</span><br><span class="line">161</span><br><span class="line">162</span><br><span class="line">163</span><br><span class="line">164</span><br><span class="line">165</span><br><span class="line">166</span><br><span class="line">167</span><br><span class="line">168</span><br><span class="line">169</span><br><span class="line">170</span><br><span class="line">171</span><br><span class="line">172</span><br><span class="line">173</span><br><span class="line">174</span><br><span class="line">175</span><br><span class="line">176</span><br><span class="line">177</span><br><span class="line">178</span><br><span class="line">179</span><br><span class="line">180</span><br><span class="line">181</span><br><span class="line">182</span><br><span class="line">183</span><br><span class="line">184</span><br><span class="line">185</span><br><span class="line">186</span><br><span class="line">187</span><br><span class="line">188</span><br><span class="line">189</span><br><span class="line">190</span><br><span class="line">191</span><br><span class="line">192</span><br><span class="line">193</span><br><span class="line">194</span><br><span class="line">195</span><br><span class="line">196</span><br><span class="line">197</span><br><span class="line">198</span><br><span class="line">199</span><br><span class="line">200</span><br><span class="line">201</span><br><span class="line">202</span><br><span class="line">203</span><br><span class="line">204</span><br><span class="line">205</span><br><span class="line">206</span><br><span class="line">207</span><br><span class="line">208</span><br><span class="line">209</span><br><span class="line">210</span><br><span class="line">211</span><br><span class="line">212</span><br><span class="line">213</span><br><span class="line">214</span><br><span class="line">215</span><br><span class="line">216</span><br><span class="line">217</span><br><span class="line">218</span><br><span class="line">219</span><br><span class="line">220</span><br><span class="line">221</span><br><span class="line">222</span><br><span class="line">223</span><br><span class="line">224</span><br><span class="line">225</span><br><span class="line">226</span><br><span class="line">227</span><br><span class="line">228</span><br><span class="line">229</span><br></pre></td><td class="code"><pre><span class="line">import torch</span><br><span class="line">import torch.nn as nn</span><br><span class="line">import torch.nn.functional as F</span><br><span class="line">from torch.autograd import Variable</span><br><span class="line">import math</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">class HardSwish(nn.Module):</span><br><span class="line"></span><br><span class="line">    def __init__(self, inplace&#x3D;True):</span><br><span class="line">        super(HardSwish, self).__init__()</span><br><span class="line">        self.relu6 &#x3D; nn.ReLU6(inplace&#x3D;inplace)</span><br><span class="line">    def forward(self, x):</span><br><span class="line">        return x * (self.relu6(x+3)) &#x2F; 6</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">class HardSigmoid(nn.Module):</span><br><span class="line">    def __init__(self, inplace&#x3D;True):</span><br><span class="line">        super(HardSigmoid, self).__init__()</span><br><span class="line">        self.relu6 &#x3D; nn.ReLU6(inplace&#x3D;inplace)</span><br><span class="line">    def forward(self, x):</span><br><span class="line">        return (self.relu6(x+3)) &#x2F; 6</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">ACT_FNS &#x3D; &#123;</span><br><span class="line">    &#39;RE&#39;: nn.ReLU6(inplace&#x3D;True),</span><br><span class="line">    &#39;HS&#39;: HardSwish(),</span><br><span class="line">    &#39;HG&#39;: HardSigmoid()</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">def _make_divisible(v, divisor, min_value&#x3D;None):</span><br><span class="line">    if min_value is None:</span><br><span class="line">        min_value &#x3D; divisor</span><br><span class="line">    new_v &#x3D; max(min_value, int(v + divisor &#x2F; 2) &#x2F;&#x2F; divisor * divisor)</span><br><span class="line">    if new_v &lt; 0.9 * v:</span><br><span class="line">        new_v +&#x3D; divisor</span><br><span class="line">    return new_v</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">def conv_3x3_bn(inp, oup, stride, nl&#x3D;&#39;RE&#39;):</span><br><span class="line">    return nn.Sequential(</span><br><span class="line">        nn.Conv2d(inp, oup, 3, stride, 1, bias&#x3D;False),</span><br><span class="line">        nn.BatchNorm2d(oup),</span><br><span class="line">        ACT_FNS[nl]</span><br><span class="line">    )</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">def conv_1x1(inp, oup, nl&#x3D;&#39;RE&#39;, with_se&#x3D;False):</span><br><span class="line">    if with_se:</span><br><span class="line">        return nn.Sequential(</span><br><span class="line">            nn.Conv2d(inp, oup, 1, 1, 0, bias&#x3D;False),</span><br><span class="line">            SqueezeAndExcite(oup, reduction&#x3D;4),</span><br><span class="line">            ACT_FNS[nl]</span><br><span class="line">        )</span><br><span class="line">    else:</span><br><span class="line">        return nn.Sequential(</span><br><span class="line">            nn.Conv2d(inp, oup, 1, 1, 0, bias&#x3D;False),</span><br><span class="line">            ACT_FNS[nl]</span><br><span class="line">        )</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">def conv_1x1_bn(inp, oup, nl&#x3D;&#39;RE&#39;, with_se&#x3D;False):</span><br><span class="line">    if with_se:</span><br><span class="line">        return nn.Sequential(</span><br><span class="line">            nn.Conv2d(inp, oup, 1, 1, 0, bias&#x3D;False),</span><br><span class="line">            SqueezeAndExcite(oup, reduction&#x3D;4),</span><br><span class="line">            nn.BatchNorm2d(oup),</span><br><span class="line">            ACT_FNS[nl]</span><br><span class="line">        )</span><br><span class="line">    else:</span><br><span class="line">        return nn.Sequential(</span><br><span class="line">            nn.Conv2d(inp, oup, 1, 1, 0, bias&#x3D;False),</span><br><span class="line">            nn.BatchNorm2d(oup),</span><br><span class="line">            ACT_FNS[nl]</span><br><span class="line">        )</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">class SqueezeAndExcite(nn.Module):</span><br><span class="line"></span><br><span class="line">    def __init__(self, n_features, reduction&#x3D;4):</span><br><span class="line">        super(SqueezeAndExcite, self).__init__()</span><br><span class="line">        if n_features % reduction !&#x3D; 0:</span><br><span class="line">            raise ValueError(&#39;n_features must be divisible by reduction (default &#x3D; 4)&#39;)</span><br><span class="line">        self.linear1 &#x3D; nn.Linear(n_features, n_features &#x2F;&#x2F; reduction, bias&#x3D;True)</span><br><span class="line">        self.nonlin1 &#x3D; ACT_FNS[&#39;RE&#39;]</span><br><span class="line">        self.linear2 &#x3D; nn.Linear(n_features &#x2F;&#x2F; reduction, n_features, bias&#x3D;True)</span><br><span class="line">        self.nonlin2 &#x3D; ACT_FNS[&#39;HG&#39;]</span><br><span class="line"></span><br><span class="line">    def forward(self, x):</span><br><span class="line">        y &#x3D; F.avg_pool2d(x, kernel_size&#x3D;x.size()[2:4])</span><br><span class="line">        y &#x3D; y.permute(0, 2, 3, 1)</span><br><span class="line">        y &#x3D; self.nonlin1(self.linear1(y))</span><br><span class="line">        y &#x3D; self.nonlin2(self.linear2(y))</span><br><span class="line">        y &#x3D; y.permute(0, 3, 1, 2)</span><br><span class="line">        y &#x3D; x * y</span><br><span class="line">        return y</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">class InvertedResidual(nn.Module):</span><br><span class="line"></span><br><span class="line">    def __init__(self, inp, oup, kernel, stride, expand_size, nl&#x3D;&#39;RE&#39;, with_se&#x3D;False):</span><br><span class="line">        super(InvertedResidual, self).__init__()</span><br><span class="line">        assert stride in [1, 2]</span><br><span class="line"></span><br><span class="line">        hidden_dim &#x3D; expand_size</span><br><span class="line"></span><br><span class="line">        self.identity &#x3D; stride &#x3D;&#x3D; 1 and inp &#x3D;&#x3D; oup</span><br><span class="line"></span><br><span class="line">        self.pw &#x3D; nn.Sequential(</span><br><span class="line">            nn.Conv2d(inp, hidden_dim, 1, 1, 0, bias&#x3D;False),</span><br><span class="line">            nn.BatchNorm2d(hidden_dim),</span><br><span class="line">            ACT_FNS[nl],</span><br><span class="line">        )</span><br><span class="line"></span><br><span class="line">        self.dw &#x3D; nn.Sequential(</span><br><span class="line">            nn.Conv2d(hidden_dim, hidden_dim, kernel, stride, kernel&#x2F;&#x2F;2, groups&#x3D;hidden_dim, bias&#x3D;False),</span><br><span class="line">            nn.BatchNorm2d(hidden_dim),</span><br><span class="line">            ACT_FNS[nl],</span><br><span class="line">        )</span><br><span class="line"></span><br><span class="line">        self.se &#x3D; nn.Sequential(</span><br><span class="line">            SqueezeAndExcite(hidden_dim, reduction&#x3D;4)</span><br><span class="line">        )</span><br><span class="line"></span><br><span class="line">        self.pw_linear &#x3D; nn.Sequential(</span><br><span class="line">            nn.Conv2d(hidden_dim, oup, 1, 1, 0, bias&#x3D;False),</span><br><span class="line">            nn.BatchNorm2d(oup),</span><br><span class="line">        )</span><br><span class="line"></span><br><span class="line">        if with_se: # with squeeze and excite </span><br><span class="line">            if expand_size &#x3D;&#x3D; oup: # exp_ratio &#x3D; 1</span><br><span class="line">                self.conv &#x3D; nn.Sequential(</span><br><span class="line">                    self.dw,</span><br><span class="line">                    self.se,</span><br><span class="line">                    self.pw_linear,</span><br><span class="line">                )</span><br><span class="line">            else:</span><br><span class="line">                self.conv &#x3D; nn.Sequential(</span><br><span class="line">                    self.pw,</span><br><span class="line">                    self.dw,</span><br><span class="line">                    self.se,</span><br><span class="line">                    self.pw_linear,</span><br><span class="line">                )</span><br><span class="line">        else:</span><br><span class="line">            if expand_size &#x3D;&#x3D; oup:</span><br><span class="line">                self.conv &#x3D; nn.Sequential(</span><br><span class="line">                    self.dw,</span><br><span class="line">                    self.pw_linear,</span><br><span class="line">                )</span><br><span class="line">            else:</span><br><span class="line">                self.conv &#x3D; nn.Sequential(</span><br><span class="line">                    self.pw,</span><br><span class="line">                    self.dw,</span><br><span class="line">                    self.pw_linear,</span><br><span class="line">                )</span><br><span class="line"></span><br><span class="line">    def forward(self, x):</span><br><span class="line">        if self.identity:</span><br><span class="line">            return x + self.conv(x)</span><br><span class="line">        else:</span><br><span class="line">            return self.conv(x)</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">class MobileNetV3(nn.Module):</span><br><span class="line"></span><br><span class="line">    # NOTE: [kernel, expansion, output, SE, NL, s]</span><br><span class="line">    cfg &#x3D; [(3,  16, 16, True,  &#39;RE&#39;, 2),</span><br><span class="line">           (3,  72, 24, False, &#39;RE&#39;, 2),  </span><br><span class="line">           (3,  88, 24, False, &#39;RE&#39;, 1),</span><br><span class="line">           (5,  96, 40, True,  &#39;HS&#39;, 2),</span><br><span class="line">           (5, 240, 40, True,  &#39;HS&#39;, 1),</span><br><span class="line">           (5, 240, 40, True,  &#39;HS&#39;, 1),</span><br><span class="line">           (5, 120, 48, True,  &#39;HS&#39;, 1),</span><br><span class="line">           (5, 144, 48, True,  &#39;HS&#39;, 1),</span><br><span class="line">           (5, 288, 96, True,  &#39;HS&#39;, 2),</span><br><span class="line">           (5, 576, 96, True,  &#39;HS&#39;, 1),</span><br><span class="line">           (5, 576, 96, True,  &#39;HS&#39;, 1)]</span><br><span class="line"></span><br><span class="line">    def __init__(self, num_classes&#x3D;2, input_size&#x3D;224, width_mult&#x3D;1.):</span><br><span class="line">        super(MobileNetV3, self).__init__()</span><br><span class="line">        # building first layer</span><br><span class="line">        assert input_size % 32 &#x3D;&#x3D; 0</span><br><span class="line">        input_channel &#x3D; _make_divisible(16 * width_mult, 8)</span><br><span class="line">        self.conv0 &#x3D; conv_3x3_bn(3, input_channel, 2, nl&#x3D;&#39;HS&#39;)</span><br><span class="line">        layers &#x3D; []</span><br><span class="line">        # building inverted residual blocks</span><br><span class="line">        block &#x3D; InvertedResidual</span><br><span class="line">        # for t, c, n, s in self.cfgs:</span><br><span class="line">        for kernel, expansion, output_channel, se, nl, stride in self.cfg:</span><br><span class="line">            layers.append(block(input_channel, output_channel, kernel, stride, expansion, nl&#x3D;nl, with_se&#x3D;se))</span><br><span class="line">            input_channel &#x3D; output_channel</span><br><span class="line">        self.features &#x3D; nn.Sequential(*layers)</span><br><span class="line"></span><br><span class="line">        # building last several layers</span><br><span class="line">        self.conv1 &#x3D; conv_1x1_bn(input_channel, expansion, nl&#x3D;&#39;HS&#39;, with_se&#x3D;False)</span><br><span class="line">        input_channel &#x3D; expansion</span><br><span class="line"></span><br><span class="line">        self.avgpool &#x3D; nn.AvgPool2d(input_size &#x2F;&#x2F; 32, stride&#x3D;1)</span><br><span class="line">        output_channel &#x3D; _make_divisible(1280 * width_mult, 8) if width_mult &gt; 1.0 else 1280</span><br><span class="line">        self.conv2 &#x3D; conv_1x1(input_channel, output_channel, nl&#x3D;&#39;HS&#39;, with_se&#x3D;False)</span><br><span class="line">        self.classifier &#x3D; nn.Linear(output_channel, num_classes)</span><br><span class="line"></span><br><span class="line">        self._initialize_weights()</span><br><span class="line"></span><br><span class="line">    def forward(self, x):</span><br><span class="line">        x &#x3D; self.conv0(x)</span><br><span class="line">        x &#x3D; self.features(x)</span><br><span class="line">        x &#x3D; self.conv1(x)</span><br><span class="line">        x &#x3D; self.avgpool(x)</span><br><span class="line">        x &#x3D; self.conv2(x)</span><br><span class="line">        x &#x3D; x.view(x.size(0), -1)</span><br><span class="line">        x &#x3D; self.classifier(x)</span><br><span class="line">        return x</span><br><span class="line"></span><br><span class="line">    def _initialize_weights(self):</span><br><span class="line">        for m in self.modules():</span><br><span class="line">            if isinstance(m, nn.Conv2d):</span><br><span class="line">                n &#x3D; m.kernel_size[0] * m.kernel_size[1] * m.out_channels</span><br><span class="line">                m.weight.data.normal_(0, math.sqrt(2. &#x2F; n))</span><br><span class="line">                if m.bias is not None:</span><br><span class="line">                    m.bias.data.zero_()</span><br><span class="line">            elif isinstance(m, nn.BatchNorm2d):</span><br><span class="line">                m.weight.data.fill_(1)</span><br><span class="line">                m.bias.data.zero_()</span><br><span class="line">            elif isinstance(m, nn.Linear):</span><br><span class="line">                n &#x3D; m.weight.size(1)</span><br><span class="line">                m.weight.data.normal_(0, 0.01)</span><br><span class="line">                m.bias.data.zero_()</span><br></pre></td></tr></table></figure>
+
+<h2 id="ShuffleNetV2-2019"><a href="#ShuffleNetV2-2019" class="headerlink" title="ShuffleNetV2(2019)"></a><br>ShuffleNetV2(2019)</br></h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br><span class="line">73</span><br><span class="line">74</span><br><span class="line">75</span><br><span class="line">76</span><br><span class="line">77</span><br><span class="line">78</span><br><span class="line">79</span><br><span class="line">80</span><br><span class="line">81</span><br><span class="line">82</span><br><span class="line">83</span><br><span class="line">84</span><br><span class="line">85</span><br><span class="line">86</span><br><span class="line">87</span><br><span class="line">88</span><br><span class="line">89</span><br><span class="line">90</span><br><span class="line">91</span><br><span class="line">92</span><br><span class="line">93</span><br><span class="line">94</span><br><span class="line">95</span><br><span class="line">96</span><br><span class="line">97</span><br><span class="line">98</span><br><span class="line">99</span><br><span class="line">100</span><br><span class="line">101</span><br><span class="line">102</span><br><span class="line">103</span><br><span class="line">104</span><br><span class="line">105</span><br><span class="line">106</span><br><span class="line">107</span><br><span class="line">108</span><br><span class="line">109</span><br><span class="line">110</span><br><span class="line">111</span><br><span class="line">112</span><br><span class="line">113</span><br><span class="line">114</span><br><span class="line">115</span><br><span class="line">116</span><br><span class="line">117</span><br><span class="line">118</span><br><span class="line">119</span><br><span class="line">120</span><br><span class="line">121</span><br><span class="line">122</span><br><span class="line">123</span><br><span class="line">124</span><br><span class="line">125</span><br><span class="line">126</span><br><span class="line">127</span><br><span class="line">128</span><br><span class="line">129</span><br><span class="line">130</span><br><span class="line">131</span><br><span class="line">132</span><br><span class="line">133</span><br><span class="line">134</span><br><span class="line">135</span><br><span class="line">136</span><br><span class="line">137</span><br><span class="line">138</span><br><span class="line">139</span><br><span class="line">140</span><br><span class="line">141</span><br><span class="line">142</span><br><span class="line">143</span><br><span class="line">144</span><br><span class="line">145</span><br><span class="line">146</span><br><span class="line">147</span><br><span class="line">148</span><br><span class="line">149</span><br><span class="line">150</span><br><span class="line">151</span><br><span class="line">152</span><br><span class="line">153</span><br><span class="line">154</span><br><span class="line">155</span><br><span class="line">156</span><br><span class="line">157</span><br><span class="line">158</span><br><span class="line">159</span><br><span class="line">160</span><br><span class="line">161</span><br><span class="line">162</span><br><span class="line">163</span><br><span class="line">164</span><br><span class="line">165</span><br><span class="line">166</span><br><span class="line">167</span><br><span class="line">168</span><br><span class="line">169</span><br><span class="line">170</span><br><span class="line">171</span><br></pre></td><td class="code"><pre><span class="line">import torch</span><br><span class="line">import torch.nn as nn</span><br><span class="line">import torch.nn.functional as F</span><br><span class="line">from torch.autograd import Variable</span><br><span class="line">from collections import OrderedDict</span><br><span class="line">from torch.nn import init</span><br><span class="line">import math</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"># model &#x3D; ShuffleNetV2()</span><br><span class="line"># input: 3*?*?</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">def conv_bn(inp, oup, stride):</span><br><span class="line">    return nn.Sequential(</span><br><span class="line">        nn.Conv2d(inp, oup, 3, stride, 1, bias&#x3D;False),</span><br><span class="line">        nn.BatchNorm2d(oup),</span><br><span class="line">        nn.ReLU(inplace&#x3D;True)</span><br><span class="line">    )</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">def conv_1x1_bn(inp, oup):</span><br><span class="line">    return nn.Sequential(</span><br><span class="line">        nn.Conv2d(inp, oup, 1, 1, 0, bias&#x3D;False),</span><br><span class="line">        nn.BatchNorm2d(oup),</span><br><span class="line">        nn.ReLU(inplace&#x3D;True)</span><br><span class="line">    )</span><br><span class="line"></span><br><span class="line">def channel_shuffle(x, groups):</span><br><span class="line">    batchsize, num_channels, height, width &#x3D; x.data.size()</span><br><span class="line"></span><br><span class="line">    channels_per_group &#x3D; num_channels &#x2F;&#x2F; groups</span><br><span class="line">    </span><br><span class="line">    # reshape</span><br><span class="line">    x &#x3D; x.view(batchsize, groups, </span><br><span class="line">        channels_per_group, height, width)</span><br><span class="line"></span><br><span class="line">    x &#x3D; torch.transpose(x, 1, 2).contiguous()</span><br><span class="line"></span><br><span class="line">    # flatten</span><br><span class="line">    x &#x3D; x.view(batchsize, -1, height, width)</span><br><span class="line"></span><br><span class="line">    return x</span><br><span class="line">    </span><br><span class="line">class InvertedResidual(nn.Module):</span><br><span class="line"></span><br><span class="line">    def __init__(self, inp, oup, stride, benchmodel):</span><br><span class="line">        super(InvertedResidual, self).__init__()</span><br><span class="line">        self.benchmodel &#x3D; benchmodel</span><br><span class="line">        self.stride &#x3D; stride</span><br><span class="line">        assert stride in [1, 2]</span><br><span class="line"></span><br><span class="line">        oup_inc &#x3D; oup&#x2F;&#x2F;2</span><br><span class="line">        </span><br><span class="line">        if self.benchmodel &#x3D;&#x3D; 1:</span><br><span class="line">            #assert inp &#x3D;&#x3D; oup_inc</span><br><span class="line">        	self.banch2 &#x3D; nn.Sequential(</span><br><span class="line">                # pw</span><br><span class="line">                nn.Conv2d(oup_inc, oup_inc, 1, 1, 0, bias&#x3D;False),</span><br><span class="line">                nn.BatchNorm2d(oup_inc),</span><br><span class="line">                nn.ReLU(inplace&#x3D;True),</span><br><span class="line">                # dw</span><br><span class="line">                nn.Conv2d(oup_inc, oup_inc, 3, stride, 1, groups&#x3D;oup_inc, bias&#x3D;False),</span><br><span class="line">                nn.BatchNorm2d(oup_inc),</span><br><span class="line">                # pw-linear</span><br><span class="line">                nn.Conv2d(oup_inc, oup_inc, 1, 1, 0, bias&#x3D;False),</span><br><span class="line">                nn.BatchNorm2d(oup_inc),</span><br><span class="line">                nn.ReLU(inplace&#x3D;True),</span><br><span class="line">            )                </span><br><span class="line">        else:                  </span><br><span class="line">            self.banch1 &#x3D; nn.Sequential(</span><br><span class="line">                # dw</span><br><span class="line">                nn.Conv2d(inp, inp, 3, stride, 1, groups&#x3D;inp, bias&#x3D;False),</span><br><span class="line">                nn.BatchNorm2d(inp),</span><br><span class="line">                # pw-linear</span><br><span class="line">                nn.Conv2d(inp, oup_inc, 1, 1, 0, bias&#x3D;False),</span><br><span class="line">                nn.BatchNorm2d(oup_inc),</span><br><span class="line">                nn.ReLU(inplace&#x3D;True),</span><br><span class="line">            )        </span><br><span class="line">    </span><br><span class="line">            self.banch2 &#x3D; nn.Sequential(</span><br><span class="line">                # pw</span><br><span class="line">                nn.Conv2d(inp, oup_inc, 1, 1, 0, bias&#x3D;False),</span><br><span class="line">                nn.BatchNorm2d(oup_inc),</span><br><span class="line">                nn.ReLU(inplace&#x3D;True),</span><br><span class="line">                # dw</span><br><span class="line">                nn.Conv2d(oup_inc, oup_inc, 3, stride, 1, groups&#x3D;oup_inc, bias&#x3D;False),</span><br><span class="line">                nn.BatchNorm2d(oup_inc),</span><br><span class="line">                # pw-linear</span><br><span class="line">                nn.Conv2d(oup_inc, oup_inc, 1, 1, 0, bias&#x3D;False),</span><br><span class="line">                nn.BatchNorm2d(oup_inc),</span><br><span class="line">                nn.ReLU(inplace&#x3D;True),</span><br><span class="line">            )</span><br><span class="line">          </span><br><span class="line">    @staticmethod</span><br><span class="line">    def _concat(x, out):</span><br><span class="line">        # concatenate along channel axis</span><br><span class="line">        return torch.cat((x, out), 1)        </span><br><span class="line"></span><br><span class="line">    def forward(self, x):</span><br><span class="line">        if 1&#x3D;&#x3D;self.benchmodel:</span><br><span class="line">            x1 &#x3D; x[:, :(x.shape[1]&#x2F;&#x2F;2), :, :]</span><br><span class="line">            x2 &#x3D; x[:, (x.shape[1]&#x2F;&#x2F;2):, :, :]</span><br><span class="line">            out &#x3D; self._concat(x1, self.banch2(x2))</span><br><span class="line">        elif 2&#x3D;&#x3D;self.benchmodel:</span><br><span class="line">            out &#x3D; self._concat(self.banch1(x), self.banch2(x))</span><br><span class="line"></span><br><span class="line">        return channel_shuffle(out, 2)</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">class ShuffleNetV2(nn.Module):</span><br><span class="line"></span><br><span class="line">    def __init__(self, n_class&#x3D;1000, input_size&#x3D;224, width_mult&#x3D;1.):</span><br><span class="line">        super(ShuffleNetV2, self).__init__()</span><br><span class="line">        </span><br><span class="line">        assert input_size % 32 &#x3D;&#x3D; 0</span><br><span class="line">        </span><br><span class="line">        self.stage_repeats &#x3D; [4, 8, 4]</span><br><span class="line">        # index 0 is invalid and should never be called.</span><br><span class="line">        # only used for indexing convenience.</span><br><span class="line">        if width_mult &#x3D;&#x3D; 0.5:</span><br><span class="line">            self.stage_out_channels &#x3D; [-1, 24,  48,  96, 192, 1024]</span><br><span class="line">        elif width_mult &#x3D;&#x3D; 1.0:</span><br><span class="line">            self.stage_out_channels &#x3D; [-1, 24, 116, 232, 464, 1024]</span><br><span class="line">        elif width_mult &#x3D;&#x3D; 1.5:</span><br><span class="line">            self.stage_out_channels &#x3D; [-1, 24, 176, 352, 704, 1024]</span><br><span class="line">        elif width_mult &#x3D;&#x3D; 2.0:</span><br><span class="line">            self.stage_out_channels &#x3D; [-1, 24, 224, 488, 976, 2048]</span><br><span class="line">        else:</span><br><span class="line">            raise ValueError(</span><br><span class="line">                &quot;&quot;&quot;&#123;&#125; groups is not supported for</span><br><span class="line">                       1x1 Grouped Convolutions&quot;&quot;&quot;.format(num_groups))</span><br><span class="line"></span><br><span class="line">        # building first layer</span><br><span class="line">        input_channel &#x3D; self.stage_out_channels[1]</span><br><span class="line">        self.conv1 &#x3D; conv_bn(3, input_channel, 2)</span><br><span class="line">        self.maxpool &#x3D; nn.MaxPool2d(kernel_size&#x3D;3, stride&#x3D;2, padding&#x3D;1)</span><br><span class="line">        self.features &#x3D; []</span><br><span class="line"></span><br><span class="line">        # building inverted residual blocks</span><br><span class="line">        for idxstage in range(len(self.stage_repeats)):</span><br><span class="line">            numrepeat &#x3D; self.stage_repeats[idxstage]</span><br><span class="line">            output_channel &#x3D; self.stage_out_channels[idxstage+2]</span><br><span class="line">            for i in range(numrepeat):</span><br><span class="line">                if i &#x3D;&#x3D; 0:</span><br><span class="line">	            #inp, oup, stride, benchmodel):</span><br><span class="line">                    self.features.append(InvertedResidual(input_channel, output_channel, 2, 2))</span><br><span class="line">                else:</span><br><span class="line">                    self.features.append(InvertedResidual(input_channel, output_channel, 1, 1))</span><br><span class="line">                input_channel &#x3D; output_channel</span><br><span class="line">                </span><br><span class="line">                </span><br><span class="line">        # make it nn.Sequential</span><br><span class="line">        self.features &#x3D; nn.Sequential(*self.features)</span><br><span class="line"></span><br><span class="line">        # building last several layers</span><br><span class="line">        self.conv_last &#x3D; conv_1x1_bn(input_channel, self.stage_out_channels[-1])</span><br><span class="line">        self.globalpool &#x3D; nn.Sequential(nn.AvgPool2d(int(input_size&#x2F;32)))</span><br><span class="line"></span><br><span class="line">        # building classifier</span><br><span class="line">        self.classifier &#x3D; nn.Sequential(nn.Linear(self.stage_out_channels[-1], n_class))</span><br><span class="line">        </span><br><span class="line">    def forward(self, x):</span><br><span class="line">        x &#x3D; self.conv1(x)</span><br><span class="line">        x &#x3D; self.maxpool(x)</span><br><span class="line">        x &#x3D; self.features(x)</span><br><span class="line">        x &#x3D; self.conv_last(x)</span><br><span class="line">        x &#x3D; self.globalpool(x)</span><br><span class="line">        x &#x3D; x.view(-1, self.stage_out_channels[-1])</span><br><span class="line">        x &#x3D; self.classifier(x)</span><br><span class="line">        return x</span><br></pre></td></tr></table></figure>
+        </div>
+
+        <blockquote class="post-copyright">
+    
+    <div class="content">
+        
+<span class="post-time">
+    Last updated: <time datetime="2020-08-20T03:23:29.106Z" itemprop="dateUpdated">2020-08-20 11:23:29</time>
+</span><br>
+
+
+        
+        如果该文章对你有用，不如点个赞或者打赏一下~~~
+        
+    </div>
+    
+    <footer>
+        <a href="http://yoursite.com">
+            <img src="/img/Curry.png" alt="SvyJ">
+            SvyJ
+        </a>
+    </footer>
+</blockquote>
+
+        
+<div class="page-reward">
+    <a id="rewardBtn" href="javascript:;" class="page-reward-btn waves-effect waves-circle waves-light">赏</a>
+</div>
+
+
+
+        <div class="post-footer">
+            
+
+            
+<div class="page-share-wrap">
+    
+
+<div class="page-share" id="pageShare">
+    <ul class="reset share-icons">
+      <li>
+        <a class="weibo share-sns" target="_blank" href="http://service.weibo.com/share/share.php?url=http://yoursite.com/2020/08/09/DeepLearning_Models_Classification/&title=《经典分类模型的Pytorch实现》 — SvyJ's HomePage&pic=http://yoursite.com/img/Curry.png" data-title="微博">
+          <i class="icon icon-weibo"></i>
+        </a>
+      </li>
+      <li>
+        <a class="weixin share-sns wxFab" href="javascript:;" data-title="微信">
+          <i class="icon icon-weixin"></i>
+        </a>
+      </li>
+      <li>
+        <a class="qq share-sns" target="_blank" href="http://connect.qq.com/widget/shareqq/index.html?url=http://yoursite.com/2020/08/09/DeepLearning_Models_Classification/&title=《经典分类模型的Pytorch实现》 — SvyJ's HomePage&source=" data-title=" QQ">
+          <i class="icon icon-qq"></i>
+        </a>
+      </li>
+      <li>
+        <a class="facebook share-sns" target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=http://yoursite.com/2020/08/09/DeepLearning_Models_Classification/" data-title=" Facebook">
+          <i class="icon icon-facebook"></i>
+        </a>
+      </li>
+      <li>
+        <a class="twitter share-sns" target="_blank" href="https://twitter.com/intent/tweet?text=《经典分类模型的Pytorch实现》 — SvyJ's HomePage&url=http://yoursite.com/2020/08/09/DeepLearning_Models_Classification/&via=http://yoursite.com" data-title=" Twitter">
+          <i class="icon icon-twitter"></i>
+        </a>
+      </li>
+      <li>
+        <a class="google share-sns" target="_blank" href="https://plus.google.com/share?url=http://yoursite.com/2020/08/09/DeepLearning_Models_Classification/" data-title=" Google+">
+          <i class="icon icon-google-plus"></i>
+        </a>
+      </li>
+    </ul>
+ </div>
+
+
+
+    <a href="javascript:;" id="shareFab" class="page-share-fab waves-effect waves-circle">
+        <i class="icon icon-share-alt icon-lg"></i>
+    </a>
+</div>
+
+
+
+        </div>
+    </div>
+
+    
+<nav class="post-nav flex-row flex-justify-between">
+  
+    <div class="waves-block waves-effect prev">
+      <a href="/2020/08/16/DeepLearning_Papers/" id="post-prev" class="post-nav-link">
+        <div class="tips"><i class="icon icon-angle-left icon-lg icon-pr"></i> Prev</div>
+        <h4 class="title">CV Papers</h4>
+      </a>
+    </div>
+  
+
+  
+    <div class="waves-block waves-effect next">
+      <a href="/2020/07/30/MarkMan/" id="post-next" class="post-nav-link">
+        <div class="tips">Next <i class="icon icon-angle-right icon-lg icon-pl"></i></div>
+        <h4 class="title">认真地做一个“马来人”</h4>
+      </a>
+    </div>
+  
+</nav>
+
+
+
+    
+
+
+<section class="comments" id="comments">
+    <div id="disqus_thread"></div>
+    <script>
+    var disqus_shortname = 'true';
+    lazyScripts.push('//' + disqus_shortname + '.disqus.com/embed.js')
+    </script>
+    <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript" target="_blank" rel="noopener">comments powered by Disqus.</a></noscript>
+</section>
+
+
+
+
+<section class="comments" id="comments">
+    <!-- UY BEGIN -->
+    <div id="uyan_frame"></div>
+    <script src="http://v2.uyan.cc/code/uyan.js?uid=true"></script>
+    <!-- UY END -->
+</section>
+
+
+
+
+<section class="comments" id="comments">
+    <div id="gitment_thread"></div>
+    <link rel="stylesheet" href="//unpkg.com/gitment/style/default.css">
+    <script src="//unpkg.com/gitment/dist/gitment.browser.js"></script>
+    <script>
+        var gitment = new Gitment({
+            owner: '',
+            repo: '',
+            oauth: {
+                client_id: '',
+                client_secret: '',
+            },
+        })
+        gitment.render('comments')
+    </script>
+</section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+</article>
+
+<div id="reward" class="page-modal reward-lay">
+    <a class="close" href="javascript:;"><i class="icon icon-close"></i></a>
+    <h3 class="reward-title">
+        <i class="icon icon-quote-left"></i>
+        谢谢大爷~
+        <i class="icon icon-quote-right"></i>
+    </h3>
+    <div class="reward-content">
+        
+        <div class="reward-code">
+            <img id="rewardCode" src="/false" alt="打赏二维码">
+        </div>
+        
+    </div>
+</div>
+
+
+
+</div>
+
+        <footer class="footer">
+    <div class="top">
+        
+<p>
+    <span id="busuanzi_container_site_uv" style='display:none'>
+        站点总访客数：<span id="busuanzi_value_site_uv"></span>
+    </span>
+    <span id="busuanzi_container_site_pv" style='display:none'>
+        站点总访问量：<span id="busuanzi_value_site_pv"></span>
+    </span>
+</p>
+
+
+        <p>
+            
+                <span><a href="/atom.xml" target="_blank" class="rss" title="rss"><i class="icon icon-lg icon-rss"></i></a></span>
+            
+            <span>This blog is licensed under a <a rel="license noopener" href="https://creativecommons.org/licenses/by/4.0/" target="_blank">Creative Commons Attribution 4.0 International License</a>.</span>
+        </p>
+    </div>
+    <div class="bottom">
+        <p><span>SvyJ &copy; 2020</span>
+            <span>
+                
+                Power by <a href="http://hexo.io/" target="_blank">Hexo</a> Theme <a href="https://github.com/yscoder/hexo-theme-indigo" target="_blank">indigo</a>
+            </span>
+        </p>
+    </div>
+</footer>
+
+    </main>
+    <div class="mask" id="mask"></div>
+<a href="javascript:;" id="gotop" class="waves-effect waves-circle waves-light"><span class="icon icon-lg icon-chevron-up"></span></a>
+
+
+
+<div class="global-share" id="globalShare">
+    <ul class="reset share-icons">
+      <li>
+        <a class="weibo share-sns" target="_blank" href="http://service.weibo.com/share/share.php?url=http://yoursite.com/2020/08/09/DeepLearning_Models_Classification/&title=《经典分类模型的Pytorch实现》 — SvyJ's HomePage&pic=http://yoursite.com/img/Curry.png" data-title="微博">
+          <i class="icon icon-weibo"></i>
+        </a>
+      </li>
+      <li>
+        <a class="weixin share-sns wxFab" href="javascript:;" data-title="微信">
+          <i class="icon icon-weixin"></i>
+        </a>
+      </li>
+      <li>
+        <a class="qq share-sns" target="_blank" href="http://connect.qq.com/widget/shareqq/index.html?url=http://yoursite.com/2020/08/09/DeepLearning_Models_Classification/&title=《经典分类模型的Pytorch实现》 — SvyJ's HomePage&source=" data-title=" QQ">
+          <i class="icon icon-qq"></i>
+        </a>
+      </li>
+      <li>
+        <a class="facebook share-sns" target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=http://yoursite.com/2020/08/09/DeepLearning_Models_Classification/" data-title=" Facebook">
+          <i class="icon icon-facebook"></i>
+        </a>
+      </li>
+      <li>
+        <a class="twitter share-sns" target="_blank" href="https://twitter.com/intent/tweet?text=《经典分类模型的Pytorch实现》 — SvyJ's HomePage&url=http://yoursite.com/2020/08/09/DeepLearning_Models_Classification/&via=http://yoursite.com" data-title=" Twitter">
+          <i class="icon icon-twitter"></i>
+        </a>
+      </li>
+      <li>
+        <a class="google share-sns" target="_blank" href="https://plus.google.com/share?url=http://yoursite.com/2020/08/09/DeepLearning_Models_Classification/" data-title=" Google+">
+          <i class="icon icon-google-plus"></i>
+        </a>
+      </li>
+    </ul>
+ </div>
+
+
+<div class="page-modal wx-share" id="wxShare">
+    <a class="close" href="javascript:;"><i class="icon icon-close"></i></a>
+    <p>扫一扫，分享到微信</p>
+    <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAN4AAADeCAAAAAB3DOFrAAACv0lEQVR42u3aQW7jMBAEQP//014gyC1rqXtI2j6UToGjWCwGEAc983jE1/PnSj7JP//72+TOx4kLDw8Pb7T068fkS3/1V6/uWV/Pzdbg4eHhHeNdv4iTJSYPSzYu50WHBx4eHt5HeXnBnWxTcvC068HDw8P7Tl5bIq+HDm89GPDw8PBiXl7CPoMr36CcejxrwcPDw4t5bQPsG34+2N/Dw8PDW+iq5y/utqGVh8Wzdf5+Ax4eHt4B3q4G/2zoqh0LyE+BR/4YPDw8vBFvpaidHSorQfCwIYeHh4e3ibdyGFwXx+uxQj5Y8PJOPDw8vMO8WRNraRxqfaDqelvx8PDwDvDaReTHQ1tez2KRelwADw8P7wAvWegssNiwoFFYjIeHh7eXl7+IZ7FCO2DaFtY3SDw8PLwDvFl0m4eqbQd/1jC72RQ8PDy8rbw8OGjvacvfduiqHh3Aw8PD28SbpRdt439X+yo5lvDw8PA+xZslwXsHCNZbbnh4eHgneHkkOgtY27ihDSxuvg0PDw/vMC8/EmbFcbspybNujjQ8PDy8A7y2nJ2V0SuxQrKe6Hvw8PDwtvKSILUdIJhtQf26T/4ZeHh4eFt5eTOpjWVnQ1p1c2vW2cPDw8Pb02OqB+jbUDUPdtc3HQ8PD++dvJWWVd2gWh4RKAIOPDw8vE2866W0sWzb9Mrx7abj4eHhvYc3iwaGBW5wIOVbfBNA4OHh4W3ltXHqSiDbluYzXhHj4uHh4Y14z/JaGQhoy/S8mL6ZxsXDw8Pbyps9Jv8kj4nb8rpOqfHw8PC28pLDoG3ztwHuyhqKtAMPDw9vK2/W1kpe0Ctl8SzG/c/BgIeHh/chXo6ZhcLtSz/6Wzw8PLwv4OUv913jBW2ku3Qw4OHh4cW8XaXw+vBBO0wQldR4eHh4W3krDbA8OFjflG3dPDw8PLw57x+lYKZLJzNjigAAAABJRU5ErkJggg==" alt="微信分享二维码">
+</div>
+
+
+
+
+    <script src="//cdn.bootcss.com/node-waves/0.7.4/waves.min.js"></script>
+<script>
+var BLOG = { ROOT: '/', SHARE: true, REWARD: true };
+
+
+</script>
+
+<script src="//unpkg.com/hexo-theme-material-indigo@latest/js/main.min.js"></script>
+
+
+<div class="search-panel" id="search-panel">
+    <ul class="search-result" id="search-result"></ul>
+</div>
+<template id="search-tpl">
+<li class="item">
+    <a href="{path}" class="waves-block waves-effect">
+        <div class="title ellipsis" title="{title}">{title}</div>
+        <div class="flex-row flex-middle">
+            <div class="tags ellipsis">
+                {tags}
+            </div>
+            <time class="flex-col time">{date}</time>
+        </div>
+    </a>
+</li>
+</template>
+
+<script src="//unpkg.com/hexo-theme-material-indigo@latest/js/search.min.js" async></script>
+
+
+
+
+
+
+<script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+
+
+
+<script>
+(function() {
+    var OriginTitile = document.title, titleTime;
+    document.addEventListener('visibilitychange', function() {
+        if (document.hidden) {
+            document.title = '你要离开了吗?';
+            clearTimeout(titleTime);
+        } else {
+            document.title = '欢迎回来！';
+            titleTime = setTimeout(function() {
+                document.title = OriginTitile;
+            },2000);
+        }
+    });
+})();
+</script>
+
+
+
+</body>
+</html>
