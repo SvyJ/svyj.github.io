@@ -1,0 +1,528 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+
+    
+
+    
+
+
+
+    <meta charset="utf-8">
+    
+    
+    
+    
+    <title>如何评估你的网络模型？ | SvyJ&#39;s HomePage | 研究方向：智能医学影像、计算机视觉</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    
+    <meta name="theme-color" content="#3F51B5">
+    
+    
+    <meta name="keywords" content="网络模型,评价指标">
+    <meta name="description" content="二分类网络的评价指标 Acc, F1, ROC, AUC   1234567891011121314151617181920212223242526272829303132333435363738394041424344454647484950515253545556575859606162636465666768697071727374757677787980818283848586def Me">
+<meta property="og:type" content="article">
+<meta property="og:title" content="如何评估你的网络模型？">
+<meta property="og:url" content="http://yoursite.com/2020/08/22/DeepLearning_Models_Metrics/index.html">
+<meta property="og:site_name" content="SvyJ&#39;s HomePage">
+<meta property="og:description" content="二分类网络的评价指标 Acc, F1, ROC, AUC   1234567891011121314151617181920212223242526272829303132333435363738394041424344454647484950515253545556575859606162636465666768697071727374757677787980818283848586def Me">
+<meta property="og:locale" content="en_US">
+<meta property="article:published_time" content="2020-08-22T02:39:22.605Z">
+<meta property="article:modified_time" content="2020-08-22T03:04:25.185Z">
+<meta property="article:author" content="SvyJ">
+<meta property="article:tag" content="网络模型">
+<meta property="article:tag" content="评价指标">
+<meta name="twitter:card" content="summary">
+    
+        <link rel="alternate" type="application/atom+xml" title="SvyJ&#39;s HomePage" href="/atom.xml">
+    
+    <link rel="shortcut icon" href="/favicon.ico">
+    <link rel="stylesheet" href="//unpkg.com/hexo-theme-material-indigo@latest/css/style.css">
+    <script>window.lazyScripts=[]</script>
+
+    <!-- custom head -->
+    
+
+<meta name="generator" content="Hexo 4.2.1"></head>
+
+<body>
+    <div id="loading" class="active"></div>
+
+    <aside id="menu" class="hide" >
+  <div class="inner flex-row-vertical">
+    <a href="javascript:;" class="header-icon waves-effect waves-circle waves-light" id="menu-off">
+        <i class="icon icon-lg icon-close"></i>
+    </a>
+    <div class="brand-wrap" style="background-image:url(/img/warriors.jpg)">
+      <div class="brand">
+        <a href="/" class="avatar waves-effect waves-circle waves-light">
+          <img src="/img/Curry.png">
+        </a>
+        <hgroup class="introduce">
+          <h5 class="nickname">SvyJ</h5>
+          <a href="mailto:研一，1746772378@qq.com" title="研一，1746772378@qq.com" class="mail">研一，1746772378@qq.com</a>
+        </hgroup>
+      </div>
+    </div>
+    <div class="scroll-wrap flex-col">
+      <ul class="nav">
+        
+            <li class="waves-block waves-effect">
+              <a href="/"  >
+                <i class="icon icon-lg icon-home"></i>
+                主页
+              </a>
+            </li>
+        
+            <li class="waves-block waves-effect">
+              <a href="/archives"  >
+                <i class="icon icon-lg icon-archives"></i>
+                归档
+              </a>
+            </li>
+        
+            <li class="waves-block waves-effect">
+              <a href="/tags"  >
+                <i class="icon icon-lg icon-tags"></i>
+                标签
+              </a>
+            </li>
+        
+            <li class="waves-block waves-effect">
+              <a href="/categories"  >
+                <i class="icon icon-lg icon-th-list"></i>
+                分类
+              </a>
+            </li>
+        
+            <li class="waves-block waves-effect">
+              <a href="https://github.com/SvyJ" target="_blank" >
+                <i class="icon icon-lg icon-github"></i>
+                Github
+              </a>
+            </li>
+        
+            <li class="waves-block waves-effect">
+              <a href="https://blog.csdn.net/qq_37350078" target="_blank" >
+                <i class="icon icon-lg icon-csdn"></i>
+                Csdn
+              </a>
+            </li>
+        
+      </ul>
+    </div>
+  </div>
+</aside>
+
+    <main id="main">
+        <header class="top-header" id="header">
+    <div class="flex-row">
+        <a href="javascript:;" class="header-icon waves-effect waves-circle waves-light on" id="menu-toggle">
+          <i class="icon icon-lg icon-navicon"></i>
+        </a>
+        <div class="flex-col header-title ellipsis">如何评估你的网络模型？</div>
+        
+        <div class="search-wrap" id="search-wrap">
+            <a href="javascript:;" class="header-icon waves-effect waves-circle waves-light" id="back">
+                <i class="icon icon-lg icon-chevron-left"></i>
+            </a>
+            <input type="text" id="key" class="search-input" autocomplete="off" placeholder="Search">
+            <a href="javascript:;" class="header-icon waves-effect waves-circle waves-light" id="search">
+                <i class="icon icon-lg icon-search"></i>
+            </a>
+        </div>
+        
+        
+        <a href="javascript:;" class="header-icon waves-effect waves-circle waves-light" id="menuShare">
+            <i class="icon icon-lg icon-share-alt"></i>
+        </a>
+        
+    </div>
+</header>
+<header class="content-header post-header">
+
+    <div class="container fade-scale">
+        <h1 class="title">如何评估你的网络模型？</h1>
+        <h5 class="subtitle">
+            
+                <time datetime="2020-08-22T02:39:22.605Z" itemprop="datePublished" class="page-time">
+  2020-08-22
+</time>
+
+
+	<ul class="article-category-list"><li class="article-category-list-item"><a class="article-category-list-link" href="/categories/%E6%A8%A1%E5%9E%8B%E8%AF%84%E4%BC%B0/">模型评估</a></li></ul>
+
+            
+        </h5>
+    </div>
+
+    
+
+
+</header>
+
+
+<div class="container body-wrap">
+    
+    <aside class="post-widget">
+        <nav class="post-toc-wrap post-toc-shrink" id="post-toc">
+            <h4>TOC</h4>
+            <ol class="post-toc"><li class="post-toc-item post-toc-level-1"><a class="post-toc-link" href="#二分类网络的评价指标"><span class="post-toc-number">1.</span> <span class="post-toc-text">二分类网络的评价指标</span></a></li><li class="post-toc-item post-toc-level-1"><a class="post-toc-link" href="#多分类网络的评价指标-以四分类为例"><span class="post-toc-number">2.</span> <span class="post-toc-text">多分类网络的评价指标(以四分类为例)</span></a></li><li class="post-toc-item post-toc-level-1"><a class="post-toc-link" href="#分割网络的评价指标"><span class="post-toc-number">3.</span> <span class="post-toc-text">分割网络的评价指标</span></a></li></ol>
+        </nav>
+    </aside>
+
+
+<article id="post-DeepLearning_Models_Metrics"
+  class="post-article article-type-post fade" itemprop="blogPost">
+
+    <div class="post-card">
+        <h1 class="post-card-title">如何评估你的网络模型？</h1>
+        <div class="post-meta">
+            <time class="post-time" title="2020-08-22 10:39:22" datetime="2020-08-22T02:39:22.605Z"  itemprop="datePublished">2020-08-22</time>
+
+            
+	<ul class="article-category-list"><li class="article-category-list-item"><a class="article-category-list-link" href="/categories/%E6%A8%A1%E5%9E%8B%E8%AF%84%E4%BC%B0/">模型评估</a></li></ul>
+
+
+
+            
+<span id="busuanzi_container_page_pv" title="文章总阅读量" style='display:none'>
+    <i class="icon icon-eye icon-pr"></i><span id="busuanzi_value_page_pv"></span>
+</span>
+
+
+        </div>
+        <div class="post-content" id="post-content" itemprop="postContent">
+            <h1 id="二分类网络的评价指标"><a href="#二分类网络的评价指标" class="headerlink" title="二分类网络的评价指标"></a><strong>二分类网络的评价指标</strong></h1><ul>
+<li>Acc, F1, ROC, AUC </li>
+</ul>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br><span class="line">73</span><br><span class="line">74</span><br><span class="line">75</span><br><span class="line">76</span><br><span class="line">77</span><br><span class="line">78</span><br><span class="line">79</span><br><span class="line">80</span><br><span class="line">81</span><br><span class="line">82</span><br><span class="line">83</span><br><span class="line">84</span><br><span class="line">85</span><br><span class="line">86</span><br></pre></td><td class="code"><pre><span class="line">def Metrics(output, labels):</span><br><span class="line">    &#39;&#39;&#39;</span><br><span class="line">    output: &lt;list&gt;</span><br><span class="line">    labels: &lt;list&gt;</span><br><span class="line">    &#39;&#39;&#39;</span><br><span class="line">    test_correct &#x3D; 0</span><br><span class="line">    test_total &#x3D; 0</span><br><span class="line">    predicts &#x3D; []</span><br><span class="line">    prob &#x3D; []</span><br><span class="line">    tp, tn, fp, fn &#x3D; 0, 0, 0, 0</span><br><span class="line"></span><br><span class="line">    for outputs in output:</span><br><span class="line">        index, predicted &#x3D; torch.max(outputs.data, 1)</span><br><span class="line">        predicts.append([outputs.data, predicted, labels])</span><br><span class="line">        test_total +&#x3D; labels.size(0)</span><br><span class="line">        test_correct +&#x3D; (predicted &#x3D;&#x3D; labels.data).sum()</span><br><span class="line"></span><br><span class="line">        # calc F1-score</span><br><span class="line">        </span><br><span class="line">        f1_predicts &#x3D; predicted.cpu().numpy().tolist()</span><br><span class="line">        f1_label &#x3D; labels.data.cpu().numpy().tolist()</span><br><span class="line">        for i in range(len(f1_label)):</span><br><span class="line">            if f1_predicts[i] &#x3D;&#x3D; 1 and f1_label[i] &#x3D;&#x3D; 1:</span><br><span class="line">                tp +&#x3D; 1</span><br><span class="line">            if f1_predicts[i] &#x3D;&#x3D; 1 and f1_label[i] &#x3D;&#x3D; 0:</span><br><span class="line">                fp +&#x3D; 1</span><br><span class="line">            if f1_predicts[i] &#x3D;&#x3D; 0 and f1_label[i] &#x3D;&#x3D; 1:</span><br><span class="line">                fn +&#x3D; 1</span><br><span class="line">            if f1_predicts[i] &#x3D;&#x3D; 0 and f1_label[i] &#x3D;&#x3D; 0:</span><br><span class="line">                tn +&#x3D; 1</span><br><span class="line"></span><br><span class="line">        # calc softmax probability</span><br><span class="line">        outputs &#x3D; outputs.data.cpu().numpy()</span><br><span class="line">        probability &#x3D; np.exp(outputs)&#x2F;np.mat(np.sum(np.exp(outputs), axis&#x3D;1)).T</span><br><span class="line">        prob &#x3D; probability[:,1].T.tolist()[0]  </span><br><span class="line">        for p, label in zip(prob, labels.data.cpu().numpy().tolist()):</span><br><span class="line">            prob.append([p, label])</span><br><span class="line"></span><br><span class="line">    F1_Score &#x3D; 2*tp&#x2F;(2*tp+fp+fn)</span><br><span class="line">    test_acc &#x3D; test_correct.item()&#x2F;test_total </span><br><span class="line"></span><br><span class="line">    return prob, test_acc, F1_Score</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">def drawROC(prob):</span><br><span class="line">    &#39;&#39;&#39;</span><br><span class="line">    prob: &lt;list&gt;: [probability of positive, true label]</span><br><span class="line">    &#39;&#39;&#39;</span><br><span class="line"></span><br><span class="line">    neg &#x3D; 0</span><br><span class="line">    for i in range(len(prob)):</span><br><span class="line">        if prob[i][1] &#x3D;&#x3D; 0:</span><br><span class="line">            neg +&#x3D; 1</span><br><span class="line">    pos &#x3D; len(prob) - neg</span><br><span class="line"></span><br><span class="line">    x &#x3D; []</span><br><span class="line">    y &#x3D; []</span><br><span class="line">    sample_sort &#x3D; sorted(prob, key&#x3D;lambda x:x[0], reverse&#x3D;False)</span><br><span class="line">    for i in range(len(sample_sort)):</span><br><span class="line">        tp &#x3D; 0</span><br><span class="line">        fp &#x3D; 0</span><br><span class="line">        for j in range(i, len(sample_sort)):</span><br><span class="line">            if sample_sort[j][1] &#x3D;&#x3D; 1:  # true positive</span><br><span class="line">                tp +&#x3D; 1</span><br><span class="line">            if sample_sort[j][1] &#x3D;&#x3D; 0:  # false positive</span><br><span class="line">                fp +&#x3D; 1</span><br><span class="line">        x.append(fp&#x2F;neg)</span><br><span class="line">        y.append(tp&#x2F;pos)</span><br><span class="line">    x.append(0)</span><br><span class="line">    y.append(0)</span><br><span class="line"></span><br><span class="line">    auc &#x3D; 0</span><br><span class="line">    for i in range(len(x)-1):</span><br><span class="line">        auc +&#x3D; ((x[i]-x[i+1]) * (y[i]+y[i+1]))</span><br><span class="line"></span><br><span class="line">    # ROC curve</span><br><span class="line">    plt.clf()</span><br><span class="line">    plt.title(&#39;Small_Intestine_Classifier_ROC&#39;)</span><br><span class="line">    plt.plot(x, y, &#39;b&#39;, label&#x3D;&#39;AUC &#x3D; %.3f ACC &#x3D; %.3f&#39; % (auc*0.5))</span><br><span class="line">    plt.xlabel(&#39;FPR&#39;)</span><br><span class="line">    plt.ylabel(&#39;TPR&#39;)</span><br><span class="line">    plt.legend(loc&#x3D;&#39;lower right&#39;)</span><br><span class="line">    plt.plot([0, 1], [0, 1], &#39;r--&#39;)</span><br><span class="line">    plt.savefig(&quot;.&#x2F;temp&#x2F;Small_Intestine_Classifier_ROC_AUC&#x3D;%.3f_EfficientNet.jpg&quot; % (auc*0.5))</span><br><span class="line"></span><br><span class="line">    return auc*0.5</span><br></pre></td></tr></table></figure>
+
+<h1 id="多分类网络的评价指标-以四分类为例"><a href="#多分类网络的评价指标-以四分类为例" class="headerlink" title="多分类网络的评价指标(以四分类为例)"></a><strong>多分类网络的评价指标(以四分类为例)</strong></h1><ul>
+<li>Acc, macro_F1, micro_F1</li>
+</ul>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br></pre></td><td class="code"><pre><span class="line">def Metrics(output, labels):</span><br><span class="line">    &#39;&#39;&#39;</span><br><span class="line">    output: &lt;list&gt;</span><br><span class="line">    labels: &lt;list&gt;</span><br><span class="line">    &#39;&#39;&#39;</span><br><span class="line">    test_correct &#x3D; 0</span><br><span class="line">    test_total &#x3D; 0</span><br><span class="line">    Confusion_Matrix &#x3D; np.zeros((4, 4))</span><br><span class="line"></span><br><span class="line">    # traverse output</span><br><span class="line">    for outputs in output:</span><br><span class="line">        index, predicted &#x3D; torch.max(outputs.data, 1)</span><br><span class="line">        test_total +&#x3D; labels.size(0)</span><br><span class="line">        test_correct +&#x3D; (predicted &#x3D;&#x3D; labels.data).sum()</span><br><span class="line"></span><br><span class="line">        # calc Confusion Matrix</span><br><span class="line">        f1_predicts &#x3D; predicted.cpu().numpy().tolist()</span><br><span class="line">        f1_label &#x3D; labels.data.cpu().numpy().tolist()</span><br><span class="line">        for i in range(len(f1_label)):</span><br><span class="line">            Confusion_Matrix[f1_predicts[i]][f1_label[i]] +&#x3D; 1</span><br><span class="line"></span><br><span class="line">    # print(&quot;Confusion_Matrix: \n&quot;, Confusion_Matrix)    </span><br><span class="line"></span><br><span class="line">    # calc F1-Score</span><br><span class="line">    TP, FP, TN, FN, P, R &#x3D; [], [], [], [], [], []</span><br><span class="line">    for i in range(4):</span><br><span class="line">        for j in range(i+1, 4):</span><br><span class="line">            tp &#x3D; Confusion_Matrix[i][i]</span><br><span class="line">            tn &#x3D; Confusion_Matrix[j][j]</span><br><span class="line">            fp &#x3D; Confusion_Matrix[j][i]</span><br><span class="line">            fn &#x3D; Confusion_Matrix[i][j]</span><br><span class="line">        TP.append(tp)</span><br><span class="line">        FP.append(fp)</span><br><span class="line">        TN.append(tn)</span><br><span class="line">        FN.append(fn)</span><br><span class="line">        P.append(tp&#x2F;(tp+fp))</span><br><span class="line">        R.append(tp&#x2F;(tp+fn))</span><br><span class="line">    macro_P &#x3D; np.mean(P)</span><br><span class="line">    macro_R &#x3D; np.mean(R)</span><br><span class="line">    _TP &#x3D; np.mean(TP)</span><br><span class="line">    _FP &#x3D; np.mean(FP)</span><br><span class="line">    _TN &#x3D; np.mean(TN)</span><br><span class="line">    _FN &#x3D; np.mean(FN)</span><br><span class="line">    micro_P &#x3D; _TP&#x2F;(_TP+_FP)</span><br><span class="line">    micro_R &#x3D; _TP&#x2F;(_TP+_FN)</span><br><span class="line"></span><br><span class="line">    macro_F1 &#x3D; (2*macro_P*macro_R)&#x2F;(macro_P+macro_R)</span><br><span class="line">    micro_F1 &#x3D; (2*micro_P*micro_R)&#x2F;(micro_P+micro_R)</span><br><span class="line">    test_acc &#x3D; test_correct.item()&#x2F;test_total</span><br><span class="line"></span><br><span class="line">    return test_acc, macro_F1, micro_F1</span><br></pre></td></tr></table></figure>
+<h1 id="分割网络的评价指标"><a href="#分割网络的评价指标" class="headerlink" title="分割网络的评价指标"></a><strong>分割网络的评价指标</strong></h1><ul>
+<li>Pixel_Acc, Dice, Jac, IoU, Spe, Sen, Pre</li>
+</ul>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br></pre></td><td class="code"><pre><span class="line">def Metrics(output, mask):</span><br><span class="line">	&#39;&#39;&#39;</span><br><span class="line">	output: model outputs, size&#x3D;[Batch_Size, Channels, Height, Width]</span><br><span class="line">	mask:   Ground Truth</span><br><span class="line">	&#39;&#39;&#39;</span><br><span class="line">	tp, fp, tn, fn &#x3D; 0, 0, 0, 0</span><br><span class="line"></span><br><span class="line">	# output binarization</span><br><span class="line">	output[output&gt;&#x3D;0.5] &#x3D; 1</span><br><span class="line">    output[output&lt;0.5]  &#x3D; 0</span><br><span class="line">    output &#x3D; output.cpu().detach().numpy().flatten().flatten()</span><br><span class="line">    img_mask &#x3D; img_mask.cpu().numpy().flatten()</span><br><span class="line"></span><br><span class="line">    # nums for metrics</span><br><span class="line">    test_pixel_correct &#x3D; len(np.argwhere(output &#x3D;&#x3D; img_mask))</span><br><span class="line">    test_pixel_total   &#x3D; output.size</span><br><span class="line">    for i in range(output.size):</span><br><span class="line">        if output[i] &#x3D;&#x3D; 1:</span><br><span class="line">            if img_mask[i]&#x3D;&#x3D;1: tp +&#x3D; 1</span><br><span class="line">            else: fp +&#x3D; 1</span><br><span class="line">        else:</span><br><span class="line">            if img_mask[i]&#x3D;&#x3D;0: tn +&#x3D; 1</span><br><span class="line">            else: fn +&#x3D; 1</span><br><span class="line">    overlap &#x3D; np.sum(output * img_mask)</span><br><span class="line"> </span><br><span class="line">    # Pixel Accuracy</span><br><span class="line">    test_pixel_acc &#x3D; test_pixel_correct&#x2F;test_pixel_total</span><br><span class="line">    # Dice </span><br><span class="line">    dice &#x3D; np.clip(((2. * overlap) &#x2F; (np.sum(img_mask) + np.sum(output) + 1)), 1e-4, 0.9999)</span><br><span class="line">    # Jaccard Index</span><br><span class="line">    jac  &#x3D; overlap&#x2F;(np.sum(img_mask) + np.sum(output)-overlap)</span><br><span class="line">    # Intersection over Union</span><br><span class="line">    IoU &#x3D; dice&#x2F;(2-dice)</span><br><span class="line">    # specificity</span><br><span class="line">    Spe &#x3D; tn&#x2F;(tn+fp)</span><br><span class="line">    # sensitivity</span><br><span class="line">    Sen &#x3D; tp&#x2F;(tp+fn)</span><br><span class="line">    # Precision</span><br><span class="line">    Pre &#x3D; tp&#x2F;(tp+fp)</span><br><span class="line"></span><br><span class="line">    return test_pixel_acc, dice, jac, IoU, Spe, Sen, Pre</span><br></pre></td></tr></table></figure>
+        </div>
+
+        <blockquote class="post-copyright">
+    
+    <div class="content">
+        
+<span class="post-time">
+    Last updated: <time datetime="2020-08-22T03:04:25.185Z" itemprop="dateUpdated">2020-08-22 11:04:25</time>
+</span><br>
+
+
+        
+        如果该文章对你有用，不如点个赞或者打赏一下~~~
+        
+    </div>
+    
+    <footer>
+        <a href="http://yoursite.com">
+            <img src="/img/Curry.png" alt="SvyJ">
+            SvyJ
+        </a>
+    </footer>
+</blockquote>
+
+        
+<div class="page-reward">
+    <a id="rewardBtn" href="javascript:;" class="page-reward-btn waves-effect waves-circle waves-light">赏</a>
+</div>
+
+
+
+        <div class="post-footer">
+            
+	<ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/%E7%BD%91%E7%BB%9C%E6%A8%A1%E5%9E%8B/" rel="tag">网络模型</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/%E8%AF%84%E4%BB%B7%E6%8C%87%E6%A0%87/" rel="tag">评价指标</a></li></ul>
+
+
+            
+<div class="page-share-wrap">
+    
+
+<div class="page-share" id="pageShare">
+    <ul class="reset share-icons">
+      <li>
+        <a class="weibo share-sns" target="_blank" href="http://service.weibo.com/share/share.php?url=http://yoursite.com/2020/08/22/DeepLearning_Models_Metrics/&title=《如何评估你的网络模型？》 — SvyJ's HomePage&pic=http://yoursite.com/img/Curry.png" data-title="微博">
+          <i class="icon icon-weibo"></i>
+        </a>
+      </li>
+      <li>
+        <a class="weixin share-sns wxFab" href="javascript:;" data-title="微信">
+          <i class="icon icon-weixin"></i>
+        </a>
+      </li>
+      <li>
+        <a class="qq share-sns" target="_blank" href="http://connect.qq.com/widget/shareqq/index.html?url=http://yoursite.com/2020/08/22/DeepLearning_Models_Metrics/&title=《如何评估你的网络模型？》 — SvyJ's HomePage&source=" data-title=" QQ">
+          <i class="icon icon-qq"></i>
+        </a>
+      </li>
+      <li>
+        <a class="facebook share-sns" target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=http://yoursite.com/2020/08/22/DeepLearning_Models_Metrics/" data-title=" Facebook">
+          <i class="icon icon-facebook"></i>
+        </a>
+      </li>
+      <li>
+        <a class="twitter share-sns" target="_blank" href="https://twitter.com/intent/tweet?text=《如何评估你的网络模型？》 — SvyJ's HomePage&url=http://yoursite.com/2020/08/22/DeepLearning_Models_Metrics/&via=http://yoursite.com" data-title=" Twitter">
+          <i class="icon icon-twitter"></i>
+        </a>
+      </li>
+      <li>
+        <a class="google share-sns" target="_blank" href="https://plus.google.com/share?url=http://yoursite.com/2020/08/22/DeepLearning_Models_Metrics/" data-title=" Google+">
+          <i class="icon icon-google-plus"></i>
+        </a>
+      </li>
+    </ul>
+ </div>
+
+
+
+    <a href="javascript:;" id="shareFab" class="page-share-fab waves-effect waves-circle">
+        <i class="icon icon-share-alt icon-lg"></i>
+    </a>
+</div>
+
+
+
+        </div>
+    </div>
+
+    
+<nav class="post-nav flex-row flex-justify-between flex-row-reverse">
+  
+
+  
+    <div class="waves-block waves-effect next">
+      <a href="/2020/08/20/DeepLearning_Models_Segmentation/" id="post-next" class="post-nav-link">
+        <div class="tips">Next <i class="icon icon-angle-right icon-lg icon-pl"></i></div>
+        <h4 class="title">经典分割模型的Pytorch实现</h4>
+      </a>
+    </div>
+  
+</nav>
+
+
+
+    
+
+
+<section class="comments" id="comments">
+    <div id="disqus_thread"></div>
+    <script>
+    var disqus_shortname = 'true';
+    lazyScripts.push('//' + disqus_shortname + '.disqus.com/embed.js')
+    </script>
+    <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript" target="_blank" rel="noopener">comments powered by Disqus.</a></noscript>
+</section>
+
+
+
+
+<section class="comments" id="comments">
+    <!-- UY BEGIN -->
+    <div id="uyan_frame"></div>
+    <script src="http://v2.uyan.cc/code/uyan.js?uid=true"></script>
+    <!-- UY END -->
+</section>
+
+
+
+
+<section class="comments" id="comments">
+    <div id="gitment_thread"></div>
+    <link rel="stylesheet" href="//unpkg.com/gitment/style/default.css">
+    <script src="//unpkg.com/gitment/dist/gitment.browser.js"></script>
+    <script>
+        var gitment = new Gitment({
+            owner: '',
+            repo: '',
+            oauth: {
+                client_id: '',
+                client_secret: '',
+            },
+        })
+        gitment.render('comments')
+    </script>
+</section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+</article>
+
+<div id="reward" class="page-modal reward-lay">
+    <a class="close" href="javascript:;"><i class="icon icon-close"></i></a>
+    <h3 class="reward-title">
+        <i class="icon icon-quote-left"></i>
+        谢谢大爷~
+        <i class="icon icon-quote-right"></i>
+    </h3>
+    <div class="reward-content">
+        
+        <div class="reward-code">
+            <img id="rewardCode" src="/false" alt="打赏二维码">
+        </div>
+        
+    </div>
+</div>
+
+
+
+</div>
+
+        <footer class="footer">
+    <div class="top">
+        
+<p>
+    <span id="busuanzi_container_site_uv" style='display:none'>
+        站点总访客数：<span id="busuanzi_value_site_uv"></span>
+    </span>
+    <span id="busuanzi_container_site_pv" style='display:none'>
+        站点总访问量：<span id="busuanzi_value_site_pv"></span>
+    </span>
+</p>
+
+
+        <p>
+            
+                <span><a href="/atom.xml" target="_blank" class="rss" title="rss"><i class="icon icon-lg icon-rss"></i></a></span>
+            
+            <span>This blog is licensed under a <a rel="license noopener" href="https://creativecommons.org/licenses/by/4.0/" target="_blank">Creative Commons Attribution 4.0 International License</a>.</span>
+        </p>
+    </div>
+    <div class="bottom">
+        <p><span>SvyJ &copy; 2020</span>
+            <span>
+                
+                Power by <a href="http://hexo.io/" target="_blank">Hexo</a> Theme <a href="https://github.com/yscoder/hexo-theme-indigo" target="_blank">indigo</a>
+            </span>
+        </p>
+    </div>
+</footer>
+
+    </main>
+    <div class="mask" id="mask"></div>
+<a href="javascript:;" id="gotop" class="waves-effect waves-circle waves-light"><span class="icon icon-lg icon-chevron-up"></span></a>
+
+
+
+<div class="global-share" id="globalShare">
+    <ul class="reset share-icons">
+      <li>
+        <a class="weibo share-sns" target="_blank" href="http://service.weibo.com/share/share.php?url=http://yoursite.com/2020/08/22/DeepLearning_Models_Metrics/&title=《如何评估你的网络模型？》 — SvyJ's HomePage&pic=http://yoursite.com/img/Curry.png" data-title="微博">
+          <i class="icon icon-weibo"></i>
+        </a>
+      </li>
+      <li>
+        <a class="weixin share-sns wxFab" href="javascript:;" data-title="微信">
+          <i class="icon icon-weixin"></i>
+        </a>
+      </li>
+      <li>
+        <a class="qq share-sns" target="_blank" href="http://connect.qq.com/widget/shareqq/index.html?url=http://yoursite.com/2020/08/22/DeepLearning_Models_Metrics/&title=《如何评估你的网络模型？》 — SvyJ's HomePage&source=" data-title=" QQ">
+          <i class="icon icon-qq"></i>
+        </a>
+      </li>
+      <li>
+        <a class="facebook share-sns" target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=http://yoursite.com/2020/08/22/DeepLearning_Models_Metrics/" data-title=" Facebook">
+          <i class="icon icon-facebook"></i>
+        </a>
+      </li>
+      <li>
+        <a class="twitter share-sns" target="_blank" href="https://twitter.com/intent/tweet?text=《如何评估你的网络模型？》 — SvyJ's HomePage&url=http://yoursite.com/2020/08/22/DeepLearning_Models_Metrics/&via=http://yoursite.com" data-title=" Twitter">
+          <i class="icon icon-twitter"></i>
+        </a>
+      </li>
+      <li>
+        <a class="google share-sns" target="_blank" href="https://plus.google.com/share?url=http://yoursite.com/2020/08/22/DeepLearning_Models_Metrics/" data-title=" Google+">
+          <i class="icon icon-google-plus"></i>
+        </a>
+      </li>
+    </ul>
+ </div>
+
+
+<div class="page-modal wx-share" id="wxShare">
+    <a class="close" href="javascript:;"><i class="icon icon-close"></i></a>
+    <p>扫一扫，分享到微信</p>
+    <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAMYAAADGCAAAAACs8KCBAAACMklEQVR42u3ay2rkQAwF0Pz/T2dgVoEe21eSO0zLxyuDO+U6DojS4+srvr7/Xj/vX6/Xp68rJOu8/u1tFwYGxscykuV6T5NfHn2mMhUDA+MBjCTInke5asA9Wjl/LwYGBkY1pCZh8fzwdx6IMTAwMKqMPN3NV8DAwMA4ZyTJZ/Uw11vz7bk4BgbGBzJ6jYHfuX97fwMDA+O/Z0yS0l6hrff7i/1gYGCsZlRTzeRpvvXJB7rIxTEwMB7AyEv5eZGu2qSsromBgbGb0csTkxdUmwSTEQ0MDIytjPkRcBKye8H9H+/CwMBYzUi2FQ06BAMTk2S10InFwMBYzaieJSfthN4B8eIjYmBgLGWcH8VywORQOE+JMTAwnsOoLvfuyl/eBMXAwHgOo1c46x0He+DDlTEwMB7GeEfb8q7xssM1MTAwVjPy0v+kHDZpeY5mRjAwMFYwElM+ANFrElSD6WESi4GBsZRR7XZOSv/52EQvBGNgYGxlTI5o1TZkddMYGBgY1eHUZImknZmX23qDIBgYGPsY1dJ/3tQsD0zE5b/DxBUDA2MpoxouqxvqtUjz6+I/g4GBsYIxL+jn7cm7hsAO+xsYGBhLGaMIXZ3gKA5+VVsUGBgYuxmTIDtJU6tHxqgHi4GBsZrRC4vzMYs8WBf6sRgYGBjB095IWXXN2wIuBgbGIkZe9J8X5m4rpWFgYCxiTJLY/Pg4ub/4NBgYGKsZdwXl8xiYpLjnWx+FYwwMjE9l/AEvxsJ4dxql5AAAAABJRU5ErkJggg==" alt="微信分享二维码">
+</div>
+
+
+
+
+    <script src="//cdn.bootcss.com/node-waves/0.7.4/waves.min.js"></script>
+<script>
+var BLOG = { ROOT: '/', SHARE: true, REWARD: true };
+
+
+</script>
+
+<script src="//unpkg.com/hexo-theme-material-indigo@latest/js/main.min.js"></script>
+
+
+<div class="search-panel" id="search-panel">
+    <ul class="search-result" id="search-result"></ul>
+</div>
+<template id="search-tpl">
+<li class="item">
+    <a href="{path}" class="waves-block waves-effect">
+        <div class="title ellipsis" title="{title}">{title}</div>
+        <div class="flex-row flex-middle">
+            <div class="tags ellipsis">
+                {tags}
+            </div>
+            <time class="flex-col time">{date}</time>
+        </div>
+    </a>
+</li>
+</template>
+
+<script src="//unpkg.com/hexo-theme-material-indigo@latest/js/search.min.js" async></script>
+
+
+
+
+
+
+<script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+
+
+
+<script>
+(function() {
+    var OriginTitile = document.title, titleTime;
+    document.addEventListener('visibilitychange', function() {
+        if (document.hidden) {
+            document.title = '你要离开了吗?';
+            clearTimeout(titleTime);
+        } else {
+            document.title = '欢迎回来！';
+            titleTime = setTimeout(function() {
+                document.title = OriginTitile;
+            },2000);
+        }
+    });
+})();
+</script>
+
+
+
+</body>
+</html>
