@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2020-08-22T12:40:51.013Z</updated>
+  <updated>2020-09-12T13:44:28.690Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -15,6 +15,38 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>语义分割综述</title>
+    <link href="http://yoursite.com/2020/09/12/Semantic_Segementation/"/>
+    <id>http://yoursite.com/2020/09/12/Semantic_Segementation/</id>
+    <published>2020-09-12T12:24:12.496Z</published>
+    <updated>2020-09-12T13:44:28.690Z</updated>
+    
+    <content type="html"><![CDATA[<h1 id="语义分割、实例分割和全景分割"><a href="#语义分割、实例分割和全景分割" class="headerlink" title="语义分割、实例分割和全景分割"></a><strong>语义分割、实例分割和全景分割</strong></h1><figure class="image-bubble">                <div class="img-lightbox">                    <div class="overlay"></div>                    <img src="/images/Semantic_Segmentation/Segmentation.png" alt="Segmentation" title="">                </div>                <div class="image-caption">Segmentation</div>            </figure><h2 id="通俗理解"><a href="#通俗理解" class="headerlink" title="通俗理解"></a>通俗理解</h2><h3 id="语义分割：分割出每个类别，即对图片的每个像素做分类"><a href="#语义分割：分割出每个类别，即对图片的每个像素做分类" class="headerlink" title="语义分割：分割出每个类别，即对图片的每个像素做分类"></a>语义分割：分割出每个类别，即对图片的每个像素做分类</h3><figure class="image-bubble">                <div class="img-lightbox">                    <div class="overlay"></div>                    <img src="/images/Semantic_Segmentation/Semantic_Segmentation.png" alt="Semantic_Segmentation" title="">                </div>                <div class="image-caption">Semantic_Segmentation</div>            </figure><h3 id="实例分割：分割出每个实例（不含背景）"><a href="#实例分割：分割出每个实例（不含背景）" class="headerlink" title="实例分割：分割出每个实例（不含背景）"></a>实例分割：分割出每个实例（不含背景）</h3><figure class="image-bubble">                <div class="img-lightbox">                    <div class="overlay"></div>                    <img src="/images/Semantic_Segmentation/Instance_Segmentation.png" alt="Instance_Segmentation" title="">                </div>                <div class="image-caption">Instance_Segmentation</div>            </figure><h3 id="全景分割：分割出每个实例（含背景）"><a href="#全景分割：分割出每个实例（含背景）" class="headerlink" title="全景分割：分割出每个实例（含背景）"></a>全景分割：分割出每个实例（含背景）</h3><h1 id="语义分割的方法"><a href="#语义分割的方法" class="headerlink" title="语义分割的方法"></a><strong>语义分割的方法</strong></h1><h3 id="传统机器学习方法"><a href="#传统机器学习方法" class="headerlink" title="传统机器学习方法"></a>传统机器学习方法</h3><ul><li>传统方法Pipeline: 特征 + forst/boost + CRF</li><li>劣势：单个学习分类器只针对单一的类别设计，导致分割类别多时有<strong>计算复杂度高</strong>和<strong>训练难度大</strong>的问题<br>（如像素级的决策树分类，参考TextonForest以及Random Forest based classifiers）</li></ul><h3 id="深度学习方法"><a href="#深度学习方法" class="headerlink" title="深度学习方法"></a>深度学习方法</h3><ul><li><strong>卷积神经网络</strong>：FCN、DeepLab-V1(2014), SegNet、UNet(2015), DeepLab-V2(2016)…<br>（一般都是在分类网络上进行精调，分类网络为了能获取更抽象的特征分层，采取了Conv+pool堆叠的方式，这导致了分辨率降低，丢失了很多信息，这对分割任务来说肯定是不好的，因为分割是对每一个像素进行分类，会造成定位精度不高。但同时更高层的特征对于分类又很重要。如何权衡这两者呢？）</li><li><strong>Encoder-Decoder方法</strong>：与经典的FCN中的Skip-Connection思想类似，Encoder为分类网络，用于提取特征，而Decoder则是将Encoder的先前丢失的空间信息逐渐恢复，Decoder的典型结构有U-Net/Segnet/RefineNet，该类方法虽然有一定的效果，能恢复部分信息，但毕竟信息已经丢失了，不可能完全恢复。</li><li><strong>Dialed FCN方法</strong>：Deeplab-V1提出的方法，将VGG的最后的两个Pool层步长置为1，这样网络的输出分辨率从1/32变为1/8。可以保留更多的细节信息，同时也丢掉了复杂的Decoder结构，但这种方法计算量大。</li><li>注：DeepLab-V3将Encoder-Decoder方法与Dialed FCN方法结合，达到了非常好的效果，同时计算量也非常巨大</li></ul><h1 id="语义分割的难点"><a href="#语义分割的难点" class="headerlink" title="语义分割的难点"></a><strong>语义分割的难点</strong></h1><ul><li>数据集问题：需要精确的像素级标注</li><li>计算资源问题：要求高精度 -&gt; 深层网络 -&gt; 分割预测每一个像素点 -&gt; 要求Feature Map有尽量高的分辨率 -&gt; 计算资源不足</li><li>精细分割：（1）<strong>大类别、小目标</strong>：分割精度高 （2）<strong>小类别、小目标</strong>：轮廓太小 -&gt; 分割精度低</li><li>上下文信息：忽略上下文信息会造成 一个类别目标分成多个类别part、不同类别目标分成相同类别<br>（什么是上下文信息？察觉并能应用能够影响场景和图像中的对象的一些或全部信息，通俗理解为<strong>像素以及周边像素的联系</strong>）</li></ul><h1 id="语义分割模型"><a href="#语义分割模型" class="headerlink" title="语义分割模型"></a><strong>语义分割模型</strong></h1><p>一般的语义分割架构可以被认为是一个<strong>编码器-解码器</strong>网络。<br>编码器通常是一个预训练的分类网络，像VGG、ResNet，然后是一个解码器网络。<br>这些架构不同的地方主要在于解码器网络。解码器的任务是将编码器学习到的可判别特征（较低分辨率）从语义上投影到像素空间（较高分辨率），以获得密集分类。<br>不同于分类任务中网络的最终结果（对图像分类的概率）是唯一重要的事，语义分割不仅需要在像素级有判别能力，还需要有能将编码器在不同阶段学到的可判别特征投影到像素空间的机制。不同的架构采用不同的机制（跳跃连接、金字塔池化等）作为解码机制的一部分。</p><h3 id="FCN"><a href="#FCN" class="headerlink" title="FCN"></a><strong>FCN</strong></h3><figure class="image-bubble">                <div class="img-lightbox">                    <div class="overlay"></div>                    <img src="/images/Semantic_Segmentation/FCN.png" alt="FCN" title="">                </div>                <div class="image-caption">FCN</div>            </figure><h4 id="Contribution"><a href="#Contribution" class="headerlink" title="Contribution"></a><strong>Contribution</strong></h4><ul><li>为语义分割引入了<strong>端到端</strong>的全卷积网络，并流行开来</li><li>重新利用ImageNet的<strong>预训练网络</strong>用于语义分割</li><li>使用<strong>反卷积层</strong>代替线性插值法进行上采样</li><li>引入<strong>跳跃连接</strong>来改善上采样粗糙的像素定位</li></ul><h3 id="SegNet"><a href="#SegNet" class="headerlink" title="SegNet"></a><strong>SegNet</strong></h3><figure class="image-bubble">                <div class="img-lightbox">                    <div class="overlay"></div>                    <img src="/images/Semantic_Segmentation/SegNet.png" alt="SegNet" title="">                </div>                <div class="image-caption">SegNet</div>            </figure><h4 id="Contribution-1"><a href="#Contribution-1" class="headerlink" title="Contribution"></a><strong>Contribution</strong></h4><ul><li>将<strong>池化层结果</strong>应用到译码过程</li><li>引入了更多的编码信息</li><li>使用的是<strong>Pooling Indices</strong>，而不是直接复制特征，只是将编码过程中Pool的位置记下来，在UpPooling是使用该信息进行Pooling</li></ul><h3 id="DeconvNet"><a href="#DeconvNet" class="headerlink" title="DeconvNet"></a><strong>DeconvNet</strong></h3><figure class="image-bubble">                <div class="img-lightbox">                    <div class="overlay"></div>                    <img src="/images/Semantic_Segmentation/DeconvNet.png" alt="DeconvNet" title="">                </div>                <div class="image-caption">DeconvNet</div>            </figure><h4 id="Contribution-2"><a href="#Contribution-2" class="headerlink" title="Contribution"></a><strong>Contribution</strong></h4><ul><li>UpPooling过程中与SegNet类似，但除了还原记录的Pooling Indices之外，<strong>其他位置均补0</strong></li></ul><h3 id="UNet"><a href="#UNet" class="headerlink" title="UNet"></a><strong>UNet</strong></h3><figure class="image-bubble">                <div class="img-lightbox">                    <div class="overlay"></div>                    <img src="/images/Semantic_Segmentation/UNet.png" alt="UNet" title="">                </div>                <div class="image-caption">UNet</div>            </figure><h4 id="Contribution-3"><a href="#Contribution-3" class="headerlink" title="Contribution"></a><strong>Contribution</strong></h4><ul><li>更规整的网络结构</li><li>通过将编码器的每层结果拼接到译码器中得到更好的结果</li></ul><h3 id="PSPNet"><a href="#PSPNet" class="headerlink" title="PSPNet"></a><strong>PSPNet</strong></h3><figure class="image-bubble">                <div class="img-lightbox">                    <div class="overlay"></div>                    <img src="/images/Semantic_Segmentation/PSPNet_0.png" alt="" title="">                </div>                <div class="image-caption"></div>            </figure><figure class="image-bubble">                <div class="img-lightbox">                    <div class="overlay"></div>                    <img src="/images/Semantic_Segmentation/PSPNet_1.png" alt="PSPNet" title="">                </div>                <div class="image-caption">PSPNet</div>            </figure><h4 id="Contribution-4"><a href="#Contribution-4" class="headerlink" title="Contribution"></a><strong>Contribution</strong></h4><ul><li>提出了<strong>金字塔池化模块</strong>来聚合图片信息</li><li>使用附加的<strong>损失函数</strong></li></ul><h3 id="RefineNet"><a href="#RefineNet" class="headerlink" title="RefineNet"></a><strong>RefineNet</strong></h3><figure class="image-bubble">                <div class="img-lightbox">                    <div class="overlay"></div>                    <img src="/images/Semantic_Segmentation/RefineNet.png" alt="RefineNet" title="">                </div>                <div class="image-caption">RefineNet</div>            </figure><h4 id="Contribution-5"><a href="#Contribution-5" class="headerlink" title="Contribution"></a><strong>Contribution</strong></h4><ul><li>精心设计的<strong>译码模块</strong></li><li>所有模块遵循<strong>残差连接</strong>设计</li></ul><h3 id="DeepLab-V1"><a href="#DeepLab-V1" class="headerlink" title="DeepLab-V1"></a><strong>DeepLab-V1</strong></h3><figure class="image-bubble">                <div class="img-lightbox">                    <div class="overlay"></div>                    <img src="/images/Semantic_Segmentation/Dilated_Conv.gif" alt="Dilated Convolution" title="">                </div>                <div class="image-caption">Dilated Convolution</div>            </figure><h3 id="DeepLab-V2"><a href="#DeepLab-V2" class="headerlink" title="DeepLab-V2"></a><strong>DeepLab-V2</strong></h3><h3 id="DeepLab-V3"><a href="#DeepLab-V3" class="headerlink" title="DeepLab-V3"></a><strong>DeepLab-V3</strong></h3>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;h1 id=&quot;语义分割、实例分割和全景分割&quot;&gt;&lt;a href=&quot;#语义分割、实例分割和全景分割&quot; class=&quot;headerlink&quot; title=&quot;语义分割、实例分割和全景分割&quot;&gt;&lt;/a&gt;&lt;strong&gt;语义分割、实例分割和全景分割&lt;/strong&gt;&lt;/h1&gt;&lt;figure 
+      
+    
+    </summary>
+    
+    
+      <category term="图像分割" scheme="http://yoursite.com/categories/%E5%9B%BE%E5%83%8F%E5%88%86%E5%89%B2/"/>
+    
+    
+      <category term="图像分割" scheme="http://yoursite.com/tags/%E5%9B%BE%E5%83%8F%E5%88%86%E5%89%B2/"/>
+    
+      <category term="分割网络" scheme="http://yoursite.com/tags/%E5%88%86%E5%89%B2%E7%BD%91%E7%BB%9C/"/>
+    
+      <category term="Pytorch" scheme="http://yoursite.com/tags/Pytorch/"/>
+    
+      <category term="语义分割" scheme="http://yoursite.com/tags/%E8%AF%AD%E4%B9%89%E5%88%86%E5%89%B2/"/>
+    
+  </entry>
   
   <entry>
     <title>一些常用的网络结构中的Module和Block</title>
@@ -38,9 +70,9 @@
       <category term="网络结构" scheme="http://yoursite.com/categories/%E7%BD%91%E7%BB%9C%E7%BB%93%E6%9E%84/"/>
     
     
-      <category term="Pytorch" scheme="http://yoursite.com/tags/Pytorch/"/>
-    
       <category term="网络模型" scheme="http://yoursite.com/tags/%E7%BD%91%E7%BB%9C%E6%A8%A1%E5%9E%8B/"/>
+    
+      <category term="Pytorch" scheme="http://yoursite.com/tags/Pytorch/"/>
     
       <category term="经典模型" scheme="http://yoursite.com/tags/%E7%BB%8F%E5%85%B8%E6%A8%A1%E5%9E%8B/"/>
     
@@ -97,11 +129,11 @@
       <category term="网络结构" scheme="http://yoursite.com/categories/%E7%BD%91%E7%BB%9C%E7%BB%93%E6%9E%84/"/>
     
     
-      <category term="Pytorch" scheme="http://yoursite.com/tags/Pytorch/"/>
-    
       <category term="图像分割" scheme="http://yoursite.com/tags/%E5%9B%BE%E5%83%8F%E5%88%86%E5%89%B2/"/>
     
       <category term="分割网络" scheme="http://yoursite.com/tags/%E5%88%86%E5%89%B2%E7%BD%91%E7%BB%9C/"/>
+    
+      <category term="Pytorch" scheme="http://yoursite.com/tags/Pytorch/"/>
     
   </entry>
   
@@ -156,11 +188,11 @@
       <category term="网络结构" scheme="http://yoursite.com/categories/%E7%BD%91%E7%BB%9C%E7%BB%93%E6%9E%84/"/>
     
     
+      <category term="Pytorch" scheme="http://yoursite.com/tags/Pytorch/"/>
+    
       <category term="图像分类" scheme="http://yoursite.com/tags/%E5%9B%BE%E5%83%8F%E5%88%86%E7%B1%BB/"/>
     
       <category term="分类网络" scheme="http://yoursite.com/tags/%E5%88%86%E7%B1%BB%E7%BD%91%E7%BB%9C/"/>
-    
-      <category term="Pytorch" scheme="http://yoursite.com/tags/Pytorch/"/>
     
   </entry>
   
@@ -169,15 +201,15 @@
     <link href="http://yoursite.com/2020/07/30/MarkMan/"/>
     <id>http://yoursite.com/2020/07/30/MarkMan/</id>
     <published>2020-07-30T11:55:08.391Z</published>
-    <updated>2020-08-22T11:45:31.383Z</updated>
+    <updated>2020-09-12T12:22:49.480Z</updated>
     
-    <content type="html"><![CDATA[<h1 id="Mark"><a href="#Mark" class="headerlink" title="Mark"></a><strong>Mark</strong></h1><ul><li>Pytorch中Tensor与各种图像格式的相互转化： <a href="https://blog.csdn.net/qq_36955294/article/details/82888443" target="_blank" rel="noopener">https://blog.csdn.net/qq_36955294/article/details/82888443</a></li></ul>]]></content>
+    <content type="html"><![CDATA[<h1 id="代码常用"><a href="#代码常用" class="headerlink" title="代码常用"></a><strong>代码常用</strong></h1><ul><li>Pytorch中Tensor与各种图像格式的相互转化： <a href="https://blog.csdn.net/qq_36955294/article/details/82888443" target="_blank" rel="noopener">https://blog.csdn.net/qq_36955294/article/details/82888443</a></li><li>Pytorch查看模型细节（利用torchsummary模块）<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">from torchsummary import summary</span><br><span class="line">summary(model, input_size&#x3D;(C, H, W))</span><br></pre></td></tr></table></figure></li></ul><h1 id="VSCode使用过程中的问题"><a href="#VSCode使用过程中的问题" class="headerlink" title="VSCode使用过程中的问题"></a><strong>VSCode使用过程中的问题</strong></h1><ul><li>SSH远程连接服务器一直弹窗输密码（解决办法：干掉重来）： <a href="https://blog.csdn.net/Mr_Cat123/article/details/107432070" target="_blank" rel="noopener">https://blog.csdn.net/Mr_Cat123/article/details/107432070</a></li></ul><h1 id="总结（大类）"><a href="#总结（大类）" class="headerlink" title="总结（大类）"></a>总结（大类）</h1><ul><li>图像分割综述（从传统到深度学习）： <a href="https://zhuanlan.zhihu.com/p/70758906" target="_blank" rel="noopener">https://zhuanlan.zhihu.com/p/70758906</a> 或 <a href="https://www.cnblogs.com/CV-life/p/11160796.html" target="_blank" rel="noopener">https://www.cnblogs.com/CV-life/p/11160796.html</a></li></ul>]]></content>
     
     <summary type="html">
     
       
       
-        &lt;h1 id=&quot;Mark&quot;&gt;&lt;a href=&quot;#Mark&quot; class=&quot;headerlink&quot; title=&quot;Mark&quot;&gt;&lt;/a&gt;&lt;strong&gt;Mark&lt;/strong&gt;&lt;/h1&gt;&lt;ul&gt;
+        &lt;h1 id=&quot;代码常用&quot;&gt;&lt;a href=&quot;#代码常用&quot; class=&quot;headerlink&quot; title=&quot;代码常用&quot;&gt;&lt;/a&gt;&lt;strong&gt;代码常用&lt;/strong&gt;&lt;/h1&gt;&lt;ul&gt;
 &lt;li&gt;Pytorch中Tensor与各种图像格式的相互转化： &lt;a href=&quot;ht
       
     

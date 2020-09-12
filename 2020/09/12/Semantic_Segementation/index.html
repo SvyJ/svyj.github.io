@@ -1,0 +1,651 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+
+    
+
+    
+
+
+
+    <meta charset="utf-8">
+    
+    
+    
+    
+    <title>语义分割综述 | SvyJ | 研究方向：智能医学影像、计算机视觉</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    
+    <meta name="theme-color" content="#3F51B5">
+    
+    
+    <meta name="keywords" content="图像分割,分割网络,Pytorch,语义分割">
+    <meta name="description" content="语义分割、实例分割和全景分割                                                                                             Segmentation              通俗理解语义分割：分割出每个类别，即对图片的每个像素做分类">
+<meta property="og:type" content="article">
+<meta property="og:title" content="语义分割综述">
+<meta property="og:url" content="http://yoursite.com/2020/09/12/Semantic_Segementation/index.html">
+<meta property="og:site_name" content="SvyJ">
+<meta property="og:description" content="语义分割、实例分割和全景分割                                                                                             Segmentation              通俗理解语义分割：分割出每个类别，即对图片的每个像素做分类">
+<meta property="og:locale" content="en_US">
+<meta property="og:image" content="http://yoursite.com/images/Semantic_Segmentation/Segmentation.png">
+<meta property="og:image" content="http://yoursite.com/images/Semantic_Segmentation/Semantic_Segmentation.png">
+<meta property="og:image" content="http://yoursite.com/images/Semantic_Segmentation/Instance_Segmentation.png">
+<meta property="og:image" content="http://yoursite.com/images/Semantic_Segmentation/FCN.png">
+<meta property="og:image" content="http://yoursite.com/images/Semantic_Segmentation/SegNet.png">
+<meta property="og:image" content="http://yoursite.com/images/Semantic_Segmentation/DeconvNet.png">
+<meta property="og:image" content="http://yoursite.com/images/Semantic_Segmentation/UNet.png">
+<meta property="og:image" content="http://yoursite.com/images/Semantic_Segmentation/PSPNet_0.png">
+<meta property="og:image" content="http://yoursite.com/images/Semantic_Segmentation/PSPNet_1.png">
+<meta property="og:image" content="http://yoursite.com/images/Semantic_Segmentation/RefineNet.png">
+<meta property="og:image" content="http://yoursite.com/images/Semantic_Segmentation/Dilated_Conv.gif">
+<meta property="article:published_time" content="2020-09-12T12:24:12.496Z">
+<meta property="article:modified_time" content="2020-09-12T13:44:28.690Z">
+<meta property="article:author" content="SvyJ">
+<meta property="article:tag" content="图像分割">
+<meta property="article:tag" content="分割网络">
+<meta property="article:tag" content="Pytorch">
+<meta property="article:tag" content="语义分割">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="http://yoursite.com/images/Semantic_Segmentation/Segmentation.png">
+    
+        <link rel="alternate" type="application/atom+xml" title="SvyJ" href="/atom.xml">
+    
+    <link rel="shortcut icon" href="/favicon.ico">
+    <link rel="stylesheet" href="//unpkg.com/hexo-theme-material-indigo@latest/css/style.css">
+    <script>window.lazyScripts=[]</script>
+
+    <!-- custom head -->
+    
+
+<meta name="generator" content="Hexo 4.2.1"></head>
+
+<body>
+    <div id="loading" class="active"></div>
+
+    <aside id="menu" class="hide" >
+  <div class="inner flex-row-vertical">
+    <a href="javascript:;" class="header-icon waves-effect waves-circle waves-light" id="menu-off">
+        <i class="icon icon-lg icon-close"></i>
+    </a>
+    <div class="brand-wrap" style="background-image:url(/img/warriors.jpg)">
+      <div class="brand">
+        <a href="/" class="avatar waves-effect waves-circle waves-light">
+          <img src="/img/Curry.png">
+        </a>
+        <hgroup class="introduce">
+          <h5 class="nickname">SvyJ</h5>
+          <a href="mailto:研一，1746772378@qq.com" title="研一，1746772378@qq.com" class="mail">研一，1746772378@qq.com</a>
+        </hgroup>
+      </div>
+    </div>
+    <div class="scroll-wrap flex-col">
+      <ul class="nav">
+        
+            <li class="waves-block waves-effect">
+              <a href="/"  >
+                <i class="icon icon-lg icon-home"></i>
+                主页
+              </a>
+            </li>
+        
+            <li class="waves-block waves-effect">
+              <a href="/archives"  >
+                <i class="icon icon-lg icon-archives"></i>
+                归档
+              </a>
+            </li>
+        
+            <li class="waves-block waves-effect">
+              <a href="/tags"  >
+                <i class="icon icon-lg icon-tags"></i>
+                标签
+              </a>
+            </li>
+        
+            <li class="waves-block waves-effect">
+              <a href="/categories"  >
+                <i class="icon icon-lg icon-th-list"></i>
+                分类
+              </a>
+            </li>
+        
+            <li class="waves-block waves-effect">
+              <a href="https://github.com/SvyJ" target="_blank" >
+                <i class="icon icon-lg icon-github"></i>
+                Github
+              </a>
+            </li>
+        
+            <li class="waves-block waves-effect">
+              <a href="https://blog.csdn.net/qq_37350078" target="_blank" >
+                <i class="icon icon-lg icon-csdn"></i>
+                Csdn
+              </a>
+            </li>
+        
+      </ul>
+    </div>
+  </div>
+</aside>
+
+    <main id="main">
+        <header class="top-header" id="header">
+    <div class="flex-row">
+        <a href="javascript:;" class="header-icon waves-effect waves-circle waves-light on" id="menu-toggle">
+          <i class="icon icon-lg icon-navicon"></i>
+        </a>
+        <div class="flex-col header-title ellipsis">语义分割综述</div>
+        
+        <div class="search-wrap" id="search-wrap">
+            <a href="javascript:;" class="header-icon waves-effect waves-circle waves-light" id="back">
+                <i class="icon icon-lg icon-chevron-left"></i>
+            </a>
+            <input type="text" id="key" class="search-input" autocomplete="off" placeholder="Search">
+            <a href="javascript:;" class="header-icon waves-effect waves-circle waves-light" id="search">
+                <i class="icon icon-lg icon-search"></i>
+            </a>
+        </div>
+        
+        
+        <a href="javascript:;" class="header-icon waves-effect waves-circle waves-light" id="menuShare">
+            <i class="icon icon-lg icon-share-alt"></i>
+        </a>
+        
+    </div>
+</header>
+<header class="content-header post-header">
+
+    <div class="container fade-scale">
+        <h1 class="title">语义分割综述</h1>
+        <h5 class="subtitle">
+            
+                <time datetime="2020-09-12T12:24:12.496Z" itemprop="datePublished" class="page-time">
+  2020-09-12
+</time>
+
+
+	<ul class="article-category-list"><li class="article-category-list-item"><a class="article-category-list-link" href="/categories/%E5%9B%BE%E5%83%8F%E5%88%86%E5%89%B2/">图像分割</a></li></ul>
+
+            
+        </h5>
+    </div>
+
+    
+
+
+</header>
+
+
+<div class="container body-wrap">
+    
+    <aside class="post-widget">
+        <nav class="post-toc-wrap post-toc-shrink" id="post-toc">
+            <h4>TOC</h4>
+            <ol class="post-toc"><li class="post-toc-item post-toc-level-1"><a class="post-toc-link" href="#语义分割、实例分割和全景分割"><span class="post-toc-number">1.</span> <span class="post-toc-text">语义分割、实例分割和全景分割</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#通俗理解"><span class="post-toc-number">1.1.</span> <span class="post-toc-text">通俗理解</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#语义分割：分割出每个类别，即对图片的每个像素做分类"><span class="post-toc-number">1.1.1.</span> <span class="post-toc-text">语义分割：分割出每个类别，即对图片的每个像素做分类</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#实例分割：分割出每个实例（不含背景）"><span class="post-toc-number">1.1.2.</span> <span class="post-toc-text">实例分割：分割出每个实例（不含背景）</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#全景分割：分割出每个实例（含背景）"><span class="post-toc-number">1.1.3.</span> <span class="post-toc-text">全景分割：分割出每个实例（含背景）</span></a></li></ol></li></ol></li><li class="post-toc-item post-toc-level-1"><a class="post-toc-link" href="#语义分割的方法"><span class="post-toc-number">2.</span> <span class="post-toc-text">语义分割的方法</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#传统机器学习方法"><span class="post-toc-number">2.0.1.</span> <span class="post-toc-text">传统机器学习方法</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#深度学习方法"><span class="post-toc-number">2.0.2.</span> <span class="post-toc-text">深度学习方法</span></a></li></ol></li></ol></li><li class="post-toc-item post-toc-level-1"><a class="post-toc-link" href="#语义分割的难点"><span class="post-toc-number">3.</span> <span class="post-toc-text">语义分割的难点</span></a></li><li class="post-toc-item post-toc-level-1"><a class="post-toc-link" href="#语义分割模型"><span class="post-toc-number">4.</span> <span class="post-toc-text">语义分割模型</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#FCN"><span class="post-toc-number">4.0.1.</span> <span class="post-toc-text">FCN</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-4"><a class="post-toc-link" href="#Contribution"><span class="post-toc-number">4.0.1.1.</span> <span class="post-toc-text">Contribution</span></a></li></ol></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#SegNet"><span class="post-toc-number">4.0.2.</span> <span class="post-toc-text">SegNet</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-4"><a class="post-toc-link" href="#Contribution-1"><span class="post-toc-number">4.0.2.1.</span> <span class="post-toc-text">Contribution</span></a></li></ol></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#DeconvNet"><span class="post-toc-number">4.0.3.</span> <span class="post-toc-text">DeconvNet</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-4"><a class="post-toc-link" href="#Contribution-2"><span class="post-toc-number">4.0.3.1.</span> <span class="post-toc-text">Contribution</span></a></li></ol></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#UNet"><span class="post-toc-number">4.0.4.</span> <span class="post-toc-text">UNet</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-4"><a class="post-toc-link" href="#Contribution-3"><span class="post-toc-number">4.0.4.1.</span> <span class="post-toc-text">Contribution</span></a></li></ol></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#PSPNet"><span class="post-toc-number">4.0.5.</span> <span class="post-toc-text">PSPNet</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-4"><a class="post-toc-link" href="#Contribution-4"><span class="post-toc-number">4.0.5.1.</span> <span class="post-toc-text">Contribution</span></a></li></ol></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#RefineNet"><span class="post-toc-number">4.0.6.</span> <span class="post-toc-text">RefineNet</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-4"><a class="post-toc-link" href="#Contribution-5"><span class="post-toc-number">4.0.6.1.</span> <span class="post-toc-text">Contribution</span></a></li></ol></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#DeepLab-V1"><span class="post-toc-number">4.0.7.</span> <span class="post-toc-text">DeepLab-V1</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#DeepLab-V2"><span class="post-toc-number">4.0.8.</span> <span class="post-toc-text">DeepLab-V2</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#DeepLab-V3"><span class="post-toc-number">4.0.9.</span> <span class="post-toc-text">DeepLab-V3</span></a></li></ol></li></ol></li></ol>
+        </nav>
+    </aside>
+
+
+<article id="post-Semantic_Segementation"
+  class="post-article article-type-post fade" itemprop="blogPost">
+
+    <div class="post-card">
+        <h1 class="post-card-title">语义分割综述</h1>
+        <div class="post-meta">
+            <time class="post-time" title="2020-09-12 20:24:12" datetime="2020-09-12T12:24:12.496Z"  itemprop="datePublished">2020-09-12</time>
+
+            
+	<ul class="article-category-list"><li class="article-category-list-item"><a class="article-category-list-link" href="/categories/%E5%9B%BE%E5%83%8F%E5%88%86%E5%89%B2/">图像分割</a></li></ul>
+
+
+
+            
+<span id="busuanzi_container_page_pv" title="文章总阅读量" style='display:none'>
+    <i class="icon icon-eye icon-pr"></i><span id="busuanzi_value_page_pv"></span>
+</span>
+
+
+        </div>
+        <div class="post-content" id="post-content" itemprop="postContent">
+            <h1 id="语义分割、实例分割和全景分割"><a href="#语义分割、实例分割和全景分割" class="headerlink" title="语义分割、实例分割和全景分割"></a><strong>语义分割、实例分割和全景分割</strong></h1><figure class="image-bubble">
+                <div class="img-lightbox">
+                    <div class="overlay"></div>
+                    <img src="/images/Semantic_Segmentation/Segmentation.png" alt="Segmentation" title="">
+                </div>
+                <div class="image-caption">Segmentation</div>
+            </figure>
+<h2 id="通俗理解"><a href="#通俗理解" class="headerlink" title="通俗理解"></a>通俗理解</h2><h3 id="语义分割：分割出每个类别，即对图片的每个像素做分类"><a href="#语义分割：分割出每个类别，即对图片的每个像素做分类" class="headerlink" title="语义分割：分割出每个类别，即对图片的每个像素做分类"></a>语义分割：分割出每个类别，即对图片的每个像素做分类</h3><figure class="image-bubble">
+                <div class="img-lightbox">
+                    <div class="overlay"></div>
+                    <img src="/images/Semantic_Segmentation/Semantic_Segmentation.png" alt="Semantic_Segmentation" title="">
+                </div>
+                <div class="image-caption">Semantic_Segmentation</div>
+            </figure>
+<h3 id="实例分割：分割出每个实例（不含背景）"><a href="#实例分割：分割出每个实例（不含背景）" class="headerlink" title="实例分割：分割出每个实例（不含背景）"></a>实例分割：分割出每个实例（不含背景）</h3><figure class="image-bubble">
+                <div class="img-lightbox">
+                    <div class="overlay"></div>
+                    <img src="/images/Semantic_Segmentation/Instance_Segmentation.png" alt="Instance_Segmentation" title="">
+                </div>
+                <div class="image-caption">Instance_Segmentation</div>
+            </figure>
+<h3 id="全景分割：分割出每个实例（含背景）"><a href="#全景分割：分割出每个实例（含背景）" class="headerlink" title="全景分割：分割出每个实例（含背景）"></a>全景分割：分割出每个实例（含背景）</h3><h1 id="语义分割的方法"><a href="#语义分割的方法" class="headerlink" title="语义分割的方法"></a><strong>语义分割的方法</strong></h1><h3 id="传统机器学习方法"><a href="#传统机器学习方法" class="headerlink" title="传统机器学习方法"></a>传统机器学习方法</h3><ul>
+<li>传统方法Pipeline: 特征 + forst/boost + CRF</li>
+<li>劣势：单个学习分类器只针对单一的类别设计，导致分割类别多时有<strong>计算复杂度高</strong>和<strong>训练难度大</strong>的问题<br>（如像素级的决策树分类，参考TextonForest以及Random Forest based classifiers）</li>
+</ul>
+<h3 id="深度学习方法"><a href="#深度学习方法" class="headerlink" title="深度学习方法"></a>深度学习方法</h3><ul>
+<li><strong>卷积神经网络</strong>：FCN、DeepLab-V1(2014), SegNet、UNet(2015), DeepLab-V2(2016)…<br>（一般都是在分类网络上进行精调，分类网络为了能获取更抽象的特征分层，采取了Conv+pool堆叠的方式，这导致了分辨率降低，丢失了很多信息，这对分割任务来说肯定是不好的，因为分割是对每一个像素进行分类，会造成定位精度不高。但同时更高层的特征对于分类又很重要。如何权衡这两者呢？）</li>
+<li><strong>Encoder-Decoder方法</strong>：与经典的FCN中的Skip-Connection思想类似，Encoder为分类网络，用于提取特征，而Decoder则是将Encoder的先前丢失的空间信息逐渐恢复，Decoder的典型结构有U-Net/Segnet/RefineNet，该类方法虽然有一定的效果，能恢复部分信息，但毕竟信息已经丢失了，不可能完全恢复。</li>
+<li><strong>Dialed FCN方法</strong>：Deeplab-V1提出的方法，将VGG的最后的两个Pool层步长置为1，这样网络的输出分辨率从1/32变为1/8。可以保留更多的细节信息，同时也丢掉了复杂的Decoder结构，但这种方法计算量大。</li>
+<li>注：DeepLab-V3将Encoder-Decoder方法与Dialed FCN方法结合，达到了非常好的效果，同时计算量也非常巨大</li>
+</ul>
+<h1 id="语义分割的难点"><a href="#语义分割的难点" class="headerlink" title="语义分割的难点"></a><strong>语义分割的难点</strong></h1><ul>
+<li>数据集问题：需要精确的像素级标注</li>
+<li>计算资源问题：要求高精度 -&gt; 深层网络 -&gt; 分割预测每一个像素点 -&gt; 要求Feature Map有尽量高的分辨率 -&gt; 计算资源不足</li>
+<li>精细分割：（1）<strong>大类别、小目标</strong>：分割精度高 （2）<strong>小类别、小目标</strong>：轮廓太小 -&gt; 分割精度低</li>
+<li>上下文信息：忽略上下文信息会造成 一个类别目标分成多个类别part、不同类别目标分成相同类别<br>（什么是上下文信息？察觉并能应用能够影响场景和图像中的对象的一些或全部信息，通俗理解为<strong>像素以及周边像素的联系</strong>）</li>
+</ul>
+<h1 id="语义分割模型"><a href="#语义分割模型" class="headerlink" title="语义分割模型"></a><strong>语义分割模型</strong></h1><p>一般的语义分割架构可以被认为是一个<strong>编码器-解码器</strong>网络。<br>编码器通常是一个预训练的分类网络，像VGG、ResNet，然后是一个解码器网络。<br>这些架构不同的地方主要在于解码器网络。解码器的任务是将编码器学习到的可判别特征（较低分辨率）从语义上投影到像素空间（较高分辨率），以获得密集分类。<br>不同于分类任务中网络的最终结果（对图像分类的概率）是唯一重要的事，语义分割不仅需要在像素级有判别能力，还需要有能将编码器在不同阶段学到的可判别特征投影到像素空间的机制。不同的架构采用不同的机制（跳跃连接、金字塔池化等）作为解码机制的一部分。</p>
+<h3 id="FCN"><a href="#FCN" class="headerlink" title="FCN"></a><strong>FCN</strong></h3><figure class="image-bubble">
+                <div class="img-lightbox">
+                    <div class="overlay"></div>
+                    <img src="/images/Semantic_Segmentation/FCN.png" alt="FCN" title="">
+                </div>
+                <div class="image-caption">FCN</div>
+            </figure>
+<h4 id="Contribution"><a href="#Contribution" class="headerlink" title="Contribution"></a><strong>Contribution</strong></h4><ul>
+<li>为语义分割引入了<strong>端到端</strong>的全卷积网络，并流行开来</li>
+<li>重新利用ImageNet的<strong>预训练网络</strong>用于语义分割</li>
+<li>使用<strong>反卷积层</strong>代替线性插值法进行上采样</li>
+<li>引入<strong>跳跃连接</strong>来改善上采样粗糙的像素定位</li>
+</ul>
+<h3 id="SegNet"><a href="#SegNet" class="headerlink" title="SegNet"></a><strong>SegNet</strong></h3><figure class="image-bubble">
+                <div class="img-lightbox">
+                    <div class="overlay"></div>
+                    <img src="/images/Semantic_Segmentation/SegNet.png" alt="SegNet" title="">
+                </div>
+                <div class="image-caption">SegNet</div>
+            </figure>
+<h4 id="Contribution-1"><a href="#Contribution-1" class="headerlink" title="Contribution"></a><strong>Contribution</strong></h4><ul>
+<li>将<strong>池化层结果</strong>应用到译码过程</li>
+<li>引入了更多的编码信息</li>
+<li>使用的是<strong>Pooling Indices</strong>，而不是直接复制特征，只是将编码过程中Pool的位置记下来，在UpPooling是使用该信息进行Pooling</li>
+</ul>
+<h3 id="DeconvNet"><a href="#DeconvNet" class="headerlink" title="DeconvNet"></a><strong>DeconvNet</strong></h3><figure class="image-bubble">
+                <div class="img-lightbox">
+                    <div class="overlay"></div>
+                    <img src="/images/Semantic_Segmentation/DeconvNet.png" alt="DeconvNet" title="">
+                </div>
+                <div class="image-caption">DeconvNet</div>
+            </figure>
+<h4 id="Contribution-2"><a href="#Contribution-2" class="headerlink" title="Contribution"></a><strong>Contribution</strong></h4><ul>
+<li>UpPooling过程中与SegNet类似，但除了还原记录的Pooling Indices之外，<strong>其他位置均补0</strong></li>
+</ul>
+<h3 id="UNet"><a href="#UNet" class="headerlink" title="UNet"></a><strong>UNet</strong></h3><figure class="image-bubble">
+                <div class="img-lightbox">
+                    <div class="overlay"></div>
+                    <img src="/images/Semantic_Segmentation/UNet.png" alt="UNet" title="">
+                </div>
+                <div class="image-caption">UNet</div>
+            </figure>
+<h4 id="Contribution-3"><a href="#Contribution-3" class="headerlink" title="Contribution"></a><strong>Contribution</strong></h4><ul>
+<li>更规整的网络结构</li>
+<li>通过将编码器的每层结果拼接到译码器中得到更好的结果</li>
+</ul>
+<h3 id="PSPNet"><a href="#PSPNet" class="headerlink" title="PSPNet"></a><strong>PSPNet</strong></h3><figure class="image-bubble">
+                <div class="img-lightbox">
+                    <div class="overlay"></div>
+                    <img src="/images/Semantic_Segmentation/PSPNet_0.png" alt="" title="">
+                </div>
+                <div class="image-caption"></div>
+            </figure>
+<figure class="image-bubble">
+                <div class="img-lightbox">
+                    <div class="overlay"></div>
+                    <img src="/images/Semantic_Segmentation/PSPNet_1.png" alt="PSPNet" title="">
+                </div>
+                <div class="image-caption">PSPNet</div>
+            </figure>
+<h4 id="Contribution-4"><a href="#Contribution-4" class="headerlink" title="Contribution"></a><strong>Contribution</strong></h4><ul>
+<li>提出了<strong>金字塔池化模块</strong>来聚合图片信息</li>
+<li>使用附加的<strong>损失函数</strong></li>
+</ul>
+<h3 id="RefineNet"><a href="#RefineNet" class="headerlink" title="RefineNet"></a><strong>RefineNet</strong></h3><figure class="image-bubble">
+                <div class="img-lightbox">
+                    <div class="overlay"></div>
+                    <img src="/images/Semantic_Segmentation/RefineNet.png" alt="RefineNet" title="">
+                </div>
+                <div class="image-caption">RefineNet</div>
+            </figure>
+<h4 id="Contribution-5"><a href="#Contribution-5" class="headerlink" title="Contribution"></a><strong>Contribution</strong></h4><ul>
+<li>精心设计的<strong>译码模块</strong></li>
+<li>所有模块遵循<strong>残差连接</strong>设计</li>
+</ul>
+<h3 id="DeepLab-V1"><a href="#DeepLab-V1" class="headerlink" title="DeepLab-V1"></a><strong>DeepLab-V1</strong></h3><figure class="image-bubble">
+                <div class="img-lightbox">
+                    <div class="overlay"></div>
+                    <img src="/images/Semantic_Segmentation/Dilated_Conv.gif" alt="Dilated Convolution" title="">
+                </div>
+                <div class="image-caption">Dilated Convolution</div>
+            </figure>
+
+<h3 id="DeepLab-V2"><a href="#DeepLab-V2" class="headerlink" title="DeepLab-V2"></a><strong>DeepLab-V2</strong></h3><h3 id="DeepLab-V3"><a href="#DeepLab-V3" class="headerlink" title="DeepLab-V3"></a><strong>DeepLab-V3</strong></h3>
+        </div>
+
+        <blockquote class="post-copyright">
+    
+    <div class="content">
+        
+<span class="post-time">
+    Last updated: <time datetime="2020-09-12T13:44:28.690Z" itemprop="dateUpdated">2020-09-12 21:44:28</time>
+</span><br>
+
+
+        
+        如果该文章对你有用，不如点个赞或者打赏一下~~~
+        
+    </div>
+    
+    <footer>
+        <a href="http://yoursite.com">
+            <img src="/img/Curry.png" alt="SvyJ">
+            SvyJ
+        </a>
+    </footer>
+</blockquote>
+
+        
+<div class="page-reward">
+    <a id="rewardBtn" href="javascript:;" class="page-reward-btn waves-effect waves-circle waves-light">赏</a>
+</div>
+
+
+
+        <div class="post-footer">
+            
+	<ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Pytorch/" rel="tag">Pytorch</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/%E5%88%86%E5%89%B2%E7%BD%91%E7%BB%9C/" rel="tag">分割网络</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/%E5%9B%BE%E5%83%8F%E5%88%86%E5%89%B2/" rel="tag">图像分割</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/%E8%AF%AD%E4%B9%89%E5%88%86%E5%89%B2/" rel="tag">语义分割</a></li></ul>
+
+
+            
+<div class="page-share-wrap">
+    
+
+<div class="page-share" id="pageShare">
+    <ul class="reset share-icons">
+      <li>
+        <a class="weibo share-sns" target="_blank" href="http://service.weibo.com/share/share.php?url=http://yoursite.com/2020/09/12/Semantic_Segementation/&title=《语义分割综述》 — SvyJ&pic=http://yoursite.com/img/Curry.png" data-title="微博">
+          <i class="icon icon-weibo"></i>
+        </a>
+      </li>
+      <li>
+        <a class="weixin share-sns wxFab" href="javascript:;" data-title="微信">
+          <i class="icon icon-weixin"></i>
+        </a>
+      </li>
+      <li>
+        <a class="qq share-sns" target="_blank" href="http://connect.qq.com/widget/shareqq/index.html?url=http://yoursite.com/2020/09/12/Semantic_Segementation/&title=《语义分割综述》 — SvyJ&source=" data-title=" QQ">
+          <i class="icon icon-qq"></i>
+        </a>
+      </li>
+      <li>
+        <a class="facebook share-sns" target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=http://yoursite.com/2020/09/12/Semantic_Segementation/" data-title=" Facebook">
+          <i class="icon icon-facebook"></i>
+        </a>
+      </li>
+      <li>
+        <a class="twitter share-sns" target="_blank" href="https://twitter.com/intent/tweet?text=《语义分割综述》 — SvyJ&url=http://yoursite.com/2020/09/12/Semantic_Segementation/&via=http://yoursite.com" data-title=" Twitter">
+          <i class="icon icon-twitter"></i>
+        </a>
+      </li>
+      <li>
+        <a class="google share-sns" target="_blank" href="https://plus.google.com/share?url=http://yoursite.com/2020/09/12/Semantic_Segementation/" data-title=" Google+">
+          <i class="icon icon-google-plus"></i>
+        </a>
+      </li>
+    </ul>
+ </div>
+
+
+
+    <a href="javascript:;" id="shareFab" class="page-share-fab waves-effect waves-circle">
+        <i class="icon icon-share-alt icon-lg"></i>
+    </a>
+</div>
+
+
+
+        </div>
+    </div>
+
+    
+<nav class="post-nav flex-row flex-justify-between flex-row-reverse">
+  
+
+  
+    <div class="waves-block waves-effect next">
+      <a href="/2020/08/22/DeepLearning_ModuleAndBlocks/" id="post-next" class="post-nav-link">
+        <div class="tips">Next <i class="icon icon-angle-right icon-lg icon-pl"></i></div>
+        <h4 class="title">一些常用的网络结构中的Module和Block</h4>
+      </a>
+    </div>
+  
+</nav>
+
+
+
+    
+
+
+<section class="comments" id="comments">
+    <div id="disqus_thread"></div>
+    <script>
+    var disqus_shortname = 'true';
+    lazyScripts.push('//' + disqus_shortname + '.disqus.com/embed.js')
+    </script>
+    <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript" target="_blank" rel="noopener">comments powered by Disqus.</a></noscript>
+</section>
+
+
+
+
+<section class="comments" id="comments">
+    <!-- UY BEGIN -->
+    <div id="uyan_frame"></div>
+    <script src="http://v2.uyan.cc/code/uyan.js?uid=true"></script>
+    <!-- UY END -->
+</section>
+
+
+
+
+<section class="comments" id="comments">
+    <div id="gitment_thread"></div>
+    <link rel="stylesheet" href="//unpkg.com/gitment/style/default.css">
+    <script src="//unpkg.com/gitment/dist/gitment.browser.js"></script>
+    <script>
+        var gitment = new Gitment({
+            owner: '',
+            repo: '',
+            oauth: {
+                client_id: '',
+                client_secret: '',
+            },
+        })
+        gitment.render('comments')
+    </script>
+</section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+</article>
+
+<div id="reward" class="page-modal reward-lay">
+    <a class="close" href="javascript:;"><i class="icon icon-close"></i></a>
+    <h3 class="reward-title">
+        <i class="icon icon-quote-left"></i>
+        谢谢大爷~
+        <i class="icon icon-quote-right"></i>
+    </h3>
+    <div class="reward-content">
+        
+        <div class="reward-code">
+            <img id="rewardCode" src="/false" alt="打赏二维码">
+        </div>
+        
+    </div>
+</div>
+
+
+
+</div>
+
+        <footer class="footer">
+    <div class="top">
+        
+<p>
+    <span id="busuanzi_container_site_uv" style='display:none'>
+        站点总访客数：<span id="busuanzi_value_site_uv"></span>
+    </span>
+    <span id="busuanzi_container_site_pv" style='display:none'>
+        站点总访问量：<span id="busuanzi_value_site_pv"></span>
+    </span>
+</p>
+
+
+        <p>
+            
+                <span><a href="/atom.xml" target="_blank" class="rss" title="rss"><i class="icon icon-lg icon-rss"></i></a></span>
+            
+            <span>This blog is licensed under a <a rel="license noopener" href="https://creativecommons.org/licenses/by/4.0/" target="_blank">Creative Commons Attribution 4.0 International License</a>.</span>
+        </p>
+    </div>
+    <div class="bottom">
+        <p><span>SvyJ &copy; 2020</span>
+            <span>
+                
+                Power by <a href="http://hexo.io/" target="_blank">Hexo</a> Theme <a href="https://github.com/yscoder/hexo-theme-indigo" target="_blank">indigo</a>
+            </span>
+        </p>
+    </div>
+</footer>
+
+    </main>
+    <div class="mask" id="mask"></div>
+<a href="javascript:;" id="gotop" class="waves-effect waves-circle waves-light"><span class="icon icon-lg icon-chevron-up"></span></a>
+
+
+
+<div class="global-share" id="globalShare">
+    <ul class="reset share-icons">
+      <li>
+        <a class="weibo share-sns" target="_blank" href="http://service.weibo.com/share/share.php?url=http://yoursite.com/2020/09/12/Semantic_Segementation/&title=《语义分割综述》 — SvyJ&pic=http://yoursite.com/img/Curry.png" data-title="微博">
+          <i class="icon icon-weibo"></i>
+        </a>
+      </li>
+      <li>
+        <a class="weixin share-sns wxFab" href="javascript:;" data-title="微信">
+          <i class="icon icon-weixin"></i>
+        </a>
+      </li>
+      <li>
+        <a class="qq share-sns" target="_blank" href="http://connect.qq.com/widget/shareqq/index.html?url=http://yoursite.com/2020/09/12/Semantic_Segementation/&title=《语义分割综述》 — SvyJ&source=" data-title=" QQ">
+          <i class="icon icon-qq"></i>
+        </a>
+      </li>
+      <li>
+        <a class="facebook share-sns" target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=http://yoursite.com/2020/09/12/Semantic_Segementation/" data-title=" Facebook">
+          <i class="icon icon-facebook"></i>
+        </a>
+      </li>
+      <li>
+        <a class="twitter share-sns" target="_blank" href="https://twitter.com/intent/tweet?text=《语义分割综述》 — SvyJ&url=http://yoursite.com/2020/09/12/Semantic_Segementation/&via=http://yoursite.com" data-title=" Twitter">
+          <i class="icon icon-twitter"></i>
+        </a>
+      </li>
+      <li>
+        <a class="google share-sns" target="_blank" href="https://plus.google.com/share?url=http://yoursite.com/2020/09/12/Semantic_Segementation/" data-title=" Google+">
+          <i class="icon icon-google-plus"></i>
+        </a>
+      </li>
+    </ul>
+ </div>
+
+
+<div class="page-modal wx-share" id="wxShare">
+    <a class="close" href="javascript:;"><i class="icon icon-close"></i></a>
+    <p>扫一扫，分享到微信</p>
+    <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAMYAAADGCAAAAACs8KCBAAACL0lEQVR42u3aO3LDMAxFUe9/00qbIpLvA6jMELysMrIi8biAic/ng9cF1t39v6/cffp8fdmSIUPGtgyyuedN195CPuVfnAwZMk5g3L2Y3FMLrORdZG8yZMiQ8XwPeQ4PuzJkyJCxisHDKzlKkifIkCFDBk9i+XGwc8R8PReXIUPGhgxeLPv/v1/pb8iQIWMrxhWuTjth1R7+eJcMGTJGMzplsiC9bARxsh8ZMmTMZnRK+WmqWTsUoiaoDBkyRjN4SE0PiyjSN0p+cXtAhgwZ2zJqW6+F1FotELU/ZciQMZrBRxz4lVpo5oe/2/+SIUPGaEYa8tIBCB40n8N9q08rQ4aMzRm8pMWDYFomqzVBv/xuyJAhYxCDv4AHzVpCy38fbp8jQ4aMYxgk8KWhc1Ub4MvXKkOGjKGM9HH9baUHwWU9WBkyZGzL4MUvnsqSw1z6zHg4TIYMGUMZPH1d1ZgMxilqS4YMGZszah1O3tTspMRBkixDhozRjLTQ1m8S8OAbp9YyZMg4gMGDZorsFNqCtFmGDBmHMdKQlx4KeWMyGC+TIUPGAYxa4prWu1Y1Sm8DrgwZMsYxrnDVhi3S0n86KCZDhozZjE47k7cwa4F12bCFDBkyRjB4uY23LUmC2g+4xcaADBkytmWkga82VPHGNJcMGTJk8INg0G584boMGTJkrEpfeThOD68yZMg4gcHHwtJiXC3d5a0IGTJknMBIU0eyRQKON9FIfWXIkLEt4wf2DHRyjvS81AAAAABJRU5ErkJggg==" alt="微信分享二维码">
+</div>
+
+
+
+
+    <script src="//cdn.bootcss.com/node-waves/0.7.4/waves.min.js"></script>
+<script>
+var BLOG = { ROOT: '/', SHARE: true, REWARD: true };
+
+
+</script>
+
+<script src="//unpkg.com/hexo-theme-material-indigo@latest/js/main.min.js"></script>
+
+
+<div class="search-panel" id="search-panel">
+    <ul class="search-result" id="search-result"></ul>
+</div>
+<template id="search-tpl">
+<li class="item">
+    <a href="{path}" class="waves-block waves-effect">
+        <div class="title ellipsis" title="{title}">{title}</div>
+        <div class="flex-row flex-middle">
+            <div class="tags ellipsis">
+                {tags}
+            </div>
+            <time class="flex-col time">{date}</time>
+        </div>
+    </a>
+</li>
+</template>
+
+<script src="//unpkg.com/hexo-theme-material-indigo@latest/js/search.min.js" async></script>
+
+
+
+
+
+
+<script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+
+
+
+<script>
+(function() {
+    var OriginTitile = document.title, titleTime;
+    document.addEventListener('visibilitychange', function() {
+        if (document.hidden) {
+            document.title = '你要离开了吗?';
+            clearTimeout(titleTime);
+        } else {
+            document.title = '欢迎回来！';
+            titleTime = setTimeout(function() {
+                document.title = OriginTitile;
+            },2000);
+        }
+    });
+})();
+</script>
+
+
+
+</body>
+</html>
