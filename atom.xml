@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2020-09-16T09:50:39.958Z</updated>
+  <updated>2020-09-16T13:04:45.405Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -15,6 +15,59 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>前端开发任职要求汇总</title>
+    <link href="http://yoursite.com/2020/09/16/Web_Job_Specification/"/>
+    <id>http://yoursite.com/2020/09/16/Web_Job_Specification/</id>
+    <published>2020-09-16T12:36:22.078Z</published>
+    <updated>2020-09-16T13:04:45.405Z</updated>
+    
+    <content type="html"><![CDATA[<h1 id="实习生要求"><a href="#实习生要求" class="headerlink" title="实习生要求"></a><strong>实习生要求</strong></h1><ul><li>在校本科或硕士研究生，计算机，软件工程相关专业优先，本科以上学历，保证至少 4 天 /周，持续实习 3 个月以上；</li><li>热爱计算机编程，丰富的编码实战经验；</li><li>熟悉<strong>JavaScript/HTML/CSS</strong>，计算机基础扎实，对<strong>web标准</strong>有深入理解；</li><li>熟悉至少一种<strong>前端框架(Vue、React)</strong>，对前后端联合开发的技术原理有全面了解，并在项目中有过实践；</li><li>掌握常见网络协议和相关的其他底层网络协议的全面知识；</li><li>熟悉JSP/Python/Php/Node.js或其他<strong>一门后台技术</strong>；</li><li>快速<strong>学习能力</strong>，实际项目中<strong>动手能力</strong>强；</li><li>良好的<strong>沟通和团队协作</strong>精神，积极主动配合设计人员和开发人员工作；</li></ul><h1 id="工程师要求"><a href="#工程师要求" class="headerlink" title="工程师要求"></a><strong>工程师要求</strong></h1><ul><li>本科及以上学历，具有良好的<strong>编程习惯</strong></li><li>熟练掌握计算机相关的基础知识，具备扎实的<strong>数据结构和算法基础</strong>；</li><li>熟悉<strong>面向对象编程</strong>设计，熟悉MVC、MVVM等<strong>前端开发模型</strong>；</li><li>具备扎实的编程基础，至少掌握一门<strong>编程语言</strong>，如Java，C#，Javascript等；</li><li>熟悉<strong>HTML的DOM结构</strong>，可快速制作HTML页面；</li><li>熟悉前端领域相关的知识，<strong>HTML、CSS、JavaScript</strong>，熟悉<strong>原生javascript</strong>，熟悉前端开发规范和<strong>W3C标准</strong>，关注前端技术发展动向；</li><li>熟悉<strong>ES6、XML、JSON</strong>等相关技术，熟悉<strong>HTTP协议</strong>，有<strong>Node研发</strong>经验者优先； </li><li>对<strong>前端工程化构建</strong>有一定的理解，熟练掌握Webpack/Gulp等构建工具；</li><li>熟练使用<strong>git</strong>等版本管理工具；</li><li>熟悉<strong>Vue/React/Angular</strong>等至少一种<strong>前端框架</strong>，并有实际操作经验；</li><li>熟悉vuejs、或者reactjs其他流行的开源js框架并且对于建立js框架有自己的想法优先；</li><li>了解Node.js/Php/Java/Go等后端语言中至少一种，有<strong>后端研发经验</strong>者优先；</li><li>对<strong>数据可视化</strong>有强烈兴趣，熟悉相关工具如 D3.js，G2, G6, Echarts，Mapbox.js 等，有深入的了解和相关项目作品可加分；</li><li>熟悉<strong>跨浏览器兼容性</strong>技术，熟悉<strong>响应式布局</strong>和<strong>多屏幕尺寸适配</strong>技术，熟悉<strong>跨终端、跨浏览器的开发</strong>模式；    </li><li>对<strong>跨端框架</strong>及解决方案有深入了解者优先；</li><li>实际<strong>动手能力</strong>强，完成过一些<strong>作品或者其他相关</strong>产出；</li><li>能够与产品经理配合，完成整个<strong>模块的设计</strong>；</li><li>能够<strong>与后端工程师深度配合</strong>完成开发，同时注重网站性能，用户代码的可维护性以及用户体验；</li><li>能够独立开发通用的UI组件，有<strong>UI组件开发经验</strong>优先；</li><li><strong>参与或贡献过开源项目</strong>的同学加分；</li><li>有编程实习经历优先；</li><li>具备良好的<strong>沟通协作和解决问题</strong>能力，热爱技术，责任心强；</li><li>积极乐观，认真负责，乐于协作；</li></ul>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;h1 id=&quot;实习生要求&quot;&gt;&lt;a href=&quot;#实习生要求&quot; class=&quot;headerlink&quot; title=&quot;实习生要求&quot;&gt;&lt;/a&gt;&lt;strong&gt;实习生要求&lt;/strong&gt;&lt;/h1&gt;&lt;ul&gt;
+&lt;li&gt;在校本科或硕士研究生，计算机，软件工程相关专业优先，本科以上学历，保证
+      
+    
+    </summary>
+    
+    
+      <category term="前端开发" scheme="http://yoursite.com/categories/%E5%89%8D%E7%AB%AF%E5%BC%80%E5%8F%91/"/>
+    
+    
+      <category term="Web前端" scheme="http://yoursite.com/tags/Web%E5%89%8D%E7%AB%AF/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>前端开发学习笔记</title>
+    <link href="http://yoursite.com/2020/09/16/Web_Summary/"/>
+    <id>http://yoursite.com/2020/09/16/Web_Summary/</id>
+    <published>2020-09-16T11:47:14.208Z</published>
+    <updated>2020-09-16T14:29:10.789Z</updated>
+    
+    <content type="html"><![CDATA[<h1 id="HTML-CSS基础"><a href="#HTML-CSS基础" class="headerlink" title="HTML/CSS基础"></a><strong>HTML/CSS基础</strong></h1><h2 id="软件架构"><a href="#软件架构" class="headerlink" title="软件架构"></a>软件架构</h2><h3 id="C-S架构（Client-Server）"><a href="#C-S架构（Client-Server）" class="headerlink" title="C/S架构（Client/Server）"></a>C/S架构（Client/Server）</h3><ul><li>一般软件的架构，如QQ，微信</li><li>特点：使用前需安装；软件更新时Client和Server端均需更新；C/S架构的软件<strong>不能跨平台使用</strong>；C/S架构的Client和Server通信采用的是<strong>自有协议</strong>，相对安全；</li></ul><h3 id="B-S架构（Browser-Server）"><a href="#B-S架构（Browser-Server）" class="headerlink" title="B/S架构（Browser/Server）"></a>B/S架构（Browser/Server）</h3><ul><li>本质上也是C/S，只是采用B/S架构的软件，使用浏览器作为客户端</li><li>通过浏览器访问网页的形式来使用软件，如微博，知乎</li><li>特点：使用无需安装，只需访问指定网址即可；软件更新时，客户端无需更新；<strong>可跨平台使用</strong>；B/S架构的Client和Server通信采用的是<strong>HTTP协议</strong>（或加入安全套接字后的<strong>HTTPS协议</strong>），安全性不如C/S架构；<br>总结：B/S开发的成本较C/S低，通用性更低，维护更方便，但是安全性较低</li></ul><h2 id="软件开发流程"><a href="#软件开发流程" class="headerlink" title="软件开发流程"></a>软件开发流程</h2><ul><li>需求分析 -&gt; 网页设计（Photoshop） -&gt; 静态网页实现（HTML等） -&gt; 动态网页（JSP/PHP）</li><li>前端任务：按照网页设计相关设计初步实现页面，为后端提供相关接口以实现数据更新</li><li>结构（HTML）、表现（CSS）、行为（Javascript）</li></ul><h2 id="HTML基础"><a href="#HTML基础" class="headerlink" title="HTML基础"></a>HTML基础</h2><ul><li><p><strong>HTML</strong><br>Hypertext Markup Language<br>纯文本：只保存文本内容；<br>超文本：能够保存文本、图片、音频、视频等内容；标记：标签<br>文本编辑器：记事本、Notepad++、Sublime text </p></li><li><p><strong>注释代码</strong></p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&lt;!--在这里注释--&gt;</span><br></pre></td></tr></table></figure></li><li><p><strong>文档声明（</strong>一定要声明<strong>）</strong><br>HTML标准：HTML4、XHTML1.0、HTML5；如何定义超文本文件的标准供浏览器区分？DOCTYPE！</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">HTML4文件声明（以严格版为例）：</span><br><span class="line">&lt;!DOCTYPE HTML PUBLIC &quot;-&#x2F;&#x2F;W3C&#x2F;&#x2F;DTD HTML 4.01&#x2F;&#x2F;EN&quot; &quot;http:&#x2F;&#x2F;www.w3.org&#x2F;TR&#x2F;html4&#x2F;strict.dtd&quot;&gt;</span><br><span class="line">XHTML1.0文件声明（以严格版为例）：</span><br><span class="line">&lt;!DOCTYPE html PUBLIC &quot;-&#x2F;&#x2F;W3C&#x2F;&#x2F;DTD XHTML 1.0 Strict&#x2F;&#x2F;EN&quot; &quot;http:&#x2F;&#x2F;www.w3.org&#x2F;TR&#x2F;xhtml&#x2F;DTD&#x2F;xhtml1-strict.dtd&quot;&gt;</span><br><span class="line">HTML5文件声明：</span><br><span class="line">&lt;!DOCTYPE html&gt;</span><br></pre></td></tr></table></figure></li><li><p><strong>HTML文件预览出现乱码</strong><br>根本原因：编码和解码采用的字符集不同<br>字符集：编码和解码所采用的规则，常见的字符集有：ASCII、ISO-8859-1、GBK(国标码)、GB2312(中文系统的默认编码)、UTF-8(万国码)<br>乱码原因：文本编辑器一般采用的编码规则为UTF-8，而中文系统的浏览器默认为GB2312的规则进行解码<br>解决方法：（1）修改文本编辑器编码方式为GB2312；（2）修改浏览器解码方式为Unicode；（3）在head标签中添加如下代码</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&lt;meta charset&#x3D;&quot;utf-8&quot;&gt;</span><br></pre></td></tr></table></figure></li><li><p><strong>常用标签说明</strong></p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">六级标题标签：h1-h6，显示效果依次减小，在搜索引擎中的重要程度依次降低，一般网页中只有一个h1（最重要），且常用h1-h3</span><br><span class="line">段落标签：p，p标签中的文字默认独占一行，且代码中的换行或多个空格会解析成一个空格</span><br><span class="line">换行标签：br，属于自结束标签，即&lt;br &#x2F;&gt;</span><br><span class="line">水平线标签：hr，生成一条水平线，属于自结束标签，即&lt;hr &#x2F;&gt;</span><br><span class="line">转义字符（实体）&#39;&lt;&#39;:(&lt;)、&#39;&gt;&#39;:(&gt;)、&#39; &#39;:(&amp;nbsp;)、版权声明：(&amp;copy;)</span><br></pre></td></tr></table></figure></li></ul>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;h1 id=&quot;HTML-CSS基础&quot;&gt;&lt;a href=&quot;#HTML-CSS基础&quot; class=&quot;headerlink&quot; title=&quot;HTML/CSS基础&quot;&gt;&lt;/a&gt;&lt;strong&gt;HTML/CSS基础&lt;/strong&gt;&lt;/h1&gt;&lt;h2 id=&quot;软件架构&quot;&gt;&lt;a href=&quot;#
+      
+    
+    </summary>
+    
+    
+      <category term="学习笔记" scheme="http://yoursite.com/categories/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/"/>
+    
+    
+      <category term="Web前端" scheme="http://yoursite.com/tags/Web%E5%89%8D%E7%AB%AF/"/>
+    
+  </entry>
   
   <entry>
     <title>（持续更新中...）认真地做一个“马来人”——Web前端部分</title>
@@ -65,15 +118,15 @@
       <category term="图像分割" scheme="http://yoursite.com/categories/%E5%9B%BE%E5%83%8F%E5%88%86%E5%89%B2/"/>
     
     
-      <category term="Pytorch" scheme="http://yoursite.com/tags/Pytorch/"/>
+      <category term="深度学习" scheme="http://yoursite.com/tags/%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0/"/>
     
       <category term="网络模型" scheme="http://yoursite.com/tags/%E7%BD%91%E7%BB%9C%E6%A8%A1%E5%9E%8B/"/>
+    
+      <category term="Pytorch" scheme="http://yoursite.com/tags/Pytorch/"/>
     
       <category term="图像分割" scheme="http://yoursite.com/tags/%E5%9B%BE%E5%83%8F%E5%88%86%E5%89%B2/"/>
     
       <category term="语义分割" scheme="http://yoursite.com/tags/%E8%AF%AD%E4%B9%89%E5%88%86%E5%89%B2/"/>
-    
-      <category term="深度学习" scheme="http://yoursite.com/tags/%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0/"/>
     
   </entry>
   
@@ -99,11 +152,11 @@
       <category term="网络结构" scheme="http://yoursite.com/categories/%E7%BD%91%E7%BB%9C%E7%BB%93%E6%9E%84/"/>
     
     
-      <category term="Pytorch" scheme="http://yoursite.com/tags/Pytorch/"/>
+      <category term="深度学习" scheme="http://yoursite.com/tags/%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0/"/>
     
       <category term="网络模型" scheme="http://yoursite.com/tags/%E7%BD%91%E7%BB%9C%E6%A8%A1%E5%9E%8B/"/>
     
-      <category term="深度学习" scheme="http://yoursite.com/tags/%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0/"/>
+      <category term="Pytorch" scheme="http://yoursite.com/tags/Pytorch/"/>
     
   </entry>
   
@@ -130,11 +183,11 @@
       <category term="模型评估" scheme="http://yoursite.com/categories/%E6%A8%A1%E5%9E%8B%E8%AF%84%E4%BC%B0/"/>
     
     
+      <category term="深度学习" scheme="http://yoursite.com/tags/%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0/"/>
+    
       <category term="网络模型" scheme="http://yoursite.com/tags/%E7%BD%91%E7%BB%9C%E6%A8%A1%E5%9E%8B/"/>
     
       <category term="评价指标" scheme="http://yoursite.com/tags/%E8%AF%84%E4%BB%B7%E6%8C%87%E6%A0%87/"/>
-    
-      <category term="深度学习" scheme="http://yoursite.com/tags/%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0/"/>
     
   </entry>
   
@@ -160,13 +213,13 @@
       <category term="网络结构" scheme="http://yoursite.com/categories/%E7%BD%91%E7%BB%9C%E7%BB%93%E6%9E%84/"/>
     
     
-      <category term="Pytorch" scheme="http://yoursite.com/tags/Pytorch/"/>
+      <category term="深度学习" scheme="http://yoursite.com/tags/%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0/"/>
     
       <category term="网络模型" scheme="http://yoursite.com/tags/%E7%BD%91%E7%BB%9C%E6%A8%A1%E5%9E%8B/"/>
     
-      <category term="图像分割" scheme="http://yoursite.com/tags/%E5%9B%BE%E5%83%8F%E5%88%86%E5%89%B2/"/>
+      <category term="Pytorch" scheme="http://yoursite.com/tags/Pytorch/"/>
     
-      <category term="深度学习" scheme="http://yoursite.com/tags/%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0/"/>
+      <category term="图像分割" scheme="http://yoursite.com/tags/%E5%9B%BE%E5%83%8F%E5%88%86%E5%89%B2/"/>
     
   </entry>
   
@@ -192,11 +245,11 @@
       <category term="参考文献" scheme="http://yoursite.com/categories/%E5%8F%82%E8%80%83%E6%96%87%E7%8C%AE/"/>
     
     
+      <category term="深度学习" scheme="http://yoursite.com/tags/%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0/"/>
+    
       <category term="网络模型" scheme="http://yoursite.com/tags/%E7%BD%91%E7%BB%9C%E6%A8%A1%E5%9E%8B/"/>
     
       <category term="参考文献" scheme="http://yoursite.com/tags/%E5%8F%82%E8%80%83%E6%96%87%E7%8C%AE/"/>
-    
-      <category term="深度学习" scheme="http://yoursite.com/tags/%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0/"/>
     
   </entry>
   
@@ -223,13 +276,13 @@
       <category term="网络结构" scheme="http://yoursite.com/categories/%E7%BD%91%E7%BB%9C%E7%BB%93%E6%9E%84/"/>
     
     
-      <category term="图像分类" scheme="http://yoursite.com/tags/%E5%9B%BE%E5%83%8F%E5%88%86%E7%B1%BB/"/>
+      <category term="深度学习" scheme="http://yoursite.com/tags/%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0/"/>
     
-      <category term="Pytorch" scheme="http://yoursite.com/tags/Pytorch/"/>
+      <category term="图像分类" scheme="http://yoursite.com/tags/%E5%9B%BE%E5%83%8F%E5%88%86%E7%B1%BB/"/>
     
       <category term="网络模型" scheme="http://yoursite.com/tags/%E7%BD%91%E7%BB%9C%E6%A8%A1%E5%9E%8B/"/>
     
-      <category term="深度学习" scheme="http://yoursite.com/tags/%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0/"/>
+      <category term="Pytorch" scheme="http://yoursite.com/tags/Pytorch/"/>
     
   </entry>
   
@@ -280,6 +333,8 @@
     
     
     
+      <category term="深度学习" scheme="http://yoursite.com/tags/%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0/"/>
+    
       <category term="Pytorch" scheme="http://yoursite.com/tags/Pytorch/"/>
     
       <category term="环境配置" scheme="http://yoursite.com/tags/%E7%8E%AF%E5%A2%83%E9%85%8D%E7%BD%AE/"/>
@@ -287,8 +342,6 @@
       <category term="Conda" scheme="http://yoursite.com/tags/Conda/"/>
     
       <category term="Jupyter" scheme="http://yoursite.com/tags/Jupyter/"/>
-    
-      <category term="深度学习" scheme="http://yoursite.com/tags/%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0/"/>
     
   </entry>
   
@@ -314,13 +367,13 @@
       <category term="网络结构" scheme="http://yoursite.com/categories/%E7%BD%91%E7%BB%9C%E7%BB%93%E6%9E%84/"/>
     
     
+      <category term="深度学习" scheme="http://yoursite.com/tags/%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0/"/>
+    
       <category term="图像分类" scheme="http://yoursite.com/tags/%E5%9B%BE%E5%83%8F%E5%88%86%E7%B1%BB/"/>
     
       <category term="网络模型" scheme="http://yoursite.com/tags/%E7%BD%91%E7%BB%9C%E6%A8%A1%E5%9E%8B/"/>
     
       <category term="Keras" scheme="http://yoursite.com/tags/Keras/"/>
-    
-      <category term="深度学习" scheme="http://yoursite.com/tags/%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0/"/>
     
   </entry>
   
