@@ -29,7 +29,7 @@
 <meta property="og:description" content="HTML&#x2F;CSS基础软件架构C&#x2F;S架构（Client&#x2F;Server） 一般软件的架构，如QQ，微信 特点：使用前需安装；软件更新时Client和Server端均需更新；C&#x2F;S架构的软件不能跨平台使用；C&#x2F;S架构的Client和Server通信采用的是自有协议，相对安全；  B&#x2F;S架构（Browser&#x2F;Server） 本质上也是C&#x2F;S，只是采用B&#x2F;S架构的软件，使用浏览器作为客户端 通过浏览器访问网">
 <meta property="og:locale" content="en_US">
 <meta property="article:published_time" content="2020-09-16T11:47:14.208Z">
-<meta property="article:modified_time" content="2020-09-16T14:29:10.789Z">
+<meta property="article:modified_time" content="2020-09-17T13:28:39.877Z">
 <meta property="article:author" content="SvyJ">
 <meta property="article:tag" content="Web前端">
 <meta name="twitter:card" content="summary">
@@ -167,7 +167,7 @@
     <aside class="post-widget">
         <nav class="post-toc-wrap post-toc-shrink" id="post-toc">
             <h4>TOC</h4>
-            <ol class="post-toc"><li class="post-toc-item post-toc-level-1"><a class="post-toc-link" href="#HTML-CSS基础"><span class="post-toc-number">1.</span> <span class="post-toc-text">HTML&#x2F;CSS基础</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#软件架构"><span class="post-toc-number">1.1.</span> <span class="post-toc-text">软件架构</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#C-S架构（Client-Server）"><span class="post-toc-number">1.1.1.</span> <span class="post-toc-text">C&#x2F;S架构（Client&#x2F;Server）</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#B-S架构（Browser-Server）"><span class="post-toc-number">1.1.2.</span> <span class="post-toc-text">B&#x2F;S架构（Browser&#x2F;Server）</span></a></li></ol></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#软件开发流程"><span class="post-toc-number">1.2.</span> <span class="post-toc-text">软件开发流程</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#HTML基础"><span class="post-toc-number">1.3.</span> <span class="post-toc-text">HTML基础</span></a></li></ol></li></ol>
+            <ol class="post-toc"><li class="post-toc-item post-toc-level-1"><a class="post-toc-link" href="#HTML-CSS基础"><span class="post-toc-number">1.</span> <span class="post-toc-text">HTML&#x2F;CSS基础</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#软件架构"><span class="post-toc-number">1.1.</span> <span class="post-toc-text">软件架构</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#C-S架构（Client-Server）"><span class="post-toc-number">1.1.1.</span> <span class="post-toc-text">C&#x2F;S架构（Client&#x2F;Server）</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#B-S架构（Browser-Server）"><span class="post-toc-number">1.1.2.</span> <span class="post-toc-text">B&#x2F;S架构（Browser&#x2F;Server）</span></a></li></ol></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#软件开发流程"><span class="post-toc-number">1.2.</span> <span class="post-toc-text">软件开发流程</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#HTML基础"><span class="post-toc-number">1.3.</span> <span class="post-toc-text">HTML基础</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#CSS基础"><span class="post-toc-number">1.4.</span> <span class="post-toc-text">CSS基础</span></a></li></ol></li></ol>
         </nav>
     </aside>
 
@@ -220,9 +220,49 @@
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&lt;meta charset&#x3D;&quot;utf-8&quot;&gt;</span><br></pre></td></tr></table></figure>
 </li>
 <li><p><strong>常用标签说明</strong></p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">六级标题标签：h1-h6，显示效果依次减小，在搜索引擎中的重要程度依次降低，一般网页中只有一个h1（最重要），且常用h1-h3</span><br><span class="line">段落标签：p，p标签中的文字默认独占一行，且代码中的换行或多个空格会解析成一个空格</span><br><span class="line">换行标签：br，属于自结束标签，即&lt;br &#x2F;&gt;</span><br><span class="line">水平线标签：hr，生成一条水平线，属于自结束标签，即&lt;hr &#x2F;&gt;</span><br><span class="line">转义字符（实体）&#39;&lt;&#39;:(&lt;)、&#39;&gt;&#39;:(&gt;)、&#39; &#39;:(&amp;nbsp;)、版权声明：(&amp;copy;)</span><br></pre></td></tr></table></figure></li>
+</li>
+<li><p>六级标题标签h1-h6<br>显示效果依次减小，在搜索引擎中的重要程度依次降低，一般网页中只有一个h1（最重要），且常用h1-h3</p>
+</li>
+<li><p>段落标签p<br>p标签中的文字默认独占一行，且代码中的换行或多个空格会解析成一个空格</p>
+</li>
+<li><p>换行标签br<br>属于自结束标签，即</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&lt;br &#x2F;&gt;或&lt;br&gt;</span><br></pre></td></tr></table></figure></li>
+<li><p>水平线标签hr<br>生成一条水平线，属于自结束标签，即</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&lt;hr &#x2F;&gt;</span><br></pre></td></tr></table></figure></li>
+<li><p>转义字符（实体）</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&#39;&lt;&#39;:(&lt;)、&#39;&gt;&#39;:(&gt;)、&#39; &#39;:(&amp;nbsp;)、版权声明：(&amp;copy;)</span><br></pre></td></tr></table></figure></li>
+<li><p>图片标签img<br>属于自结束标签，如</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&lt;img src&#x3D;&quot;1.jpg&quot; alt&#x3D;&quot;这是一幅图&quot; width&#x3D;&quot;200px&quot; height&#x3D;&quot;100px&quot; &#x2F;&gt;</span><br></pre></td></tr></table></figure>
+<p>（注：src支持jpg（此格式支持颜色丰富，图片可压缩，但不支持透明）、gif（此格式支持颜色较少，支持简单透明，支持动态图）、png（此格式支持颜色丰富，支持复杂透明）三种格式的图片，<strong>格式选取原则：效果不一致时选取效果好的，效果一致时选取占用内存小的</strong>；搜索引擎可以收录并通过alt属性识别不同的图片；宽度和高度如果只设置一个，另一个会按比例变化）</p>
+</li>
+<li><p>元数据标签meta<br>meta，用于规定页面的描述、关键词、文档的作者、最后修改时间以及其他元数据，用于搜索引擎的检索。<br>定义页面描述</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&lt;meta name&#x3D;&quot;description&quot; content&#x3D;&quot;Free Web tutorials on HTML, CSS, XML&quot; &#x2F;&gt;</span><br></pre></td></tr></table></figure>
+<p>定义页面关键字</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&lt;meta name&#x3D;&quot;keywords&quot; content&#x3D;&quot;HTML, CSS, XML&quot; &#x2F;&gt;</span><br></pre></td></tr></table></figure>
+<p>用于网页请求的重定向</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&lt;meta http-equiv&#x3D;&quot;refresh&quot; content&#x3D;&quot;5;url&#x3D;http:&#x2F;&#x2F;www.baidu.com&quot; &#x2F;&gt;</span><br></pre></td></tr></table></figure></li>
+<li><p>内联框架iframe</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&lt;iframe src&#x3D;&quot;test.html&quot; name&#x3D;&quot;tom&quot;&gt;&lt;&#x2F;iframe&gt;</span><br></pre></td></tr></table></figure></li>
+<li><p>超链接标签a</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">&lt;a href&#x3D;&quot;http:&#x2F;&#x2F;www.baidu.com&quot; target&#x3D;&quot;tom&quot;&gt;百度一下&lt;&#x2F;a&gt; # 在内联框架中打开超链接页面</span><br><span class="line">跳转到页面顶部示例</span><br><span class="line">&lt;a href&#x3D;&quot;#&quot;&gt;回顶部&lt;&#x2F;a&gt;</span><br><span class="line">跳转到页面底部示例</span><br><span class="line">&lt;a href&#x3D;&quot;#bottom&quot;&gt;去底部&lt;&#x2F;a&gt; # bottom为底部元素的id</span><br></pre></td></tr></table></figure></li>
+<li><p>居中标签center<br>center标签中的内容会默认在页面中居中显示（不常用，一般利用CSS布局）</p>
+</li>
+<li><p><strong>XHTML的语法规范</strong><br>注：XHTML的语法规范最严格，因此按照此规范</p>
+</li>
+<li><p>HTML中不区分大小写</p>
+</li>
+<li><p>HTML中的注释不能嵌套使用</p>
+</li>
+<li><p>HTML标签结构必须完整，成对or自结束</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">正确：&lt;p&gt;内容&lt;&#x2F;p&gt;</span><br><span class="line">错误：&lt;p&gt;内容</span><br></pre></td></tr></table></figure>
+<p>两种写法在显示上都正确！原因是：浏览器会<strong>尽最大努力正确地解析页面</strong>，不符合语法规范的内容浏览器都会<strong>自动修正</strong>（可通过查看页面布局F12来查看修正结果）。但某些情况下不会修正，因此<strong>必须规范代码</strong>！</p>
+</li>
+<li><p>HTML标签可以嵌套，但不可以交叉嵌套</p>
+</li>
+<li><p>HTML标签中的属性值不能为空，且必须加引号</p>
+</li>
 </ul>
-
+<h2 id="CSS基础"><a href="#CSS基础" class="headerlink" title="CSS基础"></a>CSS基础</h2>
         </div>
 
         <blockquote class="post-copyright">
@@ -230,7 +270,7 @@
     <div class="content">
         
 <span class="post-time">
-    Last updated: <time datetime="2020-09-16T14:29:10.789Z" itemprop="dateUpdated">2020-09-16 22:29:10</time>
+    Last updated: <time datetime="2020-09-17T13:28:39.877Z" itemprop="dateUpdated">2020-09-17 21:28:39</time>
 </span><br>
 
 
