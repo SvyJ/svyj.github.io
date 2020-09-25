@@ -1,0 +1,637 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+
+    
+
+    
+
+
+
+    <meta charset="utf-8">
+    
+    
+    
+    
+    <title>U-Net系列文献综述 | SvyJ | 研究方向：智能医学影像、计算机视觉</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    
+    <meta name="theme-color" content="#3F51B5">
+    
+    
+    <meta name="keywords" content="深度学习,图像分割">
+    <meta name="description" content="U-NetContribution 更规整的网络结构 通过将编码器的每层结果拼接到译码器中得到更好的结果  Architecture                                                                                             U-Net               3D U-NetArchitecture">
+<meta property="og:type" content="article">
+<meta property="og:title" content="U-Net系列文献综述">
+<meta property="og:url" content="http://yoursite.com/2020/09/18/UNet_Family/index.html">
+<meta property="og:site_name" content="SvyJ">
+<meta property="og:description" content="U-NetContribution 更规整的网络结构 通过将编码器的每层结果拼接到译码器中得到更好的结果  Architecture                                                                                             U-Net               3D U-NetArchitecture">
+<meta property="og:locale" content="en_US">
+<meta property="og:image" content="http://yoursite.com/images/UNets/UNet.png">
+<meta property="og:image" content="http://yoursite.com/images/UNets/3D_UNet.png">
+<meta property="og:image" content="http://yoursite.com/images/UNets/UNet++.png">
+<meta property="og:image" content="http://yoursite.com/images/UNets/Res_UNet.png">
+<meta property="og:image" content="http://yoursite.com/images/UNets/MultiRes_UNet.png">
+<meta property="og:image" content="http://yoursite.com/images/UNets/MultiRes_UNet_MultiBlock.png">
+<meta property="og:image" content="http://yoursite.com/images/UNets/MultiRes_UNet_ResPath.png">
+<meta property="og:image" content="http://yoursite.com/images/UNets/UNet_3+.png">
+<meta property="og:image" content="http://yoursite.com/images/UNets/MS_SSIM_Loss.png">
+<meta property="article:published_time" content="2020-09-18T09:04:13.286Z">
+<meta property="article:modified_time" content="2020-09-19T08:35:11.589Z">
+<meta property="article:author" content="SvyJ">
+<meta property="article:tag" content="深度学习">
+<meta property="article:tag" content="图像分割">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="http://yoursite.com/images/UNets/UNet.png">
+    
+        <link rel="alternate" type="application/atom+xml" title="SvyJ" href="/atom.xml">
+    
+    <link rel="shortcut icon" href="/favicon.ico">
+    <link rel="stylesheet" href="//unpkg.com/hexo-theme-material-indigo@latest/css/style.css">
+    <script>window.lazyScripts=[]</script>
+
+    <!-- custom head -->
+    
+
+<meta name="generator" content="Hexo 4.2.1"></head>
+
+<body>
+    <div id="loading" class="active"></div>
+
+    <aside id="menu" class="hide" >
+  <div class="inner flex-row-vertical">
+    <a href="javascript:;" class="header-icon waves-effect waves-circle waves-light" id="menu-off">
+        <i class="icon icon-lg icon-close"></i>
+    </a>
+    <div class="brand-wrap" style="background-image:url(/img/warriors.jpg)">
+      <div class="brand">
+        <a href="/" class="avatar waves-effect waves-circle waves-light">
+          <img src="/img/Curry.png">
+        </a>
+        <hgroup class="introduce">
+          <h5 class="nickname">SvyJ</h5>
+          <a href="mailto:研一，1746772378@qq.com" title="研一，1746772378@qq.com" class="mail">研一，1746772378@qq.com</a>
+        </hgroup>
+      </div>
+    </div>
+    <div class="scroll-wrap flex-col">
+      <ul class="nav">
+        
+            <li class="waves-block waves-effect">
+              <a href="/"  >
+                <i class="icon icon-lg icon-home"></i>
+                主页
+              </a>
+            </li>
+        
+            <li class="waves-block waves-effect">
+              <a href="/archives"  >
+                <i class="icon icon-lg icon-archives"></i>
+                归档
+              </a>
+            </li>
+        
+            <li class="waves-block waves-effect">
+              <a href="/tags"  >
+                <i class="icon icon-lg icon-tags"></i>
+                标签
+              </a>
+            </li>
+        
+            <li class="waves-block waves-effect">
+              <a href="/categories"  >
+                <i class="icon icon-lg icon-th-list"></i>
+                分类
+              </a>
+            </li>
+        
+            <li class="waves-block waves-effect">
+              <a href="https://github.com/SvyJ" target="_blank" >
+                <i class="icon icon-lg icon-github"></i>
+                Github
+              </a>
+            </li>
+        
+            <li class="waves-block waves-effect">
+              <a href="https://blog.csdn.net/qq_37350078" target="_blank" >
+                <i class="icon icon-lg icon-link"></i>
+                CSDN
+              </a>
+            </li>
+        
+      </ul>
+    </div>
+  </div>
+</aside>
+
+    <main id="main">
+        <header class="top-header" id="header">
+    <div class="flex-row">
+        <a href="javascript:;" class="header-icon waves-effect waves-circle waves-light on" id="menu-toggle">
+          <i class="icon icon-lg icon-navicon"></i>
+        </a>
+        <div class="flex-col header-title ellipsis">U-Net系列文献综述</div>
+        
+        <div class="search-wrap" id="search-wrap">
+            <a href="javascript:;" class="header-icon waves-effect waves-circle waves-light" id="back">
+                <i class="icon icon-lg icon-chevron-left"></i>
+            </a>
+            <input type="text" id="key" class="search-input" autocomplete="off" placeholder="Search">
+            <a href="javascript:;" class="header-icon waves-effect waves-circle waves-light" id="search">
+                <i class="icon icon-lg icon-search"></i>
+            </a>
+        </div>
+        
+        
+        <a href="javascript:;" class="header-icon waves-effect waves-circle waves-light" id="menuShare">
+            <i class="icon icon-lg icon-share-alt"></i>
+        </a>
+        
+    </div>
+</header>
+<header class="content-header post-header">
+
+    <div class="container fade-scale">
+        <h1 class="title">U-Net系列文献综述</h1>
+        <h5 class="subtitle">
+            
+                <time datetime="2020-09-18T09:04:13.286Z" itemprop="datePublished" class="page-time">
+  2020-09-18
+</time>
+
+
+	<ul class="article-category-list"><li class="article-category-list-item"><a class="article-category-list-link" href="/categories/%E5%9B%BE%E5%83%8F%E5%88%86%E5%89%B2/">图像分割</a></li></ul>
+
+            
+        </h5>
+    </div>
+
+    
+
+
+</header>
+
+
+<div class="container body-wrap">
+    
+    <aside class="post-widget">
+        <nav class="post-toc-wrap post-toc-shrink" id="post-toc">
+            <h4>TOC</h4>
+            <ol class="post-toc"><li class="post-toc-item post-toc-level-1"><a class="post-toc-link" href="#U-Net"><span class="post-toc-number">1.</span> <span class="post-toc-text">U-Net</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#Contribution"><span class="post-toc-number">1.0.1.</span> <span class="post-toc-text">Contribution</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#Architecture"><span class="post-toc-number">1.0.2.</span> <span class="post-toc-text">Architecture</span></a></li></ol></li></ol></li><li class="post-toc-item post-toc-level-1"><a class="post-toc-link" href="#3D-U-Net"><span class="post-toc-number">2.</span> <span class="post-toc-text">3D U-Net</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#Architecture-1"><span class="post-toc-number">2.0.1.</span> <span class="post-toc-text">Architecture</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#Tricks"><span class="post-toc-number">2.0.2.</span> <span class="post-toc-text">Tricks</span></a></li></ol></li></ol></li><li class="post-toc-item post-toc-level-1"><a class="post-toc-link" href="#U-Net-1"><span class="post-toc-number">3.</span> <span class="post-toc-text">U-Net++</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#Architecture-2"><span class="post-toc-number">3.0.1.</span> <span class="post-toc-text">Architecture</span></a></li></ol></li></ol></li><li class="post-toc-item post-toc-level-1"><a class="post-toc-link" href="#Res-U-Net"><span class="post-toc-number">4.</span> <span class="post-toc-text">Res U-Net</span></a></li><li class="post-toc-item post-toc-level-1"><a class="post-toc-link" href="#MultiRes-U-Net"><span class="post-toc-number">5.</span> <span class="post-toc-text">MultiRes U-Net</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#Contribution-1"><span class="post-toc-number">5.0.1.</span> <span class="post-toc-text">Contribution</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#Architecture-3"><span class="post-toc-number">5.0.2.</span> <span class="post-toc-text">Architecture</span></a></li></ol></li></ol></li><li class="post-toc-item post-toc-level-1"><a class="post-toc-link" href="#R2-U-Net"><span class="post-toc-number">6.</span> <span class="post-toc-text">R2 U-Net</span></a></li><li class="post-toc-item post-toc-level-1"><a class="post-toc-link" href="#Attention-U-Net"><span class="post-toc-number">7.</span> <span class="post-toc-text">Attention U-Net</span></a></li><li class="post-toc-item post-toc-level-1"><a class="post-toc-link" href="#U-Net-3"><span class="post-toc-number">8.</span> <span class="post-toc-text">U-Net 3+</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#Contribution-2"><span class="post-toc-number">8.0.1.</span> <span class="post-toc-text">Contribution</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#Architecture-4"><span class="post-toc-number">8.0.2.</span> <span class="post-toc-text">Architecture</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#Tricks-1"><span class="post-toc-number">8.0.3.</span> <span class="post-toc-text">Tricks</span></a></li></ol></li></ol></li></ol>
+        </nav>
+    </aside>
+
+
+<article id="post-UNet_Family"
+  class="post-article article-type-post fade" itemprop="blogPost">
+
+    <div class="post-card">
+        <h1 class="post-card-title">U-Net系列文献综述</h1>
+        <div class="post-meta">
+            <time class="post-time" title="2020-09-18 17:04:13" datetime="2020-09-18T09:04:13.286Z"  itemprop="datePublished">2020-09-18</time>
+
+            
+	<ul class="article-category-list"><li class="article-category-list-item"><a class="article-category-list-link" href="/categories/%E5%9B%BE%E5%83%8F%E5%88%86%E5%89%B2/">图像分割</a></li></ul>
+
+
+
+            
+<span id="busuanzi_container_page_pv" title="文章总阅读量" style='display:none'>
+    <i class="icon icon-eye icon-pr"></i><span id="busuanzi_value_page_pv"></span>
+</span>
+
+
+        </div>
+        <div class="post-content" id="post-content" itemprop="postContent">
+            <h1 id="U-Net"><a href="#U-Net" class="headerlink" title="U-Net"></a><strong>U-Net</strong></h1><h3 id="Contribution"><a href="#Contribution" class="headerlink" title="Contribution"></a><strong>Contribution</strong></h3><ul>
+<li>更规整的网络结构</li>
+<li>通过将编码器的每层结果拼接到译码器中得到更好的结果</li>
+</ul>
+<h3 id="Architecture"><a href="#Architecture" class="headerlink" title="Architecture"></a><strong>Architecture</strong></h3><figure class="image-bubble">
+                <div class="img-lightbox">
+                    <div class="overlay"></div>
+                    <img src="/images/UNets/UNet.png" alt="U-Net" title="">
+                </div>
+                <div class="image-caption">U-Net</div>
+            </figure>
+
+<h1 id="3D-U-Net"><a href="#3D-U-Net" class="headerlink" title="3D U-Net"></a><strong>3D U-Net</strong></h1><h3 id="Architecture-1"><a href="#Architecture-1" class="headerlink" title="Architecture"></a><strong>Architecture</strong></h3><figure class="image-bubble">
+                <div class="img-lightbox">
+                    <div class="overlay"></div>
+                    <img src="/images/UNets/3D_UNet.png" alt="3D U-Net" title="">
+                </div>
+                <div class="image-caption">3D U-Net</div>
+            </figure>
+
+<h3 id="Tricks"><a href="#Tricks" class="headerlink" title="Tricks"></a>Tricks</h3><ul>
+<li>两种分割方式<br>（1）半自动分割<br>半自动分割网络允许用户输入几个注释的2维切片，来得到整个三维体的分割。在半自动分割方法中，使用了IoU指标作为精度度量，得出结论3D Unet能够从很少的带标注的切片中推广到非常精确的三维分割，而不需要太多的标注工作。<br>（2）全自动分割<br>已经有一个在具有代表性的训练集上（带注释的切片）进行训练得到的网络，用户可以使用这个网络在没有注释的体积卷上运行,来得到整个三维体的分割。</li>
+<li>通道数翻倍的时机和反卷积操作。在2D Unet中，通道数翻倍的时机在下采样后的第一次卷积时；而在3D Unet中，通道数翻倍发生在下采样或上采样前的卷积中。对于反卷积操作，区别在于通道数是否减半，2D Unet中通道数减半，而3D Unet中通道数不变。</li>
+<li>使用Batch Normalization来加快收敛和避免网络结构的瓶颈。</li>
+<li>使用了旋转、缩放和灰度增强等数据增强方法，此外在训练数据和正确标注数据上运用平滑的密集变形场，即从一个标准差为4的正态分布中抽取随机向量，每个方向的间距为32个体素，然后应用b样条插值。</li>
+<li>使用带加权交叉熵损失的softmax函数对网络输出和正确标注数据进行比较，对经常出现的背景减少权重，对标注到的图像数据部分增加权重，以平衡微管和背景体素对损失的影响。未标记的像素不参与损失计算，即权重为0。这样可以让网络可以更多地仅仅学习标注到的像素点，从而达到普适性地特点。</li>
+</ul>
+<h1 id="U-Net-1"><a href="#U-Net-1" class="headerlink" title="U-Net++"></a><strong>U-Net++</strong></h1><p>作者知乎解读：<a href="https://zhuanlan.zhihu.com/p/44958351" target="_blank" rel="noopener">https://zhuanlan.zhihu.com/p/44958351</a><br>小总结：<a href="https://blog.csdn.net/u013066730/article/details/84954229?biz_id=102&amp;utm_term=UNet++&amp;utm_medium=distribute.pc_search_result.none-task-blog-2~all~sobaiduweb~default-0-84954229&amp;spm=1018.2118.3001.4187" target="_blank" rel="noopener">https://blog.csdn.net/u013066730/article/details/84954229?biz_id=102&amp;utm_term=UNet++&amp;utm_medium=distribute.pc_search_result.none-task-blog-2~all~sobaiduweb~default-0-84954229&amp;spm=1018.2118.3001.4187</a></p>
+<h3 id="Architecture-2"><a href="#Architecture-2" class="headerlink" title="Architecture"></a>Architecture</h3><ul>
+<li>黑色部分代表的就是原始Unet结构,绿色代表添加的卷积层，蓝色代表改进的Skip Connection。</li>
+<li>以X(1,2)为例说明，它是由X(1,0)、X(1,1)和上采样后的X(2,1)拼接之后，再经过一次Conv与ReLU得到。<figure class="image-bubble">
+                <div class="img-lightbox">
+                    <div class="overlay"></div>
+                    <img src="/images/UNets/UNet++.png" alt="U-Net++" title="">
+                </div>
+                <div class="image-caption">U-Net++</div>
+            </figure>
+
+</li>
+</ul>
+<h1 id="Res-U-Net"><a href="#Res-U-Net" class="headerlink" title="Res U-Net"></a><strong>Res U-Net</strong></h1><figure class="image-bubble">
+                <div class="img-lightbox">
+                    <div class="overlay"></div>
+                    <img src="/images/UNets/Res_UNet.png" alt="Res U-Net" title="">
+                </div>
+                <div class="image-caption">Res U-Net</div>
+            </figure>
+
+<h1 id="MultiRes-U-Net"><a href="#MultiRes-U-Net" class="headerlink" title="MultiRes U-Net"></a><strong>MultiRes U-Net</strong></h1><h3 id="Contribution-1"><a href="#Contribution-1" class="headerlink" title="Contribution"></a><strong>Contribution</strong></h3><ul>
+<li>将u-net中的两个3X3的卷积替换成3X3，7X7卷积运算与5X5卷积运算并行合并，使用多分辨率思路替换传统卷积层。</li>
+<li>使用res path替换传统u-net中的简单的跳过连接。</li>
+<li>在具有挑战性的训练集有着卓越的提高。</li>
+</ul>
+<h3 id="Architecture-3"><a href="#Architecture-3" class="headerlink" title="Architecture"></a><strong>Architecture</strong></h3><figure class="image-bubble">
+                <div class="img-lightbox">
+                    <div class="overlay"></div>
+                    <img src="/images/UNets/MultiRes_UNet.png" alt="MultiRes U-Net" title="">
+                </div>
+                <div class="image-caption">MultiRes U-Net</div>
+            </figure>
+<ul>
+<li>MultiBlock<br>多分辨率分析来扩展U-Net的最简单方法是将3×3和7×7卷积运算与5×5卷积运算并行地合并，如图a所示。<br>论文中使用一系列更小，更轻便的3×3卷积块来分解更大，更苛刻的5×5和7×7卷积层，如图b所示。<br>2个3×3卷积块的输出有效地近似5×5卷积运算，3个3×3卷积块的输出有效地近似7×7卷积运算。<br>最终MultiResUnet使用了三个3X3的卷积替换了unet中的模块，并且引入了1X1卷积层，添加了剩余连接，使模型能够理解一些其他空间信息。<figure class="image-bubble">
+                <div class="img-lightbox">
+                    <div class="overlay"></div>
+                    <img src="/images/UNets/MultiRes_UNet_MultiBlock.png" alt="MultiRes U-Net中的模块详细结构" title="">
+                </div>
+                <div class="image-caption">MultiRes U-Net中的模块详细结构</div>
+            </figure></li>
+<li>Res Path<br>引入残差连接，不是简单地将特征图从编码器级连接到解码器级，而是先将它们<strong>穿过带有残差连接的卷积层链，然后再与解码器特征连接</strong>。<figure class="image-bubble">
+                <div class="img-lightbox">
+                    <div class="overlay"></div>
+                    <img src="/images/UNets/MultiRes_UNet_ResPath.png" alt="MultiRes U-Net中的Residual Path" title="">
+                </div>
+                <div class="image-caption">MultiRes U-Net中的Residual Path</div>
+            </figure>
+
+</li>
+</ul>
+<h1 id="R2-U-Net"><a href="#R2-U-Net" class="headerlink" title="R2 U-Net"></a><strong>R2 U-Net</strong></h1><h1 id="Attention-U-Net"><a href="#Attention-U-Net" class="headerlink" title="Attention U-Net"></a><strong>Attention U-Net</strong></h1><h1 id="U-Net-3"><a href="#U-Net-3" class="headerlink" title="U-Net 3+"></a><strong>U-Net 3+</strong></h1><h3 id="Contribution-2"><a href="#Contribution-2" class="headerlink" title="Contribution"></a>Contribution</h3><ul>
+<li>设计了一种新的网络结构U-Net3+，通过引入全尺度的跳过连接，在全尺度特征映射中融合了低层细节和高层语义，充分利用了多尺度特征的同时具有更少的参数；</li>
+<li>通过深度监督让网络从全尺度特征中学习分割表示，提出了更优的混合损失函数以增强器官的边界；</li>
+<li>提出分类指导模块，通过与图像分类分支联合训练的方式，减少了网络在非器官图像的过度分割（Over-Segmentation）；</li>
+<li>在肝脏和脾脏数据集上进行了广泛的实验，证明了U-Net 3+的有效性。</li>
+</ul>
+<h3 id="Architecture-4"><a href="#Architecture-4" class="headerlink" title="Architecture"></a>Architecture</h3><figure class="image-bubble">
+                <div class="img-lightbox">
+                    <div class="overlay"></div>
+                    <img src="/images/UNets/UNet_3+.png" alt="UNet(a)，UNet++(b)，UNet 3+(c)" title="">
+                </div>
+                <div class="image-caption">UNet(a)，UNet++(b)，UNet 3+(c)</div>
+            </figure>
+
+<h3 id="Tricks-1"><a href="#Tricks-1" class="headerlink" title="Tricks"></a>Tricks</h3><p>UNET 3+论文笔记：<a href="https://zhuanlan.zhihu.com/p/134119120" target="_blank" rel="noopener">https://zhuanlan.zhihu.com/p/134119120</a></p>
+<ul>
+<li>全尺度跳过连接</li>
+<li>全尺度的深度监督<br>为了进一步<strong>优化网络对图像边界的分割</strong>，文章借鉴了图像质量评估中常用的多尺度SSIM（MS-SSIM）提出了MS-SSIM loss。本文最终采用了混合损失函数（Focal Loss，MS_SSIM_Loss和iou loss）来对各层进行监督。<figure class="image-bubble">
+                <div class="img-lightbox">
+                    <div class="overlay"></div>
+                    <img src="/images/UNets/MS_SSIM_Loss.png" alt="MS_SSIM_Loss" title="">
+                </div>
+                <div class="image-caption">MS_SSIM_Loss</div>
+            </figure></li>
+<li>分类指导模块（CGM）</li>
+</ul>
+
+        </div>
+
+        <blockquote class="post-copyright">
+    
+    <div class="content">
+        
+<span class="post-time">
+    Last updated: <time datetime="2020-09-19T08:35:11.589Z" itemprop="dateUpdated">2020-09-19 16:35:11</time>
+</span><br>
+
+
+        
+        如果该文章对你有用，不如点个赞或者打赏一下~~~
+        
+    </div>
+    
+    <footer>
+        <a href="http://yoursite.com">
+            <img src="/img/Curry.png" alt="SvyJ">
+            SvyJ
+        </a>
+    </footer>
+</blockquote>
+
+        
+<div class="page-reward">
+    <a id="rewardBtn" href="javascript:;" class="page-reward-btn waves-effect waves-circle waves-light">赏</a>
+</div>
+
+
+
+        <div class="post-footer">
+            
+	<ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/%E5%9B%BE%E5%83%8F%E5%88%86%E5%89%B2/" rel="tag">图像分割</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0/" rel="tag">深度学习</a></li></ul>
+
+
+            
+<div class="page-share-wrap">
+    
+
+<div class="page-share" id="pageShare">
+    <ul class="reset share-icons">
+      <li>
+        <a class="weibo share-sns" target="_blank" href="http://service.weibo.com/share/share.php?url=http://yoursite.com/2020/09/18/UNet_Family/&title=《U-Net系列文献综述》 — SvyJ&pic=http://yoursite.com/img/Curry.png" data-title="微博">
+          <i class="icon icon-weibo"></i>
+        </a>
+      </li>
+      <li>
+        <a class="weixin share-sns wxFab" href="javascript:;" data-title="微信">
+          <i class="icon icon-weixin"></i>
+        </a>
+      </li>
+      <li>
+        <a class="qq share-sns" target="_blank" href="http://connect.qq.com/widget/shareqq/index.html?url=http://yoursite.com/2020/09/18/UNet_Family/&title=《U-Net系列文献综述》 — SvyJ&source=" data-title=" QQ">
+          <i class="icon icon-qq"></i>
+        </a>
+      </li>
+      <li>
+        <a class="facebook share-sns" target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=http://yoursite.com/2020/09/18/UNet_Family/" data-title=" Facebook">
+          <i class="icon icon-facebook"></i>
+        </a>
+      </li>
+      <li>
+        <a class="twitter share-sns" target="_blank" href="https://twitter.com/intent/tweet?text=《U-Net系列文献综述》 — SvyJ&url=http://yoursite.com/2020/09/18/UNet_Family/&via=http://yoursite.com" data-title=" Twitter">
+          <i class="icon icon-twitter"></i>
+        </a>
+      </li>
+      <li>
+        <a class="google share-sns" target="_blank" href="https://plus.google.com/share?url=http://yoursite.com/2020/09/18/UNet_Family/" data-title=" Google+">
+          <i class="icon icon-google-plus"></i>
+        </a>
+      </li>
+    </ul>
+ </div>
+
+
+
+    <a href="javascript:;" id="shareFab" class="page-share-fab waves-effect waves-circle">
+        <i class="icon icon-share-alt icon-lg"></i>
+    </a>
+</div>
+
+
+
+        </div>
+    </div>
+
+    
+<nav class="post-nav flex-row flex-justify-between">
+  
+    <div class="waves-block waves-effect prev">
+      <a href="/2020/09/18/DeepLab_Family/" id="post-prev" class="post-nav-link">
+        <div class="tips"><i class="icon icon-angle-left icon-lg icon-pr"></i> Prev</div>
+        <h4 class="title">DeepLab系列文献综述</h4>
+      </a>
+    </div>
+  
+
+  
+    <div class="waves-block waves-effect next">
+      <a href="/2020/09/16/Web_Job_Specification/" id="post-next" class="post-nav-link">
+        <div class="tips">Next <i class="icon icon-angle-right icon-lg icon-pl"></i></div>
+        <h4 class="title">前端开发任职要求汇总</h4>
+      </a>
+    </div>
+  
+</nav>
+
+
+
+    
+
+
+<section class="comments" id="comments">
+    <div id="disqus_thread"></div>
+    <script>
+    var disqus_shortname = 'true';
+    lazyScripts.push('//' + disqus_shortname + '.disqus.com/embed.js')
+    </script>
+    <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript" target="_blank" rel="noopener">comments powered by Disqus.</a></noscript>
+</section>
+
+
+
+
+<section class="comments" id="comments">
+    <!-- UY BEGIN -->
+    <div id="uyan_frame"></div>
+    <script src="http://v2.uyan.cc/code/uyan.js?uid=true"></script>
+    <!-- UY END -->
+</section>
+
+
+
+
+<section class="comments" id="comments">
+    <div id="gitment_thread"></div>
+    <link rel="stylesheet" href="//unpkg.com/gitment/style/default.css">
+    <script src="//unpkg.com/gitment/dist/gitment.browser.js"></script>
+    <script>
+        var gitment = new Gitment({
+            owner: '',
+            repo: '',
+            oauth: {
+                client_id: '',
+                client_secret: '',
+            },
+        })
+        gitment.render('comments')
+    </script>
+</section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+</article>
+
+<div id="reward" class="page-modal reward-lay">
+    <a class="close" href="javascript:;"><i class="icon icon-close"></i></a>
+    <h3 class="reward-title">
+        <i class="icon icon-quote-left"></i>
+        谢谢大爷~
+        <i class="icon icon-quote-right"></i>
+    </h3>
+    <div class="reward-content">
+        
+        <div class="reward-code">
+            <img id="rewardCode" src="/false" alt="打赏二维码">
+        </div>
+        
+    </div>
+</div>
+
+
+
+</div>
+
+        <footer class="footer">
+    <div class="top">
+        
+<p>
+    <span id="busuanzi_container_site_uv" style='display:none'>
+        站点总访客数：<span id="busuanzi_value_site_uv"></span>
+    </span>
+    <span id="busuanzi_container_site_pv" style='display:none'>
+        站点总访问量：<span id="busuanzi_value_site_pv"></span>
+    </span>
+</p>
+
+
+        <p>
+            
+                <span><a href="/atom.xml" target="_blank" class="rss" title="rss"><i class="icon icon-lg icon-rss"></i></a></span>
+            
+            <span>This blog is licensed under a <a rel="license noopener" href="https://creativecommons.org/licenses/by/4.0/" target="_blank">Creative Commons Attribution 4.0 International License</a>.</span>
+        </p>
+    </div>
+    <div class="bottom">
+        <p><span>SvyJ &copy; 2020</span>
+            <span>
+                
+                Power by <a href="http://hexo.io/" target="_blank">Hexo</a> Theme <a href="https://github.com/yscoder/hexo-theme-indigo" target="_blank">indigo</a>
+            </span>
+        </p>
+    </div>
+</footer>
+
+    </main>
+    <div class="mask" id="mask"></div>
+<a href="javascript:;" id="gotop" class="waves-effect waves-circle waves-light"><span class="icon icon-lg icon-chevron-up"></span></a>
+
+
+
+<div class="global-share" id="globalShare">
+    <ul class="reset share-icons">
+      <li>
+        <a class="weibo share-sns" target="_blank" href="http://service.weibo.com/share/share.php?url=http://yoursite.com/2020/09/18/UNet_Family/&title=《U-Net系列文献综述》 — SvyJ&pic=http://yoursite.com/img/Curry.png" data-title="微博">
+          <i class="icon icon-weibo"></i>
+        </a>
+      </li>
+      <li>
+        <a class="weixin share-sns wxFab" href="javascript:;" data-title="微信">
+          <i class="icon icon-weixin"></i>
+        </a>
+      </li>
+      <li>
+        <a class="qq share-sns" target="_blank" href="http://connect.qq.com/widget/shareqq/index.html?url=http://yoursite.com/2020/09/18/UNet_Family/&title=《U-Net系列文献综述》 — SvyJ&source=" data-title=" QQ">
+          <i class="icon icon-qq"></i>
+        </a>
+      </li>
+      <li>
+        <a class="facebook share-sns" target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=http://yoursite.com/2020/09/18/UNet_Family/" data-title=" Facebook">
+          <i class="icon icon-facebook"></i>
+        </a>
+      </li>
+      <li>
+        <a class="twitter share-sns" target="_blank" href="https://twitter.com/intent/tweet?text=《U-Net系列文献综述》 — SvyJ&url=http://yoursite.com/2020/09/18/UNet_Family/&via=http://yoursite.com" data-title=" Twitter">
+          <i class="icon icon-twitter"></i>
+        </a>
+      </li>
+      <li>
+        <a class="google share-sns" target="_blank" href="https://plus.google.com/share?url=http://yoursite.com/2020/09/18/UNet_Family/" data-title=" Google+">
+          <i class="icon icon-google-plus"></i>
+        </a>
+      </li>
+    </ul>
+ </div>
+
+
+<div class="page-modal wx-share" id="wxShare">
+    <a class="close" href="javascript:;"><i class="icon icon-close"></i></a>
+    <p>扫一扫，分享到微信</p>
+    <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAMYAAADGCAAAAACs8KCBAAACO0lEQVR42u3aQW7DMAwF0dz/0i7QVRexMp9UCpgarQrDrfW0YCmSrxde1+9aP/n7/O799fO7d7YtGTJkPJZxLVfnHfK7d+/z78qQIeMcxjrIrgPu+k0ScPl3b5/LkCFDBkjarsa6+4oMGTJk1BgkdeNBWYYMGTI4g2+IF8t4YF0zNt/FZciQ8UBG2hj4z5+/2N+QIUPGQxhXe60D696m5u0eZMiQMZrBL6vrIv6udiZJENFdXIYMGeMY/BrZb3zWEsG0RSFDhoxJjNrABAm+3wvHb74uQ4aM0QySePHPx03HreNlMmTIOI3B6/CdsYx14E6brDJkyJjN4H8iDcf9lkOxwSlDhoxxDF52T8Nlui3eDIgzXBkyZAxipAG3P53FZ70+7FaGDBlDGWToIW1wdpqd5CjffEuGDBkHMNItpgkc3xZPEN8EXBkyZAxldIpuQUDE7cwaVYYMGbMZvCi/9wrKS3VoOEOGDBmjGelgVi1ZrIVacpTF+TIZMmQ8ikECaNxnCI+GJKAfjkmGDBmjGekfWjP4oaSltPguLkOGjEEM0sIkJ5GOawR5a20gTIYMGYMYfNUak7zB2bncypAhYzbjCld6QrV2Jv8HIEOGjBMYuwIuL9jxlLQ/riFDhoxJDJ7SpRfdbwdcGTJknMboF/F567GW3qGRCxkyZMgoFf37xbggNZQhQ8bxDB4QO4Wz9MhkyJBxDiMdvOgMePXblrepoQwZMoYyao0B3rYkDYP1hjZMi8iQIeOpjB9zTnDmpNcprgAAAABJRU5ErkJggg==" alt="微信分享二维码">
+</div>
+
+
+
+
+    <script src="//cdn.bootcss.com/node-waves/0.7.4/waves.min.js"></script>
+<script>
+var BLOG = { ROOT: '/', SHARE: true, REWARD: true };
+
+
+</script>
+
+<script src="//unpkg.com/hexo-theme-material-indigo@latest/js/main.min.js"></script>
+
+
+<div class="search-panel" id="search-panel">
+    <ul class="search-result" id="search-result"></ul>
+</div>
+<template id="search-tpl">
+<li class="item">
+    <a href="{path}" class="waves-block waves-effect">
+        <div class="title ellipsis" title="{title}">{title}</div>
+        <div class="flex-row flex-middle">
+            <div class="tags ellipsis">
+                {tags}
+            </div>
+            <time class="flex-col time">{date}</time>
+        </div>
+    </a>
+</li>
+</template>
+
+<script src="//unpkg.com/hexo-theme-material-indigo@latest/js/search.min.js" async></script>
+
+
+
+
+
+
+<script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+
+
+
+<script>
+(function() {
+    var OriginTitile = document.title, titleTime;
+    document.addEventListener('visibilitychange', function() {
+        if (document.hidden) {
+            document.title = '你要离开了吗?';
+            clearTimeout(titleTime);
+        } else {
+            document.title = '欢迎回来！';
+            titleTime = setTimeout(function() {
+                document.title = OriginTitile;
+            },2000);
+        }
+    });
+})();
+</script>
+
+
+
+</body>
+</html>
