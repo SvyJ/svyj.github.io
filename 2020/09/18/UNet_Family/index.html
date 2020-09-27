@@ -35,10 +35,12 @@
 <meta property="og:image" content="http://yoursite.com/images/UNets/MultiRes_UNet.png">
 <meta property="og:image" content="http://yoursite.com/images/UNets/MultiRes_UNet_MultiBlock.png">
 <meta property="og:image" content="http://yoursite.com/images/UNets/MultiRes_UNet_ResPath.png">
+<meta property="og:image" content="http://yoursite.com/images/UNets/AttentionGate.png">
+<meta property="og:image" content="http://yoursite.com/images/UNets/Attention_UNet.png">
 <meta property="og:image" content="http://yoursite.com/images/UNets/UNet_3+.png">
 <meta property="og:image" content="http://yoursite.com/images/UNets/MS_SSIM_Loss.png">
 <meta property="article:published_time" content="2020-09-18T09:04:13.286Z">
-<meta property="article:modified_time" content="2020-09-19T08:35:11.589Z">
+<meta property="article:modified_time" content="2020-09-27T06:51:34.198Z">
 <meta property="article:author" content="SvyJ">
 <meta property="article:tag" content="深度学习">
 <meta property="article:tag" content="图像分割">
@@ -178,7 +180,7 @@
     <aside class="post-widget">
         <nav class="post-toc-wrap post-toc-shrink" id="post-toc">
             <h4>TOC</h4>
-            <ol class="post-toc"><li class="post-toc-item post-toc-level-1"><a class="post-toc-link" href="#U-Net"><span class="post-toc-number">1.</span> <span class="post-toc-text">U-Net</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#Contribution"><span class="post-toc-number">1.0.1.</span> <span class="post-toc-text">Contribution</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#Architecture"><span class="post-toc-number">1.0.2.</span> <span class="post-toc-text">Architecture</span></a></li></ol></li></ol></li><li class="post-toc-item post-toc-level-1"><a class="post-toc-link" href="#3D-U-Net"><span class="post-toc-number">2.</span> <span class="post-toc-text">3D U-Net</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#Architecture-1"><span class="post-toc-number">2.0.1.</span> <span class="post-toc-text">Architecture</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#Tricks"><span class="post-toc-number">2.0.2.</span> <span class="post-toc-text">Tricks</span></a></li></ol></li></ol></li><li class="post-toc-item post-toc-level-1"><a class="post-toc-link" href="#U-Net-1"><span class="post-toc-number">3.</span> <span class="post-toc-text">U-Net++</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#Architecture-2"><span class="post-toc-number">3.0.1.</span> <span class="post-toc-text">Architecture</span></a></li></ol></li></ol></li><li class="post-toc-item post-toc-level-1"><a class="post-toc-link" href="#Res-U-Net"><span class="post-toc-number">4.</span> <span class="post-toc-text">Res U-Net</span></a></li><li class="post-toc-item post-toc-level-1"><a class="post-toc-link" href="#MultiRes-U-Net"><span class="post-toc-number">5.</span> <span class="post-toc-text">MultiRes U-Net</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#Contribution-1"><span class="post-toc-number">5.0.1.</span> <span class="post-toc-text">Contribution</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#Architecture-3"><span class="post-toc-number">5.0.2.</span> <span class="post-toc-text">Architecture</span></a></li></ol></li></ol></li><li class="post-toc-item post-toc-level-1"><a class="post-toc-link" href="#R2-U-Net"><span class="post-toc-number">6.</span> <span class="post-toc-text">R2 U-Net</span></a></li><li class="post-toc-item post-toc-level-1"><a class="post-toc-link" href="#Attention-U-Net"><span class="post-toc-number">7.</span> <span class="post-toc-text">Attention U-Net</span></a></li><li class="post-toc-item post-toc-level-1"><a class="post-toc-link" href="#U-Net-3"><span class="post-toc-number">8.</span> <span class="post-toc-text">U-Net 3+</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#Contribution-2"><span class="post-toc-number">8.0.1.</span> <span class="post-toc-text">Contribution</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#Architecture-4"><span class="post-toc-number">8.0.2.</span> <span class="post-toc-text">Architecture</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#Tricks-1"><span class="post-toc-number">8.0.3.</span> <span class="post-toc-text">Tricks</span></a></li></ol></li></ol></li></ol>
+            <ol class="post-toc"><li class="post-toc-item post-toc-level-1"><a class="post-toc-link" href="#U-Net"><span class="post-toc-number">1.</span> <span class="post-toc-text">U-Net</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#Contribution"><span class="post-toc-number">1.0.1.</span> <span class="post-toc-text">Contribution</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#Architecture"><span class="post-toc-number">1.0.2.</span> <span class="post-toc-text">Architecture</span></a></li></ol></li></ol></li><li class="post-toc-item post-toc-level-1"><a class="post-toc-link" href="#3D-U-Net"><span class="post-toc-number">2.</span> <span class="post-toc-text">3D U-Net</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#Architecture-1"><span class="post-toc-number">2.0.1.</span> <span class="post-toc-text">Architecture</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#Tricks"><span class="post-toc-number">2.0.2.</span> <span class="post-toc-text">Tricks</span></a></li></ol></li></ol></li><li class="post-toc-item post-toc-level-1"><a class="post-toc-link" href="#U-Net-1"><span class="post-toc-number">3.</span> <span class="post-toc-text">U-Net++</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#Architecture-2"><span class="post-toc-number">3.0.1.</span> <span class="post-toc-text">Architecture</span></a></li></ol></li></ol></li><li class="post-toc-item post-toc-level-1"><a class="post-toc-link" href="#Res-U-Net"><span class="post-toc-number">4.</span> <span class="post-toc-text">Res U-Net</span></a></li><li class="post-toc-item post-toc-level-1"><a class="post-toc-link" href="#MultiRes-U-Net"><span class="post-toc-number">5.</span> <span class="post-toc-text">MultiRes U-Net</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#Contribution-1"><span class="post-toc-number">5.0.1.</span> <span class="post-toc-text">Contribution</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#Architecture-3"><span class="post-toc-number">5.0.2.</span> <span class="post-toc-text">Architecture</span></a></li></ol></li></ol></li><li class="post-toc-item post-toc-level-1"><a class="post-toc-link" href="#R2-U-Net"><span class="post-toc-number">6.</span> <span class="post-toc-text">R2 U-Net</span></a></li><li class="post-toc-item post-toc-level-1"><a class="post-toc-link" href="#Attention-U-Net"><span class="post-toc-number">7.</span> <span class="post-toc-text">Attention U-Net</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#Contribution-2"><span class="post-toc-number">7.0.1.</span> <span class="post-toc-text">Contribution</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#Architecture-4"><span class="post-toc-number">7.0.2.</span> <span class="post-toc-text">Architecture</span></a></li></ol></li></ol></li><li class="post-toc-item post-toc-level-1"><a class="post-toc-link" href="#U-Net-3"><span class="post-toc-number">8.</span> <span class="post-toc-text">U-Net 3+</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#Contribution-3"><span class="post-toc-number">8.0.1.</span> <span class="post-toc-text">Contribution</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#Architecture-5"><span class="post-toc-number">8.0.2.</span> <span class="post-toc-text">Architecture</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#Tricks-1"><span class="post-toc-number">8.0.3.</span> <span class="post-toc-text">Tricks</span></a></li></ol></li></ol></li></ol>
         </nav>
     </aside>
 
@@ -282,18 +284,42 @@
 
 </li>
 </ul>
-<h1 id="R2-U-Net"><a href="#R2-U-Net" class="headerlink" title="R2 U-Net"></a><strong>R2 U-Net</strong></h1><h1 id="Attention-U-Net"><a href="#Attention-U-Net" class="headerlink" title="Attention U-Net"></a><strong>Attention U-Net</strong></h1><h1 id="U-Net-3"><a href="#U-Net-3" class="headerlink" title="U-Net 3+"></a><strong>U-Net 3+</strong></h1><h3 id="Contribution-2"><a href="#Contribution-2" class="headerlink" title="Contribution"></a>Contribution</h3><ul>
+<h1 id="R2-U-Net"><a href="#R2-U-Net" class="headerlink" title="R2 U-Net"></a><strong>R2 U-Net</strong></h1><h1 id="Attention-U-Net"><a href="#Attention-U-Net" class="headerlink" title="Attention U-Net"></a><strong>Attention U-Net</strong></h1><p>Attention，即为注意力机制。在医疗图像中，就是把注意力集中到对特定任务有用的显著特征（比如说相关组织或者是器官），抑制输入图像中的不相关区域。在级联神经网络中，需要明确的外部组织/器官定位模块，而使用Attention就不需要了。</p>
+<h3 id="Contribution-2"><a href="#Contribution-2" class="headerlink" title="Contribution"></a>Contribution</h3><ul>
+<li>进一步采用注意力方法，提出基于网格的门控（Grid-Based Gating），使注意系数（Attention Coefficients）更加特定于局部区域。 与基于全局特征向量的门控相比，这提高了性能。 此外，本方法可用于密集预测，因为不执行自适应池化。</li>
+<li>提出了应用于医学成像任务的前馈CNN模型中的软注意（Soft-Attention）技术的第一个用例之一。 提出的注意力可以取代图像分类中使用的硬注意方法和图像分割框架中的外部器官定位模型。</li>
+<li>提出了标准U-Net模型的扩展，以提高模型对前景（Foreground）像素的灵敏度，而无需复杂的启发式算法。 通过实验观察到U-Net的准确度改进在不同的图像数据集中是一致的。</li>
+</ul>
+<h3 id="Architecture-4"><a href="#Architecture-4" class="headerlink" title="Architecture"></a>Architecture</h3><figure class="image-bubble">
+                <div class="img-lightbox">
+                    <div class="overlay"></div>
+                    <img src="/images/UNets/AttentionGate.png" alt="Attention Gate" title="">
+                </div>
+                <div class="image-caption">Attention Gate</div>
+            </figure>
+<ul>
+<li>Xl代表输入Feature Map, g代表Gate Signal，Wg:1*1*1，Wx:1*1*1，代表三维卷积核尺寸为1*1*1的卷积。</li>
+<li>Attention Gate可以理解为：<strong>输入Feature Map和Gate Signal在Add之后依次经过1*1*1的卷积核压缩，ReLU，再压缩，Sigmoid增加非线性，得到与输入Feature Map相同大小的注意力系数，将注意力系数与输入Feature Map相乘得到输出</strong><figure class="image-bubble">
+                <div class="img-lightbox">
+                    <div class="overlay"></div>
+                    <img src="/images/UNets/Attention_UNet.png" alt="Attention U-Net" title="">
+                </div>
+                <div class="image-caption">Attention U-Net</div>
+            </figure></li>
+<li>如上图为带有Attention Gate的U-Net模型，与标准U-Net相比，改进的地方在于Skip-Connection增加了Attention Gate，而<strong>Gating Signal是采用的较深层Feature Map</strong>。</li>
+</ul>
+<h1 id="U-Net-3"><a href="#U-Net-3" class="headerlink" title="U-Net 3+"></a><strong>U-Net 3+</strong></h1><h3 id="Contribution-3"><a href="#Contribution-3" class="headerlink" title="Contribution"></a>Contribution</h3><ul>
 <li>设计了一种新的网络结构U-Net3+，通过引入全尺度的跳过连接，在全尺度特征映射中融合了低层细节和高层语义，充分利用了多尺度特征的同时具有更少的参数；</li>
 <li>通过深度监督让网络从全尺度特征中学习分割表示，提出了更优的混合损失函数以增强器官的边界；</li>
 <li>提出分类指导模块，通过与图像分类分支联合训练的方式，减少了网络在非器官图像的过度分割（Over-Segmentation）；</li>
 <li>在肝脏和脾脏数据集上进行了广泛的实验，证明了U-Net 3+的有效性。</li>
 </ul>
-<h3 id="Architecture-4"><a href="#Architecture-4" class="headerlink" title="Architecture"></a>Architecture</h3><figure class="image-bubble">
+<h3 id="Architecture-5"><a href="#Architecture-5" class="headerlink" title="Architecture"></a>Architecture</h3><figure class="image-bubble">
                 <div class="img-lightbox">
                     <div class="overlay"></div>
-                    <img src="/images/UNets/UNet_3+.png" alt="UNet(a)，UNet++(b)，UNet 3+(c)" title="">
+                    <img src="/images/UNets/UNet_3+.png" alt="U-Net(a)，U-Net++(b)，U-Net 3+(c)" title="">
                 </div>
-                <div class="image-caption">UNet(a)，UNet++(b)，UNet 3+(c)</div>
+                <div class="image-caption">U-Net(a)，U-Net++(b)，U-Net 3+(c)</div>
             </figure>
 
 <h3 id="Tricks-1"><a href="#Tricks-1" class="headerlink" title="Tricks"></a>Tricks</h3><p>UNET 3+论文笔记：<a href="https://zhuanlan.zhihu.com/p/134119120" target="_blank" rel="noopener">https://zhuanlan.zhihu.com/p/134119120</a></p>
@@ -316,7 +342,7 @@
     <div class="content">
         
 <span class="post-time">
-    Last updated: <time datetime="2020-09-19T08:35:11.589Z" itemprop="dateUpdated">2020-09-19 16:35:11</time>
+    Last updated: <time datetime="2020-09-27T06:51:34.198Z" itemprop="dateUpdated">2020-09-27 14:51:34</time>
 </span><br>
 
 
