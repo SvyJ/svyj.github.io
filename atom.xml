@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2020-09-18T09:12:49.559Z</updated>
+  <updated>2020-10-20T01:35:42.087Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -15,6 +15,34 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>CV Papers2</title>
+    <link href="http://yoursite.com/2020/10/13/DeepLearning_PapersRead/"/>
+    <id>http://yoursite.com/2020/10/13/DeepLearning_PapersRead/</id>
+    <published>2020-10-13T03:25:43.992Z</published>
+    <updated>2020-10-20T01:35:42.087Z</updated>
+    
+    <content type="html"><![CDATA[<h1 id="To-Read-Paper-List"><a href="#To-Read-Paper-List" class="headerlink" title="To-Read-Paper-List"></a>To-Read-Paper-List</h1><h3 id="SNE-RoadSeg-Incorporating-Surface-Normal-Information-into-Semantic-Segmentation-for-Accurate-Freespace-Detection"><a href="#SNE-RoadSeg-Incorporating-Surface-Normal-Information-into-Semantic-Segmentation-for-Accurate-Freespace-Detection" class="headerlink" title="SNE-RoadSeg: Incorporating Surface Normal Information into Semantic Segmentation for Accurate Freespace Detection"></a>SNE-RoadSeg: Incorporating Surface Normal Information into Semantic Segmentation for Accurate Freespace Detection</h3><ul><li>主页：<a href="https://sites.google.com/view/sne-roadseg" target="_blank" rel="noopener">https://sites.google.com/view/sne-roadseg</a></li><li>论文：<a href="https://arxiv.org/abs/2008.11351" target="_blank" rel="noopener">https://arxiv.org/abs/2008.11351</a></li><li>代码：<a href="https://github.com/hlwang1124/SNE-RoadSeg" target="_blank" rel="noopener">https://github.com/hlwang1124/SNE-RoadSeg</a></li><li>数据集：<a href="https://drive.google.com/file/d/1YnkqPmzxtjNfMi2B1gMy7LQa5Gnu-BsH/view" target="_blank" rel="noopener">https://drive.google.com/file/d/1YnkqPmzxtjNfMi2B1gMy7LQa5Gnu-BsH/view</a></li></ul><h3 id="Segment-as-Points-for-Efficient-Online-Multi-Object-Tracking-and-Segmentation"><a href="#Segment-as-Points-for-Efficient-Online-Multi-Object-Tracking-and-Segmentation" class="headerlink" title="Segment as Points for Efficient Online Multi-Object Tracking and Segmentation"></a>Segment as Points for Efficient Online Multi-Object Tracking and Segmentation</h3><ul><li>论文：<a href="https://arxiv.org/abs/2007.01550" target="_blank" rel="noopener">https://arxiv.org/abs/2007.01550</a></li><li>代码：<a href="https://github.com/detectRecog/PointTrack" target="_blank" rel="noopener">https://github.com/detectRecog/PointTrack</a></li><li>数据集：<a href="https://github.com/detectRecog/PointTrack" target="_blank" rel="noopener">https://github.com/detectRecog/PointTrack</a></li></ul>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;h1 id=&quot;To-Read-Paper-List&quot;&gt;&lt;a href=&quot;#To-Read-Paper-List&quot; class=&quot;headerlink&quot; title=&quot;To-Read-Paper-List&quot;&gt;&lt;/a&gt;To-Read-Paper-List&lt;/h1&gt;&lt;h3 id=&quot;S
+      
+    
+    </summary>
+    
+    
+      <category term="参考文献" scheme="http://yoursite.com/categories/%E5%8F%82%E8%80%83%E6%96%87%E7%8C%AE/"/>
+    
+    
+      <category term="深度学习" scheme="http://yoursite.com/tags/%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0/"/>
+    
+      <category term="参考文献" scheme="http://yoursite.com/tags/%E5%8F%82%E8%80%83%E6%96%87%E7%8C%AE/"/>
+    
+  </entry>
   
   <entry>
     <title>DeepLab系列文献综述</title>
@@ -332,11 +360,11 @@
     
       <category term="深度学习" scheme="http://yoursite.com/tags/%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0/"/>
     
+      <category term="图像分类" scheme="http://yoursite.com/tags/%E5%9B%BE%E5%83%8F%E5%88%86%E7%B1%BB/"/>
+    
       <category term="网络模型" scheme="http://yoursite.com/tags/%E7%BD%91%E7%BB%9C%E6%A8%A1%E5%9E%8B/"/>
     
       <category term="Pytorch" scheme="http://yoursite.com/tags/Pytorch/"/>
-    
-      <category term="图像分类" scheme="http://yoursite.com/tags/%E5%9B%BE%E5%83%8F%E5%88%86%E7%B1%BB/"/>
     
   </entry>
   
@@ -345,9 +373,9 @@
     <link href="http://yoursite.com/2020/07/30/MarkMan_DL/"/>
     <id>http://yoursite.com/2020/07/30/MarkMan_DL/</id>
     <published>2020-07-30T11:55:08.391Z</published>
-    <updated>2020-09-16T09:48:27.004Z</updated>
+    <updated>2020-10-20T01:33:35.864Z</updated>
     
-    <content type="html"><![CDATA[<h1 id="代码常用"><a href="#代码常用" class="headerlink" title="代码常用"></a><strong>代码常用</strong></h1><ul><li>Pytorch中Tensor与各种图像格式的相互转化： <a href="https://blog.csdn.net/qq_36955294/article/details/82888443" target="_blank" rel="noopener">https://blog.csdn.net/qq_36955294/article/details/82888443</a></li><li>Pytorch查看模型细节（利用torchsummary模块）<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">from torchsummary import summary</span><br><span class="line">summary(model, input_size&#x3D;(C, H, W))</span><br></pre></td></tr></table></figure></li><li>批量升级python所有包（模块）<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line"># 桌面创建python文件upgrade.py, 将如下代码拷进去，保存。 使用命令行 python upgrade.py 运行</span><br><span class="line">import pip</span><br><span class="line">import time</span><br><span class="line">from pip._internal.utils.misc import get_installed_distributions</span><br><span class="line">from subprocess import call</span><br><span class="line"></span><br><span class="line">for dist in get_installed_distributions():</span><br><span class="line">    print(dist.project_name)</span><br><span class="line">print(&#39;----------&#39;)</span><br><span class="line"></span><br><span class="line">for dist in get_installed_distributions():</span><br><span class="line">    print(&quot;updating:&quot;, dist.project_name, &quot;\t&quot;)#print log</span><br><span class="line">    print(time.asctime( time.localtime(time.time()) ))#print log</span><br><span class="line">    call(&quot;pip3 install --upgrade -i https:&#x2F;&#x2F;pypi.tuna.tsinghua.edu.cn&#x2F;simple &quot; + dist.project_name, shell&#x3D;True)#调用更新命令</span><br></pre></td></tr></table></figure></li></ul><h1 id="VSCode使用过程中的问题"><a href="#VSCode使用过程中的问题" class="headerlink" title="VSCode使用过程中的问题"></a><strong>VSCode使用过程中的问题</strong></h1><ul><li>SSH远程连接服务器一直弹窗输密码（解决办法：干掉重来）： <a href="https://blog.csdn.net/Mr_Cat123/article/details/107432070" target="_blank" rel="noopener">https://blog.csdn.net/Mr_Cat123/article/details/107432070</a></li></ul><h1 id="总结（大类）"><a href="#总结（大类）" class="headerlink" title="总结（大类）"></a>总结（大类）</h1><ul><li>图像分割综述（从传统到深度学习）： <a href="https://zhuanlan.zhihu.com/p/70758906" target="_blank" rel="noopener">https://zhuanlan.zhihu.com/p/70758906</a> 或 <a href="https://www.cnblogs.com/CV-life/p/11160796.html" target="_blank" rel="noopener">https://www.cnblogs.com/CV-life/p/11160796.html</a></li></ul>]]></content>
+    <content type="html"><![CDATA[<h1 id="代码常用"><a href="#代码常用" class="headerlink" title="代码常用"></a><strong>代码常用</strong></h1><ul><li>Pytorch中Tensor与各种图像格式的相互转化： <a href="https://blog.csdn.net/qq_36955294/article/details/82888443" target="_blank" rel="noopener">https://blog.csdn.net/qq_36955294/article/details/82888443</a></li><li>Pytorch查看模型细节（利用torchsummary模块）<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">from torchsummary import summary</span><br><span class="line">summary(model, input_size&#x3D;(C, H, W))</span><br></pre></td></tr></table></figure></li><li>批量升级python所有包（模块）<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line"># 桌面创建python文件upgrade.py, 将如下代码拷进去，保存。 使用命令行 python upgrade.py 运行</span><br><span class="line">import pip</span><br><span class="line">import time</span><br><span class="line">from pip._internal.utils.misc import get_installed_distributions</span><br><span class="line">from subprocess import call</span><br><span class="line"></span><br><span class="line">for dist in get_installed_distributions():</span><br><span class="line">    print(dist.project_name)</span><br><span class="line">print(&#39;----------&#39;)</span><br><span class="line"></span><br><span class="line">for dist in get_installed_distributions():</span><br><span class="line">    print(&quot;updating:&quot;, dist.project_name, &quot;\t&quot;)#print log</span><br><span class="line">    print(time.asctime( time.localtime(time.time()) ))#print log</span><br><span class="line">    call(&quot;pip3 install --upgrade -i https:&#x2F;&#x2F;pypi.tuna.tsinghua.edu.cn&#x2F;simple &quot; + dist.project_name, shell&#x3D;True)#调用更新命令</span><br></pre></td></tr></table></figure></li></ul><h1 id="VSCode使用过程中的问题"><a href="#VSCode使用过程中的问题" class="headerlink" title="VSCode使用过程中的问题"></a><strong>VSCode使用过程中的问题</strong></h1><ul><li>SSH远程连接服务器一直弹窗输密码（解决办法：干掉重来）： <a href="https://blog.csdn.net/Mr_Cat123/article/details/107432070" target="_blank" rel="noopener">https://blog.csdn.net/Mr_Cat123/article/details/107432070</a></li><li>SSH远程连接时Downloading with wget…超时（解决办法：干掉服务器上的.wget-hsts再重新连接）<figure class="image-bubble">                <div class="img-lightbox">                    <div class="overlay"></div>                    <img src="/images/VSCode_Bug_Solution1.png" alt="Downloading with wget超时解决办法" title="">                </div>                <div class="image-caption">Downloading with wget超时解决办法</div>            </figure></li></ul><h1 id="总结（大类）"><a href="#总结（大类）" class="headerlink" title="总结（大类）"></a>总结（大类）</h1><ul><li>图像分割综述（从传统到深度学习）： <a href="https://zhuanlan.zhihu.com/p/70758906" target="_blank" rel="noopener">https://zhuanlan.zhihu.com/p/70758906</a> 或 <a href="https://www.cnblogs.com/CV-life/p/11160796.html" target="_blank" rel="noopener">https://www.cnblogs.com/CV-life/p/11160796.html</a></li></ul>]]></content>
     
     <summary type="html">
     
@@ -423,9 +451,9 @@
     
       <category term="深度学习" scheme="http://yoursite.com/tags/%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0/"/>
     
-      <category term="网络模型" scheme="http://yoursite.com/tags/%E7%BD%91%E7%BB%9C%E6%A8%A1%E5%9E%8B/"/>
-    
       <category term="图像分类" scheme="http://yoursite.com/tags/%E5%9B%BE%E5%83%8F%E5%88%86%E7%B1%BB/"/>
+    
+      <category term="网络模型" scheme="http://yoursite.com/tags/%E7%BD%91%E7%BB%9C%E6%A8%A1%E5%9E%8B/"/>
     
       <category term="Keras" scheme="http://yoursite.com/tags/Keras/"/>
     
