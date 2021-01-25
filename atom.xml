@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2020-10-20T01:35:42.087Z</updated>
+  <updated>2020-11-29T09:26:43.656Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -15,6 +15,34 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>ISICDM_2020挑战赛——肺部组织分割</title>
+    <link href="http://yoursite.com/2020/11/04/ISICDM2020/"/>
+    <id>http://yoursite.com/2020/11/04/ISICDM2020/</id>
+    <published>2020-11-04T14:27:10.788Z</published>
+    <updated>2020-11-29T09:26:43.656Z</updated>
+    
+    <content type="html"><![CDATA[<h1 id="竞赛背景"><a href="#竞赛背景" class="headerlink" title="竞赛背景"></a>竞赛背景</h1><p>我国在工业化发展过程中，由于高度的空气污染、高吸烟率和较差的生产保护条件，导致肺癌、慢阻肺等肺部疾病的发病率一直维持在较高水平，并呈加剧趋势。另外，SARS、 COVID-19等冠状病毒肺炎传染速度快，已被列为威胁全球公众健康的重大传染性疾病。肺部疾病已经成为危害人民健康、社会及经济可持续发展的严重公共卫生问题和社会问题。 当前医学影像已经成为肺部疾病临床检测和诊断、治疗方案规划和术后评估等各个环节的重要依据。近年来，国内外研究者在肺部影像智能辅助诊疗技术方面已取得显著研究进展，在肺部疾病的早期诊断、精准治疗等方面开始发挥重要作用。传统采用检测图像中病变特征区域的异常依赖方案，对于正常组织的关注度较低，不符合专业医师的工作思路，在临床应 用中具有局限性。由于肺部结构复杂、相邻组织区分度低、结构边界不清晰、区域密度不均匀和形状不规则，如何实现<strong>肺部多层次组织结构的精准提取和定量评估</strong>，已成为肺部影像智 能化、定量化、精准化临床应用需求的难题和共性问题。</p><h1 id="数据说明"><a href="#数据说明" class="headerlink" title="数据说明"></a>数据说明</h1><p><strong>本数据集包含训练集和测试集两部分。训练集包含10例胸部CT平扫影像和10例CTA增强影像（注射血管造影剂，灰度值增强），层厚小于 2.0mm，分辨率512*512，DICOM格式，包括肺实质、支气管、肺部血管等组织的标注结构。测试集将分别由5例胸部CT影像、5例CTA影像组成。</strong><br>本数据集由竞赛参加人填写申请表后，提供下载链接，本数据集仅限于做本次竞赛和科研使用，不得用于任何商业用途。</p><h1 id="评价说明"><a href="#评价说明" class="headerlink" title="评价说明"></a>评价说明</h1><p>评价采用测试集机器评价与医生主观评价相结合的方式，按照得分顺序进行排名。</p><h1 id="数据处理"><a href="#数据处理" class="headerlink" title="数据处理"></a>数据处理</h1><h3 id="One-Hot编码"><a href="#One-Hot编码" class="headerlink" title="One-Hot编码"></a>One-Hot编码</h3><p>在图像分割中，lable也是图片，进行训练时，需要将lable image转换成one hot编码的形式。本文仅使用np.equal，np.all，np.stack，三个操作实现one hot编码。其中label为gt image, label_values为class RGB Values list。</p><ul><li>np.equal实现把label image每个像素的RGB值与某个class的RGB值进行比对，变成RGB bool值。</li><li>np.all 把RGB bool值，变成一个bool值，即实现某个class 的label mask。使用for循环，生成所有class的label mask。</li><li>np.stack实现所有class的label mask的堆叠。最终depth size 为num_classes的数量。</li></ul><h1 id="模型选择"><a href="#模型选择" class="headerlink" title="模型选择"></a>模型选择</h1><ul><li>本次比赛都选择生成对抗网络（GAN）作为Backbone，再在生成器部分做大量尝试，将UNet等分割网络作为生成器，再在生成器的输出处进行深度监督（像素级）。</li><li>生成器部分的尝试包括：<br>（1）Two Stage（模型框架源自于HMOENet）<br>（2）UNet with Inception Module</li><li>模型细节设计<br>（1）生成器和判别器输出都不需要Sigmoid，会在训练中处理<br>（2）……………………………..<br>附Codes: <a href="https://github.com/SvyJ/svyj.github.io/blob/master/codes/ISICDM" target="_blank" rel="noopener">https://github.com/SvyJ/svyj.github.io/blob/master/codes/ISICDM</a></li></ul><h1 id="训练细节"><a href="#训练细节" class="headerlink" title="训练细节"></a>训练细节</h1><ul><li>模型训练细节<br>（1）固定判别器，训练生成器<br>（2）固定生成器，训练判别器</li><li>损失函数细节<br>（1）生成器G_Loss：由三部分组成，像素点损失BCELoss，DiceLoss和一致性损失ConsistencyLoss（来自判别器）<br>  G_Loss = 0.5*(loss_ce + loss_dice) + consisitency_loss*consistency_weight<br>（2）判别器D_Loss：由两部分组成，real &amp; fake<br>  GAN：D_loss = D_loss_real + D_loss_fake<br>  WGAN：D_loss = torch.abs(D_outputs_fake.mean() - D_outputs_real.mean())</li><li>参数控制细节<br>（1）学习率：根据评价指标降低学习率，指标在patience个batch后不变化则降低factor比例<br>  scheduler_d = torch.optim.lr_scheduler.ReduceLROnPlateau(D_optimizer, mode=’max’, factor=0.5, patience=10)<br>  scheduler_g = torch.optim.lr_scheduler.ReduceLROnPlateau(G_optimizer, mode=’max’, factor=0.5, patience=10)<br>（2）权重：控制权重在clamp_lower=-0.01和clamp_upper=0.01之间<br>  for p in D.parameters():<pre><code>p.data.clamp_(clamp_lower, clamp_upper)</code></pre>（3）梯度：防止梯度爆炸<br>  nn.utils.clip_grad_value_(D.parameters(), 0.1)<br>附Codes（训练细节在train_WGAN_airway）: <a href="https://github.com/SvyJ/svyj.github.io/blob/master/codes/ISICDM" target="_blank" rel="noopener">https://github.com/SvyJ/svyj.github.io/blob/master/codes/ISICDM</a></li></ul><h1 id="实验结果"><a href="#实验结果" class="headerlink" title="实验结果"></a>实验结果</h1>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;h1 id=&quot;竞赛背景&quot;&gt;&lt;a href=&quot;#竞赛背景&quot; class=&quot;headerlink&quot; title=&quot;竞赛背景&quot;&gt;&lt;/a&gt;竞赛背景&lt;/h1&gt;&lt;p&gt;我国在工业化发展过程中，由于高度的空气污染、高吸烟率和较差的生产保护条件，导致肺癌、慢阻肺等肺部疾病的发病率一直维持在较高水
+      
+    
+    </summary>
+    
+    
+      <category term="网络结构" scheme="http://yoursite.com/categories/%E7%BD%91%E7%BB%9C%E7%BB%93%E6%9E%84/"/>
+    
+    
+      <category term="深度学习" scheme="http://yoursite.com/tags/%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0/"/>
+    
+      <category term="图像分割" scheme="http://yoursite.com/tags/%E5%9B%BE%E5%83%8F%E5%88%86%E5%89%B2/"/>
+    
+  </entry>
   
   <entry>
     <title>CV Papers2</title>
@@ -101,11 +129,11 @@
   </entry>
   
   <entry>
-    <title>前端开发任职要求汇总</title>
+    <title>前端开发任职要求汇总（2020）</title>
     <link href="http://yoursite.com/2020/09/16/Web_Job_Specification/"/>
     <id>http://yoursite.com/2020/09/16/Web_Job_Specification/</id>
     <published>2020-09-16T12:36:22.078Z</published>
-    <updated>2020-09-16T13:04:45.405Z</updated>
+    <updated>2020-11-09T01:36:57.310Z</updated>
     
     <content type="html"><![CDATA[<h1 id="实习生要求"><a href="#实习生要求" class="headerlink" title="实习生要求"></a><strong>实习生要求</strong></h1><ul><li>在校本科或硕士研究生，计算机，软件工程相关专业优先，本科以上学历，保证至少 4 天 /周，持续实习 3 个月以上；</li><li>热爱计算机编程，丰富的编码实战经验；</li><li>熟悉<strong>JavaScript/HTML/CSS</strong>，计算机基础扎实，对<strong>web标准</strong>有深入理解；</li><li>熟悉至少一种<strong>前端框架(Vue、React)</strong>，对前后端联合开发的技术原理有全面了解，并在项目中有过实践；</li><li>掌握常见网络协议和相关的其他底层网络协议的全面知识；</li><li>熟悉JSP/Python/Php/Node.js或其他<strong>一门后台技术</strong>；</li><li>快速<strong>学习能力</strong>，实际项目中<strong>动手能力</strong>强；</li><li>良好的<strong>沟通和团队协作</strong>精神，积极主动配合设计人员和开发人员工作；</li></ul><h1 id="工程师要求"><a href="#工程师要求" class="headerlink" title="工程师要求"></a><strong>工程师要求</strong></h1><ul><li>本科及以上学历，具有良好的<strong>编程习惯</strong></li><li>熟练掌握计算机相关的基础知识，具备扎实的<strong>数据结构和算法基础</strong>；</li><li>熟悉<strong>面向对象编程</strong>设计，熟悉MVC、MVVM等<strong>前端开发模型</strong>；</li><li>具备扎实的编程基础，至少掌握一门<strong>编程语言</strong>，如Java，C#，Javascript等；</li><li>熟悉<strong>HTML的DOM结构</strong>，可快速制作HTML页面；</li><li>熟悉前端领域相关的知识，<strong>HTML、CSS、JavaScript</strong>，熟悉<strong>原生javascript</strong>，熟悉前端开发规范和<strong>W3C标准</strong>，关注前端技术发展动向；</li><li>熟悉<strong>ES6、XML、JSON</strong>等相关技术，熟悉<strong>HTTP协议</strong>，有<strong>Node研发</strong>经验者优先； </li><li>对<strong>前端工程化构建</strong>有一定的理解，熟练掌握Webpack/Gulp等构建工具；</li><li>熟练使用<strong>git</strong>等版本管理工具；</li><li>熟悉<strong>Vue/React/Angular</strong>等至少一种<strong>前端框架</strong>，并有实际操作经验；</li><li>熟悉vuejs、或者reactjs其他流行的开源js框架并且对于建立js框架有自己的想法优先；</li><li>了解Node.js/Php/Java/Go等后端语言中至少一种，有<strong>后端研发经验</strong>者优先；</li><li>对<strong>数据可视化</strong>有强烈兴趣，熟悉相关工具如 D3.js，G2, G6, Echarts，Mapbox.js 等，有深入的了解和相关项目作品可加分；</li><li>熟悉<strong>跨浏览器兼容性</strong>技术，熟悉<strong>响应式布局</strong>和<strong>多屏幕尺寸适配</strong>技术，熟悉<strong>跨终端、跨浏览器的开发</strong>模式；    </li><li>对<strong>跨端框架</strong>及解决方案有深入了解者优先；</li><li>实际<strong>动手能力</strong>强，完成过一些<strong>作品或者其他相关</strong>产出；</li><li>能够与产品经理配合，完成整个<strong>模块的设计</strong>；</li><li>能够<strong>与后端工程师深度配合</strong>完成开发，同时注重网站性能，用户代码的可维护性以及用户体验；</li><li>能够独立开发通用的UI组件，有<strong>UI组件开发经验</strong>优先；</li><li><strong>参与或贡献过开源项目</strong>的同学加分；</li><li>有编程实习经历优先；</li><li>具备良好的<strong>沟通协作和解决问题</strong>能力，热爱技术，责任心强；</li><li>积极乐观，认真负责，乐于协作；</li></ul>]]></content>
     
@@ -360,11 +388,11 @@
     
       <category term="深度学习" scheme="http://yoursite.com/tags/%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0/"/>
     
-      <category term="图像分类" scheme="http://yoursite.com/tags/%E5%9B%BE%E5%83%8F%E5%88%86%E7%B1%BB/"/>
-    
       <category term="网络模型" scheme="http://yoursite.com/tags/%E7%BD%91%E7%BB%9C%E6%A8%A1%E5%9E%8B/"/>
     
       <category term="Pytorch" scheme="http://yoursite.com/tags/Pytorch/"/>
+    
+      <category term="图像分类" scheme="http://yoursite.com/tags/%E5%9B%BE%E5%83%8F%E5%88%86%E7%B1%BB/"/>
     
   </entry>
   
@@ -373,9 +401,9 @@
     <link href="http://yoursite.com/2020/07/30/MarkMan_DL/"/>
     <id>http://yoursite.com/2020/07/30/MarkMan_DL/</id>
     <published>2020-07-30T11:55:08.391Z</published>
-    <updated>2020-10-20T01:33:35.864Z</updated>
+    <updated>2020-11-22T09:24:08.804Z</updated>
     
-    <content type="html"><![CDATA[<h1 id="代码常用"><a href="#代码常用" class="headerlink" title="代码常用"></a><strong>代码常用</strong></h1><ul><li>Pytorch中Tensor与各种图像格式的相互转化： <a href="https://blog.csdn.net/qq_36955294/article/details/82888443" target="_blank" rel="noopener">https://blog.csdn.net/qq_36955294/article/details/82888443</a></li><li>Pytorch查看模型细节（利用torchsummary模块）<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">from torchsummary import summary</span><br><span class="line">summary(model, input_size&#x3D;(C, H, W))</span><br></pre></td></tr></table></figure></li><li>批量升级python所有包（模块）<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line"># 桌面创建python文件upgrade.py, 将如下代码拷进去，保存。 使用命令行 python upgrade.py 运行</span><br><span class="line">import pip</span><br><span class="line">import time</span><br><span class="line">from pip._internal.utils.misc import get_installed_distributions</span><br><span class="line">from subprocess import call</span><br><span class="line"></span><br><span class="line">for dist in get_installed_distributions():</span><br><span class="line">    print(dist.project_name)</span><br><span class="line">print(&#39;----------&#39;)</span><br><span class="line"></span><br><span class="line">for dist in get_installed_distributions():</span><br><span class="line">    print(&quot;updating:&quot;, dist.project_name, &quot;\t&quot;)#print log</span><br><span class="line">    print(time.asctime( time.localtime(time.time()) ))#print log</span><br><span class="line">    call(&quot;pip3 install --upgrade -i https:&#x2F;&#x2F;pypi.tuna.tsinghua.edu.cn&#x2F;simple &quot; + dist.project_name, shell&#x3D;True)#调用更新命令</span><br></pre></td></tr></table></figure></li></ul><h1 id="VSCode使用过程中的问题"><a href="#VSCode使用过程中的问题" class="headerlink" title="VSCode使用过程中的问题"></a><strong>VSCode使用过程中的问题</strong></h1><ul><li>SSH远程连接服务器一直弹窗输密码（解决办法：干掉重来）： <a href="https://blog.csdn.net/Mr_Cat123/article/details/107432070" target="_blank" rel="noopener">https://blog.csdn.net/Mr_Cat123/article/details/107432070</a></li><li>SSH远程连接时Downloading with wget…超时（解决办法：干掉服务器上的.wget-hsts再重新连接）<figure class="image-bubble">                <div class="img-lightbox">                    <div class="overlay"></div>                    <img src="/images/VSCode_Bug_Solution1.png" alt="Downloading with wget超时解决办法" title="">                </div>                <div class="image-caption">Downloading with wget超时解决办法</div>            </figure></li></ul><h1 id="总结（大类）"><a href="#总结（大类）" class="headerlink" title="总结（大类）"></a>总结（大类）</h1><ul><li>图像分割综述（从传统到深度学习）： <a href="https://zhuanlan.zhihu.com/p/70758906" target="_blank" rel="noopener">https://zhuanlan.zhihu.com/p/70758906</a> 或 <a href="https://www.cnblogs.com/CV-life/p/11160796.html" target="_blank" rel="noopener">https://www.cnblogs.com/CV-life/p/11160796.html</a></li></ul>]]></content>
+    <content type="html"><![CDATA[<h1 id="代码常用"><a href="#代码常用" class="headerlink" title="代码常用"></a><strong>代码常用</strong></h1><ul><li>Pytorch中Tensor与各种图像格式的相互转化： <a href="https://blog.csdn.net/qq_36955294/article/details/82888443" target="_blank" rel="noopener">https://blog.csdn.net/qq_36955294/article/details/82888443</a></li><li>Pytorch查看模型细节（利用torchsummary模块）<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">from torchsummary import summary</span><br><span class="line">summary(model, input_size&#x3D;(C, H, W))</span><br></pre></td></tr></table></figure></li><li>批量升级python所有包（模块）<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line"># 桌面创建python文件upgrade.py, 将如下代码拷进去，保存。 使用命令行 python upgrade.py 运行</span><br><span class="line">import pip</span><br><span class="line">import time</span><br><span class="line">from pip._internal.utils.misc import get_installed_distributions</span><br><span class="line">from subprocess import call</span><br><span class="line"></span><br><span class="line">for dist in get_installed_distributions():</span><br><span class="line">    print(dist.project_name)</span><br><span class="line">print(&#39;----------&#39;)</span><br><span class="line"></span><br><span class="line">for dist in get_installed_distributions():</span><br><span class="line">    print(&quot;updating:&quot;, dist.project_name, &quot;\t&quot;)#print log</span><br><span class="line">    print(time.asctime( time.localtime(time.time()) ))#print log</span><br><span class="line">    call(&quot;pip3 install --upgrade -i https:&#x2F;&#x2F;pypi.tuna.tsinghua.edu.cn&#x2F;simple &quot; + dist.project_name, shell&#x3D;True)#调用更新命令</span><br></pre></td></tr></table></figure></li><li>忽略警告信息<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">import warnings</span><br><span class="line">warnings.filterwarnings(&quot;ignore&quot;)</span><br></pre></td></tr></table></figure></li><li>重写Dataset类:<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">所有子类应该override __len__ 和 __getitem__，前者提供了数据集的大小，后者支持整数索引，范围从0到len(self)</span><br></pre></td></tr></table></figure></li><li>pytorch实用方法<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">torch.ones_like(img) # 生成与img形状相同的全1矩阵，下同</span><br><span class="line">torch.zeros_like(img)</span><br><span class="line">with torch.no_grad(): .... # 不构图，即不参与正向&#x2F;反向传播</span><br></pre></td></tr></table></figure></li><li>pytorch模型保存与加载（保存为.pt or .pth）<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">方式一：保存整个网络结构信息和模型参数信息:</span><br><span class="line">＃　保存：　torch.save(model_object, &#39;.&#x2F;model.pth&#39;)</span><br><span class="line">＃　加载：　model &#x3D; torch.load(&#39;.&#x2F;model.pth&#39;)</span><br><span class="line"></span><br><span class="line">方式二：只保存网络的模型参数-推荐使用</span><br><span class="line">＃　保存：　torch.save(model_object.state_dict(), &#39;.&#x2F;params.pth&#39;)</span><br><span class="line">＃　加载：　from models import AgeModel</span><br><span class="line">　　　　　　model &#x3D; AgeModel()</span><br><span class="line">　　　　　　model.load_state_dict(torch.load(&#39;.&#x2F;params.pth&#39;))</span><br></pre></td></tr></table></figure></li></ul><h1 id="VSCode使用过程中的问题"><a href="#VSCode使用过程中的问题" class="headerlink" title="VSCode使用过程中的问题"></a><strong>VSCode使用过程中的问题</strong></h1><ul><li>SSH远程连接服务器一直弹窗输密码（解决办法：干掉重来）： <a href="https://blog.csdn.net/Mr_Cat123/article/details/107432070" target="_blank" rel="noopener">https://blog.csdn.net/Mr_Cat123/article/details/107432070</a></li><li>SSH远程连接时Downloading with wget…超时（解决办法：干掉服务器上的.wget-hsts再重新连接）<figure class="image-bubble">                <div class="img-lightbox">                    <div class="overlay"></div>                    <img src="/images/VSCode_Bug_Solution1.png" alt="Downloading with wget超时解决办法" title="">                </div>                <div class="image-caption">Downloading with wget超时解决办法</div>            </figure></li></ul><h1 id="总结（大类）"><a href="#总结（大类）" class="headerlink" title="总结（大类）"></a>总结（大类）</h1><ul><li>图像分割综述（从传统到深度学习）： <a href="https://zhuanlan.zhihu.com/p/70758906" target="_blank" rel="noopener">https://zhuanlan.zhihu.com/p/70758906</a> 或 <a href="https://www.cnblogs.com/CV-life/p/11160796.html" target="_blank" rel="noopener">https://www.cnblogs.com/CV-life/p/11160796.html</a></li></ul>]]></content>
     
     <summary type="html">
     
@@ -451,9 +479,9 @@
     
       <category term="深度学习" scheme="http://yoursite.com/tags/%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0/"/>
     
-      <category term="图像分类" scheme="http://yoursite.com/tags/%E5%9B%BE%E5%83%8F%E5%88%86%E7%B1%BB/"/>
-    
       <category term="网络模型" scheme="http://yoursite.com/tags/%E7%BD%91%E7%BB%9C%E6%A8%A1%E5%9E%8B/"/>
+    
+      <category term="图像分类" scheme="http://yoursite.com/tags/%E5%9B%BE%E5%83%8F%E5%88%86%E7%B1%BB/"/>
     
       <category term="Keras" scheme="http://yoursite.com/tags/Keras/"/>
     
