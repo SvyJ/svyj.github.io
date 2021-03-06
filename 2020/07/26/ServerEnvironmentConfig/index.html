@@ -29,7 +29,7 @@
 <meta property="og:description" content="Anaconda环境搭建1 复制压缩包12home&#x2F;xx cp Anaconda3-5.2.0-Linux-x86_64.sh  home&#x2F;xx(也可直接手动复制粘贴文件)  2 安装1bash Anaconda3-5.2.0-Linux-x86_64.sh  3 添加到到PATH12source ~&#x2F;.bashrcvi ~&#x2F;.bashrc(查看PATH)">
 <meta property="og:locale" content="en_US">
 <meta property="article:published_time" content="2020-07-26T02:55:01.923Z">
-<meta property="article:modified_time" content="2020-09-16T09:47:21.849Z">
+<meta property="article:modified_time" content="2021-03-06T08:20:43.193Z">
 <meta property="article:author" content="SvyJ">
 <meta property="article:tag" content="深度学习">
 <meta property="article:tag" content="Pytorch">
@@ -213,9 +213,9 @@
 
 <h2 id="Jupyter-notebook配置"><a href="#Jupyter-notebook配置" class="headerlink" title="Jupyter notebook配置"></a><b>Jupyter notebook配置</b></h2><h3 id="1-创建默认config配置文件"><a href="#1-创建默认config配置文件" class="headerlink" title="1 创建默认config配置文件"></a>1 创建默认config配置文件</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">jupyter notebook --generate-config</span><br></pre></td></tr></table></figure>
 
-<h3 id="2-生成访问密码-新开一个终端，根目录下输入ipython进入编译"><a href="#2-生成访问密码-新开一个终端，根目录下输入ipython进入编译" class="headerlink" title="2 生成访问密码(新开一个终端，根目录下输入ipython进入编译)"></a>2 生成访问密码(新开一个终端，根目录下输入ipython进入编译)</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">In[1]: from notebook.auth import passwd</span><br><span class="line">In[2]: passwd()</span><br><span class="line">Enter: XXXXXX</span><br><span class="line">Verify: XXXXXX</span><br><span class="line">Out[2]: sha1: &amp;apos;xxxxxxxxxxxxxxxx&amp;apos;</span><br><span class="line">![](&#x2F;images&#x2F;JupyterNotebookPasswd.png)</span><br><span class="line">(窗口暂时不要关闭)</span><br></pre></td></tr></table></figure>
+<h3 id="2-生成访问密码-新开一个终端，根目录下输入ipython进入编译"><a href="#2-生成访问密码-新开一个终端，根目录下输入ipython进入编译" class="headerlink" title="2 生成访问密码(新开一个终端，根目录下输入ipython进入编译)"></a>2 生成访问密码(新开一个终端，根目录下输入ipython进入编译)</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">In[1]: from notebook.auth import passwd</span><br><span class="line">In[2]: passwd()</span><br><span class="line">Enter: XXXXXX</span><br><span class="line">Verify: XXXXXX</span><br><span class="line">Out[2]: sha1: &#39;xxxxxxxxxxxxxxxx&#39;</span><br><span class="line">![](&#x2F;images&#x2F;JupyterNotebookPasswd.png)</span><br><span class="line">(窗口暂时不要关闭)</span><br></pre></td></tr></table></figure>
 
-<h3 id="3-修改配置文件jupyter-notebook-config-py"><a href="#3-修改配置文件jupyter-notebook-config-py" class="headerlink" title="3 修改配置文件jupyter_notebook_config.py"></a>3 修改配置文件jupyter_notebook_config.py</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">设置所有ip可访问</span><br><span class="line">Line204: c.NotebookApp.ip&#x3D;&amp;apos;*&amp;apos; </span><br><span class="line">设置禁止自动打开浏览器</span><br><span class="line">Line272: c.NotebookApp.open_browser &#x3D; False </span><br><span class="line">设置访问密码</span><br><span class="line">Line281: c.NotebookApp.password &#x3D; u&amp;apos;xxxxxxx&amp;apos;   </span><br><span class="line">设置端口号，可自定义，尽量不要设置8888，可能会和其他人冲突</span><br><span class="line">Line292: c.NotebookApp.port &#x3D; 1234</span><br></pre></td></tr></table></figure>
+<h3 id="3-修改配置文件jupyter-notebook-config-py"><a href="#3-修改配置文件jupyter-notebook-config-py" class="headerlink" title="3 修改配置文件jupyter_notebook_config.py"></a>3 修改配置文件jupyter_notebook_config.py</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">设置所有ip可访问</span><br><span class="line">Line204: c.NotebookApp.ip&#x3D;&#39;*&#39;</span><br><span class="line">设置禁止自动打开浏览器</span><br><span class="line">Line272: c.NotebookApp.open_browser &#x3D; False </span><br><span class="line">设置访问密码</span><br><span class="line">Line281: c.NotebookApp.password &#x3D; u&#39;xxxxxxx&#39;  </span><br><span class="line">设置端口号，可自定义，尽量不要设置8888，可能会和其他人冲突</span><br><span class="line">Line292: c.NotebookApp.port &#x3D; 1234</span><br></pre></td></tr></table></figure>
 
 <h3 id="4-访问"><a href="#4-访问" class="headerlink" title="4 访问"></a>4 访问</h3><p>在环境下输入jupyter notebook<br>打开浏览器地址栏输入: <a href="http://ip:1234" target="_blank" rel="noopener">http://ip:1234</a>  </p>
 <h2 id="补充：VS-Code配置：使用VS-Code-SSH进行远程开发"><a href="#补充：VS-Code配置：使用VS-Code-SSH进行远程开发" class="headerlink" title="补充：VS Code配置：使用VS Code + SSH进行远程开发"></a><b>补充：VS Code配置：使用VS Code + SSH进行远程开发</b></h2><p>PS. 只是因为我喜欢用VS Code写代码（教程太长，甩链接）</p>
@@ -228,7 +228,7 @@
     <div class="content">
         
 <span class="post-time">
-    Last updated: <time datetime="2020-09-16T09:47:21.849Z" itemprop="dateUpdated">2020-09-16 17:47:21</time>
+    Last updated: <time datetime="2021-03-06T08:20:43.193Z" itemprop="dateUpdated">2021-03-06 16:20:43</time>
 </span><br>
 
 
