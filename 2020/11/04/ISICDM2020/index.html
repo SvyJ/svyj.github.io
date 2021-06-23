@@ -29,7 +29,7 @@
 <meta property="og:description" content="记录一下沈阳的第四届图像计算与数字医学国际研讨会(The 4th International Symposium on Image Computing and Digital Medicine, ISICDM)挑战赛的竞赛过程。不得不吐槽一下整个过程项目三的主办方的各种延误和低级错误，比如标签给的JPG格式(—&gt;_—&gt;)，槽点太多，吐槽不过来。  竞赛背景我国在工业化发展过程中，由于高">
 <meta property="og:locale" content="en_US">
 <meta property="article:published_time" content="2020-11-04T14:27:10.788Z">
-<meta property="article:modified_time" content="2021-01-26T03:06:37.765Z">
+<meta property="article:modified_time" content="2021-05-20T03:28:17.383Z">
 <meta property="article:author" content="SvyJ">
 <meta property="article:tag" content="深度学习">
 <meta property="article:tag" content="图像分割">
@@ -61,7 +61,7 @@
         </a>
         <hgroup class="introduce">
           <h5 class="nickname">SvyJ</h5>
-          <a href="mailto:研一，1746772378@qq.com" title="研一，1746772378@qq.com" class="mail">研一，1746772378@qq.com</a>
+          <a href="mailto:svyj@smail.xtu.edu.cn" title="svyj@smail.xtu.edu.cn" class="mail">svyj@smail.xtu.edu.cn</a>
         </hgroup>
       </div>
     </div>
@@ -214,7 +214,7 @@
 <h1 id="训练细节"><a href="#训练细节" class="headerlink" title="训练细节"></a>训练细节</h1><ul>
 <li>模型训练细节<br>（1）固定判别器，训练生成器<br>（2）固定生成器，训练判别器</li>
 <li>损失函数细节<br>（1）生成器G_Loss：由三部分组成，像素点损失BCELoss，DiceLoss和一致性损失ConsistencyLoss（来自判别器）<br>  G_Loss = 0.5*(loss_ce + loss_dice) + consisitency_loss*consistency_weight<br>（2）判别器D_Loss：由两部分组成，real &amp; fake<br>  GAN：D_loss = D_loss_real + D_loss_fake<br>  WGAN：D_loss = torch.abs(D_outputs_fake.mean() - D_outputs_real.mean())</li>
-<li>参数控制细节<br>（1）学习率：根据评价指标降低学习率，指标在patience个batch后不变化则降低factor比例<br>  scheduler_d = torch.optim.lr_scheduler.ReduceLROnPlateau(D_optimizer, mode=’max’, factor=0.5, patience=10)<br>  scheduler_g = torch.optim.lr_scheduler.ReduceLROnPlateau(G_optimizer, mode=’max’, factor=0.5, patience=10)<br>（2）权重：控制权重在clamp_lower=-0.01和clamp_upper=0.01之间<br>  for p in D.parameters():<pre><code>p.data.clamp_(clamp_lower, clamp_upper)</code></pre>（3）梯度：防止梯度爆炸<br>  nn.utils.clip_grad_value_(D.parameters(), 0.1)<br>附Codes（训练细节在train_WGAN_airway）: <a href="https://github.com/SvyJ/svyj.github.io/blob/master/codes/ISICDM" target="_blank" rel="noopener">https://github.com/SvyJ/svyj.github.io/blob/master/codes/ISICDM</a></li>
+<li>参数控制细节<br>（1）学习率：根据评价指标降低学习率，指标在patience个batch后不变化则降低factor比例<br>  scheduler_d = torch.optim.lr_scheduler.ReduceLROnPlateau(D_optimizer, mode=’max’, factor=0.5, patience=10)<br>  scheduler_g = torch.optim.lr_scheduler.ReduceLROnPlateau(G_optimizer, mode=’max’, factor=0.5, patience=10)<br>（2）权重：控制权重在clamp_lower=-0.01和clamp_upper=0.01之间<br>  for p in D.parameters():<pre><code>p.data.clamp_(clamp_lower, clamp_upper)</code></pre>（3）梯度：防止梯度爆炸<br>  nn.utils.clip_grad_value_(D.parameters(), 0.1)<br>附Codes（训练细节在train_WGAN_airway）: <a href="https://github.com/SvyJ/svyj.github.io/tree/master/codes/ISICDM2020" target="_blank" rel="noopener">https://github.com/SvyJ/svyj.github.io/tree/master/codes/ISICDM2020</a></li>
 </ul>
 <h1 id="实验结果"><a href="#实验结果" class="headerlink" title="实验结果"></a>实验结果</h1>
         </div>
@@ -224,7 +224,7 @@
     <div class="content">
         
 <span class="post-time">
-    Last updated: <time datetime="2021-01-26T03:06:37.765Z" itemprop="dateUpdated">2021-01-26 11:06:37</time>
+    Last updated: <time datetime="2021-05-20T03:28:17.383Z" itemprop="dateUpdated">2021-05-20 11:28:17</time>
 </span><br>
 
 
@@ -305,7 +305,14 @@
     </div>
 
     
-<nav class="post-nav flex-row flex-justify-between flex-row-reverse">
+<nav class="post-nav flex-row flex-justify-between">
+  
+    <div class="waves-block waves-effect prev">
+      <a href="/2021/03/07/leetcode/" id="post-prev" class="post-nav-link">
+        <div class="tips"><i class="icon icon-angle-left icon-lg icon-pr"></i> Prev</div>
+        <h4 class="title">（持续更新中...）LeetCode刷题日记</h4>
+      </a>
+    </div>
   
 
   

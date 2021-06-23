@@ -1,0 +1,638 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+
+    
+
+    
+
+
+
+    <meta charset="utf-8">
+    
+    
+    
+    
+    <title>Pytorch中常用的Transforms方法 | SvyJ | 研究方向：智能医学影像、计算机视觉</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    
+    <meta name="theme-color" content="#3F51B5">
+    
+    
+    <meta name="keywords" content="Pytorch">
+    <meta name="description" content="裁剪——Crop随机裁剪：transforms.RandomCrop   class torchvision.transforms.RandomCrop(size, padding&#x3D;None, pad_if_needed&#x3D;False, fill&#x3D;0, padding_mode&#x3D;‘constant’)  功能：依据给定的size随机裁剪 参数： size* - (sequence or int)，若">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Pytorch中常用的Transforms方法">
+<meta property="og:url" content="http://yoursite.com/2021/06/08/PytorchTransforms/index.html">
+<meta property="og:site_name" content="SvyJ">
+<meta property="og:description" content="裁剪——Crop随机裁剪：transforms.RandomCrop   class torchvision.transforms.RandomCrop(size, padding&#x3D;None, pad_if_needed&#x3D;False, fill&#x3D;0, padding_mode&#x3D;‘constant’)  功能：依据给定的size随机裁剪 参数： size* - (sequence or int)，若">
+<meta property="og:locale" content="en_US">
+<meta property="article:published_time" content="2021-06-08T13:34:01.175Z">
+<meta property="article:modified_time" content="2021-06-08T14:20:10.397Z">
+<meta property="article:author" content="SvyJ">
+<meta property="article:tag" content="Pytorch">
+<meta name="twitter:card" content="summary">
+    
+        <link rel="alternate" type="application/atom+xml" title="SvyJ" href="/atom.xml">
+    
+    <link rel="shortcut icon" href="/favicon.ico">
+    <link rel="stylesheet" href="//unpkg.com/hexo-theme-material-indigo@latest/css/style.css">
+    <script>window.lazyScripts=[]</script>
+
+    <!-- custom head -->
+    
+
+<meta name="generator" content="Hexo 4.2.1"></head>
+
+<body>
+    <div id="loading" class="active"></div>
+
+    <aside id="menu" class="hide" >
+  <div class="inner flex-row-vertical">
+    <a href="javascript:;" class="header-icon waves-effect waves-circle waves-light" id="menu-off">
+        <i class="icon icon-lg icon-close"></i>
+    </a>
+    <div class="brand-wrap" style="background-image:url(/img/warriors.jpg)">
+      <div class="brand">
+        <a href="/" class="avatar waves-effect waves-circle waves-light">
+          <img src="/img/Curry.png">
+        </a>
+        <hgroup class="introduce">
+          <h5 class="nickname">SvyJ</h5>
+          <a href="mailto:svyj@smail.xtu.edu.cn" title="svyj@smail.xtu.edu.cn" class="mail">svyj@smail.xtu.edu.cn</a>
+        </hgroup>
+      </div>
+    </div>
+    <div class="scroll-wrap flex-col">
+      <ul class="nav">
+        
+            <li class="waves-block waves-effect">
+              <a href="/"  >
+                <i class="icon icon-lg icon-home"></i>
+                主页
+              </a>
+            </li>
+        
+            <li class="waves-block waves-effect">
+              <a href="/archives"  >
+                <i class="icon icon-lg icon-archives"></i>
+                归档
+              </a>
+            </li>
+        
+            <li class="waves-block waves-effect">
+              <a href="/tags"  >
+                <i class="icon icon-lg icon-tags"></i>
+                标签
+              </a>
+            </li>
+        
+            <li class="waves-block waves-effect">
+              <a href="/categories"  >
+                <i class="icon icon-lg icon-th-list"></i>
+                分类
+              </a>
+            </li>
+        
+            <li class="waves-block waves-effect">
+              <a href="https://github.com/SvyJ" target="_blank" >
+                <i class="icon icon-lg icon-github"></i>
+                Github
+              </a>
+            </li>
+        
+            <li class="waves-block waves-effect">
+              <a href="https://blog.csdn.net/qq_37350078" target="_blank" >
+                <i class="icon icon-lg icon-link"></i>
+                CSDN
+              </a>
+            </li>
+        
+      </ul>
+    </div>
+  </div>
+</aside>
+
+    <main id="main">
+        <header class="top-header" id="header">
+    <div class="flex-row">
+        <a href="javascript:;" class="header-icon waves-effect waves-circle waves-light on" id="menu-toggle">
+          <i class="icon icon-lg icon-navicon"></i>
+        </a>
+        <div class="flex-col header-title ellipsis">Pytorch中常用的Transforms方法</div>
+        
+        <div class="search-wrap" id="search-wrap">
+            <a href="javascript:;" class="header-icon waves-effect waves-circle waves-light" id="back">
+                <i class="icon icon-lg icon-chevron-left"></i>
+            </a>
+            <input type="text" id="key" class="search-input" autocomplete="off" placeholder="Search">
+            <a href="javascript:;" class="header-icon waves-effect waves-circle waves-light" id="search">
+                <i class="icon icon-lg icon-search"></i>
+            </a>
+        </div>
+        
+        
+        <a href="javascript:;" class="header-icon waves-effect waves-circle waves-light" id="menuShare">
+            <i class="icon icon-lg icon-share-alt"></i>
+        </a>
+        
+    </div>
+</header>
+<header class="content-header post-header">
+
+    <div class="container fade-scale">
+        <h1 class="title">Pytorch中常用的Transforms方法</h1>
+        <h5 class="subtitle">
+            
+                <time datetime="2021-06-08T13:34:01.175Z" itemprop="datePublished" class="page-time">
+  2021-06-08
+</time>
+
+
+	<ul class="article-category-list"><li class="article-category-list-item"><a class="article-category-list-link" href="/categories/%E5%A4%87%E5%BF%98%E5%BD%95/">备忘录</a></li></ul>
+
+            
+        </h5>
+    </div>
+
+    
+
+
+</header>
+
+
+<div class="container body-wrap">
+    
+    <aside class="post-widget">
+        <nav class="post-toc-wrap post-toc-shrink" id="post-toc">
+            <h4>TOC</h4>
+            <ol class="post-toc"><li class="post-toc-item post-toc-level-1"><a class="post-toc-link" href="#裁剪——Crop"><span class="post-toc-number">1.</span> <span class="post-toc-text">裁剪——Crop</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#随机裁剪：transforms-RandomCrop"><span class="post-toc-number">1.1.</span> <span class="post-toc-text">随机裁剪：transforms.RandomCrop</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#中心裁剪：transforms-CenterCrop"><span class="post-toc-number">1.2.</span> <span class="post-toc-text">中心裁剪：transforms.CenterCrop</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#随机长宽比裁剪-transforms-RandomResizedCrop"><span class="post-toc-number">1.3.</span> <span class="post-toc-text">随机长宽比裁剪 transforms.RandomResizedCrop</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#上下左右中心裁剪：transforms-FiveCrop"><span class="post-toc-number">1.4.</span> <span class="post-toc-text">上下左右中心裁剪：transforms.FiveCrop</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#上下左右中心裁剪后翻转-transforms-TenCrop"><span class="post-toc-number">1.5.</span> <span class="post-toc-text">上下左右中心裁剪后翻转: transforms.TenCrop</span></a></li></ol></li><li class="post-toc-item post-toc-level-1"><a class="post-toc-link" href="#翻转和旋转——Flip-and-Rotation"><span class="post-toc-number">2.</span> <span class="post-toc-text">翻转和旋转——Flip and Rotation</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#依概率p水平翻转transforms-RandomHorizontalFlip"><span class="post-toc-number">2.1.</span> <span class="post-toc-text">依概率p水平翻转transforms.RandomHorizontalFlip</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#依概率p垂直翻转transforms-RandomVerticalFlip"><span class="post-toc-number">2.2.</span> <span class="post-toc-text">依概率p垂直翻转transforms.RandomVerticalFlip</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#随机旋转：transforms-RandomRotation"><span class="post-toc-number">2.3.</span> <span class="post-toc-text">随机旋转：transforms.RandomRotation</span></a></li></ol></li><li class="post-toc-item post-toc-level-1"><a class="post-toc-link" href="#图像变换"><span class="post-toc-number">3.</span> <span class="post-toc-text">图像变换</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#resize：transforms-Resize"><span class="post-toc-number">3.1.</span> <span class="post-toc-text">resize：transforms.Resize</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#标准化：transforms-Normalize"><span class="post-toc-number">3.2.</span> <span class="post-toc-text">标准化：transforms.Normalize</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#转为tensor：transforms-ToTensor"><span class="post-toc-number">3.3.</span> <span class="post-toc-text">转为tensor：transforms.ToTensor</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#填充：transforms-Pad"><span class="post-toc-number">3.4.</span> <span class="post-toc-text">填充：transforms.Pad</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#修改亮度、对比度和饱和度：transforms-ColorJitter"><span class="post-toc-number">3.5.</span> <span class="post-toc-text">修改亮度、对比度和饱和度：transforms.ColorJitter</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#转灰度图：transforms-Grayscale"><span class="post-toc-number">3.6.</span> <span class="post-toc-text">转灰度图：transforms.Grayscale</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#线性变换：transforms-LinearTransformation"><span class="post-toc-number">3.7.</span> <span class="post-toc-text">线性变换：transforms.LinearTransformation()</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#仿射变换：transforms-RandomAffine"><span class="post-toc-number">3.8.</span> <span class="post-toc-text">仿射变换：transforms.RandomAffine</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#依概率p转为灰度图：transforms-RandomGrayscale"><span class="post-toc-number">3.9.</span> <span class="post-toc-text">依概率p转为灰度图：transforms.RandomGrayscale</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#将数据转换为PILImage：transforms-ToPILImage"><span class="post-toc-number">3.10.</span> <span class="post-toc-text">将数据转换为PILImage：transforms.ToPILImage</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#transforms-Lambda"><span class="post-toc-number">3.11.</span> <span class="post-toc-text">transforms.Lambda</span></a></li></ol></li><li class="post-toc-item post-toc-level-1"><a class="post-toc-link" href="#对transforms操作，使数据增强更灵活"><span class="post-toc-number">4.</span> <span class="post-toc-text">对transforms操作，使数据增强更灵活</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#transforms-RandomChoice-transforms"><span class="post-toc-number">4.1.</span> <span class="post-toc-text">transforms.RandomChoice(transforms)</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#transforms-RandomApply-transforms-p-0-5"><span class="post-toc-number">4.2.</span> <span class="post-toc-text">transforms.RandomApply(transforms, p&#x3D;0.5)</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#transforms-RandomOrder"><span class="post-toc-number">4.3.</span> <span class="post-toc-text">transforms.RandomOrder</span></a></li></ol></li></ol>
+        </nav>
+    </aside>
+
+
+<article id="post-PytorchTransforms"
+  class="post-article article-type-post fade" itemprop="blogPost">
+
+    <div class="post-card">
+        <h1 class="post-card-title">Pytorch中常用的Transforms方法</h1>
+        <div class="post-meta">
+            <time class="post-time" title="2021-06-08 21:34:01" datetime="2021-06-08T13:34:01.175Z"  itemprop="datePublished">2021-06-08</time>
+
+            
+	<ul class="article-category-list"><li class="article-category-list-item"><a class="article-category-list-link" href="/categories/%E5%A4%87%E5%BF%98%E5%BD%95/">备忘录</a></li></ul>
+
+
+
+            
+<span id="busuanzi_container_page_pv" title="文章总阅读量" style='display:none'>
+    <i class="icon icon-eye icon-pr"></i><span id="busuanzi_value_page_pv"></span>
+</span>
+
+
+        </div>
+        <div class="post-content" id="post-content" itemprop="postContent">
+            <h1 id="裁剪——Crop"><a href="#裁剪——Crop" class="headerlink" title="裁剪——Crop"></a><strong>裁剪——Crop</strong></h1><h2 id="随机裁剪：transforms-RandomCrop"><a href="#随机裁剪：transforms-RandomCrop" class="headerlink" title="随机裁剪：transforms.RandomCrop"></a>随机裁剪：transforms.RandomCrop</h2><p>   class torchvision.transforms.RandomCrop(size, padding=None, pad_if_needed=False, fill=0, padding_mode=‘constant’)</p>
+<ul>
+<li>功能：依据给定的size随机裁剪</li>
+<li>参数：</li>
+<li><em>size*</em> - (sequence or int)，若为sequence,则为(h,w)，若为int，则(size,size)</li>
+<li><em>padding*</em> - (sequence or int, optional)，此参数是设置填充多少个pixel。当为int时，图像上下左右均填充int个，例如padding=4，则上下左右均填充4个pixel，若为3232，则会变成4040。当为sequence时，若有2个数，则第一个数表示左右扩充多少，第二个数表示上下的。当有4个数时，则为左，上，右，下。</li>
+<li><em>fill*</em> - (int or tuple) 填充的值是什么（仅当填充模式为constant时有用）。int时，各通道均填充该值，当长度为3的tuple时，表示RGB通道需要填充的值。<br>padding_mode- 填充模式，这里提供了4种填充模式，1.constant，常量。2.edge 按照图片边缘的像素值来填充。3.reflect，暂不了解。 4. symmetric，暂不了解。</li>
+</ul>
+<h2 id="中心裁剪：transforms-CenterCrop"><a href="#中心裁剪：transforms-CenterCrop" class="headerlink" title="中心裁剪：transforms.CenterCrop"></a>中心裁剪：transforms.CenterCrop</h2><p>class torchvision.transforms.CenterCrop(size)</p>
+<ul>
+<li>功能：依据给定的size从中心裁剪</li>
+<li>参数：</li>
+<li><em>size*</em> - (sequence or int)，若为sequence,则为(h,w)，若为int，则(size,size)</li>
+</ul>
+<h2 id="随机长宽比裁剪-transforms-RandomResizedCrop"><a href="#随机长宽比裁剪-transforms-RandomResizedCrop" class="headerlink" title="随机长宽比裁剪 transforms.RandomResizedCrop"></a>随机长宽比裁剪 transforms.RandomResizedCrop</h2><p>class torchvision.transforms.RandomResizedCrop(size, scale=(0.08, 1.0), ratio=(0.75, 1.3333333333333333), interpolation=2)</p>
+<ul>
+<li>功能：随机大小，随机长宽比裁剪原始图片，最后将图片resize到设定好的size</li>
+<li>参数：</li>
+<li><em>size*</em> - 输出的分辨率</li>
+<li><em>scale*</em> - 随机crop的大小区间，如scale=(0.08, 1.0)，表示随机crop出来的图片会在的0.08倍至1倍之间。</li>
+<li><em>ratio*</em> - 随机长宽比设置</li>
+<li><em>interpolation*</em> - 插值的方法，默认为双线性插值(PIL.Image.BILINEAR)</li>
+</ul>
+<h2 id="上下左右中心裁剪：transforms-FiveCrop"><a href="#上下左右中心裁剪：transforms-FiveCrop" class="headerlink" title="上下左右中心裁剪：transforms.FiveCrop"></a>上下左右中心裁剪：transforms.FiveCrop</h2><p>class torchvision.transforms.FiveCrop(size)</p>
+<ul>
+<li>功能：对图片进行上下左右以及中心裁剪，获得5张图片，返回一个4D-tensor</li>
+<li>参数：</li>
+<li><em>size*</em> - (sequence or int)，若为sequence,则为(h,w)，若为int，则(size,size)</li>
+</ul>
+<h2 id="上下左右中心裁剪后翻转-transforms-TenCrop"><a href="#上下左右中心裁剪后翻转-transforms-TenCrop" class="headerlink" title="上下左右中心裁剪后翻转: transforms.TenCrop"></a>上下左右中心裁剪后翻转: transforms.TenCrop</h2><p>class torchvision.transforms.TenCrop(size, vertical_flip=False)</p>
+<ul>
+<li>功能：对图片进行上下左右以及中心裁剪，然后全部翻转（水平或者垂直），获得10张图片，返回一个4D-tensor。</li>
+<li>参数：</li>
+<li><em>size*</em> - (sequence or int)，若为sequence,则为(h,w)，若为int，则(size,size)</li>
+<li><em>vertical_flip (bool)*</em> - 是否垂直翻转，默认为flase，即默认为水平翻转</li>
+</ul>
+<h1 id="翻转和旋转——Flip-and-Rotation"><a href="#翻转和旋转——Flip-and-Rotation" class="headerlink" title="翻转和旋转——Flip and Rotation"></a><strong>翻转和旋转——Flip and Rotation</strong></h1><h2 id="依概率p水平翻转transforms-RandomHorizontalFlip"><a href="#依概率p水平翻转transforms-RandomHorizontalFlip" class="headerlink" title="依概率p水平翻转transforms.RandomHorizontalFlip"></a>依概率p水平翻转transforms.RandomHorizontalFlip</h2><p>class torchvision.transforms.RandomHorizontalFlip(p=0.5)</p>
+<ul>
+<li>功能：依据概率p对PIL图片进行水平翻转</li>
+<li>参数：</li>
+<li><em>p*</em> - 概率，默认值为0.5</li>
+</ul>
+<h2 id="依概率p垂直翻转transforms-RandomVerticalFlip"><a href="#依概率p垂直翻转transforms-RandomVerticalFlip" class="headerlink" title="依概率p垂直翻转transforms.RandomVerticalFlip"></a>依概率p垂直翻转transforms.RandomVerticalFlip</h2><p>class torchvision.transforms.RandomVerticalFlip(p=0.5)</p>
+<ul>
+<li>功能：依据概率p对PIL图片进行垂直翻转</li>
+<li>参数：</li>
+<li><em>p*</em> - 概率，默认值为0.5</li>
+</ul>
+<h2 id="随机旋转：transforms-RandomRotation"><a href="#随机旋转：transforms-RandomRotation" class="headerlink" title="随机旋转：transforms.RandomRotation"></a>随机旋转：transforms.RandomRotation</h2><p>class torchvision.transforms.RandomRotation(degrees, resample=False, expand=False, center=None)</p>
+<ul>
+<li>功能：依degrees随机旋转一定角度</li>
+<li>参数：</li>
+<li><em>degress*</em> - (sequence or float or int) ，若为单个数，如 30，则表示在（-30，+30）之间随机旋转<br>若为sequence，如(30，60)，则表示在30-60度之间随机旋转</li>
+<li><em>resample*</em> - 重采样方法选择，可选 PIL.Image.NEAREST, PIL.Image.BILINEAR, PIL.Image.BICUBIC，默认为最近邻</li>
+<li><em>expand*</em> - 未了解</li>
+<li><em>center*</em> - 可选为中心旋转还是左上角旋转</li>
+</ul>
+<h1 id="图像变换"><a href="#图像变换" class="headerlink" title="图像变换"></a><strong>图像变换</strong></h1><h2 id="resize：transforms-Resize"><a href="#resize：transforms-Resize" class="headerlink" title="resize：transforms.Resize"></a>resize：transforms.Resize</h2><p>class torchvision.transforms.Resize(size, interpolation=2)</p>
+<ul>
+<li>功能：重置图像分辨率</li>
+<li>参数：</li>
+<li><em>size** - If size is an int, if height &gt; width, then image will be rescaled to (size \</em> height / width, size)，所以建议size设定为h*w</li>
+<li><em>interpolation*</em> - 插值方法选择，默认为PIL.Image.BILINEAR</li>
+</ul>
+<h2 id="标准化：transforms-Normalize"><a href="#标准化：transforms-Normalize" class="headerlink" title="标准化：transforms.Normalize"></a>标准化：transforms.Normalize</h2><p>class torchvision.transforms.Normalize(mean, std)</p>
+<ul>
+<li>功能：对数据按通道进行标准化，即先减均值，再除以标准差，注意是 chw</li>
+</ul>
+<h2 id="转为tensor：transforms-ToTensor"><a href="#转为tensor：transforms-ToTensor" class="headerlink" title="转为tensor：transforms.ToTensor"></a>转为tensor：transforms.ToTensor</h2><p>class torchvision.transforms.ToTensor</p>
+<ul>
+<li>功能：将PIL Image或者 ndarray 转换为tensor，并且归一化至[0-1]</li>
+<li>注意事项：归一化至[0-1]是直接除以255，若自己的ndarray数据尺度有变化，则需要自行修改。</li>
+</ul>
+<h2 id="填充：transforms-Pad"><a href="#填充：transforms-Pad" class="headerlink" title="填充：transforms.Pad"></a>填充：transforms.Pad</h2><p>class torchvision.transforms.Pad(padding, fill=0, padding_mode=‘constant’)</p>
+<ul>
+<li>功能：对图像进行填充</li>
+<li>参数：</li>
+<li><em>padding*</em> -(sequence or int, optional)，此参数是设置填充多少个pixel。<br>当为int时，图像上下左右均填充int个，例如padding=4，则上下左右均填充4个pixel，若为3232，则会变成4040。<br>当为sequence时，若有2个数，则第一个数表示左右扩充多少，第二个数表示上下的。当有4个数时，则为左，上，右，下。</li>
+<li><em>fill*</em> - (int or tuple) 填充的值是什么（仅当填充模式为constant时有用）。int时，各通道均填充该值，当长度为3的tuple时，表示RGB通道需要填充的值。</li>
+<li><em>padding_mode*</em> - 填充模式，这里提供了4种填充模式，1.constant，常量。2.edge 按照图片边缘的像素值来填充。3.reflect，？ 4. symmetric，？</li>
+</ul>
+<h2 id="修改亮度、对比度和饱和度：transforms-ColorJitter"><a href="#修改亮度、对比度和饱和度：transforms-ColorJitter" class="headerlink" title="修改亮度、对比度和饱和度：transforms.ColorJitter"></a>修改亮度、对比度和饱和度：transforms.ColorJitter</h2><p>class torchvision.transforms.ColorJitter(brightness=0, contrast=0, saturation=0, hue=0)</p>
+<ul>
+<li>功能：修改修改亮度、对比度和饱和度</li>
+</ul>
+<h2 id="转灰度图：transforms-Grayscale"><a href="#转灰度图：transforms-Grayscale" class="headerlink" title="转灰度图：transforms.Grayscale"></a>转灰度图：transforms.Grayscale</h2><p>class torchvision.transforms.Grayscale(num_output_channels=1)</p>
+<ul>
+<li>功能：将图片转换为灰度图</li>
+<li>参数：</li>
+<li><em>num_output_channels*</em> - (int) ，当为1时，正常的灰度图，当为3时， 3 channel with r == g == b</li>
+</ul>
+<h2 id="线性变换：transforms-LinearTransformation"><a href="#线性变换：transforms-LinearTransformation" class="headerlink" title="线性变换：transforms.LinearTransformation()"></a>线性变换：transforms.LinearTransformation()</h2><p>class torchvision.transforms.LinearTransformation(transformation_matrix)</p>
+<ul>
+<li>功能：对矩阵做线性变化，可用于白化处理！ whitening: zero-center the data, compute the data covariance matrix</li>
+<li>参数：</li>
+<li><em>transformation_matrix (Tensor)*</em> – tensor [D x D], D = C x H x W</li>
+</ul>
+<h2 id="仿射变换：transforms-RandomAffine"><a href="#仿射变换：transforms-RandomAffine" class="headerlink" title="仿射变换：transforms.RandomAffine"></a>仿射变换：transforms.RandomAffine</h2><p>class torchvision.transforms.RandomAffine(degrees, translate=None, scale=None, shear=None, resample=False, fillcolor=0)</p>
+<ul>
+<li>功能：仿射变换</li>
+</ul>
+<h2 id="依概率p转为灰度图：transforms-RandomGrayscale"><a href="#依概率p转为灰度图：transforms-RandomGrayscale" class="headerlink" title="依概率p转为灰度图：transforms.RandomGrayscale"></a>依概率p转为灰度图：transforms.RandomGrayscale</h2><p>class torchvision.transforms.RandomGrayscale(p=0.1)</p>
+<ul>
+<li>功能：依概率p将图片转换为灰度图，若通道数为3，则3 channel with r == g == b</li>
+</ul>
+<h2 id="将数据转换为PILImage：transforms-ToPILImage"><a href="#将数据转换为PILImage：transforms-ToPILImage" class="headerlink" title="将数据转换为PILImage：transforms.ToPILImage"></a>将数据转换为PILImage：transforms.ToPILImage</h2><p>class torchvision.transforms.ToPILImage(mode=None)</p>
+<ul>
+<li>功能：将tensor 或者 ndarray的数据转换为 PIL Image 类型数据</li>
+<li>参数：</li>
+<li><em>mode*</em> - 为None时，为1通道， mode=3通道默认转换为RGB，4通道默认转换为RGBA</li>
+</ul>
+<h2 id="transforms-Lambda"><a href="#transforms-Lambda" class="headerlink" title="transforms.Lambda"></a>transforms.Lambda</h2><p>Apply a user-defined lambda as a transform.<br>待补充。</p>
+<h1 id="对transforms操作，使数据增强更灵活"><a href="#对transforms操作，使数据增强更灵活" class="headerlink" title="对transforms操作，使数据增强更灵活"></a><strong>对transforms操作，使数据增强更灵活</strong></h1><p>PyTorch不仅可设置对图片的操作，还可以对这些操作进行随机选择、组合</p>
+<h2 id="transforms-RandomChoice-transforms"><a href="#transforms-RandomChoice-transforms" class="headerlink" title="transforms.RandomChoice(transforms)"></a>transforms.RandomChoice(transforms)</h2><ul>
+<li>功能：从给定的一系列transforms中选一个进行操作，randomly picked from a list</li>
+</ul>
+<h2 id="transforms-RandomApply-transforms-p-0-5"><a href="#transforms-RandomApply-transforms-p-0-5" class="headerlink" title="transforms.RandomApply(transforms, p=0.5)"></a>transforms.RandomApply(transforms, p=0.5)</h2><ul>
+<li>功能：给一个transform加上概率，以一定的概率执行该操作</li>
+</ul>
+<h2 id="transforms-RandomOrder"><a href="#transforms-RandomOrder" class="headerlink" title="transforms.RandomOrder"></a>transforms.RandomOrder</h2><ul>
+<li>功能：将transforms中的操作顺序随机打乱</li>
+</ul>
+<p>转载自：<a href="https://blog.csdn.net/u011995719/article/details/85107009" target="_blank" rel="noopener">https://blog.csdn.net/u011995719/article/details/85107009</a><br>参考：<br>《PyTorch 模型训练实用教程》，全文pdf请点击：<a href="https://github.com/tensor-yu/PyTorch_Tutorial" target="_blank" rel="noopener">https://github.com/tensor-yu/PyTorch_Tutorial</a><br>《PyTorch中文文档》 <a href="https://pytorch-cn.readthedocs.io/zh/latest/" target="_blank" rel="noopener">https://pytorch-cn.readthedocs.io/zh/latest/</a></p>
+
+        </div>
+
+        <blockquote class="post-copyright">
+    
+    <div class="content">
+        
+<span class="post-time">
+    Last updated: <time datetime="2021-06-08T14:20:10.397Z" itemprop="dateUpdated">2021-06-08 22:20:10</time>
+</span><br>
+
+
+        
+        如果该文章对你有用，不如点个赞或者打赏一下~~~
+        
+    </div>
+    
+    <footer>
+        <a href="http://yoursite.com">
+            <img src="/img/Curry.png" alt="SvyJ">
+            SvyJ
+        </a>
+    </footer>
+</blockquote>
+
+        
+<div class="page-reward">
+    <a id="rewardBtn" href="javascript:;" class="page-reward-btn waves-effect waves-circle waves-light">赏</a>
+</div>
+
+
+
+        <div class="post-footer">
+            
+	<ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Pytorch/" rel="tag">Pytorch</a></li></ul>
+
+
+            
+<div class="page-share-wrap">
+    
+
+<div class="page-share" id="pageShare">
+    <ul class="reset share-icons">
+      <li>
+        <a class="weibo share-sns" target="_blank" href="http://service.weibo.com/share/share.php?url=http://yoursite.com/2021/06/08/PytorchTransforms/&title=《Pytorch中常用的Transforms方法》 — SvyJ&pic=http://yoursite.com/img/Curry.png" data-title="微博">
+          <i class="icon icon-weibo"></i>
+        </a>
+      </li>
+      <li>
+        <a class="weixin share-sns wxFab" href="javascript:;" data-title="微信">
+          <i class="icon icon-weixin"></i>
+        </a>
+      </li>
+      <li>
+        <a class="qq share-sns" target="_blank" href="http://connect.qq.com/widget/shareqq/index.html?url=http://yoursite.com/2021/06/08/PytorchTransforms/&title=《Pytorch中常用的Transforms方法》 — SvyJ&source=" data-title=" QQ">
+          <i class="icon icon-qq"></i>
+        </a>
+      </li>
+      <li>
+        <a class="facebook share-sns" target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=http://yoursite.com/2021/06/08/PytorchTransforms/" data-title=" Facebook">
+          <i class="icon icon-facebook"></i>
+        </a>
+      </li>
+      <li>
+        <a class="twitter share-sns" target="_blank" href="https://twitter.com/intent/tweet?text=《Pytorch中常用的Transforms方法》 — SvyJ&url=http://yoursite.com/2021/06/08/PytorchTransforms/&via=http://yoursite.com" data-title=" Twitter">
+          <i class="icon icon-twitter"></i>
+        </a>
+      </li>
+      <li>
+        <a class="google share-sns" target="_blank" href="https://plus.google.com/share?url=http://yoursite.com/2021/06/08/PytorchTransforms/" data-title=" Google+">
+          <i class="icon icon-google-plus"></i>
+        </a>
+      </li>
+    </ul>
+ </div>
+
+
+
+    <a href="javascript:;" id="shareFab" class="page-share-fab waves-effect waves-circle">
+        <i class="icon icon-share-alt icon-lg"></i>
+    </a>
+</div>
+
+
+
+        </div>
+    </div>
+
+    
+<nav class="post-nav flex-row flex-justify-between flex-row-reverse">
+  
+
+  
+    <div class="waves-block waves-effect next">
+      <a href="/2021/03/07/leetcode/" id="post-next" class="post-nav-link">
+        <div class="tips">Next <i class="icon icon-angle-right icon-lg icon-pl"></i></div>
+        <h4 class="title">（持续更新中...）LeetCode刷题日记</h4>
+      </a>
+    </div>
+  
+</nav>
+
+
+
+    
+
+
+<section class="comments" id="comments">
+    <div id="disqus_thread"></div>
+    <script>
+    var disqus_shortname = 'true';
+    lazyScripts.push('//' + disqus_shortname + '.disqus.com/embed.js')
+    </script>
+    <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript" target="_blank" rel="noopener">comments powered by Disqus.</a></noscript>
+</section>
+
+
+
+
+<section class="comments" id="comments">
+    <!-- UY BEGIN -->
+    <div id="uyan_frame"></div>
+    <script src="http://v2.uyan.cc/code/uyan.js?uid=true"></script>
+    <!-- UY END -->
+</section>
+
+
+
+
+<section class="comments" id="comments">
+    <div id="gitment_thread"></div>
+    <link rel="stylesheet" href="//unpkg.com/gitment/style/default.css">
+    <script src="//unpkg.com/gitment/dist/gitment.browser.js"></script>
+    <script>
+        var gitment = new Gitment({
+            owner: '',
+            repo: '',
+            oauth: {
+                client_id: '',
+                client_secret: '',
+            },
+        })
+        gitment.render('comments')
+    </script>
+</section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+</article>
+
+<div id="reward" class="page-modal reward-lay">
+    <a class="close" href="javascript:;"><i class="icon icon-close"></i></a>
+    <h3 class="reward-title">
+        <i class="icon icon-quote-left"></i>
+        谢谢大爷~
+        <i class="icon icon-quote-right"></i>
+    </h3>
+    <div class="reward-content">
+        
+        <div class="reward-code">
+            <img id="rewardCode" src="/false" alt="打赏二维码">
+        </div>
+        
+    </div>
+</div>
+
+
+
+</div>
+
+        <footer class="footer">
+    <div class="top">
+        
+<p>
+    <span id="busuanzi_container_site_uv" style='display:none'>
+        站点总访客数：<span id="busuanzi_value_site_uv"></span>
+    </span>
+    <span id="busuanzi_container_site_pv" style='display:none'>
+        站点总访问量：<span id="busuanzi_value_site_pv"></span>
+    </span>
+</p>
+
+
+        <p>
+            
+                <span><a href="/atom.xml" target="_blank" class="rss" title="rss"><i class="icon icon-lg icon-rss"></i></a></span>
+            
+            <span>This blog is licensed under a <a rel="license noopener" href="https://creativecommons.org/licenses/by/4.0/" target="_blank">Creative Commons Attribution 4.0 International License</a>.</span>
+        </p>
+    </div>
+    <div class="bottom">
+        <p><span>SvyJ &copy; 2020 - 2021</span>
+            <span>
+                
+                Power by <a href="http://hexo.io/" target="_blank">Hexo</a> Theme <a href="https://github.com/yscoder/hexo-theme-indigo" target="_blank">indigo</a>
+            </span>
+        </p>
+    </div>
+</footer>
+
+    </main>
+    <div class="mask" id="mask"></div>
+<a href="javascript:;" id="gotop" class="waves-effect waves-circle waves-light"><span class="icon icon-lg icon-chevron-up"></span></a>
+
+
+
+<div class="global-share" id="globalShare">
+    <ul class="reset share-icons">
+      <li>
+        <a class="weibo share-sns" target="_blank" href="http://service.weibo.com/share/share.php?url=http://yoursite.com/2021/06/08/PytorchTransforms/&title=《Pytorch中常用的Transforms方法》 — SvyJ&pic=http://yoursite.com/img/Curry.png" data-title="微博">
+          <i class="icon icon-weibo"></i>
+        </a>
+      </li>
+      <li>
+        <a class="weixin share-sns wxFab" href="javascript:;" data-title="微信">
+          <i class="icon icon-weixin"></i>
+        </a>
+      </li>
+      <li>
+        <a class="qq share-sns" target="_blank" href="http://connect.qq.com/widget/shareqq/index.html?url=http://yoursite.com/2021/06/08/PytorchTransforms/&title=《Pytorch中常用的Transforms方法》 — SvyJ&source=" data-title=" QQ">
+          <i class="icon icon-qq"></i>
+        </a>
+      </li>
+      <li>
+        <a class="facebook share-sns" target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=http://yoursite.com/2021/06/08/PytorchTransforms/" data-title=" Facebook">
+          <i class="icon icon-facebook"></i>
+        </a>
+      </li>
+      <li>
+        <a class="twitter share-sns" target="_blank" href="https://twitter.com/intent/tweet?text=《Pytorch中常用的Transforms方法》 — SvyJ&url=http://yoursite.com/2021/06/08/PytorchTransforms/&via=http://yoursite.com" data-title=" Twitter">
+          <i class="icon icon-twitter"></i>
+        </a>
+      </li>
+      <li>
+        <a class="google share-sns" target="_blank" href="https://plus.google.com/share?url=http://yoursite.com/2021/06/08/PytorchTransforms/" data-title=" Google+">
+          <i class="icon icon-google-plus"></i>
+        </a>
+      </li>
+    </ul>
+ </div>
+
+
+<div class="page-modal wx-share" id="wxShare">
+    <a class="close" href="javascript:;"><i class="icon icon-close"></i></a>
+    <p>扫一扫，分享到微信</p>
+    <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAMYAAADGCAAAAACs8KCBAAACMklEQVR42u3aQW7DMAwEwP7/0ynQU4Egzq7kBDA9OgVJ5Wp0oCWSPz/xePyN52/+f//8+Xm8mnv8/WkDAwPjsozH4XjFSEjJ0o+3LFkbBgbGfRj549bmJsvKtw8DAwMjWcraEfBN0Dz8XxgYGBhtwD2elfyabxMGBgZGfkRLLpPHSbS1o+HJd3EMDIwLMtrCwDc/f7C+gYGBcRHGN4Pg2tU3WhUGBsZoxvFhbifd35YW2oRd0Q+CgYFxccZa4MvbLPYPhdGVFQMD4waM9uLaFgYW3wP5mjEwMEYz8qLj/hITwFp7BwYGxh0Ya0FzJ8i2z0yehoGBMZvRXl+TkJcnznLkm5CNgYExlBEpTzq65SG1LnxiYGCMZpyb4s8vrsn5NEkFYmBg3IfRtkrsBMe8wNCWHzAwMO7J2Amp+d+3YTd6Y2BgYAxi7DR7tbPa63GxQRgYGKMZn3hcfvnc2aaozQIDA2MQYy35lQfWvCBaFABeVWIxMDBuwGiD6U6g3Dlcvgm4GBgYgxhryfq8rJgfGdsNjcqyGBgYgxh5MG1Lm2uwelUYGBijGcfTdlq+FnvTyrCOgYFxB8ajHG0bxFoZoG4jw8DAGM1ow1wSLneCafICKOqxGBgYgxhJkE0evZZiaxsyimkYGBjjGG2QLdogyjaOtYYPDAwMjDzIrqXq9i/VGBgYGDmpbcVo50b1DQwMjKGMNlnftqK2v7aNHRgYGLMZO8n6NlnWNpklT8PAwBjN+AXISzf19WXNcgAAAABJRU5ErkJggg==" alt="微信分享二维码">
+</div>
+
+
+
+
+    <script src="//cdn.bootcss.com/node-waves/0.7.4/waves.min.js"></script>
+<script>
+var BLOG = { ROOT: '/', SHARE: true, REWARD: true };
+
+
+</script>
+
+<script src="//unpkg.com/hexo-theme-material-indigo@latest/js/main.min.js"></script>
+
+
+<div class="search-panel" id="search-panel">
+    <ul class="search-result" id="search-result"></ul>
+</div>
+<template id="search-tpl">
+<li class="item">
+    <a href="{path}" class="waves-block waves-effect">
+        <div class="title ellipsis" title="{title}">{title}</div>
+        <div class="flex-row flex-middle">
+            <div class="tags ellipsis">
+                {tags}
+            </div>
+            <time class="flex-col time">{date}</time>
+        </div>
+    </a>
+</li>
+</template>
+
+<script src="//unpkg.com/hexo-theme-material-indigo@latest/js/search.min.js" async></script>
+
+
+
+
+
+
+<script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+
+
+
+<script>
+(function() {
+    var OriginTitile = document.title, titleTime;
+    document.addEventListener('visibilitychange', function() {
+        if (document.hidden) {
+            document.title = '你要离开了吗?';
+            clearTimeout(titleTime);
+        } else {
+            document.title = '欢迎回来！';
+            titleTime = setTimeout(function() {
+                document.title = OriginTitile;
+            },2000);
+        }
+    });
+})();
+</script>
+
+
+
+</body>
+</html>
