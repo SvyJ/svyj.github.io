@@ -1,0 +1,545 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+
+    
+
+    
+
+
+
+    <meta charset="utf-8">
+    
+    
+    
+    
+    <title>遥感图像变化检测相关 | SvyJ | 研究方向：智能医学影像、计算机视觉</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    
+    <meta name="theme-color" content="#3F51B5">
+    
+    
+    <meta name="keywords" content="图像处理">
+    <meta name="description" content="Notes：源自于老板最近想接的横向项目，记录一下从调研到跑路的历程:D。 遥感图像变化检测任务目标 利用多时相的遥感数据，采用多种图像处理和模式识别方法提取变化信息，并定量分析和确定地表变化的特征与过程。它涉及变化的类型、分布状况与变化量，即需要确定变化前、后的地面类型、界线、及变化趋势，进而分析这些动态变化的特点与原因。(1）判断是否发生了变化；(2）确定发生变化的区域；(3）鉴别变化的性质；">
+<meta property="og:type" content="article">
+<meta property="og:title" content="遥感图像变化检测相关">
+<meta property="og:url" content="http://yoursite.com/2021/07/04/RemoteSensingChangeDetection/index.html">
+<meta property="og:site_name" content="SvyJ">
+<meta property="og:description" content="Notes：源自于老板最近想接的横向项目，记录一下从调研到跑路的历程:D。 遥感图像变化检测任务目标 利用多时相的遥感数据，采用多种图像处理和模式识别方法提取变化信息，并定量分析和确定地表变化的特征与过程。它涉及变化的类型、分布状况与变化量，即需要确定变化前、后的地面类型、界线、及变化趋势，进而分析这些动态变化的特点与原因。(1）判断是否发生了变化；(2）确定发生变化的区域；(3）鉴别变化的性质；">
+<meta property="og:locale" content="en_US">
+<meta property="og:image" content="http://yoursite.com/images/SenseRemoting/Smaple.png">
+<meta property="article:published_time" content="2021-07-04T12:04:38.620Z">
+<meta property="article:modified_time" content="2021-07-04T12:43:58.398Z">
+<meta property="article:author" content="SvyJ">
+<meta property="article:tag" content="图像处理">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="http://yoursite.com/images/SenseRemoting/Smaple.png">
+    
+        <link rel="alternate" type="application/atom+xml" title="SvyJ" href="/atom.xml">
+    
+    <link rel="shortcut icon" href="/favicon.ico">
+    <link rel="stylesheet" href="//unpkg.com/hexo-theme-material-indigo@latest/css/style.css">
+    <script>window.lazyScripts=[]</script>
+
+    <!-- custom head -->
+    
+
+<meta name="generator" content="Hexo 4.2.1"></head>
+
+<body>
+    <div id="loading" class="active"></div>
+
+    <aside id="menu" class="hide" >
+  <div class="inner flex-row-vertical">
+    <a href="javascript:;" class="header-icon waves-effect waves-circle waves-light" id="menu-off">
+        <i class="icon icon-lg icon-close"></i>
+    </a>
+    <div class="brand-wrap" style="background-image:url(/img/warriors.jpg)">
+      <div class="brand">
+        <a href="/" class="avatar waves-effect waves-circle waves-light">
+          <img src="/img/Curry.png">
+        </a>
+        <hgroup class="introduce">
+          <h5 class="nickname">SvyJ</h5>
+          <a href="mailto:svyj@smail.xtu.edu.cn" title="svyj@smail.xtu.edu.cn" class="mail">svyj@smail.xtu.edu.cn</a>
+        </hgroup>
+      </div>
+    </div>
+    <div class="scroll-wrap flex-col">
+      <ul class="nav">
+        
+            <li class="waves-block waves-effect">
+              <a href="/"  >
+                <i class="icon icon-lg icon-home"></i>
+                主页
+              </a>
+            </li>
+        
+            <li class="waves-block waves-effect">
+              <a href="/archives"  >
+                <i class="icon icon-lg icon-archives"></i>
+                归档
+              </a>
+            </li>
+        
+            <li class="waves-block waves-effect">
+              <a href="/tags"  >
+                <i class="icon icon-lg icon-tags"></i>
+                标签
+              </a>
+            </li>
+        
+            <li class="waves-block waves-effect">
+              <a href="/categories"  >
+                <i class="icon icon-lg icon-th-list"></i>
+                分类
+              </a>
+            </li>
+        
+            <li class="waves-block waves-effect">
+              <a href="https://github.com/SvyJ" target="_blank" >
+                <i class="icon icon-lg icon-github"></i>
+                Github
+              </a>
+            </li>
+        
+            <li class="waves-block waves-effect">
+              <a href="https://blog.csdn.net/qq_37350078" target="_blank" >
+                <i class="icon icon-lg icon-link"></i>
+                CSDN
+              </a>
+            </li>
+        
+      </ul>
+    </div>
+  </div>
+</aside>
+
+    <main id="main">
+        <header class="top-header" id="header">
+    <div class="flex-row">
+        <a href="javascript:;" class="header-icon waves-effect waves-circle waves-light on" id="menu-toggle">
+          <i class="icon icon-lg icon-navicon"></i>
+        </a>
+        <div class="flex-col header-title ellipsis">遥感图像变化检测相关</div>
+        
+        <div class="search-wrap" id="search-wrap">
+            <a href="javascript:;" class="header-icon waves-effect waves-circle waves-light" id="back">
+                <i class="icon icon-lg icon-chevron-left"></i>
+            </a>
+            <input type="text" id="key" class="search-input" autocomplete="off" placeholder="Search">
+            <a href="javascript:;" class="header-icon waves-effect waves-circle waves-light" id="search">
+                <i class="icon icon-lg icon-search"></i>
+            </a>
+        </div>
+        
+        
+        <a href="javascript:;" class="header-icon waves-effect waves-circle waves-light" id="menuShare">
+            <i class="icon icon-lg icon-share-alt"></i>
+        </a>
+        
+    </div>
+</header>
+<header class="content-header post-header">
+
+    <div class="container fade-scale">
+        <h1 class="title">遥感图像变化检测相关</h1>
+        <h5 class="subtitle">
+            
+                <time datetime="2021-07-04T12:04:38.620Z" itemprop="datePublished" class="page-time">
+  2021-07-04
+</time>
+
+
+	<ul class="article-category-list"><li class="article-category-list-item"><a class="article-category-list-link" href="/categories/%E5%9B%BE%E5%83%8F%E5%A4%84%E7%90%86/">图像处理</a></li></ul>
+
+            
+        </h5>
+    </div>
+
+    
+
+
+</header>
+
+
+<div class="container body-wrap">
+    
+    <aside class="post-widget">
+        <nav class="post-toc-wrap post-toc-shrink" id="post-toc">
+            <h4>TOC</h4>
+            <ol class="post-toc"><li class="post-toc-item post-toc-level-1"><a class="post-toc-link" href="#遥感图像变化检测"><span class="post-toc-number">1.</span> <span class="post-toc-text">遥感图像变化检测</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#任务目标"><span class="post-toc-number">1.1.</span> <span class="post-toc-text">任务目标</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#影响因素（难点）"><span class="post-toc-number">1.2.</span> <span class="post-toc-text">影响因素（难点）</span></a></li></ol></li><li class="post-toc-item post-toc-level-1"><a class="post-toc-link" href="#数据集整理"><span class="post-toc-number">2.</span> <span class="post-toc-text">数据集整理</span></a></li><li class="post-toc-item post-toc-level-1"><a class="post-toc-link" href="#已有方法"><span class="post-toc-number">3.</span> <span class="post-toc-text">已有方法</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#传统方法"><span class="post-toc-number">3.1.</span> <span class="post-toc-text">传统方法</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#比较后分类变化检测算法"><span class="post-toc-number">3.1.1.</span> <span class="post-toc-text">比较后分类变化检测算法</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#分类后比较变化检测算法"><span class="post-toc-number">3.1.2.</span> <span class="post-toc-text">分类后比较变化检测算法</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#基于对象变化检测算法"><span class="post-toc-number">3.1.3.</span> <span class="post-toc-text">基于对象变化检测算法</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#基于统计模型变化检测方法"><span class="post-toc-number">3.1.4.</span> <span class="post-toc-text">基于统计模型变化检测方法</span></a></li></ol></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#部分还没看的论文（传统方法）"><span class="post-toc-number">3.2.</span> <span class="post-toc-text">部分还没看的论文（传统方法）</span></a></li></ol></li></ol>
+        </nav>
+    </aside>
+
+
+<article id="post-RemoteSensingChangeDetection"
+  class="post-article article-type-post fade" itemprop="blogPost">
+
+    <div class="post-card">
+        <h1 class="post-card-title">遥感图像变化检测相关</h1>
+        <div class="post-meta">
+            <time class="post-time" title="2021-07-04 20:04:38" datetime="2021-07-04T12:04:38.620Z"  itemprop="datePublished">2021-07-04</time>
+
+            
+	<ul class="article-category-list"><li class="article-category-list-item"><a class="article-category-list-link" href="/categories/%E5%9B%BE%E5%83%8F%E5%A4%84%E7%90%86/">图像处理</a></li></ul>
+
+
+
+            
+<span id="busuanzi_container_page_pv" title="文章总阅读量" style='display:none'>
+    <i class="icon icon-eye icon-pr"></i><span id="busuanzi_value_page_pv"></span>
+</span>
+
+
+        </div>
+        <div class="post-content" id="post-content" itemprop="postContent">
+            <p>Notes：源自于老板最近想接的横向项目，记录一下从调研到跑路的历程:D。</p>
+<h1 id="遥感图像变化检测"><a href="#遥感图像变化检测" class="headerlink" title="遥感图像变化检测"></a>遥感图像变化检测</h1><h2 id="任务目标"><a href="#任务目标" class="headerlink" title="任务目标"></a>任务目标</h2><ul>
+<li>利用多时相的遥感数据，采用多种图像处理和模式识别方法提取变化信息，并定量分析和确定地表变化的特征与过程。它涉及变化的类型、分布状况与变化量，即需要确定变化前、后的地面类型、界线、及变化趋势，进而分析这些动态变化的特点与原因。<br>(1）判断是否发生了变化；<br>(2）确定发生变化的区域；<br>(3）鉴别变化的性质；<br>(4）评估变化的时间和空间分布模式。<figure class="image-bubble">
+                <div class="img-lightbox">
+                    <div class="overlay"></div>
+                    <img src="/images/SenseRemoting/Smaple.png" alt="变化检测" title="">
+                </div>
+                <div class="image-caption">变化检测</div>
+            </figure>
+猜测前两点的变化检测就是“他们”要达到的基本目标了，前两点也是变化检测研究中需要首先解决的问题，狭义上的变化检测概念即是由这两方面构成。</li>
+</ul>
+<h2 id="影响因素（难点）"><a href="#影响因素（难点）" class="headerlink" title="影响因素（难点）"></a>影响因素（难点）</h2><ul>
+<li>遥感系统因素的影响(时间、空间、光谱、辐射分辨率)</li>
+<li>环境因素的影响(大气、土壤湿度状况、物候特征)</li>
+<li>成像设备？（猜测本次任务存在这个问题）</li>
+</ul>
+<h1 id="数据集整理"><a href="#数据集整理" class="headerlink" title="数据集整理"></a>数据集整理</h1><ul>
+<li>放链接：<a href="https://blog.csdn.net/weixin_41868601/article/details/113888782" target="_blank" rel="noopener">数据集</a></li>
+</ul>
+<h1 id="已有方法"><a href="#已有方法" class="headerlink" title="已有方法"></a>已有方法</h1><h2 id="传统方法"><a href="#传统方法" class="headerlink" title="传统方法"></a>传统方法</h2><h3 id="比较后分类变化检测算法"><a href="#比较后分类变化检测算法" class="headerlink" title="比较后分类变化检测算法"></a>比较后分类变化检测算法</h3><ul>
+<li>基于简单代数运算的变化检测方法<br>  归一化图像差值法<br>  （已实现）图像灰度差值法（图像的灰度信息反映了地物的波谱反射特性）<br>  图像纹理特征差值法<br>  图像回归法<br>  图像植被指数差分法<br>  图像比值法<br>  变化向量分析法</li>
+<li>基于图像变换的变化检测方法<br>  （已实现）主成分分析法PCA<br>  独立成分分析法ICA<br>  正交变换<br>  典型相关分析<br>  缨帽变换（K-T变换）<br>  （已实现）典型相关分析法(multivariate alteration detection，MAD)、<br>  Gramm-Schmidt变换、<br>  Chi-square变换、<br>  穗帽变换(Tasseled Cap Transformation)<br>  HSI变换</li>
+<li>基于图像空间特征的变化检测方法<br>  基于统计特征的变化检测算法<br>  基于纹理特征的变化检测算法<br>  基于空间结构特征的变化检测算法</li>
+</ul>
+<h3 id="分类后比较变化检测算法"><a href="#分类后比较变化检测算法" class="headerlink" title="分类后比较变化检测算法"></a>分类后比较变化检测算法</h3><h3 id="基于对象变化检测算法"><a href="#基于对象变化检测算法" class="headerlink" title="基于对象变化检测算法"></a>基于对象变化检测算法</h3><h3 id="基于统计模型变化检测方法"><a href="#基于统计模型变化检测方法" class="headerlink" title="基于统计模型变化检测方法"></a>基于统计模型变化检测方法</h3><h2 id="部分还没看的论文（传统方法）"><a href="#部分还没看的论文（传统方法）" class="headerlink" title="部分还没看的论文（传统方法）"></a>部分还没看的论文（传统方法）</h2><p>2019.Bobholamovic/ChangeDetectionToolbox<br>2019.M J Canty. Image Analysis, Classification and Change Detection in Remote Sensing(Fourth Revised Edition)<br>2017.M J Canty. Change Detection with Google Earth Engine Imagery<br>2014.M J Canty. Image Analysis, Classification and Change Detection in Remote Sensing(Third Revised Edition)<br>Zhu Zhe.Algorithm developed for Continuous Change Detection and Classification (CCDC) of land cover using all available Landsat data<br>Implementation of “ 2009.Celik T. Unsupervised change detection in satellite images using principal component analysis and k-means clustering “.(Matlab, Python)<br>2007.Allan Aasbjerg Nielsen.IR-MAD(The Regularized Iteratively Reweighted Multivariate Alteration Detection)</p>
+<ul>
+<li>参考资料：<br>[1] 《遥感应用分析原理与方法》 赵英时 第二版<br>[2] <a href="https://gitee.com/jia_leilei001/awesome-remote-sensing-change-detection" target="_blank" rel="noopener">https://gitee.com/jia_leilei001/awesome-remote-sensing-change-detection</a><br>[3] <a href="https://blog.csdn.net/qq_37554556/article/details/104134021" target="_blank" rel="noopener">https://blog.csdn.net/qq_37554556/article/details/104134021</a><br>[4] <a href="https://blog.csdn.net/zhang22huan/article/details/8482490" target="_blank" rel="noopener">https://blog.csdn.net/zhang22huan/article/details/8482490</a><br>[5] <a href="https://blog.csdn.net/weixin_39802680/article/details/106026342" target="_blank" rel="noopener">https://blog.csdn.net/weixin_39802680/article/details/106026342</a><br>[6] <a href="https://blog.csdn.net/weixin_45145485/article/details/109005509(这里吐槽以下：这个方法出来的检测图全黑是什么鬼？)" target="_blank" rel="noopener">https://blog.csdn.net/weixin_45145485/article/details/109005509(这里吐槽以下：这个方法出来的检测图全黑是什么鬼？)</a></li>
+</ul>
+
+        </div>
+
+        <blockquote class="post-copyright">
+    
+    <div class="content">
+        
+<span class="post-time">
+    Last updated: <time datetime="2021-07-04T12:43:58.398Z" itemprop="dateUpdated">2021-07-04 20:43:58</time>
+</span><br>
+
+
+        
+        如果该文章对你有用，不如点个赞或者打赏一下~~~
+        
+    </div>
+    
+    <footer>
+        <a href="http://yoursite.com">
+            <img src="/img/Curry.png" alt="SvyJ">
+            SvyJ
+        </a>
+    </footer>
+</blockquote>
+
+        
+<div class="page-reward">
+    <a id="rewardBtn" href="javascript:;" class="page-reward-btn waves-effect waves-circle waves-light">赏</a>
+</div>
+
+
+
+        <div class="post-footer">
+            
+	<ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/%E5%9B%BE%E5%83%8F%E5%A4%84%E7%90%86/" rel="tag">图像处理</a></li></ul>
+
+
+            
+<div class="page-share-wrap">
+    
+
+<div class="page-share" id="pageShare">
+    <ul class="reset share-icons">
+      <li>
+        <a class="weibo share-sns" target="_blank" href="http://service.weibo.com/share/share.php?url=http://yoursite.com/2021/07/04/RemoteSensingChangeDetection/&title=《遥感图像变化检测相关》 — SvyJ&pic=http://yoursite.com/img/Curry.png" data-title="微博">
+          <i class="icon icon-weibo"></i>
+        </a>
+      </li>
+      <li>
+        <a class="weixin share-sns wxFab" href="javascript:;" data-title="微信">
+          <i class="icon icon-weixin"></i>
+        </a>
+      </li>
+      <li>
+        <a class="qq share-sns" target="_blank" href="http://connect.qq.com/widget/shareqq/index.html?url=http://yoursite.com/2021/07/04/RemoteSensingChangeDetection/&title=《遥感图像变化检测相关》 — SvyJ&source=" data-title=" QQ">
+          <i class="icon icon-qq"></i>
+        </a>
+      </li>
+      <li>
+        <a class="facebook share-sns" target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=http://yoursite.com/2021/07/04/RemoteSensingChangeDetection/" data-title=" Facebook">
+          <i class="icon icon-facebook"></i>
+        </a>
+      </li>
+      <li>
+        <a class="twitter share-sns" target="_blank" href="https://twitter.com/intent/tweet?text=《遥感图像变化检测相关》 — SvyJ&url=http://yoursite.com/2021/07/04/RemoteSensingChangeDetection/&via=http://yoursite.com" data-title=" Twitter">
+          <i class="icon icon-twitter"></i>
+        </a>
+      </li>
+      <li>
+        <a class="google share-sns" target="_blank" href="https://plus.google.com/share?url=http://yoursite.com/2021/07/04/RemoteSensingChangeDetection/" data-title=" Google+">
+          <i class="icon icon-google-plus"></i>
+        </a>
+      </li>
+    </ul>
+ </div>
+
+
+
+    <a href="javascript:;" id="shareFab" class="page-share-fab waves-effect waves-circle">
+        <i class="icon icon-share-alt icon-lg"></i>
+    </a>
+</div>
+
+
+
+        </div>
+    </div>
+
+    
+<nav class="post-nav flex-row flex-justify-between flex-row-reverse">
+  
+
+  
+    <div class="waves-block waves-effect next">
+      <a href="/2021/06/08/PytorchTransforms/" id="post-next" class="post-nav-link">
+        <div class="tips">Next <i class="icon icon-angle-right icon-lg icon-pl"></i></div>
+        <h4 class="title">Pytorch中常用的Transforms方法</h4>
+      </a>
+    </div>
+  
+</nav>
+
+
+
+    
+
+
+<section class="comments" id="comments">
+    <div id="disqus_thread"></div>
+    <script>
+    var disqus_shortname = 'true';
+    lazyScripts.push('//' + disqus_shortname + '.disqus.com/embed.js')
+    </script>
+    <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript" target="_blank" rel="noopener">comments powered by Disqus.</a></noscript>
+</section>
+
+
+
+
+<section class="comments" id="comments">
+    <!-- UY BEGIN -->
+    <div id="uyan_frame"></div>
+    <script src="http://v2.uyan.cc/code/uyan.js?uid=true"></script>
+    <!-- UY END -->
+</section>
+
+
+
+
+<section class="comments" id="comments">
+    <div id="gitment_thread"></div>
+    <link rel="stylesheet" href="//unpkg.com/gitment/style/default.css">
+    <script src="//unpkg.com/gitment/dist/gitment.browser.js"></script>
+    <script>
+        var gitment = new Gitment({
+            owner: '',
+            repo: '',
+            oauth: {
+                client_id: '',
+                client_secret: '',
+            },
+        })
+        gitment.render('comments')
+    </script>
+</section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+</article>
+
+<div id="reward" class="page-modal reward-lay">
+    <a class="close" href="javascript:;"><i class="icon icon-close"></i></a>
+    <h3 class="reward-title">
+        <i class="icon icon-quote-left"></i>
+        谢谢大爷~
+        <i class="icon icon-quote-right"></i>
+    </h3>
+    <div class="reward-content">
+        
+        <div class="reward-code">
+            <img id="rewardCode" src="/false" alt="打赏二维码">
+        </div>
+        
+    </div>
+</div>
+
+
+
+</div>
+
+        <footer class="footer">
+    <div class="top">
+        
+<p>
+    <span id="busuanzi_container_site_uv" style='display:none'>
+        站点总访客数：<span id="busuanzi_value_site_uv"></span>
+    </span>
+    <span id="busuanzi_container_site_pv" style='display:none'>
+        站点总访问量：<span id="busuanzi_value_site_pv"></span>
+    </span>
+</p>
+
+
+        <p>
+            
+                <span><a href="/atom.xml" target="_blank" class="rss" title="rss"><i class="icon icon-lg icon-rss"></i></a></span>
+            
+            <span>This blog is licensed under a <a rel="license noopener" href="https://creativecommons.org/licenses/by/4.0/" target="_blank">Creative Commons Attribution 4.0 International License</a>.</span>
+        </p>
+    </div>
+    <div class="bottom">
+        <p><span>SvyJ &copy; 2020 - 2021</span>
+            <span>
+                
+                Power by <a href="http://hexo.io/" target="_blank">Hexo</a> Theme <a href="https://github.com/yscoder/hexo-theme-indigo" target="_blank">indigo</a>
+            </span>
+        </p>
+    </div>
+</footer>
+
+    </main>
+    <div class="mask" id="mask"></div>
+<a href="javascript:;" id="gotop" class="waves-effect waves-circle waves-light"><span class="icon icon-lg icon-chevron-up"></span></a>
+
+
+
+<div class="global-share" id="globalShare">
+    <ul class="reset share-icons">
+      <li>
+        <a class="weibo share-sns" target="_blank" href="http://service.weibo.com/share/share.php?url=http://yoursite.com/2021/07/04/RemoteSensingChangeDetection/&title=《遥感图像变化检测相关》 — SvyJ&pic=http://yoursite.com/img/Curry.png" data-title="微博">
+          <i class="icon icon-weibo"></i>
+        </a>
+      </li>
+      <li>
+        <a class="weixin share-sns wxFab" href="javascript:;" data-title="微信">
+          <i class="icon icon-weixin"></i>
+        </a>
+      </li>
+      <li>
+        <a class="qq share-sns" target="_blank" href="http://connect.qq.com/widget/shareqq/index.html?url=http://yoursite.com/2021/07/04/RemoteSensingChangeDetection/&title=《遥感图像变化检测相关》 — SvyJ&source=" data-title=" QQ">
+          <i class="icon icon-qq"></i>
+        </a>
+      </li>
+      <li>
+        <a class="facebook share-sns" target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=http://yoursite.com/2021/07/04/RemoteSensingChangeDetection/" data-title=" Facebook">
+          <i class="icon icon-facebook"></i>
+        </a>
+      </li>
+      <li>
+        <a class="twitter share-sns" target="_blank" href="https://twitter.com/intent/tweet?text=《遥感图像变化检测相关》 — SvyJ&url=http://yoursite.com/2021/07/04/RemoteSensingChangeDetection/&via=http://yoursite.com" data-title=" Twitter">
+          <i class="icon icon-twitter"></i>
+        </a>
+      </li>
+      <li>
+        <a class="google share-sns" target="_blank" href="https://plus.google.com/share?url=http://yoursite.com/2021/07/04/RemoteSensingChangeDetection/" data-title=" Google+">
+          <i class="icon icon-google-plus"></i>
+        </a>
+      </li>
+    </ul>
+ </div>
+
+
+<div class="page-modal wx-share" id="wxShare">
+    <a class="close" href="javascript:;"><i class="icon icon-close"></i></a>
+    <p>扫一扫，分享到微信</p>
+    <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAMYAAADGCAAAAACs8KCBAAACNUlEQVR42u3awW6EMAxFUf7/p6nUbYfMfTZUwrlZoVYNnCxcO/Zx4HX+rvTnfxf/q+OJJUOGjNcyzuW6evHVb692IPuQ3S6pMmTI2ICxDqbk49ZHkK440MuQIUNG+Lw+iNp7ZciQISMNuOQT++mjDBkyZKRF7Dop5MniGvN4LS5DhowXMtLGwH8+P9jfkCFDxksY/Ssw/vp0/+CrZMiQMZrB24ppaZqWo2l5jOZBZMiQMYhBSsrOlRwJqesD5QctQ4aMeQzegKzFtzS8puW0DBkydmDwUNtH8oMrtj9lyJAxmnFvMyD9lFohHbQQZMiQMYKRXq6RBkAfzEc9ZMiQMZvRSblqg2K1Ya8v3ylDhoxtGLVyMb3u7wfrD4clQ4aM0Qxy1dWpg0lI5W+UIUPGnoz+AEStrE0T0LgTK0OGjHGMG2bKwhBcC7hfrttkyJAxlMGDIx+eIFQy2NEK9DJkyBjE6AxDcDxvixYTRxkyZIxmpKkbTxl5eZw2ABBShgwZgxgnWOllPT8OHkxRPitDhozRDFJwxpf1pau0WptBhgwZsxm1Lfh1WLoDWcF/DxkyZIxgnOFKwy4ZSCUXcDJkyNiZcUO0ThM4fMFH0seYJEOGjNcySJCtjWelRSlpJBw8b5UhQ8Y4RudqvtZg6Od1HwKuDBkytmd0gmk6WsFHNGTIkCGDF7Gd0dV058siVoYMGaMZaZgjhe5dQxio/SlDhozRjNpFP0kWa8/k02/ob8iQIeMdjB+ib9sZjpbMtwAAAABJRU5ErkJggg==" alt="微信分享二维码">
+</div>
+
+
+
+
+    <script src="//cdn.bootcss.com/node-waves/0.7.4/waves.min.js"></script>
+<script>
+var BLOG = { ROOT: '/', SHARE: true, REWARD: true };
+
+
+</script>
+
+<script src="//unpkg.com/hexo-theme-material-indigo@latest/js/main.min.js"></script>
+
+
+<div class="search-panel" id="search-panel">
+    <ul class="search-result" id="search-result"></ul>
+</div>
+<template id="search-tpl">
+<li class="item">
+    <a href="{path}" class="waves-block waves-effect">
+        <div class="title ellipsis" title="{title}">{title}</div>
+        <div class="flex-row flex-middle">
+            <div class="tags ellipsis">
+                {tags}
+            </div>
+            <time class="flex-col time">{date}</time>
+        </div>
+    </a>
+</li>
+</template>
+
+<script src="//unpkg.com/hexo-theme-material-indigo@latest/js/search.min.js" async></script>
+
+
+
+
+
+
+<script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+
+
+
+<script>
+(function() {
+    var OriginTitile = document.title, titleTime;
+    document.addEventListener('visibilitychange', function() {
+        if (document.hidden) {
+            document.title = '你要离开了吗?';
+            clearTimeout(titleTime);
+        } else {
+            document.title = '欢迎回来！';
+            titleTime = setTimeout(function() {
+                document.title = OriginTitile;
+            },2000);
+        }
+    });
+})();
+</script>
+
+
+
+</body>
+</html>
