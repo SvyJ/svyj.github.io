@@ -28,10 +28,10 @@
 <meta property="og:site_name" content="SvyJ">
 <meta property="og:description" content="Anaconda环境搭建1 复制压缩包12home&#x2F;xx cp Anaconda3-5.2.0-Linux-x86_64.sh  home&#x2F;xx(也可直接手动复制粘贴文件)  2 安装1bash Anaconda3-5.2.0-Linux-x86_64.sh  3 添加到到PATH12source ~&#x2F;.bashrcvi ~&#x2F;.bashrc(查看PATH)">
 <meta property="og:locale" content="en_US">
-<meta property="og:image" content="http://yoursite.com/images/htop.jpg">
-<meta property="og:image" content="http://yoursite.com/images/JupyterNotebookPasswd.png">
+<meta property="og:image" content="https://i.loli.net/2021/07/05/8v6yGuxiVkdegwJ.png">
+<meta property="og:image" content="https://i.loli.net/2021/07/05/PKaOJh7fB2tHijE.png">
 <meta property="article:published_time" content="2020-07-26T02:55:01.923Z">
-<meta property="article:modified_time" content="2021-03-27T03:22:58.331Z">
+<meta property="article:modified_time" content="2021-07-05T09:15:36.489Z">
 <meta property="article:author" content="SvyJ">
 <meta property="article:tag" content="深度学习">
 <meta property="article:tag" content="Pytorch">
@@ -39,7 +39,7 @@
 <meta property="article:tag" content="Conda">
 <meta property="article:tag" content="Jupyter">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:image" content="http://yoursite.com/images/htop.jpg">
+<meta name="twitter:image" content="https://i.loli.net/2021/07/05/8v6yGuxiVkdegwJ.png">
     
         <link rel="alternate" type="application/atom+xml" title="SvyJ" href="/atom.xml">
     
@@ -217,14 +217,13 @@
 
 <h2 id="集群实时进程查看"><a href="#集群实时进程查看" class="headerlink" title="集群实时进程查看"></a><b>集群实时进程查看</b></h2><h3 id="1-nvidia-smi命令"><a href="#1-nvidia-smi命令" class="headerlink" title="1 nvidia-smi命令"></a>1 nvidia-smi命令</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">用于查看GPU使用情况，其中GPU Memory Usage决定了你是否还能挤一挤</span><br><span class="line">使用 nvidia-smi -l 可实时刷新（每隔五秒）</span><br></pre></td></tr></table></figure>
 
-<h3 id="2-htop命令"><a href="#2-htop命令" class="headerlink" title="2 htop命令"></a>2 htop命令</h3><figure class="image-bubble">
+<h3 id="2-htop命令"><a href="#2-htop命令" class="headerlink" title="2 htop命令"></a>2 htop命令</h3><p>!<figure class="image-bubble">
                 <div class="img-lightbox">
                     <div class="overlay"></div>
-                    <img src="/images/htop.jpg" alt="htop" title="">
+                    <img src="https://i.loli.net/2021/07/05/8v6yGuxiVkdegwJ.png" alt="htop" title="">
                 </div>
                 <div class="image-caption">htop</div>
-            </figure>
-<p>其中各字段含义：<br>（1）红线上方从左至右、从上至下为，</p>
+            </figure><br>其中各字段含义：<br>（1）红线上方从左至右、从上至下为，</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">左边部分为：cpu、内存、交换分区的使用情况；</span><br><span class="line">右边部分为：Tasks为进程总数(87)，线程总数(400)当前运行的进程数、</span><br><span class="line">Load average为系统1&#x2F;5&#x2F;10分钟的平均负载情况、Uptime为系统运行的时间。</span><br></pre></td></tr></table></figure>
 <p>（2）红线下方各字段的意义如下，</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line">PID：进行的标识号</span><br><span class="line">USER：运行此进程的用户</span><br><span class="line">PRI：进程的优先级</span><br><span class="line">NI：进程的优先级别值，默认的为0，可以进行调整, 越小优先级越高，最小-20，最大20（用户设置最大19）</span><br><span class="line">VIRT：进程占用的虚拟内存值</span><br><span class="line">RES：进程占用的物理内存值</span><br><span class="line">SHR：进程占用的共享内存值</span><br><span class="line">S：进程的运行状况，R表示正在运行、S表示休眠，等待唤醒、Z表示僵死状态</span><br><span class="line">CPU%：该进程占用的CPU使用率</span><br><span class="line">MEM%：该进程占用的物理内存和总内存的百分比</span><br><span class="line">TIME+：该进程启动后占用的总的CPU时间</span><br><span class="line">COMMAND：进程启动的启动命令名称</span><br></pre></td></tr></table></figure>
@@ -234,7 +233,7 @@
 <figure class="image-bubble">
                 <div class="img-lightbox">
                     <div class="overlay"></div>
-                    <img src="/images/JupyterNotebookPasswd.png" alt="" title="">
+                    <img src="https://i.loli.net/2021/07/05/PKaOJh7fB2tHijE.png" alt="" title="">
                 </div>
                 <div class="image-caption"></div>
             </figure>
@@ -253,7 +252,7 @@
     <div class="content">
         
 <span class="post-time">
-    Last updated: <time datetime="2021-03-27T03:22:58.331Z" itemprop="dateUpdated">2021-03-27 11:22:58</time>
+    Last updated: <time datetime="2021-07-05T09:15:36.489Z" itemprop="dateUpdated">2021-07-05 17:15:36</time>
 </span><br>
 
 
