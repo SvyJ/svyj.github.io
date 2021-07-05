@@ -184,16 +184,7 @@
 
     
         一、语义分割、实例分割和全景分割
-                
-                    
-                    
-                
-                Segmentation
-            
-
-1、通俗理解（1）语义分割：分割出每个类别，即对图片的每个像素做分类
-                
-         ...
+...
     
 
         <a href="/2020/09/12/Semantic_Segementation/" class="post-more waves-effect waves-button">
@@ -240,14 +231,7 @@
     <div class="post-content" id="post-content" itemprop="postContent">
 
     
-        Group Convolution
-分组卷积（来自AlexNet）详解： https://www.jianshu.com/p/a936b7bc54e3
-                
-                    
-                    
-                
-                Group Convolution
-           ...
+        Group Convolution...
     
 
         <a href="/2020/08/22/DeepLearning_ModuleAndBlocks/" class="post-more waves-effect waves-button">
@@ -295,9 +279,7 @@
 
     
         二分类网络的评价指标
-Acc, F1, ROC, AUC 
-
-1234567891011121314151617181920212223242526272829303132333435363738394041424344454647484950515253545556575859606162636465666768697071727374757677787980818283848586def...
+Acc, F...
     
 
         <a href="/2020/08/22/DeepLearning_Models_Metrics/" class="post-more waves-effect waves-button">
@@ -344,7 +326,7 @@ Acc, F1, ROC, AUC
     <div class="post-content" id="post-content" itemprop="postContent">
 
     
-        FCN-32/16/8/1s(2014)注.Backbone: VGG123456789101112131415161718192021222324252627282930313233343536373839404142434445464748495051525354555657585960616263646566676869707172737475767778798081828384858...
+        FCN-32/16/8/1s(20...
     
 
         <a href="/2020/08/20/DeepLearning_Models_Segmentation/" class="post-more waves-effect waves-button">
@@ -391,10 +373,7 @@ Acc, F1, ROC, AUC
     <div class="post-content" id="post-content" itemprop="postContent">
 
     
-        read-paper-listsemantic segmentation/object detection/light-weight network/instance segmentation
-Deep-base-network
-ImageNet Classification with Deep Convolutional Neural Networks(AlexNet)
-Very Deep...
+        read-paper-listse...
     
 
         <a href="/2020/08/16/DeepLearning_Papers/" class="post-more waves-effect waves-button">
@@ -441,8 +420,7 @@ Very Deep...
     <div class="post-content" id="post-content" itemprop="postContent">
 
     
-        以下所有模型输入为224*224的图片，输出层为2个神经元（即可实现二分类问题, 更改输出神经元个数以实现多分类）
-LeNet(1998)12345678910111213141516171819202122232425262728293031323334353637import torchimport torch.nn as nnclass LeNet(nn.Module):    def...
+        以下所有模型输入为224*224的...
     
 
         <a href="/2020/08/09/DeepLearning_Models_Classification/" class="post-more waves-effect waves-button">
@@ -490,8 +468,7 @@ LeNet(1998)12345678910111213141516171819202122232425262728293031323334353637impo
 
     
         代码常用
-Pytorch中Tensor与各种图像格式的相互转化： https://blog.csdn.net/qq_36955294/article/details/82888443
-Pytorch查看模型细节和参数大小计算（利用torchsummary模块）123456789101112from torchsummary import summarysummary(model, input...
+Pytorch中Tens...
     
 
         <a href="/2020/07/30/MarkMan_DL/" class="post-more waves-effect waves-button">
@@ -536,11 +513,7 @@ Pytorch查看模型细节和参数大小计算（利用torchsummary模块）1234
     <div class="post-content" id="post-content" itemprop="postContent">
 
     
-        Anaconda环境搭建1 复制压缩包12home&#x2F;xx cp Anaconda3-5.2.0-Linux-x86_64.sh  home&#x2F;xx(也可直接手动复制粘贴文件)
-
-2 安装1bash Anaconda3-5.2.0-Linux-x86_64.sh
-
-3 添加到到PATH12source ~&#x2F;.bashrcvi ~&#x2F;.bashrc(查看PAT...
+        Anaconda环境搭建1 复制压...
     
 
         <a href="/2020/07/26/ServerEnvironmentConfig/" class="post-more waves-effect waves-button">
@@ -587,8 +560,7 @@ Pytorch查看模型细节和参数大小计算（利用torchsummary模块）1234
     <div class="post-content" id="post-content" itemprop="postContent">
 
     
-        一、Mnist数据集介绍数据集的内容：包含0-9的手写数字数据集的数量：60000个训练集/10000个测试集数据集的格式：28*28数据集通道数：灰度图（单通道通道）
-二、LeNet七层模型1、C1卷积层：6个卷积核，大小为5*5，激活函数ReLumodel.add(Conv2D(6, kernel_size = (5,5), activation = ‘relu’, input_shap...
+        一、Mnist数据集介绍数据集的内...
     
 
         <a href="/2020/06/25/LeNet_Mnist/" class="post-more waves-effect waves-button">
@@ -633,8 +605,7 @@ Pytorch查看模型细节和参数大小计算（利用torchsummary模块）1234
     <div class="post-content" id="post-content" itemprop="postContent">
 
     
-        Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub.
-Co...
+        Welcome to Hexo! ...
     
 
         <a href="/2020/06/07/hello-world/" class="post-more waves-effect waves-button">
@@ -769,6 +740,27 @@ var BLOG = { ROOT: '/', SHARE: true, REWARD: false };
 <script src="//unpkg.com/hexo-theme-material-indigo@latest/js/search.min.js" async></script>
 
 
+
+<!-- mathjax config similar to math.stackexchange -->
+
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+    tex2jax: {
+        inlineMath: [ ['$','$'], ["\\(","\\)"]  ],
+        processEscapes: true,
+        skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code']
+    }
+});
+
+MathJax.Hub.Queue(function() {
+    var all = MathJax.Hub.getAllJax(), i;
+    for(i=0; i < all.length; i += 1) {
+        all[i].SourceElement().parentNode.className += ' has-jax';
+    }
+});
+</script>
+
+<script async src="//cdn.bootcss.com/mathjax/2.7.0/MathJax.js?config=TeX-MML-AM_CHTML" async></script>
 
 
 
