@@ -20,7 +20,7 @@
     <meta name="theme-color" content="#3F51B5">
     
     
-    <meta name="keywords" content="图像分割,深度学习,图像处理">
+    <meta name="keywords" content="图像处理,深度学习,图像分割">
     <meta name="description" content="记录一下沈阳的第四届图像计算与数字医学国际研讨会(The 4th International Symposium on Image Computing and Digital Medicine, ISICDM)挑战赛的竞赛过程。不得不吐槽一下整个过程项目三的主办方的各种延误和低级错误，比如标签给的JPG格式(—&gt;_—&gt;)，槽点太多，吐槽不过来。  一、竞赛背景我国在工业化发展过程中，由">
 <meta property="og:type" content="article">
 <meta property="og:title" content="ISICDM_2020挑战赛——肺部组织分割">
@@ -37,9 +37,9 @@
 <meta property="article:published_time" content="2020-11-04T14:27:10.788Z">
 <meta property="article:modified_time" content="2021-07-04T13:26:39.618Z">
 <meta property="article:author" content="SvyJ">
-<meta property="article:tag" content="图像分割">
-<meta property="article:tag" content="深度学习">
 <meta property="article:tag" content="图像处理">
+<meta property="article:tag" content="深度学习">
+<meta property="article:tag" content="图像分割">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:image" content="http://yoursite.com/images/ISICDM/Lung.png">
     
@@ -378,47 +378,38 @@
     
 
 
-<section class="comments" id="comments">
-    <div id="disqus_thread"></div>
+
+
+
+
+
+
+
+
+
+    <!-- Valine Comments -->
+    <div class="comments vcomment" id="comments"></div>
+    <script src="//cdn1.lncld.net/static/js/3.0.4/av-min.js"></script>
+    <script src="//unpkg.com/valine@latest/dist/Valine.min.js"></script>
+    <!-- Valine Comments script -->
     <script>
-    var disqus_shortname = 'true';
-    lazyScripts.push('//' + disqus_shortname + '.disqus.com/embed.js')
-    </script>
-    <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript" target="_blank" rel="noopener">comments powered by Disqus.</a></noscript>
-</section>
-
-
-
-
-<section class="comments" id="comments">
-    <!-- UY BEGIN -->
-    <div id="uyan_frame"></div>
-    <script src="http://v2.uyan.cc/code/uyan.js?uid=true"></script>
-    <!-- UY END -->
-</section>
-
-
-
-
-<section class="comments" id="comments">
-    <div id="gitment_thread"></div>
-    <link rel="stylesheet" href="//unpkg.com/gitment/style/default.css">
-    <script src="//unpkg.com/gitment/dist/gitment.browser.js"></script>
-    <script>
-        var gitment = new Gitment({
-            owner: '',
-            repo: '',
-            oauth: {
-                client_id: '',
-                client_secret: '',
-            },
+        var GUEST_INFO = ['nick','mail','link'];
+        var guest_info = 'nick,mail'.split(',').filter(function(item){
+          return GUEST_INFO.indexOf(item) > -1
+        });
+        new Valine({
+            el: '#comments',
+            notify: 'false' == 'true',
+            verify: 'false' == 'true',
+            appId: "e5bWQMoOycxPCdtTvxkPGJ0d-gzGzoHsz",
+            appKey: "peE7twywLp5HcdBx6gmKQYUH",
+            avatar: "mm",
+            placeholder: "Leave your comments here!",
+            guest_info: guest_info.length == 0 ? GUEST_INFO : guest_info,
+            pageSize: "10"
         })
-        gitment.render('comments')
     </script>
-</section>
-
-
-
+    <!-- Valine Comments end -->
 
 
 

@@ -20,13 +20,13 @@
     <meta name="theme-color" content="#3F51B5">
     
     
-    <meta name="keywords" content="图像分割,深度学习,图像处理">
-    <meta name="description" content="一、U-NetContribution 更规整的网络结构 通过将编码器的每层结果拼接到译码器中得到更好的结果  1、Architecture                                                                                             U-Net               2、3D U-NetArchite">
+    <meta name="keywords" content="图像处理,深度学习,图像分割">
+    <meta name="description" content="一、U-NetContribution 更规整的网络结构 通过将编码器的每层结果拼接到译码器中得到更好的结果  1、Architecture                                                                                             U-Net               二、3D U-NetArchite">
 <meta property="og:type" content="article">
 <meta property="og:title" content="U-Net系列文献综述">
 <meta property="og:url" content="http://yoursite.com/2020/09/18/UNet_Family/index.html">
 <meta property="og:site_name" content="SvyJ">
-<meta property="og:description" content="一、U-NetContribution 更规整的网络结构 通过将编码器的每层结果拼接到译码器中得到更好的结果  1、Architecture                                                                                             U-Net               2、3D U-NetArchite">
+<meta property="og:description" content="一、U-NetContribution 更规整的网络结构 通过将编码器的每层结果拼接到译码器中得到更好的结果  1、Architecture                                                                                             U-Net               二、3D U-NetArchite">
 <meta property="og:locale" content="en_US">
 <meta property="og:image" content="http://yoursite.com/images/UNets/UNet.png">
 <meta property="og:image" content="http://yoursite.com/images/UNets/3D_UNet.png">
@@ -43,11 +43,11 @@
 <meta property="og:image" content="http://yoursite.com/images/UNets/UNet_3+.png">
 <meta property="og:image" content="http://yoursite.com/images/UNets/MS_SSIM_Loss.png">
 <meta property="article:published_time" content="2020-09-18T09:04:13.286Z">
-<meta property="article:modified_time" content="2021-07-04T13:06:19.519Z">
+<meta property="article:modified_time" content="2021-07-04T13:33:20.447Z">
 <meta property="article:author" content="SvyJ">
-<meta property="article:tag" content="图像分割">
-<meta property="article:tag" content="深度学习">
 <meta property="article:tag" content="图像处理">
+<meta property="article:tag" content="深度学习">
+<meta property="article:tag" content="图像分割">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:image" content="http://yoursite.com/images/UNets/UNet.png">
     
@@ -184,7 +184,7 @@
     <aside class="post-widget">
         <nav class="post-toc-wrap post-toc-shrink" id="post-toc">
             <h4>TOC</h4>
-            <ol class="post-toc"><li class="post-toc-item post-toc-level-1"><a class="post-toc-link" href="#一、U-Net"><span class="post-toc-number">1.</span> <span class="post-toc-text">一、U-Net</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#Contribution"><span class="post-toc-number">1.1.</span> <span class="post-toc-text">Contribution</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#1、Architecture"><span class="post-toc-number">1.2.</span> <span class="post-toc-text">1、Architecture</span></a></li></ol></li><li class="post-toc-item post-toc-level-1"><a class="post-toc-link" href="#2、3D-U-Net"><span class="post-toc-number">2.</span> <span class="post-toc-text">2、3D U-Net</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#Architecture"><span class="post-toc-number">2.1.</span> <span class="post-toc-text">Architecture</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#3、Tricks"><span class="post-toc-number">2.2.</span> <span class="post-toc-text">3、Tricks</span></a></li></ol></li><li class="post-toc-item post-toc-level-1"><a class="post-toc-link" href="#二、U-Net"><span class="post-toc-number">3.</span> <span class="post-toc-text">二、U-Net++</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#1、Architecture-1"><span class="post-toc-number">3.1.</span> <span class="post-toc-text">1、Architecture</span></a></li></ol></li><li class="post-toc-item post-toc-level-1"><a class="post-toc-link" href="#三、Res-U-Net和Dense-U-Net"><span class="post-toc-number">4.</span> <span class="post-toc-text">三、Res U-Net和Dense U-Net</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#1、Contribution"><span class="post-toc-number">4.1.</span> <span class="post-toc-text">1、Contribution</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#2、Architecture"><span class="post-toc-number">4.2.</span> <span class="post-toc-text">2、Architecture</span></a></li></ol></li><li class="post-toc-item post-toc-level-1"><a class="post-toc-link" href="#四、MultiRes-U-Net"><span class="post-toc-number">5.</span> <span class="post-toc-text">四、MultiRes U-Net</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#1、Contribution-1"><span class="post-toc-number">5.1.</span> <span class="post-toc-text">1、Contribution</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#2、Architecture-1"><span class="post-toc-number">5.2.</span> <span class="post-toc-text">2、Architecture</span></a></li></ol></li><li class="post-toc-item post-toc-level-1"><a class="post-toc-link" href="#五、R2-U-Net"><span class="post-toc-number">6.</span> <span class="post-toc-text">五、R2 U-Net</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#1、Contribution-2"><span class="post-toc-number">6.1.</span> <span class="post-toc-text">1、Contribution</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#2、Architecture-2"><span class="post-toc-number">6.2.</span> <span class="post-toc-text">2、Architecture</span></a></li></ol></li><li class="post-toc-item post-toc-level-1"><a class="post-toc-link" href="#六、Attention-U-Net"><span class="post-toc-number">7.</span> <span class="post-toc-text">六、Attention U-Net</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#1、Contribution-3"><span class="post-toc-number">7.1.</span> <span class="post-toc-text">1、Contribution</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#2、Architecture-3"><span class="post-toc-number">7.2.</span> <span class="post-toc-text">2、Architecture</span></a></li></ol></li><li class="post-toc-item post-toc-level-1"><a class="post-toc-link" href="#七、U-Net-3"><span class="post-toc-number">8.</span> <span class="post-toc-text">七、U-Net 3+</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#1、Contribution-4"><span class="post-toc-number">8.1.</span> <span class="post-toc-text">1、Contribution</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#2、Architecture-4"><span class="post-toc-number">8.2.</span> <span class="post-toc-text">2、Architecture</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#3、Tricks-1"><span class="post-toc-number">8.3.</span> <span class="post-toc-text">3、Tricks</span></a></li></ol></li><li class="post-toc-item post-toc-level-1"><a class="post-toc-link" href="#附：UNet-family论文及代码"><span class="post-toc-number">9.</span> <span class="post-toc-text">附：UNet-family论文及代码</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#2015"><span class="post-toc-number">9.1.</span> <span class="post-toc-text">2015</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#2016"><span class="post-toc-number">9.2.</span> <span class="post-toc-text">2016</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#2017"><span class="post-toc-number">9.3.</span> <span class="post-toc-text">2017</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#2018"><span class="post-toc-number">9.4.</span> <span class="post-toc-text">2018</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#2019"><span class="post-toc-number">9.5.</span> <span class="post-toc-text">2019</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#2020"><span class="post-toc-number">9.6.</span> <span class="post-toc-text">2020</span></a></li></ol></li></ol>
+            <ol class="post-toc"><li class="post-toc-item post-toc-level-1"><a class="post-toc-link" href="#一、U-Net"><span class="post-toc-number">1.</span> <span class="post-toc-text">一、U-Net</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#Contribution"><span class="post-toc-number">1.1.</span> <span class="post-toc-text">Contribution</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#1、Architecture"><span class="post-toc-number">1.2.</span> <span class="post-toc-text">1、Architecture</span></a></li></ol></li><li class="post-toc-item post-toc-level-1"><a class="post-toc-link" href="#二、3D-U-Net"><span class="post-toc-number">2.</span> <span class="post-toc-text">二、3D U-Net</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#Architecture"><span class="post-toc-number">2.1.</span> <span class="post-toc-text">Architecture</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#3、Tricks"><span class="post-toc-number">2.2.</span> <span class="post-toc-text">3、Tricks</span></a></li></ol></li><li class="post-toc-item post-toc-level-1"><a class="post-toc-link" href="#三、U-Net"><span class="post-toc-number">3.</span> <span class="post-toc-text">三、U-Net++</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#1、Architecture-1"><span class="post-toc-number">3.1.</span> <span class="post-toc-text">1、Architecture</span></a></li></ol></li><li class="post-toc-item post-toc-level-1"><a class="post-toc-link" href="#四、Res-U-Net和Dense-U-Net"><span class="post-toc-number">4.</span> <span class="post-toc-text">四、Res U-Net和Dense U-Net</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#1、Contribution"><span class="post-toc-number">4.1.</span> <span class="post-toc-text">1、Contribution</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#2、Architecture"><span class="post-toc-number">4.2.</span> <span class="post-toc-text">2、Architecture</span></a></li></ol></li><li class="post-toc-item post-toc-level-1"><a class="post-toc-link" href="#五、MultiRes-U-Net"><span class="post-toc-number">5.</span> <span class="post-toc-text">五、MultiRes U-Net</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#1、Contribution-1"><span class="post-toc-number">5.1.</span> <span class="post-toc-text">1、Contribution</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#2、Architecture-1"><span class="post-toc-number">5.2.</span> <span class="post-toc-text">2、Architecture</span></a></li></ol></li><li class="post-toc-item post-toc-level-1"><a class="post-toc-link" href="#六、R2-U-Net"><span class="post-toc-number">6.</span> <span class="post-toc-text">六、R2 U-Net</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#1、Contribution-2"><span class="post-toc-number">6.1.</span> <span class="post-toc-text">1、Contribution</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#2、Architecture-2"><span class="post-toc-number">6.2.</span> <span class="post-toc-text">2、Architecture</span></a></li></ol></li><li class="post-toc-item post-toc-level-1"><a class="post-toc-link" href="#七、Attention-U-Net"><span class="post-toc-number">7.</span> <span class="post-toc-text">七、Attention U-Net</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#1、Contribution-3"><span class="post-toc-number">7.1.</span> <span class="post-toc-text">1、Contribution</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#2、Architecture-3"><span class="post-toc-number">7.2.</span> <span class="post-toc-text">2、Architecture</span></a></li></ol></li><li class="post-toc-item post-toc-level-1"><a class="post-toc-link" href="#八、U-Net-3"><span class="post-toc-number">8.</span> <span class="post-toc-text">八、U-Net 3+</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#1、Contribution-4"><span class="post-toc-number">8.1.</span> <span class="post-toc-text">1、Contribution</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#2、Architecture-4"><span class="post-toc-number">8.2.</span> <span class="post-toc-text">2、Architecture</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#3、Tricks-1"><span class="post-toc-number">8.3.</span> <span class="post-toc-text">3、Tricks</span></a></li></ol></li><li class="post-toc-item post-toc-level-1"><a class="post-toc-link" href="#附：UNet-family论文及代码"><span class="post-toc-number">9.</span> <span class="post-toc-text">附：UNet-family论文及代码</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#2015"><span class="post-toc-number">9.1.</span> <span class="post-toc-text">2015</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#2016"><span class="post-toc-number">9.2.</span> <span class="post-toc-text">2016</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#2017"><span class="post-toc-number">9.3.</span> <span class="post-toc-text">2017</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#2018"><span class="post-toc-number">9.4.</span> <span class="post-toc-text">2018</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#2019"><span class="post-toc-number">9.5.</span> <span class="post-toc-text">2019</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#2020"><span class="post-toc-number">9.6.</span> <span class="post-toc-text">2020</span></a></li></ol></li></ol>
         </nav>
     </aside>
 
@@ -222,7 +222,7 @@
                 <div class="image-caption">U-Net</div>
             </figure>
 
-<h1 id="2、3D-U-Net"><a href="#2、3D-U-Net" class="headerlink" title="2、3D U-Net"></a><strong>2、3D U-Net</strong></h1><h2 id="Architecture"><a href="#Architecture" class="headerlink" title="Architecture"></a><strong>Architecture</strong></h2><figure class="image-bubble">
+<h1 id="二、3D-U-Net"><a href="#二、3D-U-Net" class="headerlink" title="二、3D U-Net"></a><strong>二、3D U-Net</strong></h1><h2 id="Architecture"><a href="#Architecture" class="headerlink" title="Architecture"></a><strong>Architecture</strong></h2><figure class="image-bubble">
                 <div class="img-lightbox">
                     <div class="overlay"></div>
                     <img src="/images/UNets/3D_UNet.png" alt="3D U-Net" title="">
@@ -237,7 +237,7 @@
 <li>使用了旋转、缩放和灰度增强等数据增强方法，此外在训练数据和正确标注数据上运用平滑的密集变形场，即从一个标准差为4的正态分布中抽取随机向量，每个方向的间距为32个体素，然后应用b样条插值。</li>
 <li>使用带加权交叉熵损失的Softmax函数对网络输出和正确标注数据进行比较，对经常出现的背景减少权重，对标注到的图像数据部分增加权重，以平衡微管和背景体素对损失的影响。未标记的像素不参与损失计算，即权重为0。这样可以让网络可以更多地仅仅学习标注到的像素点，从而达到普适性地特点。</li>
 </ul>
-<h1 id="二、U-Net"><a href="#二、U-Net" class="headerlink" title="二、U-Net++"></a><strong>二、U-Net++</strong></h1><p>作者知乎解读：<a href="https://zhuanlan.zhihu.com/p/44958351" target="_blank" rel="noopener">https://zhuanlan.zhihu.com/p/44958351</a><br>小总结：<a href="https://blog.csdn.net/u013066730/article/details/84954229?biz_id=102&amp;utm_term=UNet++&amp;utm_medium=distribute.pc_search_result.none-task-blog-2~all~sobaiduweb~default-0-84954229&amp;spm=1018.2118.3001.4187" target="_blank" rel="noopener">https://blog.csdn.net/u013066730/article/details/84954229?biz_id=102&amp;utm_term=UNet++&amp;utm_medium=distribute.pc_search_result.none-task-blog-2~all~sobaiduweb~default-0-84954229&amp;spm=1018.2118.3001.4187</a></p>
+<h1 id="三、U-Net"><a href="#三、U-Net" class="headerlink" title="三、U-Net++"></a><strong>三、U-Net++</strong></h1><p>作者知乎解读：<a href="https://zhuanlan.zhihu.com/p/44958351" target="_blank" rel="noopener">https://zhuanlan.zhihu.com/p/44958351</a><br>小总结：<a href="https://blog.csdn.net/u013066730/article/details/84954229?biz_id=102&amp;utm_term=UNet++&amp;utm_medium=distribute.pc_search_result.none-task-blog-2~all~sobaiduweb~default-0-84954229&amp;spm=1018.2118.3001.4187" target="_blank" rel="noopener">https://blog.csdn.net/u013066730/article/details/84954229?biz_id=102&amp;utm_term=UNet++&amp;utm_medium=distribute.pc_search_result.none-task-blog-2~all~sobaiduweb~default-0-84954229&amp;spm=1018.2118.3001.4187</a></p>
 <h2 id="1、Architecture-1"><a href="#1、Architecture-1" class="headerlink" title="1、Architecture"></a><strong>1、Architecture</strong></h2><ul>
 <li>黑色部分代表的就是原始U-Net结构,绿色代表添加的卷积层，蓝色代表改进的Skip Connection。</li>
 <li>以X(1,2)为例说明，它是由X(1,0)、X(1,1)和上采样后的X(2,1)拼接之后，再经过一次Conv与ReLU得到。<figure class="image-bubble">
@@ -250,7 +250,7 @@
 
 </li>
 </ul>
-<h1 id="三、Res-U-Net和Dense-U-Net"><a href="#三、Res-U-Net和Dense-U-Net" class="headerlink" title="三、Res U-Net和Dense U-Net"></a><strong>三、Res U-Net和Dense U-Net</strong></h1><h2 id="1、Contribution"><a href="#1、Contribution" class="headerlink" title="1、Contribution"></a><strong>1、Contribution</strong></h2><ul>
+<h1 id="四、Res-U-Net和Dense-U-Net"><a href="#四、Res-U-Net和Dense-U-Net" class="headerlink" title="四、Res U-Net和Dense U-Net"></a><strong>四、Res U-Net和Dense U-Net</strong></h1><h2 id="1、Contribution"><a href="#1、Contribution" class="headerlink" title="1、Contribution"></a><strong>1、Contribution</strong></h2><ul>
 <li>Res U-Net和Dense U-Net分别受到残差连接和密集连接的启发，将U-Net的每一个子模块分别替换为具有残差连接和密集连接的形式。</li>
 </ul>
 <h2 id="2、Architecture"><a href="#2、Architecture" class="headerlink" title="2、Architecture"></a><strong>2、Architecture</strong></h2><figure class="image-bubble">
@@ -261,7 +261,7 @@
                 <div class="image-caption">Res U-Net</div>
             </figure>
 
-<h1 id="四、MultiRes-U-Net"><a href="#四、MultiRes-U-Net" class="headerlink" title="四、MultiRes U-Net"></a><strong>四、MultiRes U-Net</strong></h1><h2 id="1、Contribution-1"><a href="#1、Contribution-1" class="headerlink" title="1、Contribution"></a><strong>1、Contribution</strong></h2><ul>
+<h1 id="五、MultiRes-U-Net"><a href="#五、MultiRes-U-Net" class="headerlink" title="五、MultiRes U-Net"></a><strong>五、MultiRes U-Net</strong></h1><h2 id="1、Contribution-1"><a href="#1、Contribution-1" class="headerlink" title="1、Contribution"></a><strong>1、Contribution</strong></h2><ul>
 <li>将U-Net中的两个3*3的卷积替换成3*3，7*7卷积运算与5*5卷积运算并行合并，使用多分辨率思路替换传统卷积层。</li>
 <li>使用Res Path替换传统U-Net中的简单的跳过连接。</li>
 <li>在具有挑战性的训练集有着卓越的提高。</li>
@@ -291,7 +291,7 @@
 
 </li>
 </ul>
-<h1 id="五、R2-U-Net"><a href="#五、R2-U-Net" class="headerlink" title="五、R2 U-Net"></a><strong>五、R2 U-Net</strong></h1><h2 id="1、Contribution-2"><a href="#1、Contribution-2" class="headerlink" title="1、Contribution"></a><strong>1、Contribution</strong></h2><ul>
+<h1 id="六、R2-U-Net"><a href="#六、R2-U-Net" class="headerlink" title="六、R2 U-Net"></a><strong>六、R2 U-Net</strong></h1><h2 id="1、Contribution-2"><a href="#1、Contribution-2" class="headerlink" title="1、Contribution"></a><strong>1、Contribution</strong></h2><ul>
 <li>提出了两个新模型RU-Net和R2U-Net用于医学图像分割。</li>
 <li>对医学成像的三种不同模式进行了实验，包括视网膜血管分割，皮肤癌分割和肺分割。</li>
 <li>对基于模型的视网膜血管分割任务和基于端到端图像的皮肤病变和肺分割任务的模型，对提出的模型进行性能评估。</li>
@@ -323,7 +323,7 @@
 <li>在U-Net的基础上添加了Recurrent Conv模块来改进得到的RU-Net（Recurrent U-Net），如上图。</li>
 <li>在上图的基础上加入如ResU-Net的残差模块后得到R2U-Net（Recurrent Residual U-Net）。</li>
 </ul>
-<h1 id="六、Attention-U-Net"><a href="#六、Attention-U-Net" class="headerlink" title="六、Attention U-Net"></a><strong>六、Attention U-Net</strong></h1><p>Codes: <a href="https://github.com/SvyJ/svyj.github.io/blob/master/codes/Attention_UNet.py" target="_blank" rel="noopener">https://github.com/SvyJ/svyj.github.io/blob/master/codes/Attention_UNet.py</a><br>Attention，即为注意力机制。在医疗图像中，就是把注意力集中到对特定任务有用的显著特征（比如说相关组织或者是器官），抑制输入图像中的不相关区域。在级联神经网络中，需要明确的外部组织/器官定位模块，而使用Attention就不需要了。</p>
+<h1 id="七、Attention-U-Net"><a href="#七、Attention-U-Net" class="headerlink" title="七、Attention U-Net"></a><strong>七、Attention U-Net</strong></h1><p>Codes: <a href="https://github.com/SvyJ/svyj.github.io/blob/master/codes/Attention_UNet.py" target="_blank" rel="noopener">https://github.com/SvyJ/svyj.github.io/blob/master/codes/Attention_UNet.py</a><br>Attention，即为注意力机制。在医疗图像中，就是把注意力集中到对特定任务有用的显著特征（比如说相关组织或者是器官），抑制输入图像中的不相关区域。在级联神经网络中，需要明确的外部组织/器官定位模块，而使用Attention就不需要了。</p>
 <h2 id="1、Contribution-3"><a href="#1、Contribution-3" class="headerlink" title="1、Contribution"></a><strong>1、Contribution</strong></h2><ul>
 <li>进一步采用注意力方法，提出基于网格的门控（Grid-Based Gating），使注意系数（Attention Coefficients）更加特定于局部区域。 与基于全局特征向量的门控相比，这提高了性能。 此外，本方法可用于密集预测，因为不执行自适应池化。</li>
 <li>提出了应用于医学成像任务的前馈CNN模型中的软注意（Soft-Attention）技术的第一个用例之一。 提出的注意力可以取代图像分类中使用的硬注意方法和图像分割框架中的外部器官定位模型。</li>
@@ -347,7 +347,7 @@
             </figure></li>
 <li>如上图为带有Attention Gate的U-Net模型，与标准U-Net相比，改进的地方在于Skip-Connection增加了Attention Gate，而<strong>Gating Signal是采用的较深层Feature Map</strong>。</li>
 </ul>
-<h1 id="七、U-Net-3"><a href="#七、U-Net-3" class="headerlink" title="七、U-Net 3+"></a><strong>七、U-Net 3+</strong></h1><h2 id="1、Contribution-4"><a href="#1、Contribution-4" class="headerlink" title="1、Contribution"></a><strong>1、Contribution</strong></h2><ul>
+<h1 id="八、U-Net-3"><a href="#八、U-Net-3" class="headerlink" title="八、U-Net 3+"></a><strong>八、U-Net 3+</strong></h1><h2 id="1、Contribution-4"><a href="#1、Contribution-4" class="headerlink" title="1、Contribution"></a><strong>1、Contribution</strong></h2><ul>
 <li>设计了一种新的网络结构U-Net3+，通过引入全尺度的跳过连接，在全尺度特征映射中融合了低层细节和高层语义，充分利用了多尺度特征的同时具有更少的参数；</li>
 <li>通过深度监督让网络从全尺度特征中学习分割表示，提出了更优的混合损失函数以增强器官的边界；</li>
 <li>提出分类指导模块，通过与图像分类分支联合训练的方式，减少了网络在非器官图像的过度分割（Over-Segmentation）；</li>
@@ -447,7 +447,7 @@
     <div class="content">
         
 <span class="post-time">
-    Last updated: <time datetime="2021-07-04T13:06:19.519Z" itemprop="dateUpdated">2021-07-04 21:06:19</time>
+    Last updated: <time datetime="2021-07-04T13:33:20.447Z" itemprop="dateUpdated">2021-07-04 21:33:20</time>
 </span><br>
 
 
@@ -553,47 +553,38 @@
     
 
 
-<section class="comments" id="comments">
-    <div id="disqus_thread"></div>
+
+
+
+
+
+
+
+
+
+    <!-- Valine Comments -->
+    <div class="comments vcomment" id="comments"></div>
+    <script src="//cdn1.lncld.net/static/js/3.0.4/av-min.js"></script>
+    <script src="//unpkg.com/valine@latest/dist/Valine.min.js"></script>
+    <!-- Valine Comments script -->
     <script>
-    var disqus_shortname = 'true';
-    lazyScripts.push('//' + disqus_shortname + '.disqus.com/embed.js')
-    </script>
-    <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript" target="_blank" rel="noopener">comments powered by Disqus.</a></noscript>
-</section>
-
-
-
-
-<section class="comments" id="comments">
-    <!-- UY BEGIN -->
-    <div id="uyan_frame"></div>
-    <script src="http://v2.uyan.cc/code/uyan.js?uid=true"></script>
-    <!-- UY END -->
-</section>
-
-
-
-
-<section class="comments" id="comments">
-    <div id="gitment_thread"></div>
-    <link rel="stylesheet" href="//unpkg.com/gitment/style/default.css">
-    <script src="//unpkg.com/gitment/dist/gitment.browser.js"></script>
-    <script>
-        var gitment = new Gitment({
-            owner: '',
-            repo: '',
-            oauth: {
-                client_id: '',
-                client_secret: '',
-            },
+        var GUEST_INFO = ['nick','mail','link'];
+        var guest_info = 'nick,mail'.split(',').filter(function(item){
+          return GUEST_INFO.indexOf(item) > -1
+        });
+        new Valine({
+            el: '#comments',
+            notify: 'false' == 'true',
+            verify: 'false' == 'true',
+            appId: "e5bWQMoOycxPCdtTvxkPGJ0d-gzGzoHsz",
+            appKey: "peE7twywLp5HcdBx6gmKQYUH",
+            avatar: "mm",
+            placeholder: "Leave your comments here!",
+            guest_info: guest_info.length == 0 ? GUEST_INFO : guest_info,
+            pageSize: "10"
         })
-        gitment.render('comments')
     </script>
-</section>
-
-
-
+    <!-- Valine Comments end -->
 
 
 

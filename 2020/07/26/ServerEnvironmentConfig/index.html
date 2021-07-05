@@ -20,7 +20,7 @@
     <meta name="theme-color" content="#3F51B5">
     
     
-    <meta name="keywords" content="Pytorch,深度学习,环境配置,Conda,Jupyter">
+    <meta name="keywords" content="深度学习,Pytorch,环境配置,Conda,Jupyter">
     <meta name="description" content="Anaconda环境搭建1 复制压缩包12home&#x2F;xx cp Anaconda3-5.2.0-Linux-x86_64.sh  home&#x2F;xx(也可直接手动复制粘贴文件)  2 安装1bash Anaconda3-5.2.0-Linux-x86_64.sh  3 添加到到PATH12source ~&#x2F;.bashrcvi ~&#x2F;.bashrc(查看PATH)">
 <meta property="og:type" content="article">
 <meta property="og:title" content="实验室集群环境配置（包括Anaconda环境搭建、Pytorch框架的安装和Jupyter Notebook的配置）">
@@ -33,8 +33,8 @@
 <meta property="article:published_time" content="2020-07-26T02:55:01.923Z">
 <meta property="article:modified_time" content="2021-03-27T03:22:58.331Z">
 <meta property="article:author" content="SvyJ">
-<meta property="article:tag" content="Pytorch">
 <meta property="article:tag" content="深度学习">
+<meta property="article:tag" content="Pytorch">
 <meta property="article:tag" content="环境配置">
 <meta property="article:tag" content="Conda">
 <meta property="article:tag" content="Jupyter">
@@ -359,47 +359,38 @@
     
 
 
-<section class="comments" id="comments">
-    <div id="disqus_thread"></div>
+
+
+
+
+
+
+
+
+
+    <!-- Valine Comments -->
+    <div class="comments vcomment" id="comments"></div>
+    <script src="//cdn1.lncld.net/static/js/3.0.4/av-min.js"></script>
+    <script src="//unpkg.com/valine@latest/dist/Valine.min.js"></script>
+    <!-- Valine Comments script -->
     <script>
-    var disqus_shortname = 'true';
-    lazyScripts.push('//' + disqus_shortname + '.disqus.com/embed.js')
-    </script>
-    <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript" target="_blank" rel="noopener">comments powered by Disqus.</a></noscript>
-</section>
-
-
-
-
-<section class="comments" id="comments">
-    <!-- UY BEGIN -->
-    <div id="uyan_frame"></div>
-    <script src="http://v2.uyan.cc/code/uyan.js?uid=true"></script>
-    <!-- UY END -->
-</section>
-
-
-
-
-<section class="comments" id="comments">
-    <div id="gitment_thread"></div>
-    <link rel="stylesheet" href="//unpkg.com/gitment/style/default.css">
-    <script src="//unpkg.com/gitment/dist/gitment.browser.js"></script>
-    <script>
-        var gitment = new Gitment({
-            owner: '',
-            repo: '',
-            oauth: {
-                client_id: '',
-                client_secret: '',
-            },
+        var GUEST_INFO = ['nick','mail','link'];
+        var guest_info = 'nick,mail'.split(',').filter(function(item){
+          return GUEST_INFO.indexOf(item) > -1
+        });
+        new Valine({
+            el: '#comments',
+            notify: 'false' == 'true',
+            verify: 'false' == 'true',
+            appId: "e5bWQMoOycxPCdtTvxkPGJ0d-gzGzoHsz",
+            appKey: "peE7twywLp5HcdBx6gmKQYUH",
+            avatar: "mm",
+            placeholder: "Leave your comments here!",
+            guest_info: guest_info.length == 0 ? GUEST_INFO : guest_info,
+            pageSize: "10"
         })
-        gitment.render('comments')
     </script>
-</section>
-
-
-
+    <!-- Valine Comments end -->
 
 
 
