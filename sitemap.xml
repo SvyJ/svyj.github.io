@@ -1,0 +1,366 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset
+    xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
+       http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd"
+>
+
+<url>
+ <loc>https://svyj.github.io/archives</loc>
+ <priority>0.3</priority>
+ <lastmod>2024-07-23</lastmod>
+ <changefreq>weekly</changefreq>
+</url>
+
+<url>
+ <loc>https://svyj.github.io/tags</loc>
+ <priority>0.3</priority>
+ <lastmod>2024-07-23</lastmod>
+ <changefreq>weekly</changefreq>
+</url>
+
+<url>
+ <loc>https://svyj.github.io/categories</loc>
+ <priority>0.3</priority>
+ <lastmod>2024-07-23</lastmod>
+ <changefreq>weekly</changefreq>
+</url>
+
+<url>
+ <loc>https://svyj.github.io/</loc>
+ <priority>0.3</priority>
+ <lastmod>2024-07-23</lastmod>
+ <changefreq>weekly</changefreq>
+</url>
+
+<url>
+ <loc>https://svyj.github.io/link</loc>
+ <priority>0.3</priority>
+ <lastmod>2024-07-23</lastmod>
+ <changefreq>weekly</changefreq>
+</url>
+
+<url>
+ <loc>https://svyj.github.io/about</loc>
+ <priority>0.3</priority>
+ <lastmod>2024-07-23</lastmod>
+ <changefreq>weekly</changefreq>
+</url>
+
+<url>
+ <loc>https://svyj.github.io/2023/05/03/038-M3DM</loc>
+ <priority>0.3</priority>
+ <lastmod>2024-07-23</lastmod>
+ <changefreq>weekly</changefreq>
+</url>
+
+<url>
+ <loc>https://svyj.github.io/categories/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0</loc>
+ <priority>0.3</priority>
+ <lastmod>2024-07-23</lastmod>
+ <changefreq>weekly</changefreq>
+</url>
+
+<url>
+ <loc>https://svyj.github.io/tags/%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0</loc>
+ <priority>0.3</priority>
+ <lastmod>2024-07-23</lastmod>
+ <changefreq>weekly</changefreq>
+</url>
+
+<url>
+ <loc>https://svyj.github.io/2023/05/03/037-FewShotLearning</loc>
+ <priority>0.3</priority>
+ <lastmod>2024-07-23</lastmod>
+ <changefreq>weekly</changefreq>
+</url>
+
+<url>
+ <loc>https://svyj.github.io/2023/04/03/036-DoctorApplication</loc>
+ <priority>0.3</priority>
+ <lastmod>2024-07-23</lastmod>
+ <changefreq>weekly</changefreq>
+</url>
+
+<url>
+ <loc>https://svyj.github.io/categories/%E6%95%99%E7%A8%8B</loc>
+ <priority>0.3</priority>
+ <lastmod>2024-07-23</lastmod>
+ <changefreq>weekly</changefreq>
+</url>
+
+<url>
+ <loc>https://svyj.github.io/2022/09/28/035-Autumn_Recruiment_Summary</loc>
+ <priority>0.3</priority>
+ <lastmod>2024-07-23</lastmod>
+ <changefreq>weekly</changefreq>
+</url>
+
+<url>
+ <loc>https://svyj.github.io/2022/09/25/030-InterviewQs_Leetcode</loc>
+ <priority>0.3</priority>
+ <lastmod>2024-07-23</lastmod>
+ <changefreq>weekly</changefreq>
+</url>
+
+<url>
+ <loc>https://svyj.github.io/tags/Python</loc>
+ <priority>0.3</priority>
+ <lastmod>2024-07-23</lastmod>
+ <changefreq>weekly</changefreq>
+</url>
+
+<url>
+ <loc>https://svyj.github.io/tags/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84</loc>
+ <priority>0.3</priority>
+ <lastmod>2024-07-23</lastmod>
+ <changefreq>weekly</changefreq>
+</url>
+
+<url>
+ <loc>https://svyj.github.io/tags/%E7%AE%97%E6%B3%95</loc>
+ <priority>0.3</priority>
+ <lastmod>2024-07-23</lastmod>
+ <changefreq>weekly</changefreq>
+</url>
+
+<url>
+ <loc>https://svyj.github.io/2022/09/25/026-InterviewQs_ML</loc>
+ <priority>0.3</priority>
+ <lastmod>2024-07-23</lastmod>
+ <changefreq>weekly</changefreq>
+</url>
+
+<url>
+ <loc>https://svyj.github.io/tags/%E5%9B%BE%E5%83%8F%E5%A4%84%E7%90%86</loc>
+ <priority>0.3</priority>
+ <lastmod>2024-07-23</lastmod>
+ <changefreq>weekly</changefreq>
+</url>
+
+<url>
+ <loc>https://svyj.github.io/2022/09/17/027-InterviewQs_DL</loc>
+ <priority>0.3</priority>
+ <lastmod>2024-07-23</lastmod>
+ <changefreq>weekly</changefreq>
+</url>
+
+<url>
+ <loc>https://svyj.github.io/2022/09/06/029-InterviewQs_Python</loc>
+ <priority>0.3</priority>
+ <lastmod>2024-07-23</lastmod>
+ <changefreq>weekly</changefreq>
+</url>
+
+<url>
+ <loc>https://svyj.github.io/2022/09/01/028-InterviewQs_IP</loc>
+ <priority>0.3</priority>
+ <lastmod>2024-07-23</lastmod>
+ <changefreq>weekly</changefreq>
+</url>
+
+<url>
+ <loc>https://svyj.github.io/2022/08/14/032-Leetcode</loc>
+ <priority>0.3</priority>
+ <lastmod>2024-07-23</lastmod>
+ <changefreq>weekly</changefreq>
+</url>
+
+<url>
+ <loc>https://svyj.github.io/tags/CPP</loc>
+ <priority>0.3</priority>
+ <lastmod>2024-07-23</lastmod>
+ <changefreq>weekly</changefreq>
+</url>
+
+<url>
+ <loc>https://svyj.github.io/2022/08/10/033-SwinTransformer</loc>
+ <priority>0.3</priority>
+ <lastmod>2024-07-23</lastmod>
+ <changefreq>weekly</changefreq>
+</url>
+
+<url>
+ <loc>https://svyj.github.io/categories/%E8%AE%BA%E6%96%87%E9%98%85%E8%AF%BB</loc>
+ <priority>0.3</priority>
+ <lastmod>2024-07-23</lastmod>
+ <changefreq>weekly</changefreq>
+</url>
+
+<url>
+ <loc>https://svyj.github.io/tags/%E5%9B%BE%E5%83%8F%E5%88%86%E7%B1%BB</loc>
+ <priority>0.3</priority>
+ <lastmod>2024-07-23</lastmod>
+ <changefreq>weekly</changefreq>
+</url>
+
+<url>
+ <loc>https://svyj.github.io/tags/%E7%BD%91%E7%BB%9C%E6%A8%A1%E5%9E%8B</loc>
+ <priority>0.3</priority>
+ <lastmod>2024-07-23</lastmod>
+ <changefreq>weekly</changefreq>
+</url>
+
+<url>
+ <loc>https://svyj.github.io/tags/Transformer</loc>
+ <priority>0.3</priority>
+ <lastmod>2024-07-23</lastmod>
+ <changefreq>weekly</changefreq>
+</url>
+
+<url>
+ <loc>https://svyj.github.io/2022/08/08/034-IPN_Series</loc>
+ <priority>0.3</priority>
+ <lastmod>2024-07-23</lastmod>
+ <changefreq>weekly</changefreq>
+</url>
+
+<url>
+ <loc>https://svyj.github.io/tags/%E5%9B%BE%E5%83%8F%E5%88%86%E5%89%B2</loc>
+ <priority>0.3</priority>
+ <lastmod>2024-07-23</lastmod>
+ <changefreq>weekly</changefreq>
+</url>
+
+<url>
+ <loc>https://svyj.github.io/2022/07/05/021-VesselSegmentation</loc>
+ <priority>0.3</priority>
+ <lastmod>2024-07-23</lastmod>
+ <changefreq>weekly</changefreq>
+</url>
+
+<url>
+ <loc>https://svyj.github.io/categories/%E7%A5%9E%E7%BB%8F%E7%BD%91%E7%BB%9C</loc>
+ <priority>0.3</priority>
+ <lastmod>2024-07-23</lastmod>
+ <changefreq>weekly</changefreq>
+</url>
+
+<url>
+ <loc>https://svyj.github.io/2022/07/05/022-Transformers</loc>
+ <priority>0.3</priority>
+ <lastmod>2024-07-23</lastmod>
+ <changefreq>weekly</changefreq>
+</url>
+
+<url>
+ <loc>https://svyj.github.io/2022/07/05/024-Visdom</loc>
+ <priority>0.3</priority>
+ <lastmod>2024-07-23</lastmod>
+ <changefreq>weekly</changefreq>
+</url>
+
+<url>
+ <loc>https://svyj.github.io/tags/%E7%8E%AF%E5%A2%83%E9%85%8D%E7%BD%AE</loc>
+ <priority>0.3</priority>
+ <lastmod>2024-07-23</lastmod>
+ <changefreq>weekly</changefreq>
+</url>
+
+<url>
+ <loc>https://svyj.github.io/tags/Pytorch</loc>
+ <priority>0.3</priority>
+ <lastmod>2024-07-23</lastmod>
+ <changefreq>weekly</changefreq>
+</url>
+
+<url>
+ <loc>https://svyj.github.io/page/2</loc>
+ <priority>0.3</priority>
+ <lastmod>2024-07-23</lastmod>
+ <changefreq>weekly</changefreq>
+</url>
+
+<url>
+ <loc>https://svyj.github.io/page/3</loc>
+ <priority>0.3</priority>
+ <lastmod>2024-07-23</lastmod>
+ <changefreq>weekly</changefreq>
+</url>
+
+<url>
+ <loc>https://svyj.github.io/categories/%E5%8F%82%E8%80%83%E6%96%87%E7%8C%AE</loc>
+ <priority>0.3</priority>
+ <lastmod>2024-07-23</lastmod>
+ <changefreq>weekly</changefreq>
+</url>
+
+<url>
+ <loc>https://svyj.github.io/categories/%E5%9B%BE%E5%83%8F%E5%A4%84%E7%90%86</loc>
+ <priority>0.3</priority>
+ <lastmod>2024-07-23</lastmod>
+ <changefreq>weekly</changefreq>
+</url>
+
+<url>
+ <loc>https://svyj.github.io/categories/%E5%A4%87%E5%BF%98%E5%BD%95</loc>
+ <priority>0.3</priority>
+ <lastmod>2024-07-23</lastmod>
+ <changefreq>weekly</changefreq>
+</url>
+
+<url>
+ <loc>https://svyj.github.io/tags/Conda</loc>
+ <priority>0.3</priority>
+ <lastmod>2024-07-23</lastmod>
+ <changefreq>weekly</changefreq>
+</url>
+
+<url>
+ <loc>https://svyj.github.io/tags/Jupyter</loc>
+ <priority>0.3</priority>
+ <lastmod>2024-07-23</lastmod>
+ <changefreq>weekly</changefreq>
+</url>
+
+<url>
+ <loc>https://svyj.github.io/tags/Keras</loc>
+ <priority>0.3</priority>
+ <lastmod>2024-07-23</lastmod>
+ <changefreq>weekly</changefreq>
+</url>
+
+<url>
+ <loc>https://svyj.github.io/tags/%E5%8F%82%E8%80%83%E6%96%87%E7%8C%AE</loc>
+ <priority>0.3</priority>
+ <lastmod>2024-07-23</lastmod>
+ <changefreq>weekly</changefreq>
+</url>
+
+<url>
+ <loc>https://svyj.github.io/archives/2023/05</loc>
+ <priority>0.3</priority>
+ <lastmod>2024-07-23</lastmod>
+ <changefreq>weekly</changefreq>
+</url>
+
+<url>
+ <loc>https://svyj.github.io/archives/2023/04</loc>
+ <priority>0.3</priority>
+ <lastmod>2024-07-23</lastmod>
+ <changefreq>weekly</changefreq>
+</url>
+
+<url>
+ <loc>https://svyj.github.io/archives/2022/09</loc>
+ <priority>0.3</priority>
+ <lastmod>2024-07-23</lastmod>
+ <changefreq>weekly</changefreq>
+</url>
+
+<url>
+ <loc>https://svyj.github.io/archives/2022/08</loc>
+ <priority>0.3</priority>
+ <lastmod>2024-07-23</lastmod>
+ <changefreq>weekly</changefreq>
+</url>
+
+<url>
+ <loc>https://svyj.github.io/archives/2022/07</loc>
+ <priority>0.3</priority>
+ <lastmod>2024-07-23</lastmod>
+ <changefreq>weekly</changefreq>
+</url>
+
+</urlset>
