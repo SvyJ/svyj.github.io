@@ -40,7 +40,7 @@ author_profile: true
   
 - **[Mar. 2023]** 🌟 Svy.J was awarded the title of "Outstanding Graduate Student" of XTU.
   
-- **[Jan. 2023]** 🎉 Our article on "Retinal Layer Segmentation in OCT" was accepted by the _Journal of Software_ (软件学报) (CCF-A Chinese journal). [[Paper]](https://www.jos.org.cn/jos/article/abstract/6895)
+- **[Jan. 2023]** 🎉 Our article on "Retinal Layer Segmentation in OCT" was accepted by the _Journal of Software_ (软件学报). [[Paper]](https://www.jos.org.cn/jos/article/abstract/6895)
   
 - **[Oct. 2022]** 🌟 Svy.J was awarded the "Special Scholarship" again with the rank of 1/70.
   
