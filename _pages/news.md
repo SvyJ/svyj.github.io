@@ -1,7 +1,11 @@
 ---
-layout: page
-title: Recent News
-permalink: /news/
+permalink: /
+title: ""
+excerpt: ""
+author_profile: true
+redirect_from: 
+  - /news/
+  - /news.html
 ---
 
 # **Recent News**
