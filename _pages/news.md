@@ -4,7 +4,7 @@ excerpt: ""
 author_profile: true
 redirect_from: 
   - /news/
-  - /news.html
+  - /svyj99/news.html
 ---
 
 # **Recent News**
