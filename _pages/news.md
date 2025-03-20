@@ -1,4 +1,5 @@
 ---
+layout: page
 permalink: /news/
 title: ""
 excerpt: ""
