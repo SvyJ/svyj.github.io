@@ -14,7 +14,7 @@ author_profile: true
 
 <span class='anchor' id='about-me'></span>
 
-😃🌞👫☕️🍵🎾🎧
+😃🌞♎️👫☕️🍵🎾🎧
 
 **I am currently a Ph.D. student major in Control Science and Engineering at Hunan University (HNU), working under the supervision of Prof. Dr. [Min Liu](http://eeit.hnu.edu.cn/info/1291/5218.htm) (DIRECT) and Prof. Dr. [Yaonan Wang](http://eeit.hnu.edu.cn/info/1277/4490.htm) (INDIRECT). My research interests include industrial vision and medical image anylasis. Before entering Hunan University, I received my M.Eng. (supervised by Prof. Dr. [Kai Hu](https://jwxy.xtu.edu.cn/info/1147/2508.htm) and Prof. Dr. [Xieping Gao](https://scholar.hunnu.edu.cn/gaoxieping/index.htm)) and B.S. degree from Xiangtan University (XTU) in 2023 and 2020. (Contact me: svyj@hnu.edu.cn)**
 
@@ -34,27 +34,27 @@ author_profile: true
   
 - **[Apr. 2023]** 🎓 Svy.J graduated from XTU and was conferred M.Eng. degree.
   
-- **[Apr. 2023]** 💰 Svy.J was awarded the 28th "Principal Scholarship" of XTU.
+- **[Apr. 2023]** 🌟 Svy.J was awarded the 28th "Principal Scholarship" of XTU.
 
-- **[Mar. 2023]** 👑 Svy.J was awarded the title of "Outstanding Graduate Student" of Hunan Province.
+- **[Mar. 2023]** 🌟 Svy.J was awarded the title of "Outstanding Graduate Student" of Hunan Province.
   
-- **[Mar. 2023]** 👑 Svy.J was awarded the title of "Outstanding Graduate Student" of XTU.
+- **[Mar. 2023]** 🌟 Svy.J was awarded the title of "Outstanding Graduate Student" of XTU.
   
 - **[Jan. 2023]** 🎉 Our article on "Retinal Layer Segmentation in OCT" was accepted by the _Journal of Software_ (软件学报) (CCF-A Chinese journal). [[Paper]](https://www.jos.org.cn/jos/article/abstract/6895)
   
-- **[Oct. 2022]** 💰 Svy.J was awarded the "Special Scholarship" again with the rank of 1/70.
+- **[Oct. 2022]** 🌟 Svy.J was awarded the "Special Scholarship" again with the rank of 1/70.
   
-- **[Sept. 2022]** 💰 Svy.J was awarded the "China National Scholarship".
+- **[Sept. 2022]** 🌟 Svy.J was awarded the "China National Scholarship".
   
 - **[Jul. 2022]** 🎉 Our article on "Biomarkers Segmentation in OCTA" was accepted by _IEEE T-IM_. [[Paper]](https://ieeexplore.ieee.org/document/9837090) [[Project]](https://svyj.github.io/Joint-Seg/)
   
-- **[Oct. 2021]** 💰 Svy.J was awarded the "Xinhualian Group Education Scholarship".
+- **[Oct. 2021]** 🌟 Svy.J was awarded the "Xinhualian Group Education Scholarship".
   
-- **[Oct. 2021]** 💰 Svy.J was awarded the "Special Scholarship" with the rank of 1/70.
+- **[Oct. 2021]** 🌟 Svy.J was awarded the "Special Scholarship" with the rank of 1/70.
   
 - **[Dec. 2020]** 🏆 Svy.J won the third prize in the _4th ISICDM_ in "Lung Tissue Segmentation Challenge" with his teammate Tongtong Liu (Now a Ph.D. student at SCUT) and Fucai Wu. [[ISICDM 2023]](https://svyj.github.io/2022/07/05/017-ISICDM2020)
   
-- **[Oct. 2020]** 💰 Svy.J was awarded the "First Class Scholarship" with the rank of 1/70.
+- **[Oct. 2020]** 🌟 Svy.J was awarded the "First Class Scholarship" with the rank of 1/70.
 
 # 📝 Publications 
 
