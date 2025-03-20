@@ -32,13 +32,13 @@ author_profile: true
   
 - **[Nov. 2024]** 🎉 Our article on "Weakly Supervised Surface Defect Localization" was accepted by _IEEE T-IM_. [[Project]](https://svyj.github.io/CSS/)
   
-- **[Apr. 2023]** 🎓 Svy.J graduated from Xiangtan University and was conferred M.Eng. degree.
+- **[Apr. 2023]** 🎓 Svy.J graduated from XTU and was conferred M.Eng. degree.
   
-- **[Apr. 2023]** 💰 Svy.J was awarded the 28th "Graduate Presidential Scholarship" at Xiangtan University.
+- **[Apr. 2023]** 💰 Svy.J was awarded the 28th "Principal Scholarship" of XTU.
 
-- **[Mar. 2023]** 👑 Svy.J was awarded the title of "Outstanding Graduate Student" of Hunan Provincial Ordinary Higher Education Institutions.
+- **[Mar. 2023]** 👑 Svy.J was awarded the title of "Outstanding Graduate Student" of Hunan Province.
   
-- **[Mar. 2023]** 👑 Svy.J was awarded the title of "Outstanding Graduate Student" of Xiangtan University.
+- **[Mar. 2023]** 👑 Svy.J was awarded the title of "Outstanding Graduate Student" of XTU.
   
 - **[Jan. 2023]** 🎉 Our article on "Retinal Layer Segmentation in OCT" was accepted by the _Journal of Software_ (软件学报) (CCF-A Chinese journal). [[Paper]](https://www.jos.org.cn/jos/article/abstract/6895)
   
