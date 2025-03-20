@@ -5,7 +5,7 @@ excerpt: ""
 author_profile: true
 ---
 
-# **Recent News**
+# 🔥 Recent News
 
 - **[Mar. 2024]** Our article on "Neural Architecture Search for Surface Defect Detection" was submitted to _IEEE T-ASE_.
 
