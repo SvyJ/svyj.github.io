@@ -14,6 +14,8 @@ author_profile: true
 - **[Jan. 2025]** Our article on "Multi-view Industrial Anomaly Detection" was submitted to _IEEE/ASME T-Mech_.
 
 - **[Dec. 2024]** &#127881; Our article on "Multimodal Retinal Image Analysis" was accepted by _IEEE T-IM_. [[Project]](https://svyj.github.io/Joint-Seg/)
+
+- **[Nov. 2024]** Our article on "Few-Shot Defect Segmentation" was submitted to _IEEE T-ASE_.
   
 - **[Nov. 2024]** &#127881; Our article on "Weakly Supervised Surface Defect Localization" was accepted by _IEEE T-IM_. [[Project]](https://svyj.github.io/CSS/)
   
