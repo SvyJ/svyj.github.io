@@ -44,7 +44,7 @@ author_profile: true
   
 - **[Oct. 2022]** 🌟 Svy.J was awarded the "Special Scholarship" again with the rank of 1/70.
   
-- **[Sept. 2022]** 🌟 Svy.J was awarded the "China National Scholarship".
+- **[Sep. 2022]** 🌟 Svy.J was awarded the "China National Scholarship".
   
 - **[Jul. 2022]** 🎉 Our article on "Biomarkers Segmentation in OCTA" was accepted by _IEEE T-IM_. [[Paper]](https://ieeexplore.ieee.org/document/9837090) [[Project]](https://svyj.github.io/Joint-Seg/)
   
@@ -89,6 +89,6 @@ author_profile: true
 - Reviewer of [_Journal of Imaging Informatics in Medicine (Journal of Digital Imaging)_](https://link.springer.com/journal/10278)
 
 # 📖 Educations
-- Sept. 2023 - Now, Hunan University, Ph.D.
-- Oct.  2020 - Jun. 2023, Xiangtan University, M.E.
-- Sept. 2016 - Jun. 2020, Xiangtan University, B.S.
+- Sep. 2023 - Now, Hunan University, Ph.D.
+- Oct. 2020 - Jun. 2023, Xiangtan University, M.E.
+- Sep. 2016 - Jun. 2020, Xiangtan University, B.S.
