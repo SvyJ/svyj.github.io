@@ -95,5 +95,6 @@ Frontiers in my research area are updated at [https://svyj.github.io/daily-paper
 - Reviewer of [_Journal of Imaging Informatics in Medicine (Journal of Digital Imaging)_](https://link.springer.com/journal/10278)
 
 # 📖 Educations
-- *2019.06 - 2022.04 (now)*, Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus ornare aliquet ipsum, ac tempus justo dapibus sit amet. 
-- *2015.09 - 2019.06*, Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus ornare aliquet ipsum, ac tempus justo dapibus sit amet. 
+- **[Sept. 2023 - Now]**, Hunan University. 
+- **[Oct.  2020 - Jun. 2023]**, Xiangtan University.
+- **[Sept. 2016 - Jun. 2020]**, Xiangtan University. 
