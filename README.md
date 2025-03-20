@@ -7,7 +7,7 @@ Here are some ideas to get you started:
 
 - 🔭 I’m currently a Ph.D. Candidate at Hunan University.
 - 🌱 I’m currently working on industrial vision and medical image analysis.
-- 😄 Find more about me at [Svy.J's Homepage](https://svyj.github.io/) and [Svy.J's AcademicPage](https://svyj.github.io/svyj/)
+- 😄 Find more about me at [Svy.J's Homepage](https://svyj.github.io/)
 
 
 
