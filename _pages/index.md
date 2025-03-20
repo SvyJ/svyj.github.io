@@ -16,8 +16,6 @@ author_profile: true
 
 **I am currently a Ph.D. student major in Control Science and Engineering at Hunan University, working under the supervision of Prof. Dr. [Min Liu](http://eeit.hnu.edu.cn/info/1291/5218.htm) (DIRECT) and Prof. Dr. [Yaonan Wang](http://eeit.hnu.edu.cn/info/1277/4490.htm) (INDIRECT). My research interests include industrial vision and medical image anylasis. Before entering Hunan University, I received my M.Eng. (supervised by Prof. Dr. [Kai Hu](https://jwxy.xtu.edu.cn/info/1147/2508.htm) and Prof. Dr. [Xieping Gao](https://scholar.hunnu.edu.cn/gaoxieping/index.htm)) and B.S. degree from Xiangtan University in 2023 and 2020. (Contact me: svyj@hnu.edu.cn)**
 
-More information (e.g., study blogs, experience sharing) can be found at [Svy.J's Homepage - https://svyj.github.io/](https://svyj.github.io/).
-
 Frontiers in my research area are updated at [https://svyj.github.io/daily-papers](https://svyj.github.io/daily-papers) for the in-time following.
 
 # 📝 Publications 
