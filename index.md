@@ -24,7 +24,7 @@ author_profile: true
 
 - **[Mar. 2025]** 📃 Our article on "Few-Shot Defect Segmentation" was submitted to _IEEE/ASME T-Mech_.
 
-- **[Mar. 2025]** 📃 Our two papers on was submitted to _ICCV 2025_.
+- **[Mar. 2025]** 📃 Our two papers was submitted to _ICCV 2025_.
 
 - **[Jan. 2025]** 📃 Our article on "Multi-view Industrial Anomaly Detection" was submitted to _IEEE/ASME T-Mech_.
 
