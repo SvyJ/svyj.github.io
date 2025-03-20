@@ -10,3 +10,6 @@
 main:
   - title: "Recent News"
     url: /news/
+    
+  - title: "Daily Papers"
+    url: https://svyj.github.io/daily-papers
