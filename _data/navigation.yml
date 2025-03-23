@@ -8,5 +8,7 @@
 #      Markdown formatted page while the second is generated using JSON.
 
 main:
+  - title: "Blogs"
+    url: https://svyj.github.io/blogs
   - title: "Daily Papers"
     url: https://svyj.github.io/daily-papers
