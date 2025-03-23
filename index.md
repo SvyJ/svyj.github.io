@@ -60,7 +60,7 @@ author_profile: true
 
 # 📝 Publications
 
-- [Multi-Context Aggregation Network with Foreground Correction for Automated Few-Shot Defect Segmentation](https://ieeexplore.ieee.org)
+- [Multi-Context Aggregation Network with Foreground Correction for Automated Few-Shot Defect Segmentation](https://ieeexplore.ieee.org)<br>
   Yunfeng Ma, Min Liu* (Supervisor), **Shuai Jiang**, Xueping Wang, Yuan Bian, and Yaonan Wang<br>
   _IEEE Transactions on Automation Science and Engineering (T-ASE)_, 2024<br>
 
