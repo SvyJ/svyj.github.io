@@ -20,7 +20,9 @@ author_profile: true
 
 # 🔥 Recent News
 
-- **[Mar. 2024]** 📃 Our article on "Neural Architecture Search for Surface Defect Detection" was submitted to _IEEE T-ASE_.
+- **[Mar. 2025]** 🎉 Our article on "Few-Shot Defect Segmentation" was accepted by _IEEE T-ASE_.
+
+- **[Mar. 2025]** 📃 Our article on "Neural Architecture Search for Surface Defect Detection" was submitted to _IEEE T-ASE_.
 
 - **[Mar. 2025]** 📃 Our article on "Few-Shot Defect Segmentation" was submitted to _IEEE/ASME T-Mech_.
 
@@ -29,8 +31,6 @@ author_profile: true
 - **[Jan. 2025]** 📃 Our article on "Multi-view Industrial Anomaly Detection" was submitted to _IEEE/ASME T-Mech_.
 
 - **[Dec. 2024]** 🎉 Our article on "Multimodal Retinal Image Analysis" was accepted by _IEEE T-IM_. [[Project]](https://svyj.github.io/Joint-Seg/)
-
-- **[Nov. 2024]** 📃 Our article on "Few-Shot Defect Segmentation" was submitted to _IEEE T-ASE_.
   
 - **[Nov. 2024]** 🎉 Our article on "Weakly Supervised Surface Defect Localization" was accepted by _IEEE T-IM_. [[Project]](https://svyj.github.io/CSS/)
   
@@ -58,7 +58,11 @@ author_profile: true
   
 - **[Oct. 2020]** 🌟 Svy.J was awarded the "First Class Scholarship" with the rank of 1/70.
 
-# 📝 Publications 
+# 📝 Publications
+
+- [Multi-Context Aggregation Network with Foreground Correction for Automated Few-Shot Defect Segmentation](https://ieeexplore.ieee.org)
+  Yunfeng Ma, Min Liu* (Supervisor), **Shuai Jiang**, Xueping Wang, Yuan Bian, and Yaonan Wang<br>
+  _IEEE Transactions on Automation Science and Engineering (T-ASE)_, 2024<br>
 
 - [Joint Segmentation of FAZ and RVs in OCTA Images with Auxiliary 3D Image Projection Learning](https://ieeexplore.ieee.org/document/10904426)<br>
   **Shuai Jiang**, Kai Hu* (Supervisor), Yuan Zhang, and Xieping Gao<br>
