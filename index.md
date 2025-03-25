@@ -67,9 +67,14 @@ author_profile: true
 
 # 📝 Publications
 
+- [Prompt-driven Transferable Adversarial Attack on Person Re-Identification with Attribute-aware Textual Inversion](https://arxiv.org/abs/2502.19697)<br>
+  Yuan Bian, Min Liu* (Supervisor), Yunqi Yi, Xueping Wang, **Shuai Jiang**, Yaonan Wang<br>
+  _arXiv Preprint_, 2025
+  [PDF](https://arxiv.org/pdf/2502.19697)
+
 - [Multi-Context Aggregation Network with Foreground Correction for Automated Few-Shot Defect Segmentation](https://ieeexplore.ieee.org)<br>
   Yunfeng Ma, Min Liu* (Supervisor), **Shuai Jiang**, Xueping Wang, Yuan Bian, and Yaonan Wang<br>
-  _IEEE Transactions on Automation Science and Engineering (T-ASE)_, 2024<br>
+  _IEEE Transactions on Automation Science and Engineering (T-ASE)_, 2025
 
 - [Joint Segmentation of FAZ and RVs in OCTA Images with Auxiliary 3D Image Projection Learning](https://ieeexplore.ieee.org/document/10904426)<br>
   **Shuai Jiang**, Kai Hu* (Supervisor), Yuan Zhang, and Xieping Gao<br>
@@ -98,11 +103,11 @@ author_profile: true
 - China National Scholarship, Ministry of Education of the People's Republic of China, 2022.
 - Special Scholarship, Xiangtan University, 2022 / 2021.
 
-# 📚 Service
-- Journal Reviewer: 
-- Conference Reviewer: 
+# 📚 Services
+- Journal Reviewer: T-MI, T-IM, J-BHI
+- Conference Reviewer: ICCV, ICASSP
 
 # 📖 Educations
-- Sep. 2023 - Now, Hunan University, Ph.D.
+- Sep. 2023 - Now, Hunan University, Ph.D. Candidate.
 - Oct. 2020 - Jun. 2023, Xiangtan University, M.E.
 - Sep. 2016 - Jun. 2020, Xiangtan University, B.S.
