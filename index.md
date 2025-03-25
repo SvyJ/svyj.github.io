@@ -69,12 +69,13 @@ author_profile: true
 
 - [Prompt-driven Transferable Adversarial Attack on Person Re-Identification with Attribute-aware Textual Inversion](https://arxiv.org/abs/2502.19697)<br>
   Yuan Bian, Min Liu* (Supervisor), Yunqi Yi, Xueping Wang, **Shuai Jiang**, Yaonan Wang<br>
-  _arXiv Preprint_, 2025
+  _arXiv Preprint_, 2025<br>
   [PDF](https://arxiv.org/pdf/2502.19697)
 
 - [Multi-Context Aggregation Network with Foreground Correction for Automated Few-Shot Defect Segmentation](https://ieeexplore.ieee.org)<br>
   Yunfeng Ma, Min Liu* (Supervisor), **Shuai Jiang**, Xueping Wang, Yuan Bian, and Yaonan Wang<br>
-  _IEEE Transactions on Automation Science and Engineering (T-ASE)_, 2025
+  _IEEE Transactions on Automation Science and Engineering (T-ASE)_, 2025<br>
+  [PDF](https://ieeexplore.ieee.org)
 
 - [Joint Segmentation of FAZ and RVs in OCTA Images with Auxiliary 3D Image Projection Learning](https://ieeexplore.ieee.org/document/10904426)<br>
   **Shuai Jiang**, Kai Hu* (Supervisor), Yuan Zhang, and Xieping Gao<br>
