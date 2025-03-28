@@ -117,15 +117,34 @@ kramdown:
   smart_quotes: lsquo,rsquo,ldquo,rdquo
   enable_coderay: false
 
-# Defaults
+# # Defaults
+# defaults:
+#   # _pages
+#   - scope:
+#       path: ""
+#       type: pages
+#     values:
+#       layout: default
+#       author_profile: true
+
+# _config.yml
+
+# 1. 定义 pages 集合（若未添加过）
+collections:
+  pages:
+    output: true     # 允许生成静态文件
+    permalink: /:path/  # 核心配置：生成路径为 /路径名/
+
+# 2. 修改 defaults 作用域
 defaults:
-  # _pages
   - scope:
-      path: ""
-      type: pages
+      path: "_pages"   # 限定作用于 _pages 文件夹内的文件
+      type: "pages"    # 集合类型（与上方 collections 名称一致）
     values:
       layout: default
       author_profile: true
+      # 如果 permalink 未生效，可在此覆盖（通常不需要）
+      # permalink: /:path/ 
 
 
 # Sass/SCSS
