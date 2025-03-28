@@ -27,7 +27,7 @@ author_profile: true
 
 # 🔥 Recent News
 
-- **[Mar. 2025]** 🎉 Our article on "Few-Shot Defect Segmentation" was accepted by _IEEE T-ASE_. [[Article]](https://ieeexplore.ieee.org/document/10942431)
+- **[Mar. 2025]** 🎉 Our article on "Few-Shot Defect Segmentation" was accepted by _IEEE T-ASE_. [[PDF]](https://ieeexplore.ieee.org/document/10942431)
 
 - **[Mar. 2025]** 📃 Our article on "Neural Architecture Search for Surface Defect Detection" was submitted to _IEEE T-ASE_.
 
@@ -37,9 +37,9 @@ author_profile: true
 
 - **[Jan. 2025]** 📃 Our article on "Multi-view Industrial Anomaly Detection" was submitted to _IEEE/ASME T-Mech_.
 
-- **[Dec. 2024]** 🎉 Our article on "Multimodal Retinal Image Analysis" was accepted by _IEEE T-IM_. [[Article]](https://ieeexplore.ieee.org/document/10904426)
+- **[Dec. 2024]** 🎉 Our article on "Multimodal Retinal Image Analysis" was accepted by _IEEE T-IM_. [[PDF]](https://ieeexplore.ieee.org/document/10904426)
   
-- **[Nov. 2024]** 🎉 Our article on "Weakly Supervised Surface Defect Localization" was accepted by _IEEE T-IM_. [[Article]](https://ieeexplore.ieee.org/document/10908998) [[Project]](https://svyj.github.io/CSS/)
+- **[Nov. 2024]** 🎉 Our article on "Weakly Supervised Surface Defect Localization" was accepted by _IEEE T-IM_. [[PDF]](https://ieeexplore.ieee.org/document/10908998) [[Project]](https://svyj.github.io/CSS/)
   
 - **[Apr. 2023]** 🎓 Svy.J graduated from XTU and was conferred M.Eng. degree.
   
@@ -49,13 +49,13 @@ author_profile: true
   
 - **[Mar. 2023]** 🌟 Svy.J was awarded the title of "Excellent Graduates" of XTU.
   
-- **[Jan. 2023]** 🎉 Our article on "Retinal Layer Segmentation in OCT" was accepted by the _Journal of Software_ (软件学报). [[Article]](https://www.jos.org.cn/jos/article/abstract/6895)
+- **[Jan. 2023]** 🎉 Our article on "Retinal Layer Segmentation in OCT" was accepted by the _Journal of Software_ (软件学报). [[PDF]](https://www.jos.org.cn/jos/article/abstract/6895)
   
 - **[Oct. 2022]** 🌟 Svy.J was awarded the "Special Scholarship" again with the rank of 1/70.
   
 - **[Sep. 2022]** 🌟 Svy.J was awarded the "China National Scholarship".
   
-- **[Jul. 2022]** 🎉 Our article on "Biomarkers Segmentation in OCTA" was accepted by _IEEE T-IM_. [[Article]](https://ieeexplore.ieee.org/document/9837090) [[Project]](https://svyj.github.io/Joint-Seg/)
+- **[Jul. 2022]** 🎉 Our article on "Biomarkers Segmentation in OCTA" was accepted by _IEEE T-IM_. [[PDF]](https://ieeexplore.ieee.org/document/9837090) [[Project]](https://svyj.github.io/Joint-Seg/)
   
 - **[Oct. 2021]** 🌟 Svy.J was awarded the "Xinhualian Group Education Scholarship".
   
