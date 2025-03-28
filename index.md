@@ -27,7 +27,7 @@ author_profile: true
 
 # 🔥 Recent News
 
-- **[Mar. 2025]** 🎉 Our article on "Few-Shot Defect Segmentation" was accepted by _IEEE T-ASE_.
+- **[Mar. 2025]** 🎉 Our article on "Few-Shot Defect Segmentation" was accepted by _IEEE T-ASE_. [[Article]](https://ieeexplore.ieee.org/document/10942431)
 
 - **[Mar. 2025]** 📃 Our article on "Neural Architecture Search for Surface Defect Detection" was submitted to _IEEE T-ASE_.
 
@@ -37,9 +37,9 @@ author_profile: true
 
 - **[Jan. 2025]** 📃 Our article on "Multi-view Industrial Anomaly Detection" was submitted to _IEEE/ASME T-Mech_.
 
-- **[Dec. 2024]** 🎉 Our article on "Multimodal Retinal Image Analysis" was accepted by _IEEE T-IM_. [[Project]](https://svyj.github.io/Joint-Seg/)
+- **[Dec. 2024]** 🎉 Our article on "Multimodal Retinal Image Analysis" was accepted by _IEEE T-IM_. [[Article]](https://ieeexplore.ieee.org/document/10904426)
   
-- **[Nov. 2024]** 🎉 Our article on "Weakly Supervised Surface Defect Localization" was accepted by _IEEE T-IM_. [[Project]](https://svyj.github.io/CSS/)
+- **[Nov. 2024]** 🎉 Our article on "Weakly Supervised Surface Defect Localization" was accepted by _IEEE T-IM_. [[Article]](https://ieeexplore.ieee.org/document/10908998) [[Project]](https://svyj.github.io/CSS/)
   
 - **[Apr. 2023]** 🎓 Svy.J graduated from XTU and was conferred M.Eng. degree.
   
@@ -49,13 +49,13 @@ author_profile: true
   
 - **[Mar. 2023]** 🌟 Svy.J was awarded the title of "Excellent Graduates" of XTU.
   
-- **[Jan. 2023]** 🎉 Our article on "Retinal Layer Segmentation in OCT" was accepted by the _Journal of Software_ (软件学报). [[Paper]](https://www.jos.org.cn/jos/article/abstract/6895)
+- **[Jan. 2023]** 🎉 Our article on "Retinal Layer Segmentation in OCT" was accepted by the _Journal of Software_ (软件学报). [[Article]](https://www.jos.org.cn/jos/article/abstract/6895)
   
 - **[Oct. 2022]** 🌟 Svy.J was awarded the "Special Scholarship" again with the rank of 1/70.
   
 - **[Sep. 2022]** 🌟 Svy.J was awarded the "China National Scholarship".
   
-- **[Jul. 2022]** 🎉 Our article on "Biomarkers Segmentation in OCTA" was accepted by _IEEE T-IM_. [[Paper]](https://ieeexplore.ieee.org/document/9837090) [[Project]](https://svyj.github.io/Joint-Seg/)
+- **[Jul. 2022]** 🎉 Our article on "Biomarkers Segmentation in OCTA" was accepted by _IEEE T-IM_. [[Article]](https://ieeexplore.ieee.org/document/9837090) [[Project]](https://svyj.github.io/Joint-Seg/)
   
 - **[Oct. 2021]** 🌟 Svy.J was awarded the "Xinhualian Group Education Scholarship".
   
@@ -72,10 +72,10 @@ author_profile: true
   _arXiv Preprint_, 2025<br>
   [PDF](https://arxiv.org/pdf/2502.19697)
 
-- [Multi-Context Aggregation Network with Foreground Correction for Automated Few-Shot Defect Segmentation](https://ieeexplore.ieee.org)<br>
+- [Multi-Context Aggregation Network with Foreground Correction for Automated Few-Shot Defect Segmentation](https://ieeexplore.ieee.org/document/10942431)<br>
   Yunfeng Ma, Min Liu* (Supervisor), **Shuai Jiang**, Xueping Wang, Yuan Bian, and Yaonan Wang<br>
   _IEEE Transactions on Automation Science and Engineering (T-ASE)_, 2025<br>
-  [PDF (In Publication)](https://ieeexplore.ieee.org)
+  [PDF](https://ieeexplore.ieee.org/document/10942431)
 
 - [Joint Segmentation of FAZ and RVs in OCTA Images with Auxiliary 3D Image Projection Learning](https://ieeexplore.ieee.org/document/10904426)<br>
   **Shuai Jiang**, Kai Hu* (Supervisor), Yuan Zhang, and Xieping Gao<br>
