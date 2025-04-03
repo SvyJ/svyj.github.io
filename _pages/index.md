@@ -25,6 +25,8 @@ author_profile: true
 
 # 🔥 Recent News
 
+- **[Apr. 2025]** 📃 Our article on "Real-time Aero Blade Defect Segmentation" was submitted to _SCIENTIA SINICA Informationis_ (中国科学: 信息科学).
+  
 - **[Mar. 2025]** 🎉 Our article on "Few-Shot Defect Segmentation" was accepted by _IEEE T-ASE_. [[PDF]](https://ieeexplore.ieee.org/document/10942431)
 
 - **[Mar. 2025]** 📃 Our article on "Neural Architecture Search for Surface Defect Detection" was submitted to _IEEE T-ASE_.
