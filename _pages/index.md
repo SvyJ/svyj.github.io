@@ -25,7 +25,7 @@ author_profile: true
 
 # 🔥 Recent Updates
 
-## Latest Works
+## 📃 Latest Works
 
 - **[Apr. 2025]** 📃 Our article on "Real-time Aero Blade Defect Segmentation" was submitted to _SCIENTIA SINICA Informationis_ (中国科学: 信息科学).
 
@@ -37,7 +37,7 @@ author_profile: true
 
 - **[Jan. 2025]** 📃 Our article on "Multi-view Industrial Anomaly Detection" was submitted to _IEEE/ASME T-Mech_.
 
-## Nice News
+## 🎉 Nice News
 
 - **[Mar. 2025]** 🎉 Our article on "Few-Shot Defect Segmentation" was accepted by _IEEE T-ASE_. [[PDF]](https://ieeexplore.ieee.org/document/10942431)
 
