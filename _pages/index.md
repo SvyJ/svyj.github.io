@@ -69,7 +69,9 @@ author_profile: true
   
 - **[Oct. 2020]** 🌟 Svy.J was awarded the "First Class Scholarship" with the rank of 1/70.
 
-# 📝 Publications (<p style="font-size: 12px;">* Correspinding Author</p>)
+# 📝 Publications
+
+#### * Corresponding Author
 
 - [Prompt-driven Transferable Adversarial Attack on Person Re-Identification with Attribute-aware Textual Inversion](https://arxiv.org/abs/2502.19697)<br>
   Yuan Bian, Min Liu* (Supervisor), Yunqi Yi, Xueping Wang, **Shuai Jiang**, Yaonan Wang<br>
