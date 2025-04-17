@@ -71,8 +71,6 @@ author_profile: true
 
 # 📝 Publications
 
-#### Note: * = Corresponding Author
-
 - [Prompt-driven Transferable Adversarial Attack on Person Re-Identification with Attribute-aware Textual Inversion](https://arxiv.org/abs/2502.19697)<br>
   Yuan Bian, Min Liu* (Supervisor), Yunqi Yi, Xueping Wang, **Shuai Jiang**, Yaonan Wang<br>
   _arXiv Preprint_, 2025<br>
