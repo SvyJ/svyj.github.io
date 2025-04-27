@@ -115,7 +115,7 @@ author_profile: true
 
 # 📚 Services
 - Journal Reviewer: T-MI, T-IM, J-BHI
-- Conference Reviewer: ICCV, ICASSP
+- Conference Reviewer: CVPR, ICCV, ACMMM, ICASSP
 
 # 📖 Educations
 - Sep. 2023 - Now, Hunan University, Ph.D. Candidate.
