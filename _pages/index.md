@@ -35,9 +35,9 @@ author_profile: true
 
 - **[Mar. 2025]** 📃 Our two papers was submitted to _ICCV 2025_.
 
-- **[Jan. 2025]** 📃 Our article on "Multi-view Industrial Anomaly Detection" was submitted to _IEEE/ASME T-Mech_.
-
 ## 🎉 Nice News
+
+- **[Apr. 2025]** 🎉 Our article on "Multi-View Industrial Anomaly Detection" was accepted by _IEEE/ASME T-Mech (TMECH/AIM Focused Section)_. [[PDF (In Press)]](https://ieeexplore.ieee.org)
 
 - **[Mar. 2025]** 🎉 Our article on "Few-Shot Defect Segmentation" was accepted by _IEEE T-ASE_. [[PDF]](https://ieeexplore.ieee.org/document/10942431)
 
@@ -75,6 +75,11 @@ author_profile: true
   Yuan Bian, Min Liu* (Supervisor), Yunqi Yi, Xueping Wang, **Shuai Jiang**, Yaonan Wang<br>
   _arXiv Preprint_, 2025<br>
   [PDF](https://arxiv.org/pdf/2502.19697)
+
+- [Multi-View Attention Guided Feature Learning for Unsupervised Surface Defect Detection](https://ieeexplore.ieee.org)<br>
+  Jingyu Zhou, Min Liu* (Supervisor), Yunfeng Ma, **Shuai Jiang**, and Yaonan Wang<br>
+  _IEEE/ASME Transactions on Mechatronics (T-Mech) (TMECH/AIM Focused Section)_, 2025<br>
+  [PDF](https://ieeexplore.ieee.org)
 
 - [Multi-Context Aggregation Network with Foreground Correction for Automated Few-Shot Defect Segmentation](https://ieeexplore.ieee.org/document/10942431)<br>
   Yunfeng Ma, Min Liu* (Supervisor), **Shuai Jiang**, Xueping Wang, Yuan Bian, and Yaonan Wang<br>
