@@ -78,7 +78,7 @@ author_profile: true
 
 - [Multi-View Attention Guided Feature Learning for Unsupervised Surface Defect Detection](https://ieeexplore.ieee.org)<br>
   Jingyu Zhou, Min Liu* (Supervisor), Yunfeng Ma, **Shuai Jiang**, and Yaonan Wang<br>
-  _IEEE/ASME Transactions on Mechatronics (T-Mech) (TMECH/AIM Focused Section)_, 2025<br>
+  _IEEE/ASME Transactions on Mechatronics (T-Mech)_, 2025<br>
   [PDF](https://ieeexplore.ieee.org)
 
 - [Multi-Context Aggregation Network with Foreground Correction for Automated Few-Shot Defect Segmentation](https://ieeexplore.ieee.org/document/10942431)<br>
