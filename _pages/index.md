@@ -27,7 +27,9 @@ author_profile: true
 
 ## 📃 Latest Works
 
-- **[May. 2025]** 📃 Our article on "Multi-class Anomaly Detection" was submitted to _IEEE TII_.
+- **[May. 2025]** 📃 Our article on "Multimodal Defect Detection with Missing Modalities" was submitted to _IEEE/ASME T-Mech_.
+  
+- **[May. 2025]** 📃 Our article on "Multi-class Anomaly Detection" was submitted to _IEEE T-II_.
 
 - **[May. 2025]** 📃 Our two papers was submitted to _NeurIPS 2025_.
 
@@ -37,7 +39,7 @@ author_profile: true
 
 - **[Mar. 2025]** 📃 Our article on "Few-Shot Defect Segmentation" was submitted to _IEEE/ASME T-Mech_.
 
-- **[Mar. 2025]** 📃 Our two papers was submitted to _ICCV 2025_.
+- **[Mar. 2025]** 📃 Our paper on "Prompt-driven Person Re-ID" was submitted to _ICCV 2025_.
 
 ## 🎉 Nice News
 
