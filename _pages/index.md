@@ -31,7 +31,7 @@ author_profile: true
   
 - **[May. 2025]** 📃 Our article on "Multi-class Anomaly Detection" was submitted to _IEEE T-II_.
 
-- **[May. 2025]** 📃 Our two papers was submitted to _NeurIPS 2025_.
+- **[May. 2025]** 📃 Our paper on "NAS-based Semantic Segmentation" was submitted to _NeurIPS 2025_.
 
 - **[Apr. 2025]** 📃 Our article on "Real-time Aero Blade Defect Segmentation" was submitted to _SCIENTIA SINICA Informationis_ (中国科学: 信息科学).
 
