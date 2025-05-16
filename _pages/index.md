@@ -27,11 +27,11 @@ author_profile: true
 
 ## 📃 Latest Works
 
+- **[May. 2025]** 📃 Our paper on "NAS-based Semantic Segmentation" was submitted to _NeurIPS 2025_.
+
 - **[May. 2025]** 📃 Our article on "Multimodal Defect Detection with Missing Modalities" was submitted to _IEEE/ASME T-Mech_.
   
 - **[May. 2025]** 📃 Our article on "Multi-class Anomaly Detection" was submitted to _IEEE T-II_.
-
-- **[May. 2025]** 📃 Our paper on "NAS-based Semantic Segmentation" was submitted to _NeurIPS 2025_.
 
 - **[Apr. 2025]** 📃 Our article on "Real-time Aero Blade Defect Segmentation" was submitted to _SCIENTIA SINICA Informationis_ (中国科学: 信息科学).
 
@@ -76,13 +76,11 @@ author_profile: true
 - **[Oct. 2020]** 🌟 Svy.J was awarded the "First Class Scholarship" with the rank of 1/70.
 
 # 📝 Publications
+✝ Co-first Author, * Corresponding Author
 
-- [Prompt-driven Transferable Adversarial Attack on Person Re-Identification with Attribute-aware Textual Inversion](https://arxiv.org/abs/2502.19697)<br>
-  Yuan Bian, Min Liu* (Supervisor), Yunqi Yi, Xueping Wang, **Shuai Jiang**, Yaonan Wang<br>
-  _arXiv Preprint_, 2025<br>
-  [PDF](https://arxiv.org/pdf/2502.19697)
+## 📄 Peer-Reviewed Publications 
 
-- [Multi-View Attention Guided Feature Learning for Unsupervised Surface Defect Detection](https://ieeexplore.ieee.org)<br>
+- [Multi-View Attention Guided Feature Learning for Unsupervised Surface Defect Detection](https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=3516)<br>
   Jingyu Zhou, Min Liu* (Supervisor), Yunfeng Ma, **Shuai Jiang**, and Yaonan Wang<br>
   _IEEE/ASME Transactions on Mechatronics (T-Mech)_, 2025<br>
   [PDF](https://ieeexplore.ieee.org)
@@ -112,6 +110,37 @@ author_profile: true
   _IEEE Transactions on Instrumentation and Measurement (T-IM)_, 2022<br>
   [PDF](https://ieeexplore.ieee.org/document/9837090) | [Project](https://svyj.github.io/Joint-Seg/)
 
+## 📃 Manuscripts in Peer Review
+
+- [Searching Efficient Semantic Segmentation Architectures via Dynamic Path Selection](https://openreview.net/)<br>
+  Yuxi Liu, Min Liu* (Supervisor), Yi Tang, **Shuai Jiang**, and Yaonan Wang<br>
+  _The Thirty-ninth Annual Conference on Neural Information Processing Systems (NeurIPS)_, 2025<br>
+
+- [Resilient Multimodal Industrial Surface Defect Detection with Uncertain Sensors Availability](https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=3516)<br>
+  **Shuai Jiang**, Yunfeng Ma, Jingyu Zhou, Yaonan Wang, and Min Liu* (Supervisor)<br>
+  _IEEE/ASME Transactions on Mechatronics (T-Mech)_, 2025<br>
+
+- [Cross-View Dynamic Learning-Based Multi-Class Industrial Anomaly Detection](https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=9424)<br>
+  Jingyu Zhou, Yunfeng Ma, **Shuai Jiang**, Yaonan Wang, and Min Liu* (Supervisor)<br>
+  _IEEE Transactions on Industrial Informatics (T-II)_, 2025<br>
+
+- [Neural Architecture Search Based Real-time Segmentation Method for Aero-engine Blade Surface Defects](https://ieeexplore.ieee.org)<br>
+  Xihang Cheng✝, Xiangfei Meng✝, Min Liu* (Supervisor), Yuxi Liu, Yunfeng Ma, Shuai Jiang, and Yaonan Wang<br>
+  _SCIENTIA SINICA Informationis (中国科学: 信息科学)_, 2025 (In Revision)<br>
+
+- [NAS-ASDS: Neural Architecture Search for Automated Surface Defect Segmentation](https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=8856)<br>
+  Yuxi Liu✝, Yi Tang✝, Min Liu* (Supervisor), **Shuai Jiang**, Yunfeng Ma, and Yaonan Wang<br>
+  _IEEE Transactions on Automation Science and Engineering (T-ASE)_, 2025<br>
+
+- [Efficient Feature Coupling for Industrial Few-shot Defect Segmentation](https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=3516)<br>
+  Yunfeng Ma, Min Liu* (Supervisor), **Shuai Jiang**, Jingyu Zhou, Yuan Bian, and Yaonan Wang<br>
+  _IEEE/ASME Transactions on Mechatronics (T-Mech)_, 2025 (In Major Revision)<br>
+
+- [Prompt-driven Transferable Adversarial Attack on Person Re-Identification with Attribute-aware Textual Inversion](https://arxiv.org/abs/2502.19697)<br>
+  Yuan Bian, Min Liu* (Supervisor), Yunqi Yi, Xueping Wang, **Shuai Jiang**, Yaonan Wang<br>
+  _IEEE/CVF International Conference on Computer Vision (ICCV)_, 2025 (In Rebuttal)<br>
+  [PDF](https://arxiv.org/pdf/2502.19697)
+
 # 🎖 Honors and Awards
 - Excellent Graduates, Hunan Provincial Department of Education, 2023.
 - Excellent Graduates, Xiangtan University, 2023.
@@ -120,7 +149,7 @@ author_profile: true
 - Special Scholarship, Xiangtan University, 2022 / 2021.
 
 # 📚 Services
-- Journal Reviewer: T-MI, T-IM, J-BHI
+- Journal Reviewer: [T-MI](https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=42), [T-IM](https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=19), [J-BHI](https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=6221020), [Scientific Data](https://www.nature.com/sdata/)
 - Conference Reviewer: CVPR, ICCV, ACMMM, ICASSP
 
 # 📖 Educations
