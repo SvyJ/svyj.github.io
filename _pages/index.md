@@ -126,7 +126,7 @@ author_profile: true
 
 - [Neural Architecture Search Based Real-time Segmentation Method for Aero-engine Blade Surface Defects](https://ieeexplore.ieee.org)<br>
   Xihang Cheng✝, Xiangfei Meng✝, Min Liu* (Supervisor), Yuxi Liu, Yunfeng Ma, Shuai Jiang, and Yaonan Wang<br>
-  _SCIENTIA SINICA Informationis (中国科学: 信息科学)_, 2025 (In Revision)<br>
+  _SCIENTIA SINICA Informationis (中国科学: 信息科学)_, 2025 <font color="#8A2BE2">(In Revision)</font><br>
 
 - [NAS-ASDS: Neural Architecture Search for Automated Surface Defect Segmentation](https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=8856)<br>
   Yuxi Liu✝, Yi Tang✝, Min Liu* (Supervisor), **Shuai Jiang**, Yunfeng Ma, and Yaonan Wang<br>
@@ -134,11 +134,11 @@ author_profile: true
 
 - [Efficient Feature Coupling for Industrial Few-shot Defect Segmentation](https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=3516)<br>
   Yunfeng Ma, Min Liu* (Supervisor), **Shuai Jiang**, Jingyu Zhou, Yuan Bian, and Yaonan Wang<br>
-  _IEEE/ASME Transactions on Mechatronics (T-Mech)_, 2025 (In Major Revision)<br>
+  _IEEE/ASME Transactions on Mechatronics (T-Mech)_, 2025 <font color="#8A2BE2">(In Major Revision)</font><br>
 
 - [Prompt-driven Transferable Adversarial Attack on Person Re-Identification with Attribute-aware Textual Inversion](https://arxiv.org/abs/2502.19697)<br>
   Yuan Bian, Min Liu* (Supervisor), Yunqi Yi, Xueping Wang, **Shuai Jiang**, Yaonan Wang<br>
-  _IEEE/CVF International Conference on Computer Vision (ICCV)_, 2025 (In Rebuttal)<br>
+  _IEEE/CVF International Conference on Computer Vision (ICCV)_, 2025 <font color="#8A2BE2">(In Rebuttal)</font><br>
   [PDF](https://arxiv.org/pdf/2502.19697)
 
 # 🎖 Honors and Awards
