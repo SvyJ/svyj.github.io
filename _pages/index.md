@@ -43,7 +43,7 @@ author_profile: true
 
 ## 🎉 Nice News
 
-- **[Apr. 2025]** 🎉 Our article on "Multi-View Industrial Anomaly Detection" was accepted by _IEEE/ASME T-Mech (TMECH/AIM Focused Section)_. [[PDF (In Press)]](https://ieeexplore.ieee.org/document/11010089)
+- **[Apr. 2025]** 🎉 Our article on "Multi-View Industrial Anomaly Detection" was accepted by _IEEE/ASME T-Mech (TMECH/AIM Focused Section)_. [[PDF]](https://ieeexplore.ieee.org/document/11010089)
 
 - **[Mar. 2025]** 🎉 Our article on "Few-Shot Defect Segmentation" was accepted by _IEEE T-ASE_. [[PDF]](https://ieeexplore.ieee.org/document/10942431)
 
