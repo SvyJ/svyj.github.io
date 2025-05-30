@@ -135,7 +135,7 @@ author_profile: true
   _SCIENTIA SINICA Informationis (中国科学: 信息科学)_, 2025 <font color="#8A2BE2">(In Revision)</font><br>
 
 - [NAS-ASDS: Neural Architecture Search for Automated Surface Defect Segmentation](https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=8856)<br>
-  Yuxi Liu✝, Yi Tang✝, Min Liu* (Supervisor), **Shuai Jiang**👈, Yunfeng Ma, and Yaonan Wang<br>
+  Yuxi Liu†, Yi Tang†, Min Liu* (Supervisor), **Shuai Jiang**👈, Yunfeng Ma, and Yaonan Wang<br>
   _IEEE Transactions on Automation Science and Engineering (T-ASE)_, 2025<br>
 
 - [Efficient Feature Coupling for Industrial Few-shot Defect Segmentation](https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=3516)<br>
