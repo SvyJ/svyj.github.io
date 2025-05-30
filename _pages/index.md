@@ -78,7 +78,7 @@ author_profile: true
 - **[Oct. 2020]** 🌟 Svy.J was awarded the "First Class Scholarship" with the rank of 1/70.
 
 # 📝 Publications
-✝ Co-first Author, * Corresponding Author
+† Co-first Author, * Corresponding Author
 
 ## 📄 Peer-Reviewed Publications 
 
@@ -131,7 +131,7 @@ author_profile: true
   _IEEE Transactions on Industrial Informatics (T-II)_, 2025<br>
 
 - [Neural Architecture Search Based Real-time Segmentation Method for Aero-engine Blade Surface Defects](https://ieeexplore.ieee.org)<br>
-  Xihang Cheng✝, Xiangfei Meng✝, Min Liu* (Supervisor), Yuxi Liu, Yunfeng Ma, **Shuai Jiang**👈, and Yaonan Wang<br>
+  Xihang Cheng†, Xiangfei Meng†, Min Liu* (Supervisor), Yuxi Liu, Yunfeng Ma, **Shuai Jiang**👈, and Yaonan Wang<br>
   _SCIENTIA SINICA Informationis (中国科学: 信息科学)_, 2025 <font color="#8A2BE2">(In Revision)</font><br>
 
 - [NAS-ASDS: Neural Architecture Search for Automated Surface Defect Segmentation](https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=8856)<br>
