@@ -27,6 +27,8 @@ author_profile: true
 
 ## 📃 Latest Works
 
+- **[May. 2025]** 📃 Our paper on "Training-free Multimodal Anomaly Detection" was submitted to _IEEE T-PAMI_.
+
 - **[May. 2025]** 📃 Our paper on "NAS-based Semantic Segmentation" was submitted to _NeurIPS 2025_.
 
 - **[May. 2025]** 📃 Our article on "Multimodal Defect Detection with Missing Modalities" was submitted to _IEEE/ASME T-Mech_.
@@ -112,6 +114,10 @@ author_profile: true
 
 ## 📃 Manuscripts in Peer Review
 
+- [ZUMA: Training-free Zero-shot Unified Multimodal Anomaly Detection](https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=34)<br>
+  Yunfeng Ma, Min Liu* (Supervisor), **Shuai Jiang**, Jingyu Zhou, Yuan Bian, Xueping Wang, and Yaonan Wang, and <br>
+  _IEEE Transactions on Pattern Analysis and Machine Intelligence (T-PAMI)_, 2025<br>
+
 - [Searching Efficient Semantic Segmentation Architectures via Dynamic Path Selection](https://openreview.net/)<br>
   Yuxi Liu, Min Liu* (Supervisor), Yi Tang, **Shuai Jiang**, and Yaonan Wang<br>
   _The Thirty-ninth Annual Conference on Neural Information Processing Systems (NeurIPS)_, 2025<br>
@@ -125,7 +131,7 @@ author_profile: true
   _IEEE Transactions on Industrial Informatics (T-II)_, 2025<br>
 
 - [Neural Architecture Search Based Real-time Segmentation Method for Aero-engine Blade Surface Defects](https://ieeexplore.ieee.org)<br>
-  Xihang Cheng✝, Xiangfei Meng✝, Min Liu* (Supervisor), Yuxi Liu, Yunfeng Ma, Shuai Jiang, and Yaonan Wang<br>
+  Xihang Cheng✝, Xiangfei Meng✝, Min Liu* (Supervisor), Yuxi Liu, Yunfeng Ma, **Shuai Jiang**, and Yaonan Wang<br>
   _SCIENTIA SINICA Informationis (中国科学: 信息科学)_, 2025 <font color="#8A2BE2">(In Revision)</font><br>
 
 - [NAS-ASDS: Neural Architecture Search for Automated Surface Defect Segmentation](https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=8856)<br>
