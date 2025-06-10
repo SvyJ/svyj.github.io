@@ -27,7 +27,9 @@ author_profile: true
 
 ## 📃 Latest Works
 
-- **[May. 2025]** 📃 Our paper on "Training-free Multimodal Anomaly Detection" was submitted to _IEEE T-PAMI_.
+- **[Jun. 2025]** 📃 Our paper on "Few-shot Unified Multimodal Industrial Anomaly Detection" was submitted to _IEEE T-MM_.
+
+- **[May. 2025]** 📃 Our paper on "Training-free Unified Multimodal Anomaly Detection" was submitted to _IEEE T-PAMI_.
 
 - **[May. 2025]** 📃 Our paper on "NAS-based Semantic Segmentation" was submitted to _NeurIPS 2025_.
 
@@ -114,8 +116,12 @@ author_profile: true
 
 ## 📃 Manuscripts in Peer Review
 
+- [Unified Multimodal Industrial Anomaly Detection via Few Normal Samples](https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=6046)<br>
+  **Shuai Jiang**👈, Min Liu* (Supervisor), Yunfeng Ma, Jingyu Zhou, and Yaonan Wang<br>
+  _IEEE Transactions on Multimedia (T-MM)_, 2025<br>
+
 - [ZUMA: Training-free Zero-shot Unified Multimodal Anomaly Detection](https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=34)<br>
-  Yunfeng Ma, Min Liu* (Supervisor), **Shuai Jiang**👈, Jingyu Zhou, Yuan Bian, Xueping Wang, and Yaonan Wang, and <br>
+  Yunfeng Ma, Min Liu* (Supervisor), **Shuai Jiang**👈, Jingyu Zhou, Yuan Bian, Xueping Wang, and Yaonan Wang<br>
   _IEEE Transactions on Pattern Analysis and Machine Intelligence (T-PAMI)_, 2025<br>
 
 - [Searching Efficient Semantic Segmentation Architectures via Dynamic Path Selection](https://openreview.net/)<br>
