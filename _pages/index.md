@@ -16,7 +16,7 @@ author_profile: true
 
 😃🌞♎️👫☕️🍵🎾🎧
 
-**I am currently a Ph.D. student major in Control Science and Engineering at [Hunan University (HNU)](http://www-en.hnu.edu.cn/), working under the supervision of Prof. [Min Liu](http://eeit.hnu.edu.cn/info/1291/5218.htm) (DIRECT) and Prof. [Yaonan Wang](http://eeit.hnu.edu.cn/info/1277/4490.htm) (INDIRECT). My research interest lies in robot vision, particularly in multimodal learning for industrial robots. Before entering Hunan University, I received my M.Eng. (supervised by Prof. [Kai Hu](https://jwxy.xtu.edu.cn/info/1147/2508.htm) and Prof. [Xieping Gao](https://scholar.hunnu.edu.cn/gaoxieping/index.htm)) and B.S. degrees from [Xiangtan University (XTU)](https://en.xtu.edu.cn/) in 2023 and 2020, and underwent over three-year research on medical image analysis. (Contact me: svyj@hnu.edu.cn)**
+**I am currently a Ph.D. student major in Control Science and Engineering at [Hunan University (HNU)](http://www-en.hnu.edu.cn/), working under the supervision of Prof. [Min Liu](http://eeit.hnu.edu.cn/info/1291/5218.htm) and Prof. [Yaonan Wang](http://eeit.hnu.edu.cn/info/1277/4490.htm). My research interest lies in robot vision, particularly in multimodal learning for industrial robots. Before entering Hunan University, I received my M.Eng. (supervised by Prof. [Kai Hu](https://jwxy.xtu.edu.cn/info/1147/2508.htm) and Prof. [Xieping Gao](https://scholar.hunnu.edu.cn/gaoxieping/index.htm)) and B.S. degrees from [Xiangtan University (XTU)](https://en.xtu.edu.cn/) in 2023 and 2020, and underwent over three-year research on medical image analysis. (Contact me: svyj@hnu.edu.cn)**
 
 # 🔍 Research Interests
 - Multimodal Industrial Anomaly Detection: [MIAD](https://svyj.github.io/MIAD)
