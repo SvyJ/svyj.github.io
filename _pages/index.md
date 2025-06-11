@@ -27,9 +27,9 @@ author_profile: true
 
 ## 📃 Latest Works
 
-- **[Jun. 2025]** 📃 Our paper on "Few-shot Unified Multimodal Industrial Anomaly Detection" was submitted to _IEEE T-MM_.
+- **[Jun. 2025]** 📃 Our article on "Few-shot Unified Multimodal Industrial Anomaly Detection" was submitted to _IEEE T-MM_.
 
-- **[May. 2025]** 📃 Our paper on "Training-free Unified Multimodal Anomaly Detection" was submitted to _IEEE T-PAMI_.
+- **[May. 2025]** 📃 Our article on "Training-free Unified Multimodal Anomaly Detection" was submitted to _IEEE T-PAMI_.
 
 - **[May. 2025]** 📃 Our paper on "NAS-based Semantic Segmentation" was submitted to _NeurIPS 2025_.
 
