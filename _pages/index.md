@@ -27,6 +27,8 @@ author_profile: true
 
 ## 📃 Latest Works
 
+- **[Jun. 2025]** 📃 Our article on "Neural Architecture Search for Surface Defect Detection" was submitted to _IEEE/ASME T-Mech_.
+
 - **[Jun. 2025]** 📃 Our article on "Few-shot Unified Multimodal Industrial Anomaly Detection" was submitted to _IEEE T-MM_.
 
 - **[May. 2025]** 📃 Our article on "Training-free Unified Multimodal Anomaly Detection" was submitted to _IEEE T-PAMI_.
@@ -38,8 +40,6 @@ author_profile: true
 - **[May. 2025]** 📃 Our article on "Multi-class Anomaly Detection" was submitted to _IEEE T-II_.
 
 - **[Apr. 2025]** 📃 Our article on "Real-time Aero Blade Defect Segmentation" was submitted to _SCIENTIA SINICA Informationis_ (中国科学: 信息科学).
-
-- **[Mar. 2025]** 📃 Our article on "Neural Architecture Search for Surface Defect Detection" was submitted to _IEEE T-ASE_.
 
 - **[Mar. 2025]** 📃 Our article on "Few-Shot Defect Segmentation" was submitted to _IEEE/ASME T-Mech_.
 
@@ -116,6 +116,10 @@ author_profile: true
 
 ## 📃 Manuscripts in Peer Review
 
+- [Automated Neural Architecture Design for Industrial Defect Detection](https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=3516)<br>
+  Yuxi Liu†, Yi Tang†, Min Liu* (Supervisor), **Shuai Jiang**👈, Yunfeng Ma, and Yaonan Wang<br>
+  _IEEE/ASME Transactions on Mechatronics (T-Mech)_, 2025<br>
+
 - [Unified Multimodal Industrial Anomaly Detection via Few Normal Samples](https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=6046)<br>
   **Shuai Jiang**👈, Min Liu* (Supervisor), Yunfeng Ma, Jingyu Zhou, and Yaonan Wang<br>
   _IEEE Transactions on Multimedia (T-MM)_, 2025<br>
@@ -139,10 +143,6 @@ author_profile: true
 - [Neural Architecture Search Based Real-time Segmentation Method for Aero-engine Blade Surface Defects](https://ieeexplore.ieee.org)<br>
   Xihang Cheng†, Xiangfei Meng†, Min Liu* (Supervisor), Yuxi Liu, Yunfeng Ma, **Shuai Jiang**👈, and Yaonan Wang<br>
   _SCIENTIA SINICA Informationis (中国科学: 信息科学)_, 2025 <font color="#8A2BE2">(In Revision)</font><br>
-
-- [NAS-ASDS: Neural Architecture Search for Automated Surface Defect Segmentation](https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=8856)<br>
-  Yuxi Liu†, Yi Tang†, Min Liu* (Supervisor), **Shuai Jiang**👈, Yunfeng Ma, and Yaonan Wang<br>
-  _IEEE Transactions on Automation Science and Engineering (T-ASE)_, 2025<br>
 
 - [Efficient Feature Coupling for Industrial Few-shot Defect Segmentation](https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=3516)<br>
   Yunfeng Ma, Min Liu* (Supervisor), **Shuai Jiang**👈, Jingyu Zhou, Yuan Bian, and Yaonan Wang<br>
