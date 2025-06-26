@@ -84,74 +84,74 @@ author_profile: true
 
 ## 📄 Peer-Reviewed Publications 
 
+- [Prompt-driven Transferable Adversarial Attack on Person Re-Identification with Attribute-aware Textual Inversion](https://arxiv.org/abs/2502.19697)<br>
+  Yuan Bian, Min Liu* (Supervisor), Yunqi Yi, Xueping Wang, **Shuai Jiang**, Yaonan Wang<br>
+  _IEEE/CVF International Conference on Computer Vision (ICCV)_, 2025 <font color="#8A2BE2"></font><br>
+  [PDF](https://arxiv.org/pdf/2502.19697)
+
 - [Multi-View Attention Guided Feature Learning for Unsupervised Surface Defect Detection](https://ieeexplore.ieee.org/document/11010089)<br>
-  Jingyu Zhou, Min Liu* (Supervisor), Yunfeng Ma, **Shuai Jiang**👈, and Yaonan Wang<br>
+  Jingyu Zhou, Min Liu* (Supervisor), Yunfeng Ma, **Shuai Jiang**, and Yaonan Wang<br>
   _IEEE/ASME Transactions on Mechatronics (T-Mech)_, 2025<br>
   [PDF](https://ieeexplore.ieee.org/document/11010089)
 
 - [Multi-Context Aggregation Network with Foreground Correction for Automated Few-Shot Defect Segmentation](https://ieeexplore.ieee.org/document/10942431)<br>
-  Yunfeng Ma, Min Liu* (Supervisor), **Shuai Jiang**👈, Xueping Wang, Yuan Bian, and Yaonan Wang<br>
+  Yunfeng Ma, Min Liu* (Supervisor), **Shuai Jiang**, Xueping Wang, Yuan Bian, and Yaonan Wang<br>
   _IEEE Transactions on Automation Science and Engineering (T-ASE)_, 2025<br>
   [PDF](https://ieeexplore.ieee.org/document/10942431)
 
 - [Joint Segmentation of FAZ and RVs in OCTA Images with Auxiliary 3D Image Projection Learning](https://ieeexplore.ieee.org/document/10904426)<br>
-  **Shuai Jiang**👈, Kai Hu* (Supervisor), Yuan Zhang, and Xieping Gao<br>
+  **Shuai Jiang**, Kai Hu* (Supervisor), Yuan Zhang, and Xieping Gao<br>
   _IEEE Transactions on Instrumentation and Measurement (T-IM)_, 2024<br>
   [PDF](https://ieeexplore.ieee.org/document/10904426)
 
 - [Category-agnostic Cluster-guided Selective Suppression for Weakly Supervised Surface Defect Localization](https://ieeexplore.ieee.org/document/10908998)<br>
-  **Shuai Jiang**👈, Min Liu* (Supervisor), Yuxi Liu, Yunfeng Ma, and Yaonan Wang<br>
+  **Shuai Jiang**, Min Liu* (Supervisor), Yuxi Liu, Yunfeng Ma, and Yaonan Wang<br>
   _IEEE Transactions on Instrumentation and Measurement (T-IM)_, 2024<br>
   [PDF](https://ieeexplore.ieee.org/document/10908998) | [Project](https://svyj.github.io/CSS/)
 
 - [Segmentation of Retinal Layer Boundary in OCT Images Based on End-to-end Deep Neural Network and Graph Search](https://www.jos.org.cn/jos/article/abstract/6895)<br>
-  Kai Hu (Supervisor), **Shuai Jiang**👈, Dong Liu, and Xieping Gao*<br>
+  Kai Hu (Supervisor), **Shuai Jiang**, Dong Liu, and Xieping Gao*<br>
   _Journal of Software (软件学报)_, 2023<br>
   [PDF](https://www.jos.org.cn/jos/article/abstract/6895)
 
 - [Joint-Seg: Treat Foveal Avascular Zone and Retinal Vessel Segmentation in OCTA Images as a Joint Task](https://ieeexplore.ieee.org/document/9837090)<br>
-  Kai Hu (Supervisor), **Shuai Jiang**👈, Yuan Zhang, Xuanya Li, and Xieping Gao*<br>
+  Kai Hu (Supervisor), **Shuai Jiang**, Yuan Zhang, Xuanya Li, and Xieping Gao*<br>
   _IEEE Transactions on Instrumentation and Measurement (T-IM)_, 2022<br>
   [PDF](https://ieeexplore.ieee.org/document/9837090) | [Project](https://svyj.github.io/Joint-Seg/)
 
 ## 📃 Manuscripts in Peer Review
 
 - [Automated Neural Architecture Design for Industrial Defect Detection](https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=3516)<br>
-  Yuxi Liu†, Yi Tang†, Min Liu* (Supervisor), **Shuai Jiang**👈, Yunfeng Ma, and Yaonan Wang<br>
+  Yuxi Liu†, Yi Tang†, Min Liu* (Supervisor), **Shuai Jiang**, Yunfeng Ma, and Yaonan Wang<br>
   _IEEE/ASME Transactions on Mechatronics (T-Mech)_, 2025<br>
 
 - [Unified Multimodal Industrial Anomaly Detection via Few Normal Samples](https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=6046)<br>
-  **Shuai Jiang**👈, Min Liu* (Supervisor), Yunfeng Ma, Jingyu Zhou, and Yaonan Wang<br>
+  **Shuai Jiang**, Min Liu* (Supervisor), Yunfeng Ma, Jingyu Zhou, and Yaonan Wang<br>
   _IEEE Transactions on Multimedia (T-MM)_, 2025<br>
 
 - [ZUMA: Training-free Zero-shot Unified Multimodal Anomaly Detection](https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=34)<br>
-  Yunfeng Ma, Min Liu* (Supervisor), **Shuai Jiang**👈, Jingyu Zhou, Yuan Bian, Xueping Wang, and Yaonan Wang<br>
+  Yunfeng Ma, Min Liu* (Supervisor), **Shuai Jiang**, Jingyu Zhou, Yuan Bian, Xueping Wang, and Yaonan Wang<br>
   _IEEE Transactions on Pattern Analysis and Machine Intelligence (T-PAMI)_, 2025<br>
 
 - [Searching Efficient Semantic Segmentation Architectures via Dynamic Path Selection](https://openreview.net/)<br>
-  Yuxi Liu, Min Liu* (Supervisor), Yi Tang, **Shuai Jiang**👈, and Yaonan Wang<br>
+  Yuxi Liu, Min Liu* (Supervisor), Yi Tang, **Shuai Jiang**, and Yaonan Wang<br>
   _The Thirty-ninth Annual Conference on Neural Information Processing Systems (NeurIPS)_, 2025<br>
 
 - [Resilient Multimodal Industrial Surface Defect Detection with Uncertain Sensors Availability](https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=3516)<br>
-  **Shuai Jiang**👈, Yunfeng Ma, Jingyu Zhou, Yaonan Wang, and Min Liu* (Supervisor)<br>
+  **Shuai Jiang**, Yunfeng Ma, Jingyu Zhou, Yaonan Wang, and Min Liu* (Supervisor)<br>
   _IEEE/ASME Transactions on Mechatronics (T-Mech)_, 2025<br>
 
 - [Cross-View Dynamic Learning-Based Multi-Class Industrial Anomaly Detection](https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=9424)<br>
-  Jingyu Zhou, Yunfeng Ma, **Shuai Jiang**👈, Yaonan Wang, and Min Liu* (Supervisor)<br>
+  Jingyu Zhou, Yunfeng Ma, **Shuai Jiang**, Yaonan Wang, and Min Liu* (Supervisor)<br>
   _IEEE Transactions on Industrial Informatics (T-II)_, 2025<br>
 
 - [Neural Architecture Search Based Real-time Segmentation Method for Aero-engine Blade Surface Defects](https://ieeexplore.ieee.org)<br>
-  Xihang Cheng†, Xiangfei Meng†, Min Liu* (Supervisor), Yuxi Liu, Yunfeng Ma, **Shuai Jiang**👈, and Yaonan Wang<br>
+  Xihang Cheng†, Xiangfei Meng†, Min Liu* (Supervisor), Yuxi Liu, Yunfeng Ma, **Shuai Jiang**, and Yaonan Wang<br>
   _SCIENTIA SINICA Informationis (中国科学: 信息科学)_, 2025 <font color="#8A2BE2">(In Revision)</font><br>
 
 - [Efficient Feature Coupling for Industrial Few-shot Defect Segmentation](https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=3516)<br>
-  Yunfeng Ma, Min Liu* (Supervisor), **Shuai Jiang**👈, Jingyu Zhou, Yuan Bian, and Yaonan Wang<br>
+  Yunfeng Ma, Min Liu* (Supervisor), **Shuai Jiang**, Jingyu Zhou, Yuan Bian, and Yaonan Wang<br>
   _IEEE/ASME Transactions on Mechatronics (T-Mech)_, 2025 <font color="#8A2BE2">(In Major Revision)</font><br>
-
-- [Prompt-driven Transferable Adversarial Attack on Person Re-Identification with Attribute-aware Textual Inversion](https://arxiv.org/abs/2502.19697)<br>
-  Yuan Bian, Min Liu* (Supervisor), Yunqi Yi, Xueping Wang, **Shuai Jiang**👈, Yaonan Wang<br>
-  _IEEE/CVF International Conference on Computer Vision (ICCV)_, 2025 <font color="#8A2BE2">(In Rebuttal)</font><br>
-  [PDF](https://arxiv.org/pdf/2502.19697)
 
 # 🎖 Honors and Awards
 - Excellent Graduates, Hunan Provincial Department of Education, 2023.
