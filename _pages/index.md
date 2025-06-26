@@ -87,6 +87,7 @@ author_profile: true
 - [Neural Architecture Search-based Detection Method and System for Aero-engine Blade Surface Defects](https://www.sciengine.com/SSI/doi/10.1360/SSI-2025-0145)<br>
   Xihang Cheng†, Xiangfei Meng†, Min Liu* (Supervisor), Yuxi Liu, Yunfeng Ma, **Shuai Jiang**, and Yaonan Wang<br>
   _SCIENTIA SINICA Informationis (中国科学: 信息科学)_, 2025<br>
+  [PDF](https://www.sciengine.com/SSI/doi/10.1360/SSI-2025-0145)
 
 - [Prompt-driven Transferable Adversarial Attack on Person Re-Identification with Attribute-aware Textual Inversion](https://arxiv.org/abs/2502.19697)<br>
   Yuan Bian, Min Liu* (Supervisor), Yunqi Yi, Xueping Wang, **Shuai Jiang**, Yaonan Wang<br>
