@@ -39,11 +39,11 @@ author_profile: true
   
 - **[May. 2025]** 📃 Our article on "Multi-class Anomaly Detection" was submitted to _IEEE T-II_.
 
-- **[Apr. 2025]** 📃 Our article on "Real-time Aero Blade Defect Segmentation" was submitted to _SCIENTIA SINICA Informationis_ (中国科学: 信息科学).
-
 - **[Mar. 2025]** 📃 Our article on "Few-Shot Defect Segmentation" was submitted to _IEEE/ASME T-Mech_.
 
 ## 🎉 Nice News
+
+- **[Jun. 2025]** 🎉 Our article on "Real-time Aero Blade Defect Segmentation" was submitted to _SCIENTIA SINICA Informationis_ (中国科学: 信息科学).
 
 - **[Jun. 2025]** 🎉 Our paper on "Prompt-driven Person Re-ID" was accepted by _ICCV 2025_. [[PDF]](https://arxiv.org/pdf/2502.19697)
 
@@ -82,7 +82,11 @@ author_profile: true
 # 📝 Publications
 † Co-first Author, * Corresponding Author
 
-## 📄 Peer-Reviewed Publications 
+## 📄 Peer-Reviewed Publications
+
+- [Neural Architecture Search Based Real-time Segmentation Method for Aero-engine Blade Surface Defects](http://scis.scichina.com/)<br>
+  Xihang Cheng†, Xiangfei Meng†, Min Liu* (Supervisor), Yuxi Liu, Yunfeng Ma, **Shuai Jiang**, and Yaonan Wang<br>
+  _SCIENTIA SINICA Informationis (中国科学: 信息科学)_, 2025 <font color="#8A2BE2"></font><br>
 
 - [Prompt-driven Transferable Adversarial Attack on Person Re-Identification with Attribute-aware Textual Inversion](https://arxiv.org/abs/2502.19697)<br>
   Yuan Bian, Min Liu* (Supervisor), Yunqi Yi, Xueping Wang, **Shuai Jiang**, Yaonan Wang<br>
@@ -144,10 +148,6 @@ author_profile: true
 - [Cross-View Dynamic Learning-Based Multi-Class Industrial Anomaly Detection](https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=9424)<br>
   Jingyu Zhou, Yunfeng Ma, **Shuai Jiang**, Yaonan Wang, and Min Liu* (Supervisor)<br>
   _IEEE Transactions on Industrial Informatics (T-II)_, 2025<br>
-
-- [Neural Architecture Search Based Real-time Segmentation Method for Aero-engine Blade Surface Defects](https://ieeexplore.ieee.org)<br>
-  Xihang Cheng†, Xiangfei Meng†, Min Liu* (Supervisor), Yuxi Liu, Yunfeng Ma, **Shuai Jiang**, and Yaonan Wang<br>
-  _SCIENTIA SINICA Informationis (中国科学: 信息科学)_, 2025 <font color="#8A2BE2">(In Revision)</font><br>
 
 - [Efficient Feature Coupling for Industrial Few-shot Defect Segmentation](https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=3516)<br>
   Yunfeng Ma, Min Liu* (Supervisor), **Shuai Jiang**, Jingyu Zhou, Yuan Bian, and Yaonan Wang<br>
