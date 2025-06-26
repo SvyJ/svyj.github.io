@@ -43,7 +43,7 @@ author_profile: true
 
 ## 🎉 Nice News
 
-- **[Jun. 2025]** 🎉 Our article on "Real-time Aero Blade Defect Segmentation" was submitted to _SCIENTIA SINICA Informationis_ (中国科学: 信息科学).
+- **[Jun. 2025]** 🎉 Our article on "Neural Architecture Search-based Aero-engine Blade Defect Detection" was accepted by _SCIENTIA SINICA Informationis_ (中国科学: 信息科学). [[PDF]](https://www.sciengine.com/SSI/doi/10.1360/SSI-2025-0145)
 
 - **[Jun. 2025]** 🎉 Our paper on "Prompt-driven Person Re-ID" was accepted by _ICCV 2025_. [[PDF]](https://arxiv.org/pdf/2502.19697)
 
@@ -84,13 +84,13 @@ author_profile: true
 
 ## 📄 Peer-Reviewed Publications
 
-- [Neural Architecture Search Based Real-time Segmentation Method for Aero-engine Blade Surface Defects](http://scis.scichina.com/)<br>
+- [Neural Architecture Search-based Detection Method and System for Aero-engine Blade Surface Defects](https://www.sciengine.com/SSI/doi/10.1360/SSI-2025-0145)<br>
   Xihang Cheng†, Xiangfei Meng†, Min Liu* (Supervisor), Yuxi Liu, Yunfeng Ma, **Shuai Jiang**, and Yaonan Wang<br>
-  _SCIENTIA SINICA Informationis (中国科学: 信息科学)_, 2025 <font color="#8A2BE2"></font><br>
+  _SCIENTIA SINICA Informationis (中国科学: 信息科学)_, 2025<br>
 
 - [Prompt-driven Transferable Adversarial Attack on Person Re-Identification with Attribute-aware Textual Inversion](https://arxiv.org/abs/2502.19697)<br>
   Yuan Bian, Min Liu* (Supervisor), Yunqi Yi, Xueping Wang, **Shuai Jiang**, Yaonan Wang<br>
-  _IEEE/CVF International Conference on Computer Vision (ICCV)_, 2025 <font color="#8A2BE2"></font><br>
+  _IEEE/CVF International Conference on Computer Vision (ICCV)_, 2025<br>
   [PDF](https://arxiv.org/pdf/2502.19697)
 
 - [Multi-View Attention Guided Feature Learning for Unsupervised Surface Defect Detection](https://ieeexplore.ieee.org/document/11010089)<br>
