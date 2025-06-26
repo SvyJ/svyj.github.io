@@ -43,9 +43,9 @@ author_profile: true
 
 - **[Mar. 2025]** 📃 Our article on "Few-Shot Defect Segmentation" was submitted to _IEEE/ASME T-Mech_.
 
-- **[Mar. 2025]** 📃 Our paper on "Prompt-driven Person Re-ID" was submitted to _ICCV 2025_.
-
 ## 🎉 Nice News
+
+- **[Jun. 2025]** 📃 Our paper on "Prompt-driven Person Re-ID" was accepted by _ICCV 2025_. [[PDF]](https://arxiv.org/pdf/2502.19697)
 
 - **[Apr. 2025]** 🎉 Our article on "Multi-View Industrial Anomaly Detection" was accepted by _IEEE/ASME T-Mech (TMECH/AIM Focused Section)_. [[PDF]](https://ieeexplore.ieee.org/document/11010089)
 
