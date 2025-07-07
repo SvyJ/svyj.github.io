@@ -129,7 +129,7 @@ author_profile: true
 ## 📃 Manuscripts in Peer Review
 
 - [EGCR-Net: Edge-Guided Cross-Region Network for Semi-Supervised Soldering Defect Detection](https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=9424)<br>
-  Yaoyi Cai, Dan Huang, ZhiXun Li, **Shuai Jiang**, Yunfeng Ma, Zekai Yao*, and Min Liu* (Supervisor)<br>
+  Yaoyi Cai, Dan Huang, ZhiXun Li, **Shuai Jiang**, Yunfeng Ma, Zekai Yao\*, and Min Liu\* (Supervisor)<br>
   _IEEE Transactions on Industrial Informatics (T-II)_, 2025<br>
 
 - [Automated Neural Architecture Design for Industrial Defect Detection](https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=3516)<br>
