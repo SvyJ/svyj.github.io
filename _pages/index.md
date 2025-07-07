@@ -27,6 +27,8 @@ author_profile: true
 
 ## 📃 Latest Works
 
+- **[Jul. 2025]** 📃 Our article on "Semi-Supervised Soldering Defect Detection" was submitted to _IEEE T-II_.
+
 - **[Jun. 2025]** 📃 Our article on "Neural Architecture Search for Surface Defect Detection" was submitted to _IEEE/ASME T-Mech_.
 
 - **[Jun. 2025]** 📃 Our article on "Few-shot Unified Multimodal Industrial Anomaly Detection" was submitted to _IEEE T-MM_.
@@ -125,6 +127,10 @@ author_profile: true
   [PDF](https://ieeexplore.ieee.org/document/9837090) | [Project](https://svyj.github.io/Joint-Seg/)
 
 ## 📃 Manuscripts in Peer Review
+
+- [EGCR-Net: Edge-Guided Cross-Region Network for Semi-Supervised Soldering Defect Detection](https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=9424)<br>
+  Yaoyi Cai, Dan Huang, ZhiXun Li, **Shuai Jiang**, Yunfeng Ma, Zekai Yao*, and Min Liu* (Supervisor)<br>
+  _IEEE Transactions on Industrial Informatics (T-II)_, 2025<br>
 
 - [Automated Neural Architecture Design for Industrial Defect Detection](https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=3516)<br>
   Yuxi Liu†, Yi Tang†, Min Liu* (Supervisor), **Shuai Jiang**, Yunfeng Ma, and Yaonan Wang<br>
