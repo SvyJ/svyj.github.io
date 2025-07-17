@@ -88,7 +88,7 @@ author_profile: true
 
 ## 📄 Peer-Reviewed Publications
 
-<div class='paper-box'><div class='paper-box-image'><div><div class="badge">CVPR 2016</div><img src='images/500x300.png' alt="sym" width="100%"></div></div>
+<div class='paper-box'><div class='paper-box-image'><div><div class="badge">CVPR 2016</div><img src='images/500x300.png' alt="sym" height="100"></div></div>
 <div class='paper-box-text' markdown="1">
 [Neural Architecture Search-based Detection Method and System for Aero-engine Blade Surface Defects](https://www.sciengine.com/SSI/doi/10.1360/SSI-2025-0145)<br>
 Xihang Cheng†, Xiangfei Meng†, Min Liu* (Supervisor), Yuxi Liu, Yunfeng Ma, **Shuai Jiang**, and Yaonan Wang<br>
