@@ -105,36 +105,60 @@ _IEEE/CVF International Conference on Computer Vision (ICCV)_, 2025<br>
 [PDF](https://arxiv.org/pdf/2502.19697)
 </div>
 </div>
-  
-- [Multi-View Attention Guided Feature Learning for Unsupervised Surface Defect Detection](https://ieeexplore.ieee.org/document/11010089)<br>
-  Jingyu Zhou, Min Liu* (Supervisor), Yunfeng Ma, **Shuai Jiang**, and Yaonan Wang<br>
-  _IEEE/ASME Transactions on Mechatronics (T-Mech)_, 2025<br>
-  [PDF](https://ieeexplore.ieee.org/document/11010089)
 
-- [Multi-Context Aggregation Network with Foreground Correction for Automated Few-Shot Defect Segmentation](https://ieeexplore.ieee.org/document/10942431)<br>
-  Yunfeng Ma, Min Liu* (Supervisor), **Shuai Jiang**, Xueping Wang, Yuan Bian, and Yaonan Wang<br>
-  _IEEE Transactions on Automation Science and Engineering (T-ASE)_, 2025<br>
-  [PDF](https://ieeexplore.ieee.org/document/10942431)
+<div class='paper-box'><div class='paper-box-image'><div><div class="badge">CVPR 2016</div><img src='images/500x300.png' alt="sym" width="100%"></div></div>
+<div class='paper-box-text' markdown="1">
+[Multi-View Attention Guided Feature Learning for Unsupervised Surface Defect Detection](https://ieeexplore.ieee.org/document/11010089)<br>
+Jingyu Zhou, Min Liu* (Supervisor), Yunfeng Ma, **Shuai Jiang**, and Yaonan Wang<br>
+_IEEE/ASME Transactions on Mechatronics (T-Mech)_, 2025<br>
+[PDF](https://ieeexplore.ieee.org/document/11010089)
+</div>
+</div>
 
-- [Joint Segmentation of FAZ and RVs in OCTA Images with Auxiliary 3D Image Projection Learning](https://ieeexplore.ieee.org/document/10904426)<br>
-  **Shuai Jiang**, Kai Hu* (Supervisor), Yuan Zhang, and Xieping Gao<br>
-  _IEEE Transactions on Instrumentation and Measurement (T-IM)_, 2024<br>
-  [PDF](https://ieeexplore.ieee.org/document/10904426)
+<div class='paper-box'><div class='paper-box-image'><div><div class="badge">CVPR 2016</div><img src='images/500x300.png' alt="sym" width="100%"></div></div>
+<div class='paper-box-text' markdown="1">
+[Multi-Context Aggregation Network with Foreground Correction for Automated Few-Shot Defect Segmentation](https://ieeexplore.ieee.org/document/10942431)<br>
+Yunfeng Ma, Min Liu* (Supervisor), **Shuai Jiang**, Xueping Wang, Yuan Bian, and Yaonan Wang<br>
+_IEEE Transactions on Automation Science and Engineering (T-ASE)_, 2025<br>
+[PDF](https://ieeexplore.ieee.org/document/10942431)
+</div>
+</div>
 
-- [Category-agnostic Cluster-guided Selective Suppression for Weakly Supervised Surface Defect Localization](https://ieeexplore.ieee.org/document/10908998)<br>
-  **Shuai Jiang**, Min Liu* (Supervisor), Yuxi Liu, Yunfeng Ma, and Yaonan Wang<br>
-  _IEEE Transactions on Instrumentation and Measurement (T-IM)_, 2024<br>
-  [PDF](https://ieeexplore.ieee.org/document/10908998) | [Project](https://svyj.github.io/CSS/)
+<div class='paper-box'><div class='paper-box-image'><div><div class="badge">CVPR 2016</div><img src='images/500x300.png' alt="sym" width="100%"></div></div>
+<div class='paper-box-text' markdown="1">
+[Joint Segmentation of FAZ and RVs in OCTA Images with Auxiliary 3D Image Projection Learning](https://ieeexplore.ieee.org/document/10904426)<br>
+**Shuai Jiang**, Kai Hu* (Supervisor), Yuan Zhang, and Xieping Gao<br>
+_IEEE Transactions on Instrumentation and Measurement (T-IM)_, 2024<br>
+[PDF](https://ieeexplore.ieee.org/document/10904426)
+</div>
+</div>
 
-- [Segmentation of Retinal Layer Boundary in OCT Images Based on End-to-end Deep Neural Network and Graph Search](https://www.jos.org.cn/jos/article/abstract/6895)<br>
-  Kai Hu (Supervisor), **Shuai Jiang**, Dong Liu, and Xieping Gao*<br>
-  _Journal of Software (软件学报)_, 2023<br>
-  [PDF](https://www.jos.org.cn/jos/article/abstract/6895)
+<div class='paper-box'><div class='paper-box-image'><div><div class="badge">CVPR 2016</div><img src='images/500x300.png' alt="sym" width="100%"></div></div>
+<div class='paper-box-text' markdown="1">
+[Category-agnostic Cluster-guided Selective Suppression for Weakly Supervised Surface Defect Localization](https://ieeexplore.ieee.org/document/10908998)<br>
+**Shuai Jiang**, Min Liu* (Supervisor), Yuxi Liu, Yunfeng Ma, and Yaonan Wang<br>
+_IEEE Transactions on Instrumentation and Measurement (T-IM)_, 2024<br>
+[PDF](https://ieeexplore.ieee.org/document/10908998) | [Project](https://svyj.github.io/CSS/)
+</div>
+</div>
 
-- [Joint-Seg: Treat Foveal Avascular Zone and Retinal Vessel Segmentation in OCTA Images as a Joint Task](https://ieeexplore.ieee.org/document/9837090)<br>
-  Kai Hu (Supervisor), **Shuai Jiang**, Yuan Zhang, Xuanya Li, and Xieping Gao*<br>
-  _IEEE Transactions on Instrumentation and Measurement (T-IM)_, 2022<br>
-  [PDF](https://ieeexplore.ieee.org/document/9837090) | [Project](https://svyj.github.io/Joint-Seg/)
+<div class='paper-box'><div class='paper-box-image'><div><div class="badge">CVPR 2016</div><img src='images/500x300.png' alt="sym" width="100%"></div></div>
+<div class='paper-box-text' markdown="1">
+[Segmentation of Retinal Layer Boundary in OCT Images Based on End-to-end Deep Neural Network and Graph Search](https://www.jos.org.cn/jos/article/abstract/6895)<br>
+Kai Hu (Supervisor), **Shuai Jiang**, Dong Liu, and Xieping Gao*<br>
+_Journal of Software (软件学报)_, 2023<br>
+[PDF](https://www.jos.org.cn/jos/article/abstract/6895)
+</div>
+</div>
+
+<div class='paper-box'><div class='paper-box-image'><div><div class="badge">CVPR 2016</div><img src='images/500x300.png' alt="sym" width="100%"></div></div>
+<div class='paper-box-text' markdown="1">
+[Joint-Seg: Treat Foveal Avascular Zone and Retinal Vessel Segmentation in OCTA Images as a Joint Task](https://ieeexplore.ieee.org/document/9837090)<br>
+Kai Hu (Supervisor), **Shuai Jiang**, Yuan Zhang, Xuanya Li, and Xieping Gao*<br>
+_IEEE Transactions on Instrumentation and Measurement (T-IM)_, 2022<br>
+[PDF](https://ieeexplore.ieee.org/document/9837090) | [Project](https://svyj.github.io/Joint-Seg/)
+</div>
+</div>
 
 ## 📃 Manuscripts in Peer Review
 
