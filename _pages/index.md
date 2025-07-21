@@ -25,7 +25,7 @@ author_profile: true
 
 # 🔥 Recent Updates
 
-## 📃 Latest Works
+## 📝 Latest Works
 
 - **[Jul. 2025]** 📃 Our article on "Semi-Supervised Soldering Defect Detection" was submitted to _IEEE T-II_.
 
@@ -83,46 +83,10 @@ author_profile: true
   
 - **[Oct. 2020]** 🌟 Svy.J was awarded the "First Class Scholarship" with the rank of 1/70.
 
-# 📝 Publications
+# 📚 Publications
 † Co-first Author, * Corresponding Author
 
-## 📄 Peer-Reviewed Publications
-
-<div class='paper-box'><div class='paper-box-image'><div><div class="badge">中国科学: 信息科学 2025</div><img src='images/pubs/msfa.png' alt="sym" width="100%"></div></div>
-<div class='paper-box-text' markdown="1">
-[Neural Architecture Search-based Detection Method and System for Aero-engine Blade Surface Defects](https://www.sciengine.com/SSI/doi/10.1360/SSI-2025-0145)<br>
-Xihang Cheng†, Xiangfei Meng†, Min Liu* (Supervisor), Yuxi Liu, Yunfeng Ma, **Shuai Jiang**, and Yaonan Wang<br>
-_SCIENTIA SINICA Informationis (中国科学: 信息科学)_, 2025<br>
-[PDF](https://www.sciengine.com/SSI/doi/10.1360/SSI-2025-0145)
-</div>
-</div>
-
-<div class='paper-box'><div class='paper-box-image'><div><div class="badge">ICCV 2025</div><img src='images/pubs/ap-attack.png' alt="sym" width="100%"></div></div>
-<div class='paper-box-text' markdown="1">
-[Prompt-driven Transferable Adversarial Attack on Person Re-Identification with Attribute-aware Textual Inversion](https://arxiv.org/abs/2502.19697)<br>
-Yuan Bian, Min Liu* (Supervisor), Yunqi Yi, Xueping Wang, **Shuai Jiang**, Yaonan Wang<br>
-_IEEE/CVF International Conference on Computer Vision (ICCV)_, 2025<br>
-[PDF](https://arxiv.org/pdf/2502.19697)
-</div>
-</div>
-
-<div class='paper-box'><div class='paper-box-image'><div><div class="badge">T-Mech 2025</div><img src='images/pubs/mvag-fl.png' alt="sym" width="100%"></div></div>
-<div class='paper-box-text' markdown="1">
-[Multi-View Attention Guided Feature Learning for Unsupervised Surface Defect Detection](https://ieeexplore.ieee.org/document/11010089)<br>
-Jingyu Zhou, Min Liu* (Supervisor), Yunfeng Ma, **Shuai Jiang**, and Yaonan Wang<br>
-_IEEE/ASME Transactions on Mechatronics (T-Mech)_, 2025<br>
-[PDF](https://ieeexplore.ieee.org/document/11010089)
-</div>
-</div>
-
-<div class='paper-box'><div class='paper-box-image'><div><div class="badge">T-ASE 2025</div><img src='images/pubs/mca-net.png' alt="sym" width="100%"></div></div>
-<div class='paper-box-text' markdown="1">
-[Multi-Context Aggregation Network with Foreground Correction for Automated Few-Shot Defect Segmentation](https://ieeexplore.ieee.org/document/10942431)<br>
-Yunfeng Ma, Min Liu* (Supervisor), **Shuai Jiang**, Xueping Wang, Yuan Bian, and Yaonan Wang<br>
-_IEEE Transactions on Automation Science and Engineering (T-ASE)_, 2025<br>
-[PDF](https://ieeexplore.ieee.org/document/10942431)
-</div>
-</div>
+## 📑 Peer-Reviewed Publications
 
 <div class='paper-box'><div class='paper-box-image'><div><div class="badge">T-IM 2024</div><img src='images/pubs/pl-joint-seg.png' alt="sym" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
@@ -157,6 +121,44 @@ _Journal of Software (软件学报)_, 2023<br>
 Kai Hu (Supervisor), **Shuai Jiang**, Yuan Zhang, Xuanya Li, and Xieping Gao*<br>
 _IEEE Transactions on Instrumentation and Measurement (T-IM)_, 2022<br>
 [PDF](https://ieeexplore.ieee.org/document/9837090) | [Project](https://svyj.github.io/Joint-Seg/)
+</div>
+</div>
+
+## 📄 Co-authored Peer-Reviewed Publications
+
+<div class='paper-box'><div class='paper-box-image'><div><div class="badge">中国科学: 信息科学 2025</div><img src='images/pubs/msfa.png' alt="sym" width="100%"></div></div>
+<div class='paper-box-text' markdown="1">
+[Neural Architecture Search-based Detection Method and System for Aero-engine Blade Surface Defects](https://www.sciengine.com/SSI/doi/10.1360/SSI-2025-0145)<br>
+Xihang Cheng†, Xiangfei Meng†, Min Liu* (Supervisor), Yuxi Liu, Yunfeng Ma, **Shuai Jiang**, and Yaonan Wang<br>
+_SCIENTIA SINICA Informationis (中国科学: 信息科学)_, 2025<br>
+[PDF](https://www.sciengine.com/SSI/doi/10.1360/SSI-2025-0145)
+</div>
+</div>
+
+<div class='paper-box'><div class='paper-box-image'><div><div class="badge">ICCV 2025</div><img src='images/pubs/ap-attack.png' alt="sym" width="100%"></div></div>
+<div class='paper-box-text' markdown="1">
+[Prompt-driven Transferable Adversarial Attack on Person Re-Identification with Attribute-aware Textual Inversion](https://arxiv.org/abs/2502.19697)<br>
+Yuan Bian, Min Liu* (Supervisor), Yunqi Yi, Xueping Wang, **Shuai Jiang**, Yaonan Wang<br>
+_IEEE/CVF International Conference on Computer Vision (ICCV)_, 2025<br>
+[PDF](https://arxiv.org/pdf/2502.19697)
+</div>
+</div>
+
+<div class='paper-box'><div class='paper-box-image'><div><div class="badge">T-Mech 2025</div><img src='images/pubs/mvag-fl.png' alt="sym" width="100%"></div></div>
+<div class='paper-box-text' markdown="1">
+[Multi-View Attention Guided Feature Learning for Unsupervised Surface Defect Detection](https://ieeexplore.ieee.org/document/11010089)<br>
+Jingyu Zhou, Min Liu* (Supervisor), Yunfeng Ma, **Shuai Jiang**, and Yaonan Wang<br>
+_IEEE/ASME Transactions on Mechatronics (T-Mech)_, 2025<br>
+[PDF](https://ieeexplore.ieee.org/document/11010089)
+</div>
+</div>
+
+<div class='paper-box'><div class='paper-box-image'><div><div class="badge">T-ASE 2025</div><img src='images/pubs/mca-net.png' alt="sym" width="100%"></div></div>
+<div class='paper-box-text' markdown="1">
+[Multi-Context Aggregation Network with Foreground Correction for Automated Few-Shot Defect Segmentation](https://ieeexplore.ieee.org/document/10942431)<br>
+Yunfeng Ma, Min Liu* (Supervisor), **Shuai Jiang**, Xueping Wang, Yuan Bian, and Yaonan Wang<br>
+_IEEE Transactions on Automation Science and Engineering (T-ASE)_, 2025<br>
+[PDF](https://ieeexplore.ieee.org/document/10942431)
 </div>
 </div>
 
@@ -205,7 +207,7 @@ _IEEE Transactions on Instrumentation and Measurement (T-IM)_, 2022<br>
 - China National Scholarship, Ministry of Education of the People's Republic of China, 2022.
 - Special Scholarship, Xiangtan University, 2022 / 2021.
 
-# 📚 Services
+# 🧑‍🤝‍🧑 Services
 - Journal Reviewer: [T-MI](https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=42), [T-IM](https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=19), [J-BHI](https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=6221020), [Scientific Data](https://www.nature.com/sdata/)
 - Conference Reviewer: CVPR, ICCV, ACMMM, ICASSP
 
