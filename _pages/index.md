@@ -41,7 +41,7 @@ author_profile: true
 
 - **[May. 2025]** 📃 Our article on "Multimodal Defect Detection with Missing Modalities" was submitted to _IEEE/ASME T-Mech_.
   
-- **[May. 2025]** 📃 Our article on "Multi-class Anomaly Detection" was submitted to _IEEE T-II_.
+- **[May. 2025]** 📃 Our article on "Multi-View Multi-class Anomaly Detection" was submitted to _IEEE T-II_.
 
 - **[Mar. 2025]** 📃 Our article on "Few-Shot Defect Segmentation" was submitted to _IEEE/ASME T-Mech_.
 
