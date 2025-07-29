@@ -186,7 +186,7 @@ _IEEE Transactions on Automation Science and Engineering (T-ASE)_, 2025<br>
 
 - [Searching Efficient Semantic Segmentation Architectures via Dynamic Path Selection](https://openreview.net/)<br>
   Yuxi Liu, Min Liu* (Supervisor), Yi Tang, **Shuai Jiang**, and Yaonan Wang<br>
-  _The Thirty-ninth Annual Conference on Neural Information Processing Systems (NeurIPS)_, 2025<br>
+  _The Thirty-ninth Annual Conference on Neural Information Processing Systems (NeurIPS)_, 2025 <font color="#8A2BE2">(In Rebuttal)</font><br>
 
 - [Resilient Multimodal Industrial Surface Defect Detection with Uncertain Sensors Availability](https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=3516)<br>
   **Shuai Jiang**, Yunfeng Ma, Jingyu Zhou, Yaonan Wang, and Min Liu* (Supervisor)<br>
