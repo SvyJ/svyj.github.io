@@ -164,9 +164,9 @@ _IEEE Transactions on Automation Science and Engineering (T-ASE)_, 2025<br>
 
 ## 📃 Manuscripts in Peer Review
 
-- [EGCR-Net: Edge-Guided Cross-Region Network for Semi-Supervised Soldering Defect Detection](https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=9424)<br>
+- [EGCR-Net: Edge-Guided Cross-Region Network for Semi-Supervised Soldering Defect Detection](https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=19)<br>
   Yaoyi Cai, Dan Huang, ZhiXun Li, Yunfeng Ma, **Shuai Jiang**, Zekai Yao\*, and Min Liu\* (Supervisor)<br>
-  _IEEE Transactions on Industrial Informatics (T-II)_, 2025<br>
+    _IEEE Transactions on Instrumentation and Measurement (T-IM)_, 2025<br>
 
 - [3D Imaging Optical Path-Guided Viewpoint Planning Method for Free-Form Surface Inspection](https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=3516)<br>
   Jingyu Zhou, Zhenhai Li, Min Liu* (Supervisor), Yunfeng Ma, **Shuai Jiang**, and Yaonan Wang<br>
