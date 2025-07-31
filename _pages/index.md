@@ -90,7 +90,7 @@ author_profile: true
 
 <div class='paper-box'><div class='paper-box-image'><div><div class="badge">T-IM 2024</div><img src='images/pubs/pl-joint-seg.png' alt="sym" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
-[Joint Segmentation of FAZ and RVs in OCTA Images with Auxiliary 3D Image Projection Learning](https://ieeexplore.ieee.org/document/10904426)<br>
+[Joint Segmentation of FAZ and RVs in OCTA Images with Auxiliary 3D Image Projection Learning](https://svyj.github.io/PL-Joint-Seg/)<br>
 **Shuai Jiang**, Kai Hu* (Supervisor), Yuan Zhang, and Xieping Gao<br>
 _IEEE Transactions on Instrumentation and Measurement (T-IM)_, 2024<br>
 [PDF](https://ieeexplore.ieee.org/document/10904426) | [Project](https://svyj.github.io/PL-Joint-Seg/)
@@ -99,7 +99,7 @@ _IEEE Transactions on Instrumentation and Measurement (T-IM)_, 2024<br>
 
 <div class='paper-box'><div class='paper-box-image'><div><div class="badge">T-IM 2024</div><img src='images/pubs/ccs.png' alt="sym" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
-[Category-agnostic Cluster-guided Selective Suppression for Weakly Supervised Surface Defect Localization](https://ieeexplore.ieee.org/document/10908998)<br>
+[Category-agnostic Cluster-guided Selective Suppression for Weakly Supervised Surface Defect Localization](https://svyj.github.io/CSS/)<br>
 **Shuai Jiang**, Min Liu* (Supervisor), Yuxi Liu, Yunfeng Ma, and Yaonan Wang<br>
 _IEEE Transactions on Instrumentation and Measurement (T-IM)_, 2024<br>
 [PDF](https://ieeexplore.ieee.org/document/10908998) | [Project](https://svyj.github.io/CSS/)
@@ -117,7 +117,7 @@ _Journal of Software (软件学报)_, 2023<br>
 
 <div class='paper-box'><div class='paper-box-image'><div><div class="badge">T-IM 2022</div><img src='images/pubs/joint-seg.png' alt="sym" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
-[Joint-Seg: Treat Foveal Avascular Zone and Retinal Vessel Segmentation in OCTA Images as a Joint Task](https://ieeexplore.ieee.org/document/9837090)<br>
+[Joint-Seg: Treat Foveal Avascular Zone and Retinal Vessel Segmentation in OCTA Images as a Joint Task](https://svyj.github.io/Joint-Seg/)<br>
 Kai Hu (Supervisor), **Shuai Jiang**, Yuan Zhang, Xuanya Li, and Xieping Gao*<br>
 _IEEE Transactions on Instrumentation and Measurement (T-IM)_, 2022<br>
 [PDF](https://ieeexplore.ieee.org/document/9837090) | [Project](https://svyj.github.io/Joint-Seg/)
