@@ -55,7 +55,7 @@ author_profile: true
 
 - **[Mar. 2025]** 🎉 Our article on "Few-Shot Defect Segmentation" was accepted by _IEEE T-ASE_. [[PDF]](https://ieeexplore.ieee.org/document/10942431)
 
-- **[Dec. 2024]** 🎉 Our article on "Multimodal Retinal Image Analysis" was accepted by _IEEE T-IM_. [[PDF]](https://ieeexplore.ieee.org/document/10904426)
+- **[Dec. 2024]** 🎉 Our article on "Multimodal Retinal Image Analysis" was accepted by _IEEE T-IM_. [[PDF]](https://ieeexplore.ieee.org/document/10904426) [[Project]](https://svyj.github.io/PL-Joint-Seg/)
   
 - **[Nov. 2024]** 🎉 Our article on "Weakly Supervised Surface Defect Localization" was accepted by _IEEE T-IM_. [[PDF]](https://ieeexplore.ieee.org/document/10908998) [[Project]](https://svyj.github.io/CSS/)
   
@@ -93,7 +93,7 @@ author_profile: true
 [Joint Segmentation of FAZ and RVs in OCTA Images with Auxiliary 3D Image Projection Learning](https://ieeexplore.ieee.org/document/10904426)<br>
 **Shuai Jiang**, Kai Hu* (Supervisor), Yuan Zhang, and Xieping Gao<br>
 _IEEE Transactions on Instrumentation and Measurement (T-IM)_, 2024<br>
-[PDF](https://ieeexplore.ieee.org/document/10904426)
+[PDF](https://ieeexplore.ieee.org/document/10904426) | [Project](https://svyj.github.io/PL-Joint-Seg/)
 </div>
 </div>
 
