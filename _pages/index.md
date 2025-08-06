@@ -27,7 +27,9 @@ author_profile: true
 
 ## 📝 Latest Works
 
-- **[Jul. 2025]** 📃 Our article on "Semi-Supervised Soldering Defect Detection" was submitted to _IEEE T-II_.
+- **[Aug. 2025]** 📃 Our article on "Multi-View Multi-class Anomaly Detection" was submitted to _IEEE T-CSVT_.
+
+- **[Jul. 2025]** 📃 Our article on "Semi-Supervised Soldering Defect Detection" was submitted to _IEEE T-IM_.
 
 - **[Jul. 2025]** 📃 Our article on "Surface Inspection Viewpoint Planning" was submitted to _IEEE/ASME T-Mech_.
 
@@ -40,8 +42,6 @@ author_profile: true
 - **[May. 2025]** 📃 Our paper on "NAS-based Semantic Segmentation" was submitted to _NeurIPS 2025_.
 
 - **[May. 2025]** 📃 Our article on "Multimodal Defect Detection with Missing Modalities" was submitted to _IEEE/ASME T-Mech_.
-  
-- **[May. 2025]** 📃 Our article on "Multi-View Multi-class Anomaly Detection" was submitted to _IEEE T-II_.
 
 - **[Mar. 2025]** 📃 Our article on "Few-Shot Defect Segmentation" was submitted to _IEEE/ASME T-Mech_.
 
@@ -164,6 +164,10 @@ _IEEE Transactions on Automation Science and Engineering (T-ASE)_, 2025<br>
 
 ## 📃 Manuscripts in Peer Review
 
+- [Cross-View Dynamic Learning-Based Multi-Class Industrial Anomaly Detection](https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=9424)<br>
+  Jingyu Zhou, Yunfeng Ma, **Shuai Jiang**, Yaonan Wang, and Min Liu* (Supervisor)<br>
+  _IEEE Transactions on Industrial Informatics (T-CSVT)_, 2025<br>
+
 - [EGCR-Net: Edge-Guided Cross-Region Network for Semi-Supervised Soldering Defect Detection](https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=19)<br>
   Yaoyi Cai, Dan Huang, ZhiXun Li, Yunfeng Ma, **Shuai Jiang**, Zekai Yao\*, and Min Liu\* (Supervisor)<br>
     _IEEE Transactions on Instrumentation and Measurement (T-IM)_, 2025<br>
@@ -191,10 +195,6 @@ _IEEE Transactions on Automation Science and Engineering (T-ASE)_, 2025<br>
 - [Resilient Multimodal Industrial Surface Defect Detection with Uncertain Sensors Availability](https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=3516)<br>
   **Shuai Jiang**, Yunfeng Ma, Jingyu Zhou, Yaonan Wang, and Min Liu* (Supervisor)<br>
   _IEEE/ASME Transactions on Mechatronics (T-Mech)_, 2025 <font color="#8A2BE2">(In Major Revision)<br>
-
-- [Cross-View Dynamic Learning-Based Multi-Class Industrial Anomaly Detection](https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=9424)<br>
-  Jingyu Zhou, Yunfeng Ma, **Shuai Jiang**, Yaonan Wang, and Min Liu* (Supervisor)<br>
-  _IEEE Transactions on Industrial Informatics (T-II)_, 2025<br>
 
 - [Efficient Feature Coupling for Industrial Few-shot Defect Segmentation](https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=3516)<br>
   Yunfeng Ma, Min Liu* (Supervisor), **Shuai Jiang**, Jingyu Zhou, Yuan Bian, and Yaonan Wang<br>
