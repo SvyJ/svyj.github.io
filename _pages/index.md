@@ -27,9 +27,9 @@ author_profile: true
 
 ## 📝 Latest Works
 
-- **[Aug. 2025]** 📃 Our article on "Multi-View Multi-class Anomaly Detection" was submitted to _IEEE T-CSVT_.
+- **[Aug. 2025]** 📃 Our article on "Semi-Supervised Soldering Defect Detection" was submitted to _IEEE T-IM_.
 
-- **[Jul. 2025]** 📃 Our article on "Semi-Supervised Soldering Defect Detection" was submitted to _IEEE T-IM_.
+- **[Aug. 2025]** 📃 Our article on "Multi-View Multi-class Anomaly Detection" was submitted to _IEEE T-CSVT_.
 
 - **[Jul. 2025]** 📃 Our article on "Surface Inspection Viewpoint Planning" was submitted to _IEEE/ASME T-Mech_.
 
@@ -164,13 +164,13 @@ _IEEE Transactions on Automation Science and Engineering (T-ASE)_, 2025<br>
 
 ## 📃 Manuscripts in Peer Review
 
-- [Cross-View Dynamic Learning-Based Multi-Class Industrial Anomaly Detection](https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=9424)<br>
-  Jingyu Zhou, Yunfeng Ma, **Shuai Jiang**, Yaonan Wang, and Min Liu* (Supervisor)<br>
-  _IEEE Transactions on Industrial Informatics (T-CSVT)_, 2025<br>
-
 - [EGCR-Net: Edge-Guided Cross-Region Network for Semi-Supervised Soldering Defect Detection](https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=19)<br>
   Yaoyi Cai, Dan Huang, ZhiXun Li, Yunfeng Ma, **Shuai Jiang**, Zekai Yao\*, and Min Liu\* (Supervisor)<br>
     _IEEE Transactions on Instrumentation and Measurement (T-IM)_, 2025<br>
+
+- [Cross-View Dynamic Learning-Based Multi-Class Industrial Anomaly Detection](https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=9424)<br>
+  Jingyu Zhou, Yunfeng Ma, **Shuai Jiang**, Yaonan Wang, and Min Liu* (Supervisor)<br>
+  _IEEE Transactions on Industrial Informatics (T-CSVT)_, 2025<br>
 
 - [3D Imaging Optical Path-Guided Viewpoint Planning Method for Free-Form Surface Inspection](https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=3516)<br>
   Jingyu Zhou, Zhenhai Li, Min Liu* (Supervisor), Yunfeng Ma, **Shuai Jiang**, and Yaonan Wang<br>
