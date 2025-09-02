@@ -41,11 +41,11 @@ author_profile: true
 
 - **[May. 2025]** 📃 Our paper on "NAS-based Semantic Segmentation" was submitted to _NeurIPS 2025_.
 
-- **[May. 2025]** 📃 Our article on "Multimodal Defect Detection with Missing Modalities" was submitted to _IEEE/ASME T-Mech_.
-
 - **[Mar. 2025]** 📃 Our article on "Few-Shot Defect Segmentation" was submitted to _IEEE/ASME T-Mech_.
 
 ## 🎉 Nice News
+
+- **[Sep. 2025]** 🎉 Our article on "Multimodal Defect Detection with Missing Modalities" was accepted by _IEEE/ASME T-Mech_. [[PDF (In Press)]](https://ieeexplore.ieee.org/)
 
 - **[Jun. 2025]** 🎉 Our article on "Neural Architecture Search-based Aero-engine Blade Defect Detection" was accepted by _SCIENTIA SINICA Informationis_ (中国科学: 信息科学). [[PDF]](https://www.sciengine.com/SSI/doi/10.1360/SSI-2025-0145)
 
@@ -87,6 +87,15 @@ author_profile: true
 † Co-first Author, * Corresponding Author
 
 ## 📑 Peer-Reviewed Publications
+
+<div class='paper-box'><div class='paper-box-image'><div><div class="badge">T-Mech 2025</div><img src='images/pubs/misdd-mm.png' alt="sym" width="100%"></div></div>
+<div class='paper-box-text' markdown="1">
+[Resilient Multimodal Industrial Surface Defect Detection with Uncertain Sensors Availability](https://svyj.github.io/MISDD-MM/)<br>
+**Shuai Jiang**, Yunfeng Ma, Jingyu Zhou, Yaonan Wang, and Min Liu* (Supervisor)<br>
+_IEEE/ASME Transactions on Mechatronics (T-Mech)_, 2025<br>
+[PDF (In Press)](https://ieeexplore.ieee.org) | [Project](https://svyj.github.io/MISDD-MM/)
+</div>
+</div>
 
 <div class='paper-box'><div class='paper-box-image'><div><div class="badge">T-IM 2024</div><img src='images/pubs/pl-joint-seg.png' alt="sym" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
@@ -191,10 +200,6 @@ _IEEE Transactions on Automation Science and Engineering (T-ASE)_, 2025<br>
 - [Searching Efficient Semantic Segmentation Architectures via Dynamic Path Selection](https://openreview.net/)<br>
   Yuxi Liu, Min Liu* (Supervisor), Yi Tang, **Shuai Jiang**, and Yaonan Wang<br>
   _The Thirty-ninth Annual Conference on Neural Information Processing Systems (NeurIPS)_, 2025 <font color="#8A2BE2">(In Rebuttal)</font><br>
-
-- [Resilient Multimodal Industrial Surface Defect Detection with Uncertain Sensors Availability](https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=3516)<br>
-  **Shuai Jiang**, Yunfeng Ma, Jingyu Zhou, Yaonan Wang, and Min Liu* (Supervisor)<br>
-  _IEEE/ASME Transactions on Mechatronics (T-Mech)_, 2025 <font color="#8A2BE2">(In Major Revision)<br>
 
 - [Efficient Feature Coupling for Industrial Few-shot Defect Segmentation](https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=3516)<br>
   Yunfeng Ma, Min Liu* (Supervisor), **Shuai Jiang**, Jingyu Zhou, Yuan Bian, and Yaonan Wang<br>
