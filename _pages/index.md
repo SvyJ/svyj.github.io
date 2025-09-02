@@ -91,7 +91,7 @@ author_profile: true
 <div class='paper-box'><div class='paper-box-image'><div><div class="badge">T-Mech 2025</div><img src='images/pubs/misdd-mm.png' alt="sym" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
 [Resilient Multimodal Industrial Surface Defect Detection with Uncertain Sensors Availability](https://svyj.github.io/MISDD-MM/)<br>
-**Shuai Jiang**, Yunfeng Ma, Jingyu Zhou, Yaonan Wang, and Min Liu* (Supervisor)<br>
+**Shuai Jiang**, Yunfeng Ma, Jingyu Zhou, Yuan Bian, Yaonan Wang, and Min Liu* (Supervisor)<br>
 _IEEE/ASME Transactions on Mechatronics (T-Mech)_, 2025<br>
 [PDF (In Press)](https://ieeexplore.ieee.org) | [Project](https://svyj.github.io/MISDD-MM/)
 </div>
