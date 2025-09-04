@@ -49,7 +49,7 @@ author_profile: true
 
 - **[Jun. 2025]** 🎉 Our article on "Neural Architecture Search-based Aero-engine Blade Defect Detection" was accepted by _SCIENTIA SINICA Informationis_ (中国科学: 信息科学). [[PDF]](https://www.sciengine.com/SSI/doi/10.1360/SSI-2025-0145)
 
-- **[Jun. 2025]** 🎉 Our paper on "Prompt-driven Person Re-ID" was accepted by _ICCV 2025_. [[PAPER]](https://iccv.thecvf.com/virtual/2025/poster/348) [[PDF]](https://arxiv.org/pdf/2502.19697)
+- **[Jun. 2025]** 🎉 Our paper on "Prompt-driven Person Re-ID" was accepted by _ICCV 2025_. [[Poster]](https://iccv.thecvf.com/virtual/2025/poster/348) [[arXiv]](https://arxiv.org/pdf/2502.19697)
 
 - **[Apr. 2025]** 🎉 Our article on "Multi-View Industrial Anomaly Detection" was accepted by _IEEE/ASME T-Mech (TMECH/AIM Focused Section)_. [[PDF]](https://ieeexplore.ieee.org/document/11010089)
 
@@ -149,7 +149,7 @@ _SCIENTIA SINICA Informationis (中国科学: 信息科学)_, 2025<br>
 [Prompt-driven Transferable Adversarial Attack on Person Re-Identification with Attribute-aware Textual Inversion](https://arxiv.org/abs/2502.19697)<br>
 Yuan Bian, Min Liu* (Supervisor), Yunqi Yi, Xueping Wang, **Shuai Jiang**, Yaonan Wang<br>
 _IEEE/CVF International Conference on Computer Vision (ICCV)_, 2025<br>
-[PDF](https://arxiv.org/pdf/2502.19697) | [PAPER](https://iccv.thecvf.com/virtual/2025/poster/348)
+[arXiv](https://arxiv.org/pdf/2502.19697) | [Poster](https://iccv.thecvf.com/virtual/2025/poster/348)
 </div>
 </div>
 
