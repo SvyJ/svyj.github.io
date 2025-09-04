@@ -45,7 +45,7 @@ author_profile: true
 
 ## 🎉 Nice News
 
-- **[Sep. 2025]** 🎉 Our article on "Multimodal Defect Detection with Missing Modalities" was accepted by _IEEE/ASME T-Mech_. [[PDF (In Press)]](https://ieeexplore.ieee.org/)
+- **[Sep. 2025]** 🎉 Our article on "Multimodal Defect Detection with Missing Modalities" was accepted by _IEEE/ASME T-Mech_. [[arXiv]]((https://arxiv.org/abs/2509.02962))
 
 - **[Jun. 2025]** 🎉 Our article on "Neural Architecture Search-based Aero-engine Blade Defect Detection" was accepted by _SCIENTIA SINICA Informationis_ (中国科学: 信息科学). [[PDF]](https://www.sciengine.com/SSI/doi/10.1360/SSI-2025-0145)
 
@@ -93,7 +93,7 @@ author_profile: true
 [Resilient Multimodal Industrial Surface Defect Detection with Uncertain Sensors Availability](https://svyj.github.io/MISDD-MM/)<br>
 **Shuai Jiang**, Yunfeng Ma, Jingyu Zhou, Yuan Bian, Yaonan Wang, and Min Liu* (Supervisor)<br>
 _IEEE/ASME Transactions on Mechatronics (T-Mech)_, 2025<br>
-[PDF (In Press)](https://ieeexplore.ieee.org) | [Project](https://svyj.github.io/MISDD-MM/)
+[arXiv](https://arxiv.org/abs/2509.02962) | [PDF (In Press)](https://ieeexplore.ieee.org) | [Project](https://svyj.github.io/MISDD-MM/)
 </div>
 </div>
 
