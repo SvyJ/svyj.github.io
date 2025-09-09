@@ -187,7 +187,7 @@ _IEEE Transactions on Automation Science and Engineering (T-ASE)_, 2025<br>
 
 - [Automated Neural Architecture Design for Industrial Defect Detection](https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=3516)<br>
   Yuxi Liu†, Yi Tang†, Min Liu* (Supervisor), **Shuai Jiang**, Yunfeng Ma, and Yaonan Wang<br>
-  _IEEE/ASME Transactions on Mechatronics (T-Mech)_, 2025<br>
+  _IEEE/ASME Transactions on Mechatronics (T-Mech)_, 2025 <font color="#8A2BE2">(In Major Revision)</font><br>
 
 - [Unified Multimodal Industrial Anomaly Detection via Few Normal Samples](https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=6046)<br>
   **Shuai Jiang**, Min Liu* (Supervisor), Yunfeng Ma, Jingyu Zhou, and Yaonan Wang<br>
