@@ -39,11 +39,11 @@ author_profile: true
 
 - **[May. 2025]** 📃 Our article on "Training-free Unified Multimodal Anomaly Detection" was submitted to _IEEE T-PAMI_.
 
-- **[May. 2025]** 📃 Our paper on "NAS-based Semantic Segmentation" was submitted to _NeurIPS 2025_.
-
 - **[Mar. 2025]** 📃 Our article on "Few-Shot Defect Segmentation" was submitted to _IEEE/ASME T-Mech_.
 
 ## 🎉 Nice News
+
+- **[Sep. 2025]** 🎉 Our paper on "NAS-based Semantic Segmentation" was accepted to _NeurIPS 2025_.
 
 - **[Sep. 2025]** 🎉 Our article on "Multimodal Defect Detection with Missing Modalities" was accepted by _IEEE/ASME T-Mech_. [[arXiv]](https://arxiv.org/abs/2509.02962)
 
@@ -135,6 +135,15 @@ _IEEE Transactions on Instrumentation and Measurement (T-IM)_, 2022<br>
 
 ## 📄 Co-authored Peer-Reviewed Publications
 
+<div class='paper-box'><div class='paper-box-image'><div><div class="badge">NeurIPS 2025</div><img src='images/pubs/dps.png' alt="sym" width="100%"></div></div>
+<div class='paper-box-text' markdown="1">
+[Searching Efficient Semantic Segmentation Architectures via Dynamic Path Selection](https://openreview.net/group?id=NeurIPS.cc/2025/Conference)<br>
+Yuxi Liu, Min Liu* (Supervisor), Yi Tang, **Shuai Jiang**, and Yaonan Wang<br>
+_The Thirty-ninth Annual Conference on Neural Information Processing Systems (NeurIPS)_, 2025<br>
+[PDF](https://openreview.net/group?id=NeurIPS.cc/2025/Conference)
+</div>
+</div>
+
 <div class='paper-box'><div class='paper-box-image'><div><div class="badge">中国科学: 信息科学 2025</div><img src='images/pubs/msfa.png' alt="sym" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
 [Neural Architecture Search-based Detection Method and System for Aero-engine Blade Surface Defects](https://www.sciengine.com/SSI/doi/10.1360/SSI-2025-0145)<br>
@@ -196,10 +205,6 @@ _IEEE Transactions on Automation Science and Engineering (T-ASE)_, 2025<br>
 - [ZUMA: Training-free Zero-shot Unified Multimodal Anomaly Detection](https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=34)<br>
   Yunfeng Ma, Min Liu* (Supervisor), **Shuai Jiang**, Jingyu Zhou, Yuan Bian, Xueping Wang, and Yaonan Wang<br>
   _IEEE Transactions on Pattern Analysis and Machine Intelligence (T-PAMI)_, 2025<br>
-
-- [Searching Efficient Semantic Segmentation Architectures via Dynamic Path Selection](https://openreview.net/)<br>
-  Yuxi Liu, Min Liu* (Supervisor), Yi Tang, **Shuai Jiang**, and Yaonan Wang<br>
-  _The Thirty-ninth Annual Conference on Neural Information Processing Systems (NeurIPS)_, 2025 <font color="#8A2BE2">(In Rebuttal)</font><br>
 
 - [Efficient Feature Coupling for Industrial Few-shot Defect Segmentation](https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=3516)<br>
   Yunfeng Ma, Min Liu* (Supervisor), **Shuai Jiang**, Jingyu Zhou, Yuan Bian, and Yaonan Wang<br>
