@@ -118,7 +118,7 @@ _IEEE Transactions on Instrumentation and Measurement (T-IM)_, 2024<br>
 <div class='paper-box'><div class='paper-box-image'><div><div class="badge">软件学报 2023</div><img src='images/pubs/agr-net.png' alt="sym" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
 [Segmentation of Retinal Layer Boundary in OCT Images Based on End-to-end Deep Neural Network and Graph Search](https://www.jos.org.cn/jos/article/abstract/6895)<br>
-Kai Hu, **Shuai Jiang**, Dong Liu, and Xieping Gao*<br>
+Kai Hu (M.E. Supervisor), **Shuai Jiang**, Dong Liu, and Xieping Gao*<br>
 _Journal of Software (软件学报)_, 2023<br>
 [PDF](https://www.jos.org.cn/jos/article/abstract/6895)
 </div>
@@ -127,7 +127,7 @@ _Journal of Software (软件学报)_, 2023<br>
 <div class='paper-box'><div class='paper-box-image'><div><div class="badge">T-IM 2022</div><img src='images/pubs/joint-seg.png' alt="sym" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
 [Joint-Seg: Treat Foveal Avascular Zone and Retinal Vessel Segmentation in OCTA Images as a Joint Task](https://svyj.github.io/Joint-Seg/)<br>
-Kai Hu, **Shuai Jiang**, Yuan Zhang, Xuanya Li, and Xieping Gao*<br>
+Kai Hu (M.E. Supervisor), **Shuai Jiang**, Yuan Zhang, Xuanya Li, and Xieping Gao*<br>
 _IEEE Transactions on Instrumentation and Measurement (T-IM)_, 2022<br>
 [PDF](https://ieeexplore.ieee.org/document/9837090) | [Project](https://svyj.github.io/Joint-Seg/)
 </div>
