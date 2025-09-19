@@ -140,7 +140,7 @@ _IEEE Transactions on Instrumentation and Measurement (T-IM)_, 2022<br>
 [Searching Efficient Semantic Segmentation Architectures via Dynamic Path Selection](https://openreview.net/group?id=NeurIPS.cc/2025/Conference)<br>
 Yuxi Liu, Min Liu* (Supervisor), Yi Tang, **Shuai Jiang**, and Yaonan Wang<br>
 _The Thirty-ninth Annual Conference on Neural Information Processing Systems (NeurIPS)_, 2025<br>
-[PDF](https://openreview.net/group?id=NeurIPS.cc/2025/Conference)
+[PDF](https://openreview.net/group?id=NeurIPS.cc/2025/Conference) | [Poster](https://neurips.cc/virtual/2025/poster/115231)
 </div>
 </div>
 
