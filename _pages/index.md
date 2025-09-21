@@ -192,7 +192,7 @@ _IEEE Transactions on Automation Science and Engineering (T-ASE)_, 2025<br>
 
 - [3D Imaging Optical Path-Guided Viewpoint Planning Method for Free-Form Surface Inspection](https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=3516)<br>
   Jingyu Zhou, Zhenhai Li, Min Liu*, Yunfeng Ma, **Shuai Jiang**, and Yaonan Wang<br>
-  _IEEE/ASME Transactions on Mechatronics (T-Mech)_, 2025<br>
+  _IEEE/ASME Transactions on Mechatronics (T-Mech)_, 2025 <font color="#8A2BE2">(In Major Revision)</font><br>
 
 - [Automated Neural Architecture Design for Industrial Defect Detection](https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=3516)<br>
   Yuxi Liu†, Yunfeng Ma†, Yi Tang, Min Liu*, **Shuai Jiang**, and Yaonan Wang<br>
