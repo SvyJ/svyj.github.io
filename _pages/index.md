@@ -27,6 +27,8 @@ author_profile: true
 
 ## 📝 Latest Works
 
+- **[Sep. 2025]** 📃 Our article on "Few-Shot Strip Steel Surface Defect Segmentation" was submitted to _IEEE T-IM_.
+
 - **[Sep. 2025]** 📃 Our article on "Continual Learning-based Multimodal Anomaly Detection" was submitted to _IEEE T-IP_.
 
 - **[Aug. 2025]** 📃 Our article on "Semi-Supervised Soldering Defect Detection" was submitted to _IEEE T-IM_.
@@ -183,6 +185,10 @@ _IEEE Transactions on Automation Science and Engineering (T-ASE)_, 2025<br>
 </div>
 
 ## 📃 Manuscripts in Peer Review
+
+- [Edge-guided Semantic Cross-Matching Network for Few-Shot Strip Steel Surface Defect Segmentation](https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=19)<br>
+  Zekai Yao†, Yunfeng Ma†, Min Liu*, **Shuai Jiang**, Yingmei He, and Yaonan Wang<br>
+  _IEEE Transactions on Instrumentation and Measurement (T-IM)_, 2025<br>
 
 - [COLA: Unsupervised Continual Learning for Zero-shot Multimodal Anomaly Detection](https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=83)<br>
   Yunfeng Ma†, **Shuai Jiang**†, Min Liu*, Jingyu Zhou, Xueping Wang, and Yaonan Wang<br>
