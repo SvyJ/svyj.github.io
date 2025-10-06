@@ -139,6 +139,15 @@ _IEEE Transactions on Instrumentation and Measurement (T-IM)_, 2022<br>
 
 ## 📄 Co-authored Peer-Reviewed Publications
 
+<div class='paper-box'><div class='paper-box-image'><div><div class="badge">T-Mech 2025</div><img src='images/pubs/efc-net.jpg' alt="sym" width="100%"></div></div>
+<div class='paper-box-text' markdown="1">
+[Efficient Feature Coupling for Industrial Few-shot Defect Segmentation](https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?reload=true&punumber=3516)<br>
+Yunfeng Ma, Min Liu*, **Shuai Jiang**, Jingyu Zhou, Yuan Bian, and Yaonan Wang<br>
+_IEEE/ASME Transactions on Mechatronics (T-Mech)_, 2025<br>
+[PDF](https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=3516)
+</div>
+</div>
+
 <div class='paper-box'><div class='paper-box-image'><div><div class="badge">NeurIPS 2025</div><img src='images/pubs/dps.png' alt="sym" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
 [Searching Efficient Semantic Segmentation Architectures via Dynamic Path Selection](https://openreview.net/group?id=NeurIPS.cc/2025/Conference)<br>
@@ -216,7 +225,7 @@ _IEEE Transactions on Automation Science and Engineering (T-ASE)_, 2025<br>
 
 - [ZUMA: Training-free Zero-shot Unified Multimodal Anomaly Detection](https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=34)<br>
   Yunfeng Ma, Min Liu*, **Shuai Jiang**, Jingyu Zhou, Yuan Bian, Xueping Wang, and Yaonan Wang<br>
-  _IEEE Transactions on Pattern Analysis and Machine Intelligence (T-PAMI)_, 2025<br>
+  _IEEE Transactions on Pattern Analysis and Machine Intelligence (T-PAMI)_, 2025 <font color="#8A2BE2">(In Major Revision)</font><br>
 
 - [Efficient Feature Coupling for Industrial Few-shot Defect Segmentation](https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=3516)<br>
   Yunfeng Ma, Min Liu*, **Shuai Jiang**, Jingyu Zhou, Yuan Bian, and Yaonan Wang<br>
