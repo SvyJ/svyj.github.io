@@ -233,10 +233,6 @@ _IEEE Transactions on Automation Science and Engineering (T-ASE)_, 2025<br>
   Yunfeng Ma, Min Liu*, **Shuai Jiang**, Jingyu Zhou, Yuan Bian, Xueping Wang, and Yaonan Wang<br>
   _IEEE Transactions on Pattern Analysis and Machine Intelligence (T-PAMI)_, 2025 <font color="#8A2BE2">(In Major Revision)</font><br>
 
-- [Efficient Feature Coupling for Industrial Few-shot Defect Segmentation](https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=3516)<br>
-  Yunfeng Ma, Min Liu*, **Shuai Jiang**, Jingyu Zhou, Yuan Bian, and Yaonan Wang<br>
-  _IEEE/ASME Transactions on Mechatronics (T-Mech)_, 2025 <font color="#8A2BE2">(In Major Revision)</font><br>
-
 # 🎖 Honors and Awards
 - Excellent Graduates, Hunan Provincial Department of Education, 2023.
 - Excellent Graduates, Xiangtan University, 2023.
@@ -245,8 +241,8 @@ _IEEE Transactions on Automation Science and Engineering (T-ASE)_, 2025<br>
 - Special Scholarship, Xiangtan University, 2022 / 2021.
 
 # 🧑‍🤝‍🧑 Services
-- Journal Reviewer: [T-MI](https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=42), [T-IM](https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=19), [J-BHI](https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=6221020), [Scientific Data](https://www.nature.com/sdata/)
-- Conference Reviewer: CVPR, ICCV, ACMMM, ICASSP
+- Journal Reviewer: [T-MI](https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=42), [T-IM](https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=19), [J-BHI](https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=6221020), [Scientific Data](https://www.nature.com/sdata/), [IEEE Access](https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=6287639)
+- Conference Reviewer: NeurIPS, CVPR, ICCV, AAAI, ACMMM, ICASSP, ICME
 
 # 📖 Educations
 - Sep. 2023 - Now, Hunan University, Ph.D. Candidate.
