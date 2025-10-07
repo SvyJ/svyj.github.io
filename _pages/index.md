@@ -45,9 +45,9 @@ author_profile: true
 
 - **[May. 2025]** 📃 Our article on "Training-free Unified Multimodal Anomaly Detection" was submitted to _IEEE T-PAMI_.
 
-- **[Mar. 2025]** 📃 Our article on "Few-Shot Defect Segmentation" was submitted to _IEEE/ASME T-Mech_.
-
 ## 🎉 Nice News
+
+- **[Oct. 2025]** 📃 Our article on "Few-Shot Defect Segmentation" was accepted to _IEEE/ASME T-Mech_.
 
 - **[Sep. 2025]** 🎉 Our paper on "NAS-based Semantic Segmentation" was accepted to _NeurIPS 2025_.
 
@@ -197,7 +197,7 @@ _IEEE Transactions on Automation Science and Engineering (T-ASE)_, 2025<br>
 
 ## 📃 Manuscripts in Peer Review
 
-- [SCAP: Semantic Prototype Alignment for Robust Point Cloud Registration](https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=9424)<br>
+- [SCAP: Semantic Prototype Alignment for Robust Point Cloud Registration](https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=76)<br>
   Jingyu Zhou, Yunfeng Ma, **Shuai Jiang**, Yaonan Wang, and Min Liu*<br>
   _IEEE Transactions on Circuits and Systems for Video Technology (T-CSVT)_, 2025<br>
 
@@ -213,7 +213,7 @@ _IEEE Transactions on Automation Science and Engineering (T-ASE)_, 2025<br>
   Yaoyi Cai, Dan Huang, ZhiXun Li, Yunfeng Ma, **Shuai Jiang**, Zekai Yao\*, and Min Liu\*<br>
     _IEEE Transactions on Instrumentation and Measurement (T-IM)_, 2025 <font color="#8A2BE2">(In Major Revision)</font><br>
 
-- [Cross-View Dynamic Learning-Based Multi-Class Industrial Anomaly Detection](https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=9424)<br>
+- [Cross-View Dynamic Learning-Based Multi-Class Industrial Anomaly Detection](https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=76)<br>
   Jingyu Zhou, Yunfeng Ma, **Shuai Jiang**, Yaonan Wang, and Min Liu*<br>
   _IEEE Transactions on Circuits and Systems for Video Technology (T-CSVT)_, 2025<br>
 
