@@ -215,7 +215,7 @@ _IEEE Transactions on Automation Science and Engineering (T-ASE)_, 2025<br>
 
 - [Cross-View Dynamic Learning-Based Multi-Class Industrial Anomaly Detection](https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=76)<br>
   Jingyu Zhou, Yunfeng Ma, **Shuai Jiang**, Yaonan Wang, and Min Liu*<br>
-  _IEEE Transactions on Circuits and Systems for Video Technology (T-CSVT)_, 2025<br>
+  _IEEE Transactions on Circuits and Systems for Video Technology (T-CSVT)_, 2025 <font color="#8A2BE2">(In Major Revision)</font><br>
 
 - [3D Imaging Optical Path-Guided Viewpoint Planning Method for Free-Form Surface Inspection](https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=3516)<br>
   Jingyu Zhou†, Yunfeng Ma†, Zhenhai Li, Min Liu*, **Shuai Jiang**, and Yaonan Wang<br>
