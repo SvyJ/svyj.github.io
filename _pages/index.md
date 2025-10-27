@@ -45,9 +45,9 @@ author_profile: true
 
 ## 🎉 Nice News
 
-- **[Oct. 2025]** 📃 Our article on "Surface Inspection Viewpoint Planning" was accepted by _IEEE/ASME T-Mech_.
+- **[Oct. 2025]** 🎉 Our article on "Surface Inspection Viewpoint Planning" was accepted by _IEEE/ASME T-Mech_.
 
-- **[Oct. 2025]** 📃 Our article on "Few-Shot Defect Segmentation" was accepted by _IEEE/ASME T-Mech_. [[PDF]](https://ieeexplore.ieee.org/document/11216352/)
+- **[Oct. 2025]** 🎉 Our article on "Few-Shot Defect Segmentation" was accepted by _IEEE/ASME T-Mech_. [[PDF]](https://ieeexplore.ieee.org/document/11216352/)
 
 - **[Sep. 2025]** 🎉 Our paper on "NAS-based Semantic Segmentation" was accepted by _NeurIPS 2025_.
 
