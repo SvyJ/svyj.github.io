@@ -37,8 +37,6 @@ author_profile: true
 
 - **[Aug. 2025]** 📃 Our article on "Multi-View Multi-class Anomaly Detection" was submitted to _IEEE T-CSVT_.
 
-- **[Jul. 2025]** 📃 Our article on "Surface Inspection Viewpoint Planning" was submitted to _IEEE/ASME T-Mech_.
-
 - **[Jun. 2025]** 📃 Our article on "Neural Architecture Search for Surface Defect Detection" was submitted to _IEEE/ASME T-Mech_.
 
 - **[Jun. 2025]** 📃 Our article on "Few-shot Unified Multimodal Industrial Anomaly Detection" was submitted to _IEEE T-MM_.
@@ -47,9 +45,11 @@ author_profile: true
 
 ## 🎉 Nice News
 
-- **[Oct. 2025]** 📃 Our article on "Few-Shot Defect Segmentation" was accepted to _IEEE/ASME T-Mech_.
+- **[Oct. 2025]** 📃 Our article on "Surface Inspection Viewpoint Planning" was accepted by _IEEE/ASME T-Mech_.
 
-- **[Sep. 2025]** 🎉 Our paper on "NAS-based Semantic Segmentation" was accepted to _NeurIPS 2025_.
+- **[Oct. 2025]** 📃 Our article on "Few-Shot Defect Segmentation" was accepted by _IEEE/ASME T-Mech_. [[PDF]](https://ieeexplore.ieee.org/document/11216352/)
+
+- **[Sep. 2025]** 🎉 Our paper on "NAS-based Semantic Segmentation" was accepted by _NeurIPS 2025_.
 
 - **[Sep. 2025]** 🎉 Our article on "Multimodal Defect Detection with Missing Modalities" was accepted by _IEEE/ASME T-Mech_. [[Project]](https://svyj.github.io/MISDD-MM/)
 
@@ -141,12 +141,21 @@ _IEEE Transactions on Instrumentation and Measurement (T-IM)_, 2022<br>
 
 ## 📄 Co-authored Peer-Reviewed Publications
 
+<div class='paper-box'><div class='paper-box-image'><div><div class="badge">T-Mech 2025</div><img src='images/pubs/iop_vp.png' alt="sym" width="100%"></div></div>
+<div class='paper-box-text' markdown="1">
+[3D Imaging Optical Path-Guided Viewpoint Planning Method for Free-Form Surface Inspection](https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?reload=true&punumber=3516)<br>
+Jingyu Zhou†, Yunfeng Ma†, Zhenhai Li, Min Liu*, **Shuai Jiang**, and Yaonan Wang<br>
+_IEEE/ASME Transactions on Mechatronics (T-Mech)_, 2025<br>
+[PDF (In Press)](https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=3516)
+</div>
+</div>
+
 <div class='paper-box'><div class='paper-box-image'><div><div class="badge">T-Mech 2025</div><img src='images/pubs/efc-net.jpg' alt="sym" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
 [Efficient Feature Coupling for Industrial Few-shot Defect Segmentation](https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?reload=true&punumber=3516)<br>
 Yunfeng Ma, Min Liu*, **Shuai Jiang**, Jingyu Zhou, Yuan Bian, and Yaonan Wang<br>
 _IEEE/ASME Transactions on Mechatronics (T-Mech)_, 2025<br>
-[PDF](https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=3516)
+[PDF](https://ieeexplore.ieee.org/document/11216352/)
 </div>
 </div>
 
@@ -216,10 +225,6 @@ _IEEE Transactions on Automation Science and Engineering (T-ASE)_, 2025<br>
 - [Cross-View Dynamic Learning-Based Multi-Class Industrial Anomaly Detection](https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=76)<br>
   Jingyu Zhou, Yunfeng Ma, **Shuai Jiang**, Yaonan Wang, and Min Liu*<br>
   _IEEE Transactions on Circuits and Systems for Video Technology (T-CSVT)_, 2025 <font color="#8A2BE2">(In Major Revision)</font><br>
-
-- [3D Imaging Optical Path-Guided Viewpoint Planning Method for Free-Form Surface Inspection](https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=3516)<br>
-  Jingyu Zhou†, Yunfeng Ma†, Zhenhai Li, Min Liu*, **Shuai Jiang**, and Yaonan Wang<br>
-  _IEEE/ASME Transactions on Mechatronics (T-Mech)_, 2025 <font color="#8A2BE2">(In Major Revision)</font><br>
 
 - [Automated Neural Architecture Design for Industrial Defect Detection](https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=3516)<br>
   Yuxi Liu†, Yunfeng Ma†, Yi Tang, Min Liu*, **Shuai Jiang**, and Yaonan Wang<br>
