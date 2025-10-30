@@ -27,6 +27,8 @@ author_profile: true
 
 ## 📝 Latest Works
 
+- **[Oct. 2025]** 📃 Our article on "Few-shot Defect Segmentation" was submitted to _IEEE T-II_.
+  
 - **[Oct. 2025]** 📃 Our article on "Point Cloud Registration" was submitted to _IEEE T-CSVT_.
 
 - **[Sep. 2025]** 📃 Our article on "Few-Shot Strip Steel Surface Defect Segmentation" was submitted to _IEEE T-IM_.
@@ -205,6 +207,10 @@ _IEEE Transactions on Automation Science and Engineering (T-ASE)_, 2025<br>
 </div>
 
 ## 📃 Manuscripts in Peer Review
+
+- [PANDA: Progressive Adaptive Network for Defect-aware Few-shot Segmentation](https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=9424)<br>
+  Meng Gao, Yunfeng Ma, **Shuai Jiang**, Qi Su, Xiangfei Meng, Yaonan Wang, and Min Liu*<br>
+  _IEEE Transactions on Industrial Informatics (T-II)_, 2025<br>
 
 - [SCAP: Semantic Prototype Alignment for Robust Point Cloud Registration](https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=76)<br>
   Jingyu Zhou, Yunfeng Ma, **Shuai Jiang**, Yaonan Wang, and Min Liu*<br>
