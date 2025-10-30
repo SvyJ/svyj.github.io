@@ -99,7 +99,7 @@ author_profile: true
 [Resilient Multimodal Industrial Surface Defect Detection with Uncertain Sensors Availability](https://svyj.github.io/MISDD-MM/)<br>
 **Shuai Jiang**, Yunfeng Ma, Jingyu Zhou, Yuan Bian, Yaonan Wang, and Min Liu*<br>
 _IEEE/ASME Transactions on Mechatronics (T-Mech)_, 2025<br>
-[arXiv](https://arxiv.org/abs/2509.02962) | [PDF](https://ieeexplore.ieee.org/document/11173953) | [Project](https://svyj.github.io/MISDD-MM/)
+[Project](https://svyj.github.io/MISDD-MM/) | [arXiv](https://arxiv.org/abs/2509.02962) | [PDF](https://ieeexplore.ieee.org/document/11173953) | [Code](https://github.com/SvyJ/MISDD-MM)
 </div>
 </div>
 
@@ -108,7 +108,7 @@ _IEEE/ASME Transactions on Mechatronics (T-Mech)_, 2025<br>
 [Joint Segmentation of FAZ and RVs in OCTA Images with Auxiliary 3D Image Projection Learning](https://svyj.github.io/PL-Joint-Seg/)<br>
 **Shuai Jiang**, Kai Hu*, Yuan Zhang, and Xieping Gao<br>
 _IEEE Transactions on Instrumentation and Measurement (T-IM)_, 2024<br>
-[PDF](https://ieeexplore.ieee.org/document/10904426) | [Project](https://svyj.github.io/PL-Joint-Seg/)
+[Project](https://svyj.github.io/PL-Joint-Seg/) | [PDF](https://ieeexplore.ieee.org/document/10904426) | [Code](https://github.com/SvyJ/Joint-Seg)
 </div>
 </div>
 
@@ -117,7 +117,7 @@ _IEEE Transactions on Instrumentation and Measurement (T-IM)_, 2024<br>
 [Category-agnostic Cluster-guided Selective Suppression for Weakly Supervised Surface Defect Localization](https://svyj.github.io/CSS/)<br>
 **Shuai Jiang**, Min Liu*, Yuxi Liu, Yunfeng Ma, and Yaonan Wang<br>
 _IEEE Transactions on Instrumentation and Measurement (T-IM)_, 2024<br>
-[PDF](https://ieeexplore.ieee.org/document/10908998) | [Project](https://svyj.github.io/CSS/)
+[Project](https://svyj.github.io/CSS/) | [PDF](https://ieeexplore.ieee.org/document/10908998) | [Code](https://github.com/SvyJ/CSS)
 </div>
 </div>
 
@@ -135,7 +135,7 @@ _Journal of Software (软件学报)_, 2023<br>
 [Joint-Seg: Treat Foveal Avascular Zone and Retinal Vessel Segmentation in OCTA Images as a Joint Task](https://svyj.github.io/Joint-Seg/)<br>
 Kai Hu (M.E. Supervisor), **Shuai Jiang**, Yuan Zhang, Xuanya Li, and Xieping Gao*<br>
 _IEEE Transactions on Instrumentation and Measurement (T-IM)_, 2022<br>
-[PDF](https://ieeexplore.ieee.org/document/9837090) | [Project](https://svyj.github.io/Joint-Seg/)
+[Project](https://svyj.github.io/Joint-Seg/) | [PDF](https://ieeexplore.ieee.org/document/9837090) | [Code](https://github.com/SvyJ/Joint-Seg)
 </div>
 </div>
 
@@ -182,7 +182,7 @@ _SCIENTIA SINICA Informationis (中国科学: 信息科学)_, 2025<br>
 [Prompt-driven Transferable Adversarial Attack on Person Re-Identification with Attribute-aware Textual Inversion](https://arxiv.org/abs/2502.19697)<br>
 Yuan Bian, Min Liu*, Yunqi Yi, Xueping Wang, **Shuai Jiang**, Yaonan Wang<br>
 _IEEE/CVF International Conference on Computer Vision (ICCV)_, 2025<br>
-[arXiv](https://arxiv.org/pdf/2502.19697) | [PDF](https://openaccess.thecvf.com/content/ICCV2025/html/Bian_Prompt-driven_Transferable_Adversarial_Attack_on_Person_Re-Identification_with_Attribute-aware_Textual_ICCV_2025_paper.html) | [Poster](https://iccv.thecvf.com/virtual/2025/poster/348)
+[arXiv](https://arxiv.org/pdf/2502.19697) | [PDF](https://openaccess.thecvf.com/content/ICCV2025/html/Bian_Prompt-driven_Transferable_Adversarial_Attack_on_Person_Re-Identification_with_Attribute-aware_Textual_ICCV_2025_paper.html) | [Code](https://github.com/yuanbianGit/AP-Attack)
 </div>
 </div>
 
