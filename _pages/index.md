@@ -47,7 +47,7 @@ author_profile: true
 
 ## 🎉 Nice News
 
-- **[Nov. 2025]** 🌟 Svy.J was awarded the "GENCA Scholarship". [Page](https://robot.hnu.edu.cn/info/1092/1961.htm)
+- **[Nov. 2025]** 🌟 Svy.J was awarded the "GENCA Scholarship". [[Page]](https://robot.hnu.edu.cn/info/1092/1961.htm)
 
 - **[Oct. 2025]** 🎉 Our article on "Surface Inspection Viewpoint Planning" was accepted by _IEEE/ASME T-Mech_.
 
