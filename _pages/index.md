@@ -168,7 +168,7 @@ _IEEE/ASME Transactions on Mechatronics (T-Mech)_, 2025<br>
 [Searching Efficient Semantic Segmentation Architectures via Dynamic Path Selection](https://openreview.net/group?id=NeurIPS.cc/2025/Conference)<br>
 Yuxi Liu†, Min Liu†, **Shuai Jiang**, Yi Tang*, and Yaonan Wang<br>
 _The Thirty-ninth Annual Conference on Neural Information Processing Systems (NeurIPS)_, 2025<br>
-[PDF](https://openreview.net/group?id=NeurIPS.cc/2025/Conference) | [Poster](https://neurips.cc/virtual/2025/poster/115231)
+[PDF](https://openreview.net/pdf?id=xXVEsGWSs8)
 </div>
 </div>
 
