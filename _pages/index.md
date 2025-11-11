@@ -35,8 +35,6 @@ author_profile: true
 
 - **[Sep. 2025]** 📃 Our article on "Continual Learning-based Multimodal Anomaly Detection" was submitted to _IEEE T-IP_.
 
-- **[Aug. 2025]** 📃 Our article on "Semi-Supervised Soldering Defect Detection" was submitted to _IEEE T-IM_.
-
 - **[Aug. 2025]** 📃 Our article on "Multi-View Multi-class Anomaly Detection" was submitted to _IEEE T-CSVT_.
 
 - **[Jun. 2025]** 📃 Our article on "Neural Architecture Search for Surface Defect Detection" was submitted to _IEEE/ASME T-Mech_.
@@ -46,6 +44,8 @@ author_profile: true
 - **[May. 2025]** 📃 Our article on "Training-free Unified Multimodal Anomaly Detection" was submitted to _IEEE T-PAMI_.
 
 ## 🎉 Nice News
+
+- **[Nov. 2025]** 🎉 Our article on "Semi-Supervised Soldering Defect Detection" was accepted by _IEEE T-IM_.
 
 - **[Nov. 2025]** 🌟 Svy.J was awarded the "GENCA Scholarship". [[Page]](https://robot.hnu.edu.cn/info/1092/1961.htm)
 
@@ -145,6 +145,15 @@ _IEEE Transactions on Instrumentation and Measurement (T-IM)_, 2022<br>
 
 ## 📄 Co-authored Peer-Reviewed Publications
 
+<div class='paper-box'><div class='paper-box-image'><div><div class="badge">T-IM 2025</div><img src='images/pubs/iop_vp.png' alt="sym" width="100%"></div></div>
+<div class='paper-box-text' markdown="1">
+[EGCR-Net: Edge-Guided Cross-Region Network for Semi-Supervised Soldering Defect Detection](https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=19)<br>
+Yaoyi Cai, Dan Huang, ZhiXun Li, Yunfeng Ma\*, **Shuai Jiang**, Zekai Yao\*, and Min Liu\*<br>
+_IEEE Transactions on Instrumentation and Measurement (T-IM)_, 2025<br>
+[PDF (In Press)](https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=19)
+</div>
+</div>
+
 <div class='paper-box'><div class='paper-box-image'><div><div class="badge">T-Mech 2025</div><img src='images/pubs/iop_vp.png' alt="sym" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
 [3D Imaging Optical Path-Guided Viewpoint Planning Method for Free-Form Surface Inspection](https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?reload=true&punumber=3516)<br>
@@ -225,10 +234,6 @@ _IEEE Transactions on Automation Science and Engineering (T-ASE)_, 2025<br>
 - [COLA: Unsupervised Continual Learning for Zero-shot Multimodal Anomaly Detection](https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=83)<br>
   Yunfeng Ma†, **Shuai Jiang**†, Min Liu*, Jingyu Zhou, Xueping Wang, and Yaonan Wang<br>
   _IEEE Transactions on Image Processing (T-IP)_, 2025<br>
-
-- [EGCR-Net: Edge-Guided Cross-Region Network for Semi-Supervised Soldering Defect Detection](https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=19)<br>
-  Yaoyi Cai, Dan Huang, ZhiXun Li, Yunfeng Ma, **Shuai Jiang**, Zekai Yao\*, and Min Liu\*<br>
-    _IEEE Transactions on Instrumentation and Measurement (T-IM)_, 2025 <font color="#8A2BE2">(In Major Revision)</font><br>
 
 - [Cross-View Dynamic Learning-Based Multi-Class Industrial Anomaly Detection](https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=76)<br>
   Jingyu Zhou, Yunfeng Ma, **Shuai Jiang**, Yaonan Wang, and Min Liu*<br>
