@@ -145,7 +145,7 @@ _IEEE Transactions on Instrumentation and Measurement (T-IM)_, 2022<br>
 
 ## 📄 Co-authored Peer-Reviewed Publications
 
-<div class='paper-box'><div class='paper-box-image'><div><div class="badge">T-IM 2025</div><img src='images/pubs/iop_vp.png' alt="sym" width="100%"></div></div>
+<div class='paper-box'><div class='paper-box-image'><div><div class="badge">T-IM 2025</div><img src='images/pubs/egcr-net.png' alt="sym" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
 [EGCR-Net: Edge-Guided Cross-Region Network for Semi-Supervised Soldering Defect Detection](https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=19)<br>
 Yaoyi Cai, Dan Huang, ZhiXun Li, Yunfeng Ma\*, **Shuai Jiang**, Zekai Yao\*, and Min Liu\*<br>
