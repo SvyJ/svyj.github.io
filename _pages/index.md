@@ -26,8 +26,6 @@ author_profile: true
 # 🔥 Recent Updates
 
 ## 📝 Latest Works
-
-- **[Oct. 2025]** 📃 Our article on "Few-shot Defect Segmentation" was submitted to _IEEE T-II_.
   
 - **[Oct. 2025]** 📃 Our article on "Point Cloud Registration" was submitted to _IEEE T-CSVT_.
 
@@ -42,6 +40,8 @@ author_profile: true
 - **[May. 2025]** 📃 Our article on "Training-free Unified Multimodal Anomaly Detection" was submitted to _IEEE T-PAMI_.
 
 ## 🎉 Nice News
+
+- **[Nov. 2025]** 🎉 Our article on "Few-shot Defect Segmentation" was accepted by _IEEE T-II_.
 
 - **[Nov. 2025]** 🎉 Our article on "Neural Architecture Search for Surface Defect Detection" was accepted by _IEEE/ASME T-Mech_.
 
@@ -94,7 +94,7 @@ author_profile: true
 - **[Oct. 2020]** 🌟 Svy.J was awarded the "First Class Scholarship" with the rank of 1/70.
 
 # 📚 Publications
-† Co-first Author, * Corresponding Author
+† Equal Contribution, * Corresponding Author
 
 ## 📑 Peer-Reviewed Publications
 
@@ -144,6 +144,15 @@ _IEEE Transactions on Instrumentation and Measurement (T-IM)_, 2022<br>
 </div>
 
 ## 📄 Co-authored Peer-Reviewed Publications
+  
+<div class='paper-box'><div class='paper-box-image'><div><div class="badge">T-II 2025</div><img src='images/pubs/panda.png' alt="sym" width="100%"></div></div>
+<div class='paper-box-text' markdown="1">
+[PANDA: Progressive Adaptive Network for Defect-aware Few-shot Segmentation](https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?reload=true&punumber=9424)<br>
+Meng Gao†, Yunfeng Ma†, **Shuai Jiang**, Qi Su, Xiangfei Meng, Yaonan Wang, and Min Liu*<br>
+_IEEE Transactions on Industrial Informatics (T-II)_, 2025<br>
+[PDF (In Press)](https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=9424)
+</div>
+</div>
 
 <div class='paper-box'><div class='paper-box-image'><div><div class="badge">T-Mech 2025</div><img src='images/pubs/autonad.png' alt="sym" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
@@ -227,10 +236,6 @@ _IEEE Transactions on Automation Science and Engineering (T-ASE)_, 2025<br>
 </div>
 
 ## 📃 Manuscripts in Peer Review
-
-- [PANDA: Progressive Adaptive Network for Defect-aware Few-shot Segmentation](https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=9424)<br>
-  Meng Gao, Yunfeng Ma, **Shuai Jiang**, Qi Su, Xiangfei Meng, Yaonan Wang, and Min Liu*<br>
-  _IEEE Transactions on Industrial Informatics (T-II)_, 2025<br>
 
 - [SCAP: Semantic Prototype Alignment for Robust Point Cloud Registration](https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=76)<br>
   Jingyu Zhou, Yunfeng Ma, **Shuai Jiang**, Yaonan Wang, and Min Liu*<br>
