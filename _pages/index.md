@@ -43,17 +43,17 @@ author_profile: true
 
 - **[Nov. 2025]** 🎉 Our article on "Few-shot Defect Segmentation" was accepted by _IEEE T-II_.
 
-- **[Nov. 2025]** 🎉 Our article on "Neural Architecture Search for Surface Defect Detection" was accepted by _IEEE/ASME T-Mech_.
+- **[Nov. 2025]** 🎉 Our article on "Neural Architecture Search for Surface Defect Detection" was accepted by _IEEE/ASME T-Mech_. [[PDF]](https://arxiv.org/pdf/2510.06669)
 
-- **[Nov. 2025]** 🎉 Our article on "Semi-Supervised Soldering Defect Detection" was accepted by _IEEE T-IM_.
+- **[Nov. 2025]** 🎉 Our article on "Semi-Supervised Soldering Defect Detection" was accepted by _IEEE T-IM_. [[PDF]](https://ieeexplore.ieee.org/document/11271762)
 
 - **[Nov. 2025]** 🌟 Svy.J was awarded the "GENCA Scholarship". [[Page]](https://robot.hnu.edu.cn/info/1092/1961.htm)
 
-- **[Oct. 2025]** 🎉 Our article on "Surface Inspection Viewpoint Planning" was accepted by _IEEE/ASME T-Mech_.
+- **[Oct. 2025]** 🎉 Our article on "Surface Inspection Viewpoint Planning" was accepted by _IEEE/ASME T-Mech_. [[PDF]](https://ieeexplore.ieee.org/document/11271033)
 
 - **[Oct. 2025]** 🎉 Our article on "Few-Shot Defect Segmentation" was accepted by _IEEE/ASME T-Mech_. [[PDF]](https://ieeexplore.ieee.org/document/11216352/)
 
-- **[Sep. 2025]** 🎉 Our paper on "NAS-based Semantic Segmentation" was accepted by _NeurIPS 2025_.
+- **[Sep. 2025]** 🎉 Our paper on "NAS-based Semantic Segmentation" was accepted by _NeurIPS 2025_. [[PDF]](https://openreview.net/pdf?id=xXVEsGWSs8)
 
 - **[Sep. 2025]** 🎉 Our article on "Multimodal Defect Detection with Missing Modalities" was accepted by _IEEE/ASME T-Mech_. [[Project]](https://svyj.github.io/MISDD-MM/)
 
@@ -168,7 +168,7 @@ _IEEE/ASME Transactions on Mechatronics (T-Mech)_, 2025<br>
 [EGCR-Net: Edge-Guided Cross-Region Network for Semi-Supervised Soldering Defect Detection](https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=19)<br>
 Yaoyi Cai, Dan Huang, ZhiXun Li, Yunfeng Ma\*, **Shuai Jiang**, Zekai Yao\*, and Min Liu\*<br>
 _IEEE Transactions on Instrumentation and Measurement (T-IM)_, 2025<br>
-[PDF (In Press)](https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=19)
+[PDF](https://ieeexplore.ieee.org/document/11271762) | [Code](https://github.com/lilyhd/EGCRNet)
 </div>
 </div>
 
@@ -177,7 +177,7 @@ _IEEE Transactions on Instrumentation and Measurement (T-IM)_, 2025<br>
 [3D Imaging Optical Path-Guided Viewpoint Planning Method for Free-Form Surface Inspection](https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?reload=true&punumber=3516)<br>
 Jingyu Zhou†, Yunfeng Ma†, Zhenhai Li, Min Liu*, **Shuai Jiang**, and Yaonan Wang<br>
 _IEEE/ASME Transactions on Mechatronics (T-Mech)_, 2025<br>
-[PDF (In Press)](https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=3516)
+[PDF](https://ieeexplore.ieee.org/document/11271033)
 </div>
 </div>
 
