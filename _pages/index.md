@@ -18,7 +18,7 @@ author_profile: true
 
 **I am currently a Ph.D. student major in Control Science and Engineering at [School of Artificial Intelligence and Robotics](http://robotics.hnu.edu.cn/) and [National Engineering Research Center for Robot Visual Perception and Control Technology](https://robot.hnu.edu.cn/), [Hunan University (HNU)](http://www-en.hnu.edu.cn/), working under the supervision of Prof. [Min Liu](https://robotics.hnu.edu.cn/info/1176/3087.htm) and Prof. [Yaonan Wang](https://robotics.hnu.edu.cn/info/1176/3098.htm). My research interest lies in robot vision, particularly in multimodal learning for industrial robots. Before entering Hunan University, I received my M.Eng. (supervised by Prof. [Kai Hu](https://jwxy.xtu.edu.cn/info/1147/2508.htm) and Prof. [Xieping Gao](https://scholar.hunnu.edu.cn/gaoxieping/index.htm)) and B.S. degrees from [School of Computer Science](https://jwxy.xtu.edu.cn/), [Xiangtan University (XTU)](https://en.xtu.edu.cn/) in 2023 and 2020, and underwent over three-year research on medical image analysis. (Contact me: svyj@hnu.edu.cn)**
 
-[Curriculum Vitae](https://svyj.github.io/files/cv.pdf)
+[Curriculum Vitae](https://svyj.github.io/files/Curriculum_Vitae_of_SvyJ.pdf)
 
 # 🔍 Research Interests
 - Multimodal Industrial Anomaly Detection
