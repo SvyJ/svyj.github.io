@@ -21,8 +21,8 @@ author_profile: true
 [Curriculum Vitae](https://svyj.github.io/files/Curriculum_Vitae_of_SvyJ.pdf)
 
 # 🔍 Research Interests
-- Multimodal Industrial Anomaly Detection
-- Vision-Language-Action Models
+- Industrial Multimodal Vision
+- Industrial Embodied Intelligence
 - Medical Image Analysis
 
 # 🔥 Recent Updates
@@ -167,7 +167,7 @@ _IEEE/ASME Transactions on Mechatronics (T-Mech)_, 2025<br>
 
 <div class='paper-box'><div class='paper-box-image'><div><div class="badge">T-IM 2025</div><img src='images/pubs/egcr-net.png' alt="sym" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
-[EGCR-Net: Edge-Guided Cross-Region Network for Semi-Supervised Soldering Defect Detection](https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=19)<br>
+[EGCR-Net: Edge-Guided Cross-Region Network for Semi-Supervised Soldering Defect Detection](https://ieeexplore.ieee.org/document/11271762)<br>
 Yaoyi Cai, Dan Huang, ZhiXun Li, Yunfeng Ma\*, **Shuai Jiang**, Zekai Yao\*, and Min Liu\*<br>
 _IEEE Transactions on Instrumentation and Measurement (T-IM)_, 2025<br>
 [PDF](https://ieeexplore.ieee.org/document/11271762) | [Code](https://github.com/lilyhd/EGCRNet)
@@ -176,7 +176,7 @@ _IEEE Transactions on Instrumentation and Measurement (T-IM)_, 2025<br>
 
 <div class='paper-box'><div class='paper-box-image'><div><div class="badge">T-Mech 2025</div><img src='images/pubs/iop_vp.png' alt="sym" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
-[3D Imaging Optical Path-Guided Viewpoint Planning Method for Free-Form Surface Inspection](https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?reload=true&punumber=3516)<br>
+[3D Imaging Optical Path-Guided Viewpoint Planning Method for Free-Form Surface Inspection](https://ieeexplore.ieee.org/document/11271033)<br>
 Jingyu Zhou†, Yunfeng Ma†, Zhenhai Li, Min Liu*, **Shuai Jiang**, and Yaonan Wang<br>
 _IEEE/ASME Transactions on Mechatronics (T-Mech)_, 2025<br>
 [PDF](https://ieeexplore.ieee.org/document/11271033)
@@ -185,16 +185,16 @@ _IEEE/ASME Transactions on Mechatronics (T-Mech)_, 2025<br>
 
 <div class='paper-box'><div class='paper-box-image'><div><div class="badge">T-Mech 2025</div><img src='images/pubs/efc-net.jpg' alt="sym" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
-[Efficient Feature Coupling for Industrial Few-shot Defect Segmentation](https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?reload=true&punumber=3516)<br>
+[Efficient Feature Coupling for Industrial Few-shot Defect Segmentation](https://ieeexplore.ieee.org/document/11216352)<br>
 Yunfeng Ma, Min Liu*, **Shuai Jiang**, Jingyu Zhou, Yuan Bian, and Yaonan Wang<br>
 _IEEE/ASME Transactions on Mechatronics (T-Mech)_, 2025<br>
-[PDF](https://ieeexplore.ieee.org/document/11216352/)
+[PDF](https://ieeexplore.ieee.org/document/11216352)
 </div>
 </div>
 
 <div class='paper-box'><div class='paper-box-image'><div><div class="badge">NeurIPS 2025</div><img src='images/pubs/dps.png' alt="sym" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
-[Searching Efficient Semantic Segmentation Architectures via Dynamic Path Selection](https://openreview.net/group?id=NeurIPS.cc/2025/Conference)<br>
+[Searching Efficient Semantic Segmentation Architectures via Dynamic Path Selection](https://openreview.net/pdf?id=xXVEsGWSs8)<br>
 Yuxi Liu†, Min Liu†, **Shuai Jiang**, Yi Tang*, and Yaonan Wang<br>
 _The Thirty-ninth Annual Conference on Neural Information Processing Systems (NeurIPS)_, 2025<br>
 [PDF](https://openreview.net/pdf?id=xXVEsGWSs8)
@@ -264,6 +264,7 @@ _IEEE Transactions on Automation Science and Engineering (T-ASE)_, 2025<br>
   _IEEE Transactions on Pattern Analysis and Machine Intelligence (T-PAMI)_, 2025 <font color="#8A2BE2">(In Major Revision)</font><br>
 
 # 🎖 Honors and Awards
+- GENCA Scholarship, Hunan University, 2025.
 - Excellent Graduates, Hunan Provincial Department of Education, 2023.
 - Excellent Graduates, Xiangtan University, 2023.
 - Principal Scholarship, Xiangtan University, 2023.
