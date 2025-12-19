@@ -241,7 +241,7 @@ _IEEE Transactions on Automation Science and Engineering (T-ASE)_, 2025<br>
 
 - [SCAP: Semantic Prototype Alignment for Robust Point Cloud Registration](https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=76)<br>
   Jingyu Zhou, Yunfeng Ma, **Shuai Jiang**, Yaonan Wang, and Min Liu*<br>
-  _IEEE Transactions on Circuits and Systems for Video Technology (T-CSVT)_, 2025<br>
+  _IEEE Transactions on Circuits and Systems for Video Technology (T-CSVT)_, 2025 <font color="#8A2BE2">(In Major Revision)</font><br>
 
 - [Edge-guided Semantic Cross-Matching Network for Few-Shot Strip Steel Surface Defect Segmentation](https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=19)<br>
   Zekai Yao†, Yunfeng Ma†, Min Liu*, **Shuai Jiang**, Yingmei He, and Yaonan Wang<br>
