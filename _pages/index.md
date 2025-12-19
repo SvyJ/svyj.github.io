@@ -282,15 +282,11 @@ _IEEE Transactions on Automation Science and Engineering (T-ASE)_, 2025<br>
 
 
 
-<div style="text-align:center; margin-top:10px;">
-  <h4 style="font-weight:normal; color:gray;">Visitor Map</h4>
-
-  <div style="width:260px; margin:0 auto; overflow:hidden;">
-    <script type="text/javascript"
-      id="clstr_globe"
-      src="//clustrmaps.com/globe.js?d=GshtVPcPto948t-wfrTU4e4vwwfa3I2empyDOBZDWA0">
-    </script>
-  </div>
+<div style="width:150px; margin:0 auto; overflow:hidden;">
+  <script type="text/javascript"
+    id="clstr_globe"
+    src="//clustrmaps.com/globe.js?d=GshtVPcPto948t-wfrTU4e4vwwfa3I2empyDOBZDWA0">
+  </script>
 </div>
 
 
