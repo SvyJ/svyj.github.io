@@ -245,7 +245,7 @@ _IEEE Transactions on Automation Science and Engineering (T-ASE)_, 2025<br>
 
 - [Edge-guided Semantic Cross-Matching Network for Few-Shot Strip Steel Surface Defect Segmentation](https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=19)<br>
   Zekai Yao†, Yunfeng Ma†, Min Liu*, **Shuai Jiang**, Yingmei He, and Yaonan Wang<br>
-  _IEEE Transactions on Instrumentation and Measurement (T-IM)_, 2025<br>
+  _IEEE Transactions on Instrumentation and Measurement (T-IM)_, 2025 <font color="#8A2BE2">(In Major Revision)</font><br>
 
 - [COLA: Unsupervised Continual Learning for Zero-shot Multimodal Anomaly Detection](https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=83)<br>
   Yunfeng Ma†, **Shuai Jiang**†, Min Liu*, Jingyu Zhou, Xueping Wang, and Yaonan Wang<br>
