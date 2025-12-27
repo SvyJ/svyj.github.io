@@ -43,9 +43,9 @@ author_profile: true
 
 ## 🎉 Nice News
 
-- **[Nov. 2025]** 🎉 Our article on "Few-shot Defect Segmentation" was accepted by _IEEE T-II_.
+- **[Nov. 2025]** 🎉 Our article on "Few-shot Defect Segmentation" was accepted by _IEEE T-II_. [[PDF]](https://ieeexplore.ieee.org/document/11314672)
 
-- **[Nov. 2025]** 🎉 Our article on "Neural Architecture Search for Surface Defect Detection" was accepted by _IEEE/ASME T-Mech_. [[PDF]](https://arxiv.org/pdf/2510.06669)
+- **[Nov. 2025]** 🎉 Our article on "Neural Architecture Search for Surface Defect Detection" was accepted by _IEEE/ASME T-Mech_. [[PDF]](https://ieeexplore.ieee.org/document/11316164)
 
 - **[Nov. 2025]** 🎉 Our article on "Semi-Supervised Soldering Defect Detection" was accepted by _IEEE T-IM_. [[PDF]](https://ieeexplore.ieee.org/document/11271762)
 
@@ -57,7 +57,7 @@ author_profile: true
 
 - **[Sep. 2025]** 🎉 Our paper on "NAS-based Semantic Segmentation" was accepted by _NeurIPS 2025_. [[PDF]](https://openreview.net/pdf?id=xXVEsGWSs8)
 
-- **[Sep. 2025]** 🎉 Our article on "Multimodal Defect Detection with Missing Modalities" was accepted by _IEEE/ASME T-Mech_. [[Project]](https://svyj.github.io/MISDD-MM/)
+- **[Sep. 2025]** 🎉 Our article on "Multimodal Defect Detection with Missing Modalities" was accepted by _IEEE/ASME T-Mech_. [[PDF]](https://ieeexplore.ieee.org/document/11173953) [[Project]](https://svyj.github.io/MISDD-MM/)
 
 - **[Jun. 2025]** 🎉 Our article on "Neural Architecture Search-based Aero-engine Blade Defect Detection" was accepted by _SCIENTIA SINICA Informationis_ (中国科学: 信息科学). [[PDF]](https://www.sciengine.com/SSI/doi/10.1360/SSI-2025-0145)
 
@@ -149,19 +149,19 @@ _IEEE Transactions on Instrumentation and Measurement (T-IM)_, 2022<br>
   
 <div class='paper-box'><div class='paper-box-image'><div><div class="badge">T-II 2025</div><img src='images/pubs/panda.png' alt="sym" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
-[PANDA: Progressive Adaptive Network for Defect-aware Few-shot Segmentation](https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?reload=true&punumber=9424)<br>
+[PANDA: Progressive Adaptive Network for Defect-aware Few-shot Segmentation](https://ieeexplore.ieee.org/document/11314672)<br>
 Meng Gao†, Yunfeng Ma†, **Shuai Jiang**, Qi Su, Xiangfei Meng, Yaonan Wang, and Min Liu*<br>
 _IEEE Transactions on Industrial Informatics (T-II)_, 2025<br>
-[PDF (In Press)](https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=9424)
+[PDF](https://ieeexplore.ieee.org/document/11314672)
 </div>
 </div>
 
 <div class='paper-box'><div class='paper-box-image'><div><div class="badge">T-Mech 2025</div><img src='images/pubs/autonad.png' alt="sym" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
-[Automated Neural Architecture Design for Industrial Defect Detection](https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?reload=true&punumber=3516)<br>
+[Automated Neural Architecture Design for Industrial Defect Detection](https://ieeexplore.ieee.org/document/11316164)<br>
 Yuxi Liu†, Yunfeng Ma†, Yi Tang, Min Liu*, **Shuai Jiang**, and Yaonan Wang<br>
 _IEEE/ASME Transactions on Mechatronics (T-Mech)_, 2025<br>
-[arXiv](https://arxiv.org/abs/2510.06669) | [PDF (In Press)](https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=3516)
+[arXiv](https://arxiv.org/abs/2510.06669) | [PDF](https://ieeexplore.ieee.org/document/11316164)
 </div>
 </div>
 
