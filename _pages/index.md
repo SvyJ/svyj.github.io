@@ -272,7 +272,7 @@ _IEEE Transactions on Automation Science and Engineering (T-ASE)_, 2025<br>
 - Special Scholarship, Xiangtan University, 2022 / 2021.
 
 # 🧑‍🤝‍🧑 Services
-- Journal Reviewer: [T-II](https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=9424), [T-MI](https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=42), [T-IM](https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=19), [J-BHI](https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=6221020), [Scientific Data](https://www.nature.com/sdata/), [IEEE Access](https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=6287639)
+- Journal Reviewer: [T-II](https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=9424), [T-MI](https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=42), [T-IM](https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=19), [J-BHI](https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=6221020), [Scientific Reports](https://www.nature.com/srep/), [Scientific Data](https://www.nature.com/sdata/), [IEEE Access](https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=6287639)
 - Conference Reviewer: NeurIPS, CVPR, ICCV, AAAI, ACMMM, ICASSP, ICME
 
 # 📖 Educations
