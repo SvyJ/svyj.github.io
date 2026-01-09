@@ -28,6 +28,8 @@ author_profile: true
 # 🔥 Recent Updates
 
 ## 📝 Latest Works
+
+- **[Jan. 2026]** 📃 Our article on "Noise-robust Long-tail Multimodal Anomaly Detection" was submitted to _IEEE T-CSVT_.
   
 - **[Oct. 2025]** 📃 Our article on "Point Cloud Registration" was submitted to _IEEE T-CSVT_.
 
@@ -239,6 +241,10 @@ _IEEE Transactions on Automation Science and Engineering (T-ASE)_, 2025<br>
 
 ## 📃 Manuscripts in Peer Review
 
+- [Towards Noise-robust Long-tail Multimodal Industrial Anomaly Detection](https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=76)<br>
+  **Shuai Jiang**, Yunfeng Ma, Jingyu Zhou, Yaonan Wang, and Min Liu*<br>
+  _IEEE Transactions on Circuits and Systems for Video Technology (T-CSVT)_, 2026<br>
+
 - [SCAP: Semantic Prototype Alignment for Robust Point Cloud Registration](https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=76)<br>
   Jingyu Zhou, Yunfeng Ma, **Shuai Jiang**, Yaonan Wang, and Min Liu*<br>
   _IEEE Transactions on Circuits and Systems for Video Technology (T-CSVT)_, 2025 <font color="#8A2BE2">(In Major Revision)</font><br>
@@ -261,7 +267,7 @@ _IEEE Transactions on Automation Science and Engineering (T-ASE)_, 2025<br>
 
 - [ZUMA: Training-free Zero-shot Unified Multimodal Anomaly Detection](https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=34)<br>
   Yunfeng Ma, Min Liu*, **Shuai Jiang**, Jingyu Zhou, Yuan Bian, Xueping Wang, and Yaonan Wang<br>
-  _IEEE Transactions on Pattern Analysis and Machine Intelligence (T-PAMI)_, 2025 <font color="#8A2BE2">(In Major Revision)</font><br>
+  _IEEE Transactions on Pattern Analysis and Machine Intelligence (T-PAMI)_, 2025 <font color="#8A2BE2">(In Minor Revision)</font><br>
 
 # 🎖 Honors and Awards
 - GENCA Scholarship, Hunan University, 2025.
