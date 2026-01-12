@@ -29,6 +29,8 @@ author_profile: true
 
 ## 📝 Latest Works
 
+- **[Jan. 2026]** 📃 Our paper on "Zero-shot Point Cloud Registration" was submitted to _IJCAI 2026_.
+
 - **[Jan. 2026]** 📃 Our article on "Noise-robust Long-tail Multimodal Anomaly Detection" was submitted to _IEEE T-CSVT_.
   
 - **[Oct. 2025]** 📃 Our article on "Point Cloud Registration" was submitted to _IEEE T-CSVT_.
@@ -240,6 +242,10 @@ _IEEE Transactions on Automation Science and Engineering (T-ASE)_, 2025<br>
 </div>
 
 ## 📃 Manuscripts in Peer Review
+
+- [Z-REG: Domain-Robust Zero-shot Point Cloud Registration via Equivariance-Aware Stabilization](https://2026.ijcai.org/)<br>
+  Jingyu Zhou, Yunfeng Ma, **Shuai Jiang**, Xueping Wang, Zekai Yao, and Min Liu*<br>
+  _35th International Joint Conference on Artificial Intelligence (IJCAI)_, 2026<br>
 
 - [Towards Noise-robust Long-tail Multimodal Industrial Anomaly Detection](https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=76)<br>
   **Shuai Jiang**, Yunfeng Ma, Jingyu Zhou, Yaonan Wang, and Min Liu*<br>
