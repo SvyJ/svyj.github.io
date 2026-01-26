@@ -155,8 +155,8 @@ _IEEE Transactions on Instrumentation and Measurement (T-IM)_, 2022<br>
 <div class='paper-box-text' markdown="1">
 [ZUMA: Training-free Zero-shot Unified Multimodal Anomaly Detection](https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=34)<br>
 Yunfeng Ma, Min Liu*, **Shuai Jiang**, Jingyu Zhou, Yuan Bian, Xueping Wang, and Yaonan Wang<br>
-_IEEE Transactions on Pattern Analysis and Machine Intelligence (T-PAMI)_, 2025<br>
-[PDF](https://ieeexplore.ieee.org/document/11314672)
+_IEEE Transactions on Pattern Analysis and Machine Intelligence (T-PAMI)_, 2026<br>
+[PDF](In Press)
 </div>
 </div>
   
