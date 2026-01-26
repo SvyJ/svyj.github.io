@@ -45,7 +45,7 @@ author_profile: true
 
 ## 🎉 Nice News
 
-- **[Jan. 2026]** 📃 Our article on "Training-free Unified Multimodal Anomaly Detection" was accepted by _IEEE T-PAMI_.
+- **[Jan. 2026]** 🎉 Our article on "Training-free Unified Multimodal Anomaly Detection" was accepted by _IEEE T-PAMI_.
 
 - **[Nov. 2025]** 🎉 Our article on "Few-shot Defect Segmentation" was accepted by _IEEE T-II_. [[PDF]](https://ieeexplore.ieee.org/document/11314672)
 
