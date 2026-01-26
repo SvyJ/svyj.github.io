@@ -43,9 +43,9 @@ author_profile: true
 
 - **[Jun. 2025]** 📃 Our article on "Few-shot Unified Multimodal Industrial Anomaly Detection" was submitted to _IEEE T-MM_.
 
-- **[May. 2025]** 📃 Our article on "Training-free Unified Multimodal Anomaly Detection" was submitted to _IEEE T-PAMI_.
-
 ## 🎉 Nice News
+
+- **[Jan. 2026]** 📃 Our article on "Training-free Unified Multimodal Anomaly Detection" was accepted by _IEEE T-PAMI_.
 
 - **[Nov. 2025]** 🎉 Our article on "Few-shot Defect Segmentation" was accepted by _IEEE T-II_. [[PDF]](https://ieeexplore.ieee.org/document/11314672)
 
@@ -150,6 +150,15 @@ _IEEE Transactions on Instrumentation and Measurement (T-IM)_, 2022<br>
 </div>
 
 ## 📄 Co-authored Peer-Reviewed Publications
+
+<div class='paper-box'><div class='paper-box-image'><div><div class="badge">T-PAMI 2026</div><img src='images/pubs/zuma.png' alt="sym" width="100%"></div></div>
+<div class='paper-box-text' markdown="1">
+[ZUMA: Training-free Zero-shot Unified Multimodal Anomaly Detection](https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=34)<br>
+Yunfeng Ma, Min Liu*, **Shuai Jiang**, Jingyu Zhou, Yuan Bian, Xueping Wang, and Yaonan Wang<br>
+_IEEE Transactions on Pattern Analysis and Machine Intelligence (T-PAMI)_, 2025<br>
+[PDF](https://ieeexplore.ieee.org/document/11314672)
+</div>
+</div>
   
 <div class='paper-box'><div class='paper-box-image'><div><div class="badge">T-II 2025</div><img src='images/pubs/panda.png' alt="sym" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
@@ -270,10 +279,6 @@ _IEEE Transactions on Automation Science and Engineering (T-ASE)_, 2025<br>
 - [Unified Multimodal Industrial Anomaly Detection via Few Normal Samples](https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=6046)<br>
   **Shuai Jiang**, Min Liu*, Yunfeng Ma, Jingyu Zhou, and Yaonan Wang<br>
   _IEEE Transactions on Multimedia (T-MM)_, 2025<br>
-
-- [ZUMA: Training-free Zero-shot Unified Multimodal Anomaly Detection](https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=34)<br>
-  Yunfeng Ma, Min Liu*, **Shuai Jiang**, Jingyu Zhou, Yuan Bian, Xueping Wang, and Yaonan Wang<br>
-  _IEEE Transactions on Pattern Analysis and Machine Intelligence (T-PAMI)_, 2025 <font color="#8A2BE2">(In Minor Revision)</font><br>
 
 # 🎖 Honors and Awards
 - GENCA Scholarship, Hunan University, 2025.
