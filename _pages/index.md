@@ -165,7 +165,7 @@ _IEEE Transactions on Pattern Analysis and Machine Intelligence (T-PAMI)_, 2026<
 [PANDA: Progressive Adaptive Network for Defect-aware Few-shot Segmentation](https://ieeexplore.ieee.org/document/11314672)<br>
 Meng Gao†, Yunfeng Ma†, **Shuai Jiang**, Qi Su, Xiangfei Meng, Yaonan Wang, and Min Liu*<br>
 _IEEE Transactions on Industrial Informatics (T-II)_, 2025<br>
-[PDF](https://ieeexplore.ieee.org/document/11314672)
+[PDF](https://ieeexplore.ieee.org/document/11314672) | [Code](https://github.com/AndrawGaw/PANDA)
 </div>
 </div>
 
@@ -174,7 +174,7 @@ _IEEE Transactions on Industrial Informatics (T-II)_, 2025<br>
 [Automated Neural Architecture Design for Industrial Defect Detection](https://ieeexplore.ieee.org/document/11316164)<br>
 Yuxi Liu†, Yunfeng Ma†, Yi Tang, Min Liu*, **Shuai Jiang**, and Yaonan Wang<br>
 _IEEE/ASME Transactions on Mechatronics (T-Mech)_, 2025<br>
-[arXiv](https://arxiv.org/abs/2510.06669) | [PDF](https://ieeexplore.ieee.org/document/11316164)
+[arXiv](https://arxiv.org/abs/2510.06669) | [PDF](https://ieeexplore.ieee.org/document/11316164) | [Code](https://github.com/Yuxi104/AutoNAD)
 </div>
 </div>
 
