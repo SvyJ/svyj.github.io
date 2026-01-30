@@ -27,6 +27,8 @@ author_profile: true
 
 # 🔥 Recent Updates
 
+More historical updates can be found [here](https://svyj.github.io/news)
+
 ## 📝 Latest Works
 
 - **[Jan. 2026]** 📃 Our paper on "Zero-shot Point Cloud Registration" was submitted to _IJCAI 2026_.
@@ -68,8 +70,6 @@ author_profile: true
 - **[Jun. 2025]** 🎉 Our paper on "Prompt-driven Person Re-ID" was accepted by _ICCV 2025_. [[Poster]](https://iccv.thecvf.com/virtual/2025/poster/348) [[arXiv]](https://arxiv.org/pdf/2502.19697)
 
 - **[Apr. 2025]** 🎉 Our article on "Multi-View Industrial Anomaly Detection" was accepted by _IEEE/ASME T-Mech (TMECH/AIM Focused Section)_. [[PDF]](https://ieeexplore.ieee.org/document/11010089)
-
-[More...](https://svyj.github.io/news)
 
 
 # 📚 Publications
