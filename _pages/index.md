@@ -45,7 +45,7 @@ author_profile: true
 
 ## 🎉 Nice News
 
-- **[Jan. 2026]** 🎉 Our article on "Training-free Unified Multimodal Anomaly Detection" was accepted by _IEEE T-PAMI_.
+- **[Jan. 2026]** 🎉 Our article on "Training-free Unified Multimodal Anomaly Detection" was accepted by _IEEE T-PAMI_. [[PDF]](https://ieeexplore.ieee.org/document/11367454)
 
 - **[Nov. 2025]** 🎉 Our article on "Few-shot Defect Segmentation" was accepted by _IEEE T-II_. [[PDF]](https://ieeexplore.ieee.org/document/11314672)
 
@@ -153,10 +153,10 @@ _IEEE Transactions on Instrumentation and Measurement (T-IM)_, 2022<br>
 
 <div class='paper-box'><div class='paper-box-image'><div><div class="badge">T-PAMI 2026</div><img src='images/pubs/zuma.png' alt="sym" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
-[ZUMA: Training-free Zero-shot Unified Multimodal Anomaly Detection](https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=34)<br>
+[ZUMA: Training-free Zero-shot Unified Multimodal Anomaly Detection](https://ieeexplore.ieee.org/document/11367454)<br>
 Yunfeng Ma, Min Liu*, **Shuai Jiang**, Jingyu Zhou, Yuan Bian, Xueping Wang, and Yaonan Wang<br>
 _IEEE Transactions on Pattern Analysis and Machine Intelligence (T-PAMI)_, 2026<br>
-[PDF(In Press)](https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=34) | [Code](https://github.com/yif-ma/ZUMA)
+[PDF](https://ieeexplore.ieee.org/document/11367454) | [Code](https://github.com/yif-ma/ZUMA)
 </div>
 </div>
   
