@@ -69,35 +69,7 @@ author_profile: true
 
 - **[Apr. 2025]** 🎉 Our article on "Multi-View Industrial Anomaly Detection" was accepted by _IEEE/ASME T-Mech (TMECH/AIM Focused Section)_. [[PDF]](https://ieeexplore.ieee.org/document/11010089)
 
-- **[Mar. 2025]** 🎉 Our article on "Few-Shot Defect Segmentation" was accepted by _IEEE T-ASE_. [[PDF]](https://ieeexplore.ieee.org/document/10942431)
-
-- **[Dec. 2024]** 🎉 Our article on "Multimodal Retinal Image Analysis" was accepted by _IEEE T-IM_. [[PDF]](https://ieeexplore.ieee.org/document/10904426) [[Project]](https://svyj.github.io/PL-Joint-Seg/)
-  
-- **[Nov. 2024]** 🎉 Our article on "Weakly Supervised Surface Defect Localization" was accepted by _IEEE T-IM_. [[PDF]](https://ieeexplore.ieee.org/document/10908998) [[Project]](https://svyj.github.io/CSS/)
-  
-- **[Apr. 2023]** 🎓 Svy.J graduated from XTU and was conferred M.Eng. degree.
-  
-- **[Apr. 2023]** 🌟 Svy.J was awarded the 28th "Principal Scholarship" of XTU.
-
-- **[Mar. 2023]** 🌟 Svy.J was awarded the title of "Excellent Graduates" of Hunan, China.
-  
-- **[Mar. 2023]** 🌟 Svy.J was awarded the title of "Excellent Graduates" of XTU.
-  
-- **[Jan. 2023]** 🎉 Our article on "Retinal Layer Segmentation in OCT" was accepted by the _Journal of Software_ (软件学报). [[PDF]](https://www.jos.org.cn/jos/article/abstract/6895)
-  
-- **[Oct. 2022]** 🌟 Svy.J was awarded the "Special Scholarship" again with the rank of 1/70.
-  
-- **[Sep. 2022]** 🌟 Svy.J was awarded the "China National Scholarship".
-  
-- **[Jul. 2022]** 🎉 Our article on "Biomarkers Segmentation in OCTA" was accepted by _IEEE T-IM_. [[PDF]](https://ieeexplore.ieee.org/document/9837090) [[Project]](https://svyj.github.io/Joint-Seg/)
-  
-- **[Oct. 2021]** 🌟 Svy.J was awarded the "Xinhualian Group Education Scholarship".
-  
-- **[Oct. 2021]** 🌟 Svy.J was awarded the "Special Scholarship" with the rank of 1/70.
-  
-- **[Dec. 2020]** 🏆 Svy.J won the 3rd prize in the _4th ISICDM_ in "Challenge 3: Segmentation of Pulmonary Tissues" with his teammates Tongtong Liu (Now a Ph.D. student at [SCUT](https://www.scut.edu.cn/)) and Fucai Wu (Now a engineer at [LUSTER](https://www.lusterinc.com/)). [[ISICDM 2020]](https://isicdm2020.imagecomputing.org/cn/Challenges.html)
-  
-- **[Oct. 2020]** 🌟 Svy.J was awarded the "First Class Scholarship" with the rank of 1/70.
+[More...](https://svyj.github.io/news)
 
 
 # 📚 Publications
