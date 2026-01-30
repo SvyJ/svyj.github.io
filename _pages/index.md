@@ -45,6 +45,8 @@ author_profile: true
 
 ## 🎉 Nice News
 
+<ul id="news-list">
+  
 - **[Jan. 2026]** 🎉 Our article on "Training-free Unified Multimodal Anomaly Detection" was accepted by _IEEE T-PAMI_. [[PDF]](https://ieeexplore.ieee.org/document/11367454)
 
 - **[Nov. 2025]** 🎉 Our article on "Few-shot Defect Segmentation" was accepted by _IEEE T-II_. [[PDF]](https://ieeexplore.ieee.org/document/11314672)
@@ -98,6 +100,8 @@ author_profile: true
 - **[Dec. 2020]** 🏆 Svy.J won the 3rd prize in the _4th ISICDM_ in "Challenge 3: Segmentation of Pulmonary Tissues" with his teammates Tongtong Liu (Now a Ph.D. student at [SCUT](https://www.scut.edu.cn/)) and Fucai Wu (Now a engineer at [LUSTER](https://www.lusterinc.com/)). [[ISICDM 2020]](https://isicdm2020.imagecomputing.org/cn/Challenges.html)
   
 - **[Oct. 2020]** 🌟 Svy.J was awarded the "First Class Scholarship" with the rank of 1/70.
+
+</ul>
 
 # 📚 Publications
 † Equal Contribution, * Corresponding Author
@@ -307,3 +311,144 @@ _IEEE Transactions on Automation Science and Engineering (T-ASE)_, 2025<br>
 </div>
 
 
+
+
+<style>
+.collapsible-news {
+  --primary-color: #2f81f7;
+  --transition-speed: 0.4s;
+  margin-top: 1.5rem;
+}
+
+.news-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.news-list li {
+  padding: 0.8rem 0;
+  border-bottom: 1px solid #e1e4e8;
+  opacity: 0;
+  transform: translateY(-10px);
+  animation: fadeInUp var(--transition-speed) ease-out forwards;
+}
+
+.news-list li:nth-child(-n+10) {
+  animation-delay: calc(var(--i) * 0.03s);
+}
+
+.news-list li.hidden {
+  display: none;
+}
+
+@keyframes fadeInUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.toggle-button {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin-top: 1.5rem;
+  padding: 0.75rem 1.5rem;
+  background: linear-gradient(135deg, var(--primary-color), #1f6feb);
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 0.95rem;
+  font-weight: 500;
+  transition: all 0.3s ease;
+  box-shadow: 0 2px 5px rgba(47, 129, 247, 0.2);
+}
+
+.toggle-button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(47, 129, 247, 0.3);
+}
+
+.toggle-button:active {
+  transform: translateY(0);
+}
+
+.toggle-icon {
+  transition: transform var(--transition-speed) cubic-bezier(0.4, 0, 0.2, 1);
+  font-size: 1.1em;
+}
+
+.toggle-button.expanded .toggle-icon {
+  transform: rotate(180deg);
+}
+
+.count-badge {
+  background: rgba(255, 255, 255, 0.2);
+  padding: 0.2rem 0.6rem;
+  border-radius: 12px;
+  font-size: 0.85rem;
+  margin-left: 0.3rem;
+}
+</style>
+
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+  const newsList = document.querySelector('#news-list');
+  const newsItems = newsList.querySelectorAll('li');
+  const hiddenClass = 'hidden';
+  const defaultShowCount = 10;
+  
+  // 创建切换按钮
+  const toggleButton = document.createElement('button');
+  toggleButton.className = 'toggle-button';
+  toggleButton.innerHTML = `
+    <span class="toggle-icon">▼</span>
+    <span class="button-text">显示更多</span>
+    <span class="count-badge">+${newsItems.length - defaultShowCount}</span>
+  `;
+  
+  // 插入按钮
+  newsList.parentNode.insertBefore(toggleButton, newsList.nextSibling);
+  
+  // 初始隐藏第10条之后的内容
+  newsItems.forEach((item, index) => {
+    if (index >= defaultShowCount) {
+      item.classList.add(hiddenClass);
+      item.style.animationDelay = '0s';
+    }
+  });
+  
+  // 切换显示/隐藏
+  toggleButton.addEventListener('click', function() {
+    const isExpanded = this.classList.toggle('expanded');
+    const hiddenItems = newsList.querySelectorAll(`.${hiddenClass}`);
+    
+    if (isExpanded) {
+      // 展开所有
+      hiddenItems.forEach((item, index) => {
+        item.style.animationDelay = `${index * 0.03}s`;
+        setTimeout(() => {
+          item.classList.remove(hiddenClass);
+        }, 50);
+      });
+      this.querySelector('.button-text').textContent = '收起内容';
+      this.querySelector('.count-badge').textContent = `-${hiddenItems.length}`;
+    } else {
+      // 收起超出部分
+      const itemsToHide = Array.from(newsItems).slice(defaultShowCount);
+      itemsToHide.forEach((item, index) => {
+        item.classList.add(hiddenClass);
+      });
+      this.querySelector('.button-text').textContent = '显示更多';
+      this.querySelector('.count-badge').textContent = `+${itemsToHide.length}`;
+    }
+  });
+  
+  // 为每个列表项添加动画延迟变量
+  newsItems.forEach((item, index) => {
+    item.style.setProperty('--i', index);
+  });
+});
+</script>
