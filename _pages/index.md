@@ -320,26 +320,27 @@ _IEEE Transactions on Automation Science and Engineering (T-ASE)_, 2025<br>
   margin-top: 1.5rem;
 }
 
-.news-list {
+#news-list ~ ul {
   list-style: none;
   padding: 0;
   margin: 0;
 }
 
-.news-list li {
+#news-list ~ ul li {
   padding: 0.8rem 0;
   border-bottom: 1px solid #e1e4e8;
   opacity: 0;
   transform: translateY(-10px);
-  animation: fadeInUp var(--transition-speed) ease-out forwards;
+  animation: fadeInUp 0.4s ease-out forwards;
 }
 
-.news-list li:nth-child(-n+10) {
-  animation-delay: calc(var(--i) * 0.03s);
-}
-
-.news-list li.hidden {
+#news-list ~ ul li:nth-child(n+11) {
   display: none;
+}
+
+#news-list ~ ul li.show {
+  display: list-item;
+  animation-delay: calc((var(--index) - 10) * 0.03s);
 }
 
 @keyframes fadeInUp {
@@ -394,58 +395,62 @@ _IEEE Transactions on Automation Science and Engineering (T-ASE)_, 2025<br>
 </style>
 
 <script>
-// 修改之前的JavaScript代码
 document.addEventListener('DOMContentLoaded', function() {
-  // 找到包含新闻的段落后面的第一个列表
   const heading = document.querySelector('h2:contains("🎉 Nice News")');
   if (!heading) return;
   
-  const container = heading.nextElementSibling;
-  if (container && container.tagName === 'UL') {
-    container.id = 'news-list';
-  } else {
-    // 如果GitHub Pages没有自动生成UL，我们手动创建
-    const listItems = [];
-    let nextElem = heading.nextElementSibling;
-    
-    while (nextElem && nextElem.tagName === 'P' && nextElem.textContent.trim().startsWith('-')) {
-      listItems.push(nextElem.textContent.trim().substring(1).trim());
-      nextElem = nextElem.nextElementSibling;
-    }
-    
-    if (listItems.length > 0) {
-      const ul = document.createElement('ul');
-      ul.id = 'news-list';
-      listItems.forEach(item => {
-        const li = document.createElement('li');
-        li.innerHTML = convertMarkdownToHTML(item);
-        ul.appendChild(li);
-      });
-      
-      // 移除原始的段落
-      let toRemove = heading.nextElementSibling;
-      while (toRemove && listItems.some((_, i) => toRemove === heading.nextElementSibling)) {
-        const next = toRemove.nextElementSibling;
-        toRemove.remove();
-        toRemove = next;
-      }
-      
-      heading.parentNode.insertBefore(ul, heading.nextSibling);
-    }
+  // 找到下一个UL
+  let nextElem = heading.nextElementSibling;
+  while (nextElem && nextElem.tagName !== 'UL') {
+    nextElem = nextElem.nextElementSibling;
   }
   
-  // 原有的折叠逻辑
-  const newsList = document.querySelector('#news-list');
-  if (!newsList) return;
-  
-  // ... 原有的折叠代码保持不变 ...
+  if (nextElem) {
+    const newsItems = nextElem.querySelectorAll('li');
+    
+    // 添加索引和隐藏类
+    newsItems.forEach((item, index) => {
+      item.style.setProperty('--index', index);
+      if (index >= 10) {
+        item.style.display = 'none';
+      }
+    });
+    
+    // 创建按钮
+    const toggleButton = document.createElement('button');
+    toggleButton.className = 'toggle-button';
+    toggleButton.innerHTML = `
+      <span class="toggle-icon">▼</span>
+      <span class="button-text">显示更多</span>
+      <span class="count-badge">+${newsItems.length - 10}</span>
+    `;
+    
+    // 插入按钮
+    nextElem.parentNode.insertBefore(toggleButton, nextElem.nextSibling);
+    
+    // 切换逻辑
+    toggleButton.addEventListener('click', function() {
+      const isExpanded = this.classList.toggle('expanded');
+      
+      if (isExpanded) {
+        // 显示所有
+        newsItems.forEach((item, index) => {
+          if (index >= 10) {
+            item.style.display = 'list-item';
+            item.style.animationDelay = `${(index - 10) * 0.03}s`;
+          }
+        });
+        this.querySelector('.button-text').textContent = '收起内容';
+      } else {
+        // 隐藏超过10个的
+        newsItems.forEach((item, index) => {
+          if (index >= 10) {
+            item.style.display = 'none';
+          }
+        });
+        this.querySelector('.button-text').textContent = '显示更多';
+      }
+    });
+  }
 });
-
-function convertMarkdownToHTML(text) {
-  return text
-    .replace(/\*\*(.*?)\*\*/g, '<strong>$1</strong>')
-    .replace(/\*(.*?)\*/g, '<em>$1</em>')
-    .replace(/\[(.*?)\]\((.*?)\)/g, '<a href="$2">[$1]</a>')
-    .replace(/🎉|🌟|🎓|🏆/g, match => `<span class="emoji">${match}</span>`);
-}
 </script>
