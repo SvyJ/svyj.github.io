@@ -1,9 +1,27 @@
 ---
-permalink: /
-title: ""
+permalink: /news/
+title: "News"
 excerpt: ""
 author_profile: true
 ---
+
+# 🔥 Recent Updates
+
+## 📝 Latest Works
+
+- **[Jan. 2026]** 📃 Our paper on "Zero-shot Point Cloud Registration" was submitted to _IJCAI 2026_.
+
+- **[Jan. 2026]** 📃 Our article on "Noise-robust Long-tail Multimodal Anomaly Detection" was submitted to _IEEE T-CSVT_.
+  
+- **[Oct. 2025]** 📃 Our article on "Point Cloud Registration" was submitted to _IEEE T-CSVT_.
+
+- **[Sep. 2025]** 📃 Our article on "Few-Shot Strip Steel Surface Defect Segmentation" was submitted to _IEEE T-IM_.
+
+- **[Sep. 2025]** 📃 Our article on "Continual Learning-based Multimodal Anomaly Detection" was submitted to _IEEE T-IP_.
+
+- **[Aug. 2025]** 📃 Our article on "Multi-View Multi-class Anomaly Detection" was submitted to _IEEE T-CSVT_.
+
+- **[Jun. 2025]** 📃 Our article on "Few-shot Unified Multimodal Industrial Anomaly Detection" was submitted to _IEEE T-MM_.
 
 ## 🎉 Nice News
 
