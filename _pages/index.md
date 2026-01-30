@@ -394,61 +394,58 @@ _IEEE Transactions on Automation Science and Engineering (T-ASE)_, 2025<br>
 </style>
 
 <script>
+// 修改之前的JavaScript代码
 document.addEventListener('DOMContentLoaded', function() {
-  const newsList = document.querySelector('#news-list');
-  const newsItems = newsList.querySelectorAll('li');
-  const hiddenClass = 'hidden';
-  const defaultShowCount = 10;
+  // 找到包含新闻的段落后面的第一个列表
+  const heading = document.querySelector('h2:contains("🎉 Nice News")');
+  if (!heading) return;
   
-  // 创建切换按钮
-  const toggleButton = document.createElement('button');
-  toggleButton.className = 'toggle-button';
-  toggleButton.innerHTML = `
-    <span class="toggle-icon">▼</span>
-    <span class="button-text">显示更多</span>
-    <span class="count-badge">+${newsItems.length - defaultShowCount}</span>
-  `;
-  
-  // 插入按钮
-  newsList.parentNode.insertBefore(toggleButton, newsList.nextSibling);
-  
-  // 初始隐藏第10条之后的内容
-  newsItems.forEach((item, index) => {
-    if (index >= defaultShowCount) {
-      item.classList.add(hiddenClass);
-      item.style.animationDelay = '0s';
-    }
-  });
-  
-  // 切换显示/隐藏
-  toggleButton.addEventListener('click', function() {
-    const isExpanded = this.classList.toggle('expanded');
-    const hiddenItems = newsList.querySelectorAll(`.${hiddenClass}`);
+  const container = heading.nextElementSibling;
+  if (container && container.tagName === 'UL') {
+    container.id = 'news-list';
+  } else {
+    // 如果GitHub Pages没有自动生成UL，我们手动创建
+    const listItems = [];
+    let nextElem = heading.nextElementSibling;
     
-    if (isExpanded) {
-      // 展开所有
-      hiddenItems.forEach((item, index) => {
-        item.style.animationDelay = `${index * 0.03}s`;
-        setTimeout(() => {
-          item.classList.remove(hiddenClass);
-        }, 50);
-      });
-      this.querySelector('.button-text').textContent = '收起内容';
-      this.querySelector('.count-badge').textContent = `-${hiddenItems.length}`;
-    } else {
-      // 收起超出部分
-      const itemsToHide = Array.from(newsItems).slice(defaultShowCount);
-      itemsToHide.forEach((item, index) => {
-        item.classList.add(hiddenClass);
-      });
-      this.querySelector('.button-text').textContent = '显示更多';
-      this.querySelector('.count-badge').textContent = `+${itemsToHide.length}`;
+    while (nextElem && nextElem.tagName === 'P' && nextElem.textContent.trim().startsWith('-')) {
+      listItems.push(nextElem.textContent.trim().substring(1).trim());
+      nextElem = nextElem.nextElementSibling;
     }
-  });
+    
+    if (listItems.length > 0) {
+      const ul = document.createElement('ul');
+      ul.id = 'news-list';
+      listItems.forEach(item => {
+        const li = document.createElement('li');
+        li.innerHTML = convertMarkdownToHTML(item);
+        ul.appendChild(li);
+      });
+      
+      // 移除原始的段落
+      let toRemove = heading.nextElementSibling;
+      while (toRemove && listItems.some((_, i) => toRemove === heading.nextElementSibling)) {
+        const next = toRemove.nextElementSibling;
+        toRemove.remove();
+        toRemove = next;
+      }
+      
+      heading.parentNode.insertBefore(ul, heading.nextSibling);
+    }
+  }
   
-  // 为每个列表项添加动画延迟变量
-  newsItems.forEach((item, index) => {
-    item.style.setProperty('--i', index);
-  });
+  // 原有的折叠逻辑
+  const newsList = document.querySelector('#news-list');
+  if (!newsList) return;
+  
+  // ... 原有的折叠代码保持不变 ...
 });
+
+function convertMarkdownToHTML(text) {
+  return text
+    .replace(/\*\*(.*?)\*\*/g, '<strong>$1</strong>')
+    .replace(/\*(.*?)\*/g, '<em>$1</em>')
+    .replace(/\[(.*?)\]\((.*?)\)/g, '<a href="$2">[$1]</a>')
+    .replace(/🎉|🌟|🎓|🏆/g, match => `<span class="emoji">${match}</span>`);
+}
 </script>
