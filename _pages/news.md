@@ -1,3 +1,11 @@
+---
+layout: single
+permalink: /news/
+title: "News"
+excerpt: ""
+author_profile: true
+---
+
 # 🔥 Recent Updates
 
 ## 📝 Latest Works
