@@ -13,6 +13,12 @@ author_profile: true
 {% assign url = gsDataBaseUrl | append: "google-scholar-stats/gs_data_shieldsio.json" %}
 
 <span class='anchor' id='about-me'></span>
+<style>
+  .scrollable {
+    max-height: 200px; 
+    overflow-y: scroll; 
+  }
+</style>
 
 😃🌞♎️👫☕️🍵🎾🎧
 
@@ -27,52 +33,49 @@ author_profile: true
 
 # 🔥 Recent Updates
 
-More historical updates can be found [here](https://svyj.github.io/news)
-
 ## 📝 Latest Works
 
-<style>
-  .scrollable {
-    max-height: 200px; 
-    overflow-y: scroll; 
-  }
-</style>
-
 <div class="scrollable"><ul>
-  <li><strong>[Jan. 2026]</strong> 📃 Our paper on "Zero-shot Point Cloud Registration" was submitted to _IJCAI 2026_.</li>
-  <li><strong>[Jan. 2026]</strong> 📃 Our article on "Noise-robust Long-tail Multimodal Anomaly Detection" was submitted to _IEEE T-CSVT_.</li>
-  <li><strong>[Oct. 2025]</strong> 📃 Our article on "Point Cloud Registration" was submitted to _IEEE T-CSVT_.</li>
-  <li><strong>[Sep. 2025]</strong> 📃 Our article on "Few-Shot Strip Steel Surface Defect Segmentation" was submitted to _IEEE T-IM_.</li>
-  <li><strong>[Sep. 2025]</strong> 📃 Our article on "Continual Learning-based Multimodal Anomaly Detection" was submitted to _IEEE T-IP_.</li>
-  <li><strong>[Aug. 2025]</strong> 📃 Our article on "Multi-View Multi-class Anomaly Detection" was submitted to _IEEE T-CSVT_.</li>
-  <li><strong>[Jun. 2025]</strong> 📃 Our article on "Few-shot Unified Multimodal Industrial Anomaly Detection" was submitted to _IEEE T-MM_.</li>
+  <li><strong>[Jan. 2026]</strong> 📃 Our paper on "Zero-shot Point Cloud Registration" was submitted to <i>IJCAI 2026</i>.</li>
+  <li><strong>[Jan. 2026]</strong> 📃 Our article on "Noise-robust Long-tail Multimodal Anomaly Detection" was submitted to <i>IEEE T-CSVT</i>.</li>
+  <li><strong>[Oct. 2025]</strong> 📃 Our article on "Point Cloud Registration" was submitted to <i>IEEE T-CSVT</i>.</li>
+  <li><strong>[Sep. 2025]</strong> 📃 Our article on "Few-Shot Strip Steel Surface Defect Segmentation" was submitted to <i>IEEE T-IM</i>.</li>
+  <li><strong>[Sep. 2025]</strong> 📃 Our article on "Continual Learning-based Multimodal Anomaly Detection" was submitted to <i>IEEE T-IP</i>.</li>
+  <li><strong>[Aug. 2025]</strong> 📃 Our article on "Multi-View Multi-class Anomaly Detection" was submitted to <i>IEEE T-CSVT</i>.</li>
+  <li><strong>[Jun. 2025]</strong> 📃 Our article on "Few-shot Unified Multimodal Industrial Anomaly Detection" was submitted to <i>IEEE T-MM</i>.</li>
 </ul></div>
 
 ## 🎉 Nice News
-  
-- **[Jan. 2026]** 🎉 Our article on "Training-free Unified Multimodal Anomaly Detection" was accepted by _IEEE T-PAMI_. [[PDF]](https://ieeexplore.ieee.org/document/11367454)
 
-- **[Nov. 2025]** 🎉 Our article on "Few-shot Defect Segmentation" was accepted by _IEEE T-II_. [[PDF]](https://ieeexplore.ieee.org/document/11314672)
-
-- **[Nov. 2025]** 🎉 Our article on "Neural Architecture Search for Surface Defect Detection" was accepted by _IEEE/ASME T-Mech_. [[PDF]](https://ieeexplore.ieee.org/document/11316164)
-
-- **[Nov. 2025]** 🎉 Our article on "Semi-Supervised Soldering Defect Detection" was accepted by _IEEE T-IM_. [[PDF]](https://ieeexplore.ieee.org/document/11271762)
-
-- **[Nov. 2025]** 🌟 Svy.J was awarded the "GENCA Scholarship". [[Page]](https://robot.hnu.edu.cn/info/1092/1961.htm)
-
-- **[Oct. 2025]** 🎉 Our article on "Surface Inspection Viewpoint Planning" was accepted by _IEEE/ASME T-Mech_. [[PDF]](https://ieeexplore.ieee.org/document/11271033)
-
-- **[Oct. 2025]** 🎉 Our article on "Few-Shot Defect Segmentation" was accepted by _IEEE/ASME T-Mech_. [[PDF]](https://ieeexplore.ieee.org/document/11216352/)
-
-- **[Sep. 2025]** 🎉 Our paper on "NAS-based Semantic Segmentation" was accepted by _NeurIPS 2025_. [[PDF]](https://openreview.net/pdf?id=xXVEsGWSs8)
-
-- **[Sep. 2025]** 🎉 Our article on "Multimodal Defect Detection with Missing Modalities" was accepted by _IEEE/ASME T-Mech_. [[PDF]](https://ieeexplore.ieee.org/document/11173953) [[Project]](https://svyj.github.io/MISDD-MM/)
-
-- **[Jun. 2025]** 🎉 Our article on "Neural Architecture Search-based Aero-engine Blade Defect Detection" was accepted by _SCIENTIA SINICA Informationis_ (中国科学: 信息科学). [[PDF]](https://www.sciengine.com/SSI/doi/10.1360/SSI-2025-0145)
-
-- **[Jun. 2025]** 🎉 Our paper on "Prompt-driven Person Re-ID" was accepted by _ICCV 2025_. [[Poster]](https://iccv.thecvf.com/virtual/2025/poster/348) [[arXiv]](https://arxiv.org/pdf/2502.19697)
-
-- **[Apr. 2025]** 🎉 Our article on "Multi-View Industrial Anomaly Detection" was accepted by _IEEE/ASME T-Mech (TMECH/AIM Focused Section)_. [[PDF]](https://ieeexplore.ieee.org/document/11010089)
+<div class="scrollable"><ul>
+  <li><strong>[Jan. 2026]</strong> 🎉 Our article on "Training-free Unified Multimodal Anomaly Detection" was accepted by <i>IEEE T-PAMI</i>. <a href="https://ieeexplore.ieee.org/document/11367454">[PDF]</a></li>
+  <li><strong>[Nov. 2025]</strong> 🎉 Our article on "Few-shot Defect Segmentation" was accepted by <i>IEEE T-II</i>. <a href="https://ieeexplore.ieee.org/document/11314672">[PDF]</a></li>
+  <li><strong>[Nov. 2025]</strong> 🎉 Our article on "Neural Architecture Search for Surface Defect Detection" was accepted by <i>IEEE/ASME T-Mech</i>. <a href="https://ieeexplore.ieee.org/document/11316164">[PDF]</a></li>
+  <li><strong>[Nov. 2025]</strong> 🎉 Our article on "Semi-Supervised Soldering Defect Detection" was accepted by <i>IEEE T-IM</i>. <a href="https://ieeexplore.ieee.org/document/11271762">[PDF]</a></li>
+  <li><strong>[Nov. 2025]</strong> 🌟 Svy.J was awarded the "GENCA Scholarship". <a href="https://robot.hnu.edu.cn/info/1092/1961.htm">[Page]</a></li>
+  <li><strong>[Oct. 2025]</strong> 🎉 Our article on "Surface Inspection Viewpoint Planning" was accepted by <i>IEEE/ASME T-Mech</i>. <a href="https://ieeexplore.ieee.org/document/11271033">[PDF]</a></li>
+  <li><strong>[Oct. 2025]</strong> 🎉 Our article on "Few-Shot Defect Segmentation" was accepted by <i>IEEE/ASME T-Mech</i>. <a href="https://ieeexplore.ieee.org/document/11216352/">[PDF]</a></li>
+  <li><strong>[Sep. 2025]</strong> 🎉 Our paper on "NAS-based Semantic Segmentation" was accepted by <i>NeurIPS 2025</i>. <a href="https://openreview.net/pdf?id=xXVEsGWSs8">[PDF]</a></li>
+  <li><strong>[Sep. 2025]</strong> 🎉 Our article on "Multimodal Defect Detection with Missing Modalities" was accepted by <i>IEEE/ASME T-Mech</i>. <a href="https://ieeexplore.ieee.org/document/11173953">[PDF]</a> <a href="https://svyj.github.io/MISDD-MM/">[Project]</a></li>
+  <li><strong>[Jun. 2025]</strong> 🎉 Our article on "Neural Architecture Search-based Aero-engine Blade Defect Detection" was accepted by <i>SCIENTIA SINICA Informationis</i> (中国科学: 信息科学). <a href="https://www.sciengine.com/SSI/doi/10.1360/SSI-2025-0145">[PDF]</a></li>
+  <li><strong>[Jun. 2025]</strong> 🎉 Our paper on "Prompt-driven Person Re-ID" was accepted by <i>ICCV 2025</i>. <a href="https://iccv.thecvf.com/virtual/2025/poster/348">[Poster]</a> <a href="https://arxiv.org/pdf/2502.19697">[arXiv]</a></li>
+  <li><strong>[Apr. 2025]</strong> 🎉 Our article on "Multi-View Industrial Anomaly Detection" was accepted by <i>IEEE/ASME T-Mech (TMECH/AIM Focused Section)</i>. <a href="https://ieeexplore.ieee.org/document/11010089">[PDF]</a></li>
+  <li><strong>[Mar. 2025]</strong> 🎉 Our article on "Few-Shot Defect Segmentation" was accepted by <i>IEEE T-ASE</i>. <a href="https://ieeexplore.ieee.org/document/10942431">[PDF]</a></li>
+  <li><strong>[Dec. 2024]</strong> 🎉 Our article on "Multimodal Retinal Image Analysis" was accepted by <i>IEEE T-IM</i>. <a href="https://ieeexplore.ieee.org/document/10904426">[PDF]</a> <a href="https://svyj.github.io/PL-Joint-Seg/">[Project]</a></li>
+  <li><strong>[Nov. 2024]</strong> 🎉 Our article on "Weakly Supervised Surface Defect Localization" was accepted by <i>IEEE T-IM</i>. <a href="https://ieeexplore.ieee.org/document/10908998">[PDF]</a> <a href="https://svyj.github.io/CSS/">[Project]</a></li>
+  <li><strong>[Apr. 2023]</strong> 🎓 Svy.J graduated from XTU and was conferred M.Eng. degree.</li>
+  <li><strong>[Apr. 2023]</strong> 🌟 Svy.J was awarded the 28th "Principal Scholarship" of XTU.</li>
+  <li><strong>[Mar. 2023]</strong> 🌟 Svy.J was awarded the title of "Excellent Graduates" of Hunan, China.</li>
+  <li><strong>[Mar. 2023]</strong> 🌟 Svy.J was awarded the title of "Excellent Graduates" of XTU.</li>
+  <li><strong>[Jan. 2023]</strong> 🎉 Our article on "Retinal Layer Segmentation in OCT" was accepted by the <i>Journal of Software</i> (软件学报). <a href="https://www.jos.org.cn/jos/article/abstract/6895">[PDF]</a></li>
+  <li><strong>[Oct. 2022]</strong> 🌟 Svy.J was awarded the "Special Scholarship" again with the rank of 1/70.</li>
+  <li><strong>[Sep. 2022]</strong> 🌟 Svy.J was awarded the "China National Scholarship".</li>
+  <li><strong>[Jul. 2022]</strong> 🎉 Our article on "Biomarkers Segmentation in OCTA" was accepted by <i>IEEE T-IM</i>. <a href="https://ieeexplore.ieee.org/document/9837090">[PDF]</a> <a href="https://svyj.github.io/Joint-Seg/">[Project]</a></li>
+  <li><strong>[Oct. 2021]</strong> 🌟 Svy.J was awarded the "Xinhualian Group Education Scholarship".</li>
+  <li><strong>[Oct. 2021]</strong> 🌟 Svy.J was awarded the "Special Scholarship" with the rank of 1/70.</li>
+  <li><strong>[Dec. 2020]</strong> 🏆 Svy.J won the 3rd prize in the <i>4th ISICDM</i> in "Challenge 3: Segmentation of Pulmonary Tissues" with his teammates Tongtong Liu (Now a Ph.D. student at <a href="https://www.scut.edu.cn/">SCUT</a>) and Fucai Wu (Now a engineer at <a href="https://www.lusterinc.com/">LUSTER</a>). <a href="https://isicdm2020.imagecomputing.org/cn/Challenges.html">[ISICDM 2020]</a></li>
+  <li><strong>[Oct. 2020]</strong> 🌟 Svy.J was awarded the "First Class Scholarship" with the rank of 1/70.</li>
+</ul></div>
 
 
 # 📚 Publications
