@@ -39,28 +39,14 @@ More historical updates can be found [here](https://svyj.github.io/news)
 </style>
 
 <div class="scrollable"><ul>
-  <li><strong>[Jan. 2026]</strong>: &nbsp;📃 Our paper on "Zero-shot Point Cloud Registration" was submitted to _IJCAI 2026_.</li>
-  <li><strong>[Jan. 2026]</strong>: &nbsp;🎉 📃 Our article on "Noise-robust Long-tail Multimodal Anomaly Detection" was submitted to _IEEE T-CSVT_.</li>
-  <li><strong>[Oct. 2025]</strong>: &nbsp;📃 Our article on "Point Cloud Registration" was submitted to _IEEE T-CSVT_.</li>
-  <li><strong>[Sep. 2025]</strong>: &nbsp;📃 Our article on "Few-Shot Strip Steel Surface Defect Segmentation" was submitted to _IEEE T-IM_.</li>
-  <li><strong>[Sep. 2025]</strong>: &nbsp;📃 Our article on "Continual Learning-based Multimodal Anomaly Detection" was submitted to _IEEE T-IP_.</li>
-  <li><strong>[Aug. 2025]</strong>: &nbsp;📃 Our article on "Multi-View Multi-class Anomaly Detection" was submitted to _IEEE T-CSVT_.</li>
-  <li><strong>[Jun. 2025]</strong>: &nbsp;📃 Our article on "Few-shot Unified Multimodal Industrial Anomaly Detection" was submitted to _IEEE T-MM_.</li>
+  <li><strong>[Jan. 2026]</strong> 📃 Our paper on "Zero-shot Point Cloud Registration" was submitted to _IJCAI 2026_.</li>
+  <li><strong>[Jan. 2026]</strong> 📃 Our article on "Noise-robust Long-tail Multimodal Anomaly Detection" was submitted to _IEEE T-CSVT_.</li>
+  <li><strong>[Oct. 2025]</strong> 📃 Our article on "Point Cloud Registration" was submitted to _IEEE T-CSVT_.</li>
+  <li><strong>[Sep. 2025]</strong> 📃 Our article on "Few-Shot Strip Steel Surface Defect Segmentation" was submitted to _IEEE T-IM_.</li>
+  <li><strong>[Sep. 2025]</strong> 📃 Our article on "Continual Learning-based Multimodal Anomaly Detection" was submitted to _IEEE T-IP_.</li>
+  <li><strong>[Aug. 2025]</strong> 📃 Our article on "Multi-View Multi-class Anomaly Detection" was submitted to _IEEE T-CSVT_.</li>
+  <li><strong>[Jun. 2025]</strong> 📃 Our article on "Few-shot Unified Multimodal Industrial Anomaly Detection" was submitted to _IEEE T-MM_.</li>
 </ul></div>
-
-- **[Jan. 2026]** 📃 Our paper on "Zero-shot Point Cloud Registration" was submitted to _IJCAI 2026_.
-
-- **[Jan. 2026]** 📃 Our article on "Noise-robust Long-tail Multimodal Anomaly Detection" was submitted to _IEEE T-CSVT_.
-  
-- **[Oct. 2025]** 📃 Our article on "Point Cloud Registration" was submitted to _IEEE T-CSVT_.
-
-- **[Sep. 2025]** 📃 Our article on "Few-Shot Strip Steel Surface Defect Segmentation" was submitted to _IEEE T-IM_.
-
-- **[Sep. 2025]** 📃 Our article on "Continual Learning-based Multimodal Anomaly Detection" was submitted to _IEEE T-IP_.
-
-- **[Aug. 2025]** 📃 Our article on "Multi-View Multi-class Anomaly Detection" was submitted to _IEEE T-CSVT_.
-
-- **[Jun. 2025]** 📃 Our article on "Few-shot Unified Multimodal Industrial Anomaly Detection" was submitted to _IEEE T-MM_.
 
 ## 🎉 Nice News
   
