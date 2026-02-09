@@ -38,7 +38,6 @@ author_profile: true
 <div class="scrollable"><ul>
   <li><strong>[Jan. 2026]</strong> 📃 Our paper on "Zero-shot Point Cloud Registration" was submitted to <i>IJCAI 2026</i>.</li>
   <li><strong>[Jan. 2026]</strong> 📃 Our article on "Noise-robust Long-tail Multimodal Anomaly Detection" was submitted to <i>IEEE T-CSVT</i>.</li>
-  <li><strong>[Oct. 2025]</strong> 📃 Our article on "Point Cloud Registration" was submitted to <i>IEEE T-CSVT</i>.</li>
   <li><strong>[Sep. 2025]</strong> 📃 Our article on "Few-Shot Strip Steel Surface Defect Segmentation" was submitted to <i>IEEE T-IM</i>.</li>
   <li><strong>[Sep. 2025]</strong> 📃 Our article on "Continual Learning-based Multimodal Anomaly Detection" was submitted to <i>IEEE T-IP</i>.</li>
   <li><strong>[Aug. 2025]</strong> 📃 Our article on "Multi-View Multi-class Anomaly Detection" was submitted to <i>IEEE T-CSVT</i>.</li>
@@ -48,6 +47,7 @@ author_profile: true
 ## 🎉 Nice News
 
 <div class="scrollable"><ul>
+  <li><strong>[Feb. 2026]</strong> 🎉 Our article on "Point Cloud Registration" was accepted by <i>IEEE T-CSVT</i>.</li>
   <li><strong>[Jan. 2026]</strong> 🎉 Our article on "Training-free Unified Multimodal Anomaly Detection" was accepted by <i>IEEE T-PAMI</i>. <a href="https://ieeexplore.ieee.org/document/11367454">[PDF]</a></li>
   <li><strong>[Nov. 2025]</strong> 🎉 Our article on "Few-shot Defect Segmentation" was accepted by <i>IEEE T-II</i>. <a href="https://ieeexplore.ieee.org/document/11314672">[PDF]</a></li>
   <li><strong>[Nov. 2025]</strong> 🎉 Our article on "Neural Architecture Search for Surface Defect Detection" was accepted by <i>IEEE/ASME T-Mech</i>. <a href="https://ieeexplore.ieee.org/document/11316164">[PDF]</a></li>
@@ -129,6 +129,15 @@ _IEEE Transactions on Instrumentation and Measurement (T-IM)_, 2022<br>
 </div>
 
 ## 📄 Co-authored Peer-Reviewed Publications
+
+<div class='paper-box'><div class='paper-box-image'><div><div class="badge">T-CSVT 2026</div><img src='images/pubs/scap.png' alt="sym" width="100%"></div></div>
+<div class='paper-box-text' markdown="1">
+[SCAP: Semantic Prototype Alignment for Robust Point Cloud Registration](https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=76)<br>
+Jingyu Zhou, Yunfeng Ma, **Shuai Jiang**, Yaonan Wang, and Min Liu*<br>
+_IEEE Transactions on Circuits and Systems for Video Technology (T-CSVT)_, 2026<br>
+[PDF (In Press)](https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=76) | [Code](https://github.com/zfinn1/SCAP)
+</div>
+</div>
 
 <div class='paper-box'><div class='paper-box-image'><div><div class="badge">T-PAMI 2026</div><img src='images/pubs/zuma.png' alt="sym" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
@@ -238,10 +247,6 @@ _IEEE Transactions on Automation Science and Engineering (T-ASE)_, 2025<br>
 - [Towards Noise-robust Long-tail Multimodal Industrial Anomaly Detection](https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=76)<br>
   **Shuai Jiang**, Yunfeng Ma, Jingyu Zhou, Yaonan Wang, and Min Liu*<br>
   _IEEE Transactions on Circuits and Systems for Video Technology (T-CSVT)_, 2026<br>
-
-- [SCAP: Semantic Prototype Alignment for Robust Point Cloud Registration](https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=76)<br>
-  Jingyu Zhou, Yunfeng Ma, **Shuai Jiang**, Yaonan Wang, and Min Liu*<br>
-  _IEEE Transactions on Circuits and Systems for Video Technology (T-CSVT)_, 2025 <font color="#8A2BE2">(In Major Revision)</font><br>
 
 - [Edge-guided Semantic Cross-Matching Network for Few-Shot Strip Steel Surface Defect Segmentation](https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=19)<br>
   Zekai Yao†, Yunfeng Ma†, Min Liu*, **Shuai Jiang**, Yingmei He, and Yaonan Wang<br>
