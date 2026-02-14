@@ -47,7 +47,7 @@ author_profile: true
 ## 🎉 Nice News
 
 <div class="scrollable"><ul>
-  <li><strong>[Feb. 2026]</strong> 🎉 Our article on "Point Cloud Registration" was accepted by <i>IEEE T-CSVT</i>.</li>
+  <li><strong>[Feb. 2026]</strong> 🎉 Our article on "Point Cloud Registration" was accepted by <i>IEEE T-CSVT</i>. <a href="https://ieeexplore.ieee.org/document/11395294">[PDF]</a></li>
   <li><strong>[Jan. 2026]</strong> 🎉 Our article on "Training-free Unified Multimodal Anomaly Detection" was accepted by <i>IEEE T-PAMI</i>. <a href="https://ieeexplore.ieee.org/document/11367454">[PDF]</a></li>
   <li><strong>[Nov. 2025]</strong> 🎉 Our article on "Few-shot Defect Segmentation" was accepted by <i>IEEE T-II</i>. <a href="https://ieeexplore.ieee.org/document/11314672">[PDF]</a></li>
   <li><strong>[Nov. 2025]</strong> 🎉 Our article on "Neural Architecture Search for Surface Defect Detection" was accepted by <i>IEEE/ASME T-Mech</i>. <a href="https://ieeexplore.ieee.org/document/11316164">[PDF]</a></li>
@@ -132,10 +132,10 @@ _IEEE Transactions on Instrumentation and Measurement (T-IM)_, 2022<br>
 
 <div class='paper-box'><div class='paper-box-image'><div><div class="badge">T-CSVT 2026</div><img src='images/pubs/scap.png' alt="sym" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
-[SCAP: Semantic Prototype Alignment for Robust Point Cloud Registration](https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=76)<br>
+[SCAP: Semantic Prototype Alignment for Robust Point Cloud Registration](https://ieeexplore.ieee.org/document/11395294)<br>
 Jingyu Zhou, Yunfeng Ma, **Shuai Jiang**, Yaonan Wang, and Min Liu*<br>
 _IEEE Transactions on Circuits and Systems for Video Technology (T-CSVT)_, 2026<br>
-[PDF (In Press)](https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=76) | [Code](https://github.com/zfinn1/SCAP)
+[PDF](https://ieeexplore.ieee.org/document/11395294) | [Code](https://github.com/zfinn1/SCAP)
 </div>
 </div>
 
