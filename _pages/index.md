@@ -225,7 +225,7 @@ _IEEE/CVF International Conference on Computer Vision (ICCV)_, 2025<br>
 [Multi-View Attention Guided Feature Learning for Unsupervised Surface Defect Detection](https://ieeexplore.ieee.org/document/11010089)<br>
 Jingyu Zhou, Min Liu*, Yunfeng Ma, **Shuai Jiang**, and Yaonan Wang<br>
 _IEEE/ASME Transactions on Mechatronics (T-Mech)_, 2025<br>
-[PDF](https://ieeexplore.ieee.org/document/11010089)
+[PDF](https://ieeexplore.ieee.org/document/11010089) | [Code](https://github.com/zhoujingyu111/MVAG-FL)
 </div>
 </div>
 
