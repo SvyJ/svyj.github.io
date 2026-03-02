@@ -240,14 +240,22 @@ _IEEE Transactions on Automation Science and Engineering (T-ASE)_, 2025<br>
 
 ## 📃 Manuscripts in Peer Review
 
+- [Micro Surface Defect Inspection of Aero-Engine Blades via Dynamic Cross-Scale Semantic Aggregation](https://ieeexplore.ieee.org/)<br>
+  Kaijie Li†, **Shuai Jiang**†, Yao Lin, Jingyu Zhou, Hao Qu, Xiangfei Meng, Yaonan Wang, Min Liu*<br>
+  _IEEE Transactions on XX (T-XX)_, 2026<br>
+
+- [Towards Noise-robust Long-tail Multimodal Industrial Anomaly Detection](https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=76)<br>
+  **Shuai Jiang**, Yunfeng Ma, Jingyu Zhou, Yaonan Wang, and Min Liu*<br>
+  _IEEE Transactions on Multimedia (T-MM)_, 2026<br>
+  
 - [Z-REG: Domain-Robust Zero-shot Point Cloud Registration via Equivariance-Aware Stabilization](https://2026.ijcai.org/)<br>
   Jingyu Zhou, Yunfeng Ma, **Shuai Jiang**, Xueping Wang, Zekai Yao, and Min Liu*<br>
   _35th International Joint Conference on Artificial Intelligence (IJCAI)_, 2026<br>
 
-- [Towards Noise-robust Long-tail Multimodal Industrial Anomaly Detection](https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=76)<br>
-  **Shuai Jiang**, Yunfeng Ma, Jingyu Zhou, Yaonan Wang, and Min Liu*<br>
-  _IEEE Transactions on Circuits and Systems for Video Technology (T-CSVT)_, 2026<br>
-
+- [Unified Multimodal Industrial Anomaly Detection via Few Normal Samples](https://ieeexplore.ieee.org/)<br>
+  **Shuai Jiang**, Min Liu*, Yunfeng Ma, Jingyu Zhou, and Yaonan Wang<br>
+  _IEEE Transactions on XX (T-XX)_, 2026<br>
+  
 - [Edge-guided Semantic Cross-Matching Network for Few-Shot Strip Steel Surface Defect Segmentation](https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=19)<br>
   Zekai Yao†, Yunfeng Ma†, Min Liu*, **Shuai Jiang**, Yingmei He, and Yaonan Wang<br>
   _IEEE Transactions on Instrumentation and Measurement (T-IM)_, 2025 <font color="#8A2BE2">(In Major Revision)</font><br>
@@ -260,10 +268,6 @@ _IEEE Transactions on Automation Science and Engineering (T-ASE)_, 2025<br>
   Jingyu Zhou, Yunfeng Ma, **Shuai Jiang**, Yaonan Wang, and Min Liu*<br>
   _IEEE Transactions on Circuits and Systems for Video Technology (T-CSVT)_, 2025 <font color="#8A2BE2">(In Major Revision)</font><br>
   [Code](https://github.com/zfinn1/CVDL)
-
-- [Unified Multimodal Industrial Anomaly Detection via Few Normal Samples](https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=6046)<br>
-  **Shuai Jiang**, Min Liu*, Yunfeng Ma, Jingyu Zhou, and Yaonan Wang<br>
-  _IEEE Transactions on Multimedia (T-MM)_, 2025<br>
 
 # 🎖 Honors and Awards
 - GENCA Scholarship, Hunan University, 2025.
