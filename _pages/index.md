@@ -267,7 +267,7 @@ _IEEE Transactions on Automation Science and Engineering (T-ASE)_, 2025<br>
 
 - [Cross-View Dynamic Learning-Based Multi-Class Industrial Anomaly Detection](https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=76)<br>
   Jingyu Zhou, Yunfeng Ma, **Shuai Jiang**, Yaonan Wang, and Min Liu*<br>
-  _IEEE Transactions on Circuits and Systems for Video Technology (T-CSVT)_, 2025 <font color="#8A2BE2">(In Major Revision)</font><br>
+  _IEEE Transactions on Circuits and Systems for Video Technology (T-CSVT)_, 2025 <font color="#8A2BE2">(In Minor Revision)</font><br>
   [Code](https://github.com/zfinn1/CVDL)
 
 # 🎖 Honors and Awards
