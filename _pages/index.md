@@ -36,12 +36,13 @@ author_profile: true
 ## 📝 Latest Works
 
 <div class="scrollable"><ul>
-  <li><strong>[Jan. 2026]</strong> 📃 Our paper on "Zero-shot Point Cloud Registration" was submitted to <i>IJCAI 2026</i>.</li>
-  <li><strong>[Jan. 2026]</strong> 📃 Our article on "Noise-robust Long-tail Multimodal Anomaly Detection" was submitted to <i>IEEE T-CSVT</i>.</li>
+  <li><strong>[Mar. 2026]</strong> 📃 Our paper on "Zero-shot Point Cloud Registration" was submitted to <i>IEEE T-ASE</i>.</li>
+  <li><strong>[Feb. 2026]</strong> 📃 Our paper on "Micro Surface Defect Inspection" was submitted to <i>IEEE T-XX</i>.</li>
+  <li><strong>[Jan. 2026]</strong> 📃 Our article on "Noise-robust Long-tail Multimodal Anomaly Detection" was submitted to <i>IEEE T-MM</i>.</li>
+  <li><strong>[Jan. 2026]</strong> 📃 Our article on "Few-shot Unified Multimodal Industrial Anomaly Detection" was submitted to <i>IEEE T-XX</i>.</li>
   <li><strong>[Sep. 2025]</strong> 📃 Our article on "Few-Shot Strip Steel Surface Defect Segmentation" was submitted to <i>IEEE T-IM</i>.</li>
   <li><strong>[Sep. 2025]</strong> 📃 Our article on "Continual Learning-based Multimodal Anomaly Detection" was submitted to <i>IEEE T-IP</i>.</li>
   <li><strong>[Aug. 2025]</strong> 📃 Our article on "Multi-View Multi-class Anomaly Detection" was submitted to <i>IEEE T-CSVT</i>.</li>
-  <li><strong>[Jun. 2025]</strong> 📃 Our article on "Few-shot Unified Multimodal Industrial Anomaly Detection" was submitted to <i>IEEE T-MM</i>.</li>
 </ul></div>
 
 ## 🎉 Nice News
@@ -240,6 +241,10 @@ _IEEE Transactions on Automation Science and Engineering (T-ASE)_, 2025<br>
 
 ## 📃 Manuscripts in Peer Review
 
+- [Z-REG: Domain-Robust Zero-shot Point Cloud Registration via Equivariance-Aware Stabilization](https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=8856)<br>
+  Jingyu Zhou, Yunfeng Ma, **Shuai Jiang**, Xueping Wang, Zekai Yao, and Min Liu*<br>
+  _IEEE Transactions on Automation Science and Engineering (T-ASE)_, 2026<br>
+
 - [Micro Surface Defect Inspection of Aero-Engine Blades via Dynamic Cross-Scale Semantic Aggregation](https://ieeexplore.ieee.org/)<br>
   Kaijie Li†, **Shuai Jiang**†, Yao Lin, Jingyu Zhou, Hao Qu, Xiangfei Meng, Yaonan Wang, Min Liu*<br>
   _IEEE Transactions on XX (T-XX)_, 2026<br>
@@ -247,10 +252,6 @@ _IEEE Transactions on Automation Science and Engineering (T-ASE)_, 2025<br>
 - [Towards Noise-robust Long-tail Multimodal Industrial Anomaly Detection](https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=76)<br>
   **Shuai Jiang**, Yunfeng Ma, Jingyu Zhou, Yaonan Wang, and Min Liu*<br>
   _IEEE Transactions on Multimedia (T-MM)_, 2026<br>
-  
-- [Z-REG: Domain-Robust Zero-shot Point Cloud Registration via Equivariance-Aware Stabilization](https://2026.ijcai.org/)<br>
-  Jingyu Zhou, Yunfeng Ma, **Shuai Jiang**, Xueping Wang, Zekai Yao, and Min Liu*<br>
-  _35th International Joint Conference on Artificial Intelligence (IJCAI)_, 2026<br>
 
 - [Unified Multimodal Industrial Anomaly Detection via Few Normal Samples](https://ieeexplore.ieee.org/)<br>
   **Shuai Jiang**, Min Liu*, Yunfeng Ma, Jingyu Zhou, and Yaonan Wang<br>
