@@ -247,7 +247,7 @@ _IEEE Transactions on Automation Science and Engineering (T-ASE)_, 2025<br>
 
 - [Micro Surface Defect Inspection of Aero-Engine Blades via Dynamic Cross-Scale Semantic Aggregation](https://ieeexplore.ieee.org/)<br>
   Kaijie Li†, **Shuai Jiang**†, Yao Lin, Jingyu Zhou, Hao Qu, Xiangfei Meng, Yaonan Wang, Min Liu*<br>
-  _IEEE Transactions on XX (T-XX)_, 2026<br>
+  _IEEE Transactions on XX (T-XX)_, 2026 <font color="#8A2BE2">(In Minor Revision)</font><br>
 
 - [Towards Noise-robust Long-tail Multimodal Industrial Anomaly Detection](https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=76)<br>
   **Shuai Jiang**, Yunfeng Ma, Jingyu Zhou, Yaonan Wang, and Min Liu*<br>
