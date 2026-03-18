@@ -37,6 +37,7 @@ author_profile: true
 
 <div class="scrollable"><ul>
   <li><strong>[Mar. 2026]</strong> 📃 Our paper on "Zero-shot Point Cloud Registration" was submitted to <i>IEEE T-ASE</i>.</li>
+  <li><strong>[Mar. 2026]</strong> 📃 Our paper on "Semi-supervised Anomaly Localization" was submitted to <i>IEEE T-II</i>.</li>
   <li><strong>[Feb. 2026]</strong> 📃 Our paper on "Micro Surface Defect Inspection" was submitted to <i>IEEE T-XX</i>.</li>
   <li><strong>[Jan. 2026]</strong> 📃 Our article on "Noise-robust Long-tail Multimodal Anomaly Detection" was submitted to <i>IEEE T-MM</i>.</li>
   <li><strong>[Jan. 2026]</strong> 📃 Our article on "Few-shot Unified Multimodal Industrial Anomaly Detection" was submitted to <i>IEEE T-XX</i>.</li>
@@ -244,6 +245,10 @@ _IEEE Transactions on Automation Science and Engineering (T-ASE)_, 2025<br>
 - [Z-REG: Domain-Robust Zero-shot Point Cloud Registration via Equivariance-Aware Stabilization](https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=8856)<br>
   Jingyu Zhou, Yunfeng Ma, **Shuai Jiang**, Xueping Wang, Zekai Yao, and Min Liu*<br>
   _IEEE Transactions on Automation Science and Engineering (T-ASE)_, 2026<br>
+  
+- [SyDRA: Dual-Stream Synergistic Learning for Interference-Robust Anomaly Localization on Structure-Dominant Industrial Surfaces](https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=9424)<br>
+  Yiqiong Zhang, Xueping Wang, Yunfeng Ma, Yingmei He, **Shuai Jiang**, Yaonan Wang, Min Liu*<br>
+  _IEEE Transactions on Industrial Informatics_, 2026<br>
 
 - [Micro Surface Defect Inspection of Aero-Engine Blades via Dynamic Cross-Scale Semantic Aggregation](https://ieeexplore.ieee.org/)<br>
   Kaijie Li†, **Shuai Jiang**†, Yao Lin, Jingyu Zhou, Hao Qu, Xiangfei Meng, Yaonan Wang, Min Liu*<br>
