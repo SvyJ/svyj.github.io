@@ -216,7 +216,7 @@ _SCIENTIA SINICA Informationis (中国科学: 信息科学)_, 2025<br>
 <div class='paper-box'><div class='paper-box-image'><div><div class="badge">ICCV 2025</div><img src='images/pubs/ap-attack.png' alt="sym" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
 [Prompt-driven Transferable Adversarial Attack on Person Re-Identification with Attribute-aware Textual Inversion](https://arxiv.org/abs/2502.19697)<br>
-Yuan Bian, Min Liu*, Yunqi Yi, Xueping Wang, **Shuai Jiang**, Yaonan Wang<br>
+Yuan Bian, Min Liu*, Yunqi Yi, Xueping Wang, **Shuai Jiang**, and Yaonan Wang<br>
 _IEEE/CVF International Conference on Computer Vision (ICCV)_, 2025<br>
 [arXiv](https://arxiv.org/pdf/2502.19697) | [PDF](https://openaccess.thecvf.com/content/ICCV2025/html/Bian_Prompt-driven_Transferable_Adversarial_Attack_on_Person_Re-Identification_with_Attribute-aware_Textual_ICCV_2025_paper.html) | [Code](https://github.com/yuanbianGit/AP-Attack)
 </div>
@@ -247,11 +247,11 @@ _IEEE Transactions on Automation Science and Engineering (T-ASE)_, 2025<br>
   _IEEE Transactions on Automation Science and Engineering (T-ASE)_, 2026<br>
   
 - [SyDRA: Dual-Stream Synergistic Learning for Interference-Robust Anomaly Localization on Structure-Dominant Industrial Surfaces](https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=9424)<br>
-  Yiqiong Zhang, Xueping Wang, Yunfeng Ma, Yingmei He, **Shuai Jiang**, Yaonan Wang, Min Liu*<br>
+  Yiqiong Zhang, Xueping Wang, Yunfeng Ma, Yingmei He, **Shuai Jiang**, Yaonan Wang, and Min Liu*<br>
   _IEEE Transactions on Industrial Informatics_, 2026<br>
 
 - [Micro Surface Defect Inspection of Aero-Engine Blades via Dynamic Cross-Scale Semantic Aggregation](https://ieeexplore.ieee.org/)<br>
-  Kaijie Li†, **Shuai Jiang**†, Yao Lin, Jingyu Zhou, Hao Qu, Xiangfei Meng, Yaonan Wang, Min Liu*<br>
+  Kaijie Li†, **Shuai Jiang**†, Yao Lin, Jingyu Zhou, Hao Qu, Xiangfei Meng, Yaonan Wang, and Min Liu*<br>
   _IEEE Transactions on XX (T-XX)_, 2026 <font color="#8A2BE2">(In Minor Revision)</font><br>
 
 - [Towards Noise-robust Long-tail Multimodal Industrial Anomaly Detection](https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=76)<br>
@@ -263,7 +263,7 @@ _IEEE Transactions on Automation Science and Engineering (T-ASE)_, 2025<br>
   _IEEE Transactions on XX (T-XX)_, 2026 <font color="#8A2BE2">(In Minor Revision)</font><br>
   
 - [Edge-guided Semantic Cross-Matching Network for Few-Shot Strip Steel Surface Defect Segmentation](https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=19)<br>
-  Zekai Yao†, Yunfeng Ma†, Min Liu*, **Shuai Jiang**, Yingmei He, and Yaonan Wang<br>
+  Zekai Yao†, Jiazheng Wang†, Yunfeng Ma, **Shuai Jiang**, Yingmei He, Yaonan Wang, and Min Liu*<br>
   _IEEE Transactions on Instrumentation and Measurement (T-IM)_, 2025 <font color="#8A2BE2">(In Minor Revision)</font><br>
 
 - [COLA: Unsupervised Continual Learning for Zero-shot Multimodal Anomaly Detection](https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=83)<br>
