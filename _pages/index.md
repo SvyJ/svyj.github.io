@@ -243,7 +243,7 @@ _IEEE Transactions on Automation Science and Engineering (T-ASE)_, 2025<br>
 ## 📃 Manuscripts in Peer Review
 
 - [Z-REG: Domain-Robust Zero-shot Point Cloud Registration via Equivariance-Aware Stabilization](https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=8856)<br>
-  Jingyu Zhou, Yunfeng Ma, **Shuai Jiang**, Xueping Wang, Zekai Yao, and Min Liu*<br>
+  Jingyu Zhou, Yunfeng Ma, **Shuai Jiang**, Xueping Wang, Zekai Yao, Yaonan Wang, and Min Liu*<br>
   _IEEE Transactions on Automation Science and Engineering (T-ASE)_, 2026<br>
   
 - [SyDRA: Dual-Stream Synergistic Learning for Interference-Robust Anomaly Localization on Structure-Dominant Industrial Surfaces](https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=9424)<br>
