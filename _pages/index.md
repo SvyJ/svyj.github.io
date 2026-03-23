@@ -284,21 +284,21 @@ _IEEE Transactions on Automation Science and Engineering (T-ASE)_, 2025<br>
 - Special Scholarship, Xiangtan University, 2022 / 2021.
 # 🧑‍🤝‍🧑 Services
 ## Journals
-- [IEEE Transactions on Industrial Informatics (T-II)](https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=9424),
-- [IEEE Transactions on Medical Imaging (T-MI)](https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=42),
-- [IEEE Transactions on Instrumentation and Measurement (T-IM)](https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=19),
+- [IEEE Transactions on Industrial Informatics (T-II)](https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=9424)
+- [IEEE Transactions on Medical Imaging (T-MI)](https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=42)
+- [IEEE Transactions on Instrumentation and Measurement (T-IM)](https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=19)
 - [Automation in Construction (AutoCon)](https://www.sciencedirect.com/journal/automation-in-construction)
-- [Scientific Reports (SR)](https://www.nature.com/srep/),
-- [Scientific Data (SData)](https://www.nature.com/sdata/),
+- [Scientific Reports (SR)](https://www.nature.com/srep/)
+- [Scientific Data (SData)](https://www.nature.com/sdata/)
 - [IEEE Access](https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=6287639)
 ## Conferences
-- NeurIPS 2025
-- CVPR 2025, 2026
-- ICCV 2025
-- AAAI 2025, 2026
-- ACMMM 2025
-- ICASS 2023
-- ICME 2022
+- Annual Conference on Neural Information Processing Systems (NeurIPS), 2025
+- IEEE/CVF Computer Vision and Pattern Recognition Conference (CVPR), 2025, 2026
+- IEEE/CVF International Conference on Computer Vision (ICCV), 2025
+- AAAI Conference on Artificial Intelligence (AAAI), 2025, 2026
+- ACM International Conference on Multimedia (ACMMM), 2025
+- IEEE International Conference on Acoustics, Speech, and Signal Processing (ICASSP), 2023
+- IEEE International Conference on Multimedia and Expo (ICME), 2022
 
 # 📖 Educations
 - Sep. 2023 - Now, Hunan University, Ph.D. Candidate.
