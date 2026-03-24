@@ -281,7 +281,7 @@ _IEEE Transactions on Automation Science and Engineering (T-ASE)_, 2025<br>
 - Excellent Graduates, Xiangtan University, 2023.
 - Principal Scholarship, Xiangtan University, 2023.
 - China National Scholarship, Ministry of Education of the People's Republic of China, 2022.
-- Special Scholarship, Xiangtan University, 2022 / 2021.
+- Special Scholarship, Xiangtan University, 2021 / 2022.
 
 # 🌐 Services
 
@@ -295,9 +295,9 @@ _IEEE Transactions on Automation Science and Engineering (T-ASE)_, 2025<br>
   
 ## 👥 Conferences
 - [Annual Conference on Neural Information Processing Systems (NeurIPS)](https://neurips.cc/), 2025
-- [IEEE/CVF Computer Vision and Pattern Recognition Conference (CVPR)](https://cvpr.thecvf.com/), 2025, 2026
+- [IEEE/CVF Computer Vision and Pattern Recognition Conference (CVPR)](https://cvpr.thecvf.com/), 2025/ 2026
 - [IEEE/CVF International Conference on Computer Vision (ICCV)](https://iccv.thecvf.com/), 2025
-- [AAAI Conference on Artificial Intelligence (AAAI)](https://aaai.org/conference/aaai/), 2025, 2026
+- [AAAI Conference on Artificial Intelligence (AAAI)](https://aaai.org/conference/aaai/), 2025 / 2026
 - [ACM International Conference on Multimedia (ACM MM)](https://acmmm.org/index.html), 2025
 - [IEEE International Conference on Acoustics, Speech, and Signal Processing (ICASSP)](https://ieeeicassp.org/), 2023
 - [IEEE International Conference on Multimedia and Expo (ICME)](https://ieeeicme.org/), 2022
