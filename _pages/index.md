@@ -80,7 +80,7 @@ author_profile: true
 </ul></div>
 
 
-# 📚 Publications
+# 📘 Publications
 † Equal Contribution, * Corresponding Author
 
 ## 📑 Peer-Reviewed Publications
@@ -282,23 +282,25 @@ _IEEE Transactions on Automation Science and Engineering (T-ASE)_, 2025<br>
 - Principal Scholarship, Xiangtan University, 2023.
 - China National Scholarship, Ministry of Education of the People's Republic of China, 2022.
 - Special Scholarship, Xiangtan University, 2022 / 2021.
-# 🧑‍🤝‍🧑 Services
-## Journals
+
+# 🌐 Services
+
+## 📚 Journals
 - [IEEE Transactions on Industrial Informatics (T-II)](https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=9424)
 - [IEEE Transactions on Medical Imaging (T-MI)](https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=42)
 - [IEEE Transactions on Instrumentation and Measurement (T-IM)](https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=19)
 - [Automation in Construction (AutoCon)](https://www.sciencedirect.com/journal/automation-in-construction)
 - [Scientific Reports (SR)](https://www.nature.com/srep/)
-- [Scientific Data (SData)](https://www.nature.com/sdata/)
 - [IEEE Access](https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=6287639)
-## Conferences
-- Annual Conference on Neural Information Processing Systems (NeurIPS), 2025
-- IEEE/CVF Computer Vision and Pattern Recognition Conference (CVPR), 2025, 2026
-- IEEE/CVF International Conference on Computer Vision (ICCV), 2025
-- AAAI Conference on Artificial Intelligence (AAAI), 2025, 2026
-- ACM International Conference on Multimedia (ACMMM), 2025
-- IEEE International Conference on Acoustics, Speech, and Signal Processing (ICASSP), 2023
-- IEEE International Conference on Multimedia and Expo (ICME), 2022
+  
+## 👥 Conferences
+- [Annual Conference on Neural Information Processing Systems (NeurIPS)](https://neurips.cc/), 2025
+- [IEEE/CVF Computer Vision and Pattern Recognition Conference (CVPR)](https://cvpr.thecvf.com/), 2025, 2026
+- [IEEE/CVF International Conference on Computer Vision (ICCV)](https://iccv.thecvf.com/), 2025
+- [AAAI Conference on Artificial Intelligence (AAAI)](https://aaai.org/conference/aaai/), 2025, 2026
+- [ACM International Conference on Multimedia (ACM MM)](https://acmmm.org/index.html), 2025
+- [IEEE International Conference on Acoustics, Speech, and Signal Processing (ICASSP)](https://ieeeicassp.org/), 2023
+- [IEEE International Conference on Multimedia and Expo (ICME)](https://ieeeicme.org/), 2022
 
 # 📖 Educations
 - Sep. 2023 - Now, Hunan University, Ph.D. Candidate.
