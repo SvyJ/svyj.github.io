@@ -259,7 +259,7 @@ _IEEE Transactions on Automation Science and Engineering (T-ASE)_, 2025<br>
   _IEEE Transactions on Multimedia (T-MM)_, 2026<br>
 
 - [Unified Multimodal Industrial Anomaly Detection via Few Normal Samples](https://ieeexplore.ieee.org/)<br>
-  **Shuai Jiang**, Yunfeng Ma, Jingyu Zhou, and Yaonan Wang, Min Liu*<br>
+  **Shuai Jiang**, Yunfeng Ma, Jingyu Zhou, Yaonan Wang, and Min Liu*<br>
   _IEEE Transactions on XX (T-XX)_, 2026 <font color="#8A2BE2">(In Minor Revision)</font><br>
   
 - [Edge-guided Semantic Cross-Matching Network for Few-Shot Strip Steel Surface Defect Segmentation](https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=19)<br>
