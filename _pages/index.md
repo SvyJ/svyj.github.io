@@ -26,7 +26,7 @@ author_profile: true
 
 [Curriculum Vitae (English, Last Update: Mar. 1, 2026)](https://svyj.github.io/files/Curriculum_Vitae_of_SvyJ.pdf)
 
-🔔🔔 <strong style="color: red;">I am currently seeking a tenure-track faculty position for Spring 2027.</strong>
+🔔🔔 <strong style="color: red; font-size: 1.3em;">I am currently seeking a tenure-track faculty position for Spring 2027.</strong>
 
 # 🔍 Research Interests
 - Industrial Multimodal Vision
