@@ -38,9 +38,8 @@ author_profile: true
 ## 📝 Latest Works
 
 <div class="scrollable"><ul>
-  <li><strong>[Mar. 2026]</strong> 📃 Our paper on "Zero-shot Point Cloud Registration" was submitted to <i>IEEE T-ASE</i>.</li>
-  <li><strong>[Mar. 2026]</strong> 📃 Our paper on "Semi-supervised Anomaly Localization" was submitted to <i>IEEE T-II</i>.</li>
-  <li><strong>[Feb. 2026]</strong> 📃 Our paper on "Micro Surface Defect Inspection" was submitted to <i>IEEE T-XX</i>.</li>
+  <li><strong>[Mar. 2026]</strong> 📃 Our article on "Zero-shot Point Cloud Registration" was submitted to <i>IEEE T-ASE</i>.</li>
+  <li><strong>[Mar. 2026]</strong> 📃 Our article on "Semi-supervised Anomaly Localization" was submitted to <i>IEEE T-II</i>.</li>
   <li><strong>[Jan. 2026]</strong> 📃 Our article on "Noise-robust Long-tail Multimodal Anomaly Detection" was submitted to <i>IEEE T-MM</i>.</li>
   <li><strong>[Sep. 2025]</strong> 📃 Our article on "Few-Shot Strip Steel Surface Defect Segmentation" was submitted to <i>IEEE T-IM</i>.</li>
   <li><strong>[Sep. 2025]</strong> 📃 Our article on "Continual Learning-based Multimodal Anomaly Detection" was submitted to <i>IEEE T-IP</i>.</li>
@@ -50,6 +49,7 @@ author_profile: true
 ## 🎉 Nice News
 
 <div class="scrollable"><ul>
+  <li><strong>[Apr. 2026]</strong> 🎉 Our article on "Micro Surface Defect Inspection" was accepted by <i>IEEE T-II</i>. <a href="https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=9424">[PDF (In Press)]</a></li>
   <li><strong>[Apr. 2026]</strong> 🎉 Our article on "Few-shot Unified Multimodal Industrial Anomaly Detection" was accepted by <i>IEEE T-II</i>. <a href="https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=9424">[PDF (In Press)]</a></li>
   <li><strong>[Feb. 2026]</strong> 🎉 Our article on "Point Cloud Registration" was accepted by <i>IEEE T-CSVT</i>. <a href="https://ieeexplore.ieee.org/document/11395294">[PDF]</a></li>
   <li><strong>[Jan. 2026]</strong> 🎉 Our article on "Training-free Unified Multimodal Anomaly Detection" was accepted by <i>IEEE T-PAMI</i>. <a href="https://ieeexplore.ieee.org/document/11367454">[PDF]</a></li>
@@ -90,7 +90,16 @@ author_profile: true
 <div class='paper-box'><div class='paper-box-image'><div><div class="badge">T-II 2026</div><img src='images/pubs/unimf.png' alt="sym" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
 [Unified Multimodal Industrial Anomaly Detection via Few Normal Samples](https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=9424)<br>
-**Shuai Jiang**, Yunfeng Ma, Jingyu Zhou, Yaonan Wang, and Min Liu*<br>
+Kaijie Li†, **Shuai Jiang**†, Yunfeng Ma, Jingyu Zhou, Yaonan Wang, and Min Liu*<br>
+_IEEE Transactions on Industrial Informatics (T-II)_, 2026<br>
+[PDF (In Press)](https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=9424)
+</div>
+</div>
+
+<div class='paper-box'><div class='paper-box-image'><div><div class="badge">T-II 2026</div><img src='images/pubs/dcsa-net.png' alt="sym" width="100%"></div></div>
+<div class='paper-box-text' markdown="1">
+[Micro Surface Defect Inspection of Aero-Engine Blades via Dynamic Cross-Scale Semantic](https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=9424)<br>
+**Shuai Jiang**, Yunfeng Ma, Yao Lin, Jingyu Zhou, Hao Qu, Xiangfei Meng, Yaonan Wang, and Min Liu*<br>
 _IEEE Transactions on Industrial Informatics (T-II)_, 2026<br>
 [PDF (In Press)](https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=9424)
 </div>
@@ -260,10 +269,6 @@ _IEEE Transactions on Automation Science and Engineering (T-ASE)_, 2025<br>
 - [SyDRA: Dual-Stream Synergistic Learning for Interference-Robust Anomaly Localization on Structure-Dominant Industrial Surfaces](https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=9424)<br>
   Yiqiong Zhang, Xueping Wang, Yunfeng Ma, Yingmei He, **Shuai Jiang**, Yaonan Wang, and Min Liu*<br>
   _IEEE Transactions on Industrial Informatics_, 2026<br>
-
-- [Micro Surface Defect Inspection of Aero-Engine Blades via Dynamic Cross-Scale Semantic Aggregation](https://ieeexplore.ieee.org/)<br>
-  Kaijie Li†, **Shuai Jiang**†, Yao Lin, Jingyu Zhou, Hao Qu, Xiangfei Meng, Yaonan Wang, and Min Liu*<br>
-  _IEEE Transactions on XX (T-XX)_, 2026 <font color="#8A2BE2">(In Minor Revision)</font><br>
 
 - [Towards Noise-robust Long-tail Multimodal Industrial Anomaly Detection](https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=76)<br>
   **Shuai Jiang**, Yunfeng Ma, Jingyu Zhou, Yaonan Wang, and Min Liu*<br>
