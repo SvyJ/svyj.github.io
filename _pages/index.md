@@ -92,7 +92,7 @@ author_profile: true
 [Unified Multimodal Industrial Anomaly Detection via Few Normal Samples](https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=9424)<br>
 **Shuai Jiang**, Yunfeng Ma, Jingyu Zhou, Yaonan Wang, and Min Liu*<br>
 _IEEE Transactions on Industrial Informatics (T-II)_, 2026<br>
-[PDF (In Press)](https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=9424)
+[PDF (In Press)](https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=9424) | [Code](https://github.com/SvyJ/UniMF)
 </div>
 </div>
 
@@ -101,7 +101,7 @@ _IEEE Transactions on Industrial Informatics (T-II)_, 2026<br>
 [Micro Surface Defect Inspection of Aero-Engine Blades via Dynamic Cross-Scale Semantic](https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=9424)<br>
 Kaijie Li†, **Shuai Jiang**†, Yao Lin, Jingyu Zhou, Hao Qu, Xiangfei Meng, Yaonan Wang, and Min Liu*<br>
 _IEEE Transactions on Industrial Informatics (T-II)_, 2026<br>
-[PDF (In Press)](https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=9424)
+[PDF (In Press)](https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=9424) | [Code (Coming Soon)](https://github.com/)
 </div>
 </div>
 
@@ -273,6 +273,7 @@ _IEEE Transactions on Automation Science and Engineering (T-ASE)_, 2025<br>
 - [Towards Noise-robust Long-tail Multimodal Industrial Anomaly Detection](https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=76)<br>
   **Shuai Jiang**, Yunfeng Ma, Jingyu Zhou, Yaonan Wang, and Min Liu*<br>
   _IEEE Transactions on Multimedia (T-MM)_, 2026<br>
+  [Code](https://github.com/SvyJ/MDTS)
   
 - [Edge-guided Semantic Cross-Matching Network for Few-Shot Strip Steel Surface Defect Segmentation](https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=19)<br>
   Zekai Yao†, Jiazheng Wang†, Yunfeng Ma, **Shuai Jiang**, Yingmei He, Yaonan Wang, and Min Liu*<br>
