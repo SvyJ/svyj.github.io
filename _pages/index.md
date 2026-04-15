@@ -146,10 +146,7 @@ _Journal of Software (软件学报)_, 2023<br>
 [Joint-Seg: Treat Foveal Avascular Zone and Retinal Vessel Segmentation in OCTA Images as a Joint Task](https://svyj.github.io/Joint-Seg/)<br>
 Kai Hu (M.E. Supervisor), **Shuai Jiang**, Yuan Zhang, Xuanya Li, and Xieping Gao*<br>
 _IEEE Transactions on Instrumentation and Measurement (T-IM)_, 2022<br>
-[Project](https://svyj.github.io/Joint-Seg/) | [PDF](https://ieeexplore.ieee.org/document/9837090) | [Code](https://github.com/SvyJ/Joint-Seg)<br>
-<a href="https://scholar.google.com/scholar?cluster=15715660542936442805">
-<img src="https://citations.njzj.net/citations?cluster=15715660542936442805&style=social" alt="Citations">
-</a>
+[Project](https://svyj.github.io/Joint-Seg/) | [PDF](https://ieeexplore.ieee.org/document/9837090) | [Code](https://github.com/SvyJ/Joint-Seg)
 </div>
 </div>
 
