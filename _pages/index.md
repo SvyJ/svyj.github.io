@@ -43,12 +43,12 @@ author_profile: true
   <li><strong>[Jan. 2026]</strong> 📃 Our article on "Noise-robust Long-tail Multimodal Anomaly Detection" was submitted to <i>IEEE T-MM</i>.</li>
   <li><strong>[Sep. 2025]</strong> 📃 Our article on "Few-Shot Strip Steel Surface Defect Segmentation" was submitted to <i>IEEE T-IM</i>.</li>
   <li><strong>[Sep. 2025]</strong> 📃 Our article on "Continual Learning-based Multimodal Anomaly Detection" was submitted to <i>IEEE T-IP</i>.</li>
-  <li><strong>[Aug. 2025]</strong> 📃 Our article on "Multi-View Multi-class Anomaly Detection" was submitted to <i>IEEE T-CSVT</i>.</li>
 </ul></div>
 
 ## 🎉 Nice News
 
 <div class="scrollable"><ul>
+  <li><strong>[Apr. 2026]</strong> 🎉 Our article on "Multi-View Multi-class Anomaly Detection" was accepted by <i>IEEE T-CSVT</i>. <a href="https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=76">[PDF (In Press)]</a></li>
   <li><strong>[Apr. 2026]</strong> 🎉 Our article on "Micro Surface Defect Inspection" was accepted by <i>IEEE T-II</i>. <a href="https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=9424">[PDF (In Press)]</a></li>
   <li><strong>[Apr. 2026]</strong> 🎉 Our article on "Few-shot Unified Multimodal Industrial Anomaly Detection" was accepted by <i>IEEE T-II</i>. <a href="https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=9424">[PDF (In Press)]</a></li>
   <li><strong>[Feb. 2026]</strong> 🎉 Our article on "Point Cloud Registration" was accepted by <i>IEEE T-CSVT</i>. <a href="https://ieeexplore.ieee.org/document/11395294">[PDF]</a></li>
@@ -151,6 +151,15 @@ _IEEE Transactions on Instrumentation and Measurement (T-IM)_, 2022<br>
 </div>
 
 ## 📄 Co-authored Peer-Reviewed Publications
+
+<div class='paper-box'><div class='paper-box-image'><div><div class="badge">T-CSVT 2026</div><img src='images/pubs/cvdl.png' alt="sym" width="100%"></div></div>
+<div class='paper-box-text' markdown="1">
+[Cross-View Dynamic Learning-Based Multi-Class Industrial Anomaly Detection](https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=76)<br>
+Jingyu Zhou, Yunfeng Ma, **Shuai Jiang**, Yaonan Wang, and Min Liu*<br>
+_IEEE Transactions on Circuits and Systems for Video Technology (T-CSVT)_, 2026<br>
+[PDF (In Press)](https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=76) | [Code](https://github.com/zfinn1/CVDL)
+</div>
+</div>
 
 <div class='paper-box'><div class='paper-box-image'><div><div class="badge">T-CSVT 2026</div><img src='images/pubs/scap.png' alt="sym" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
@@ -282,11 +291,6 @@ _IEEE Transactions on Automation Science and Engineering (T-ASE)_, 2025<br>
 - [COLA: Unsupervised Continual Learning for Zero-shot Multimodal Anomaly Detection](https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=83)<br>
   Yunfeng Ma†, **Shuai Jiang**†, Min Liu*, Jingyu Zhou, Xueping Wang, and Yaonan Wang<br>
   _IEEE Transactions on Image Processing (T-IP)_, 2025<br>
-
-- [Cross-View Dynamic Learning-Based Multi-Class Industrial Anomaly Detection](https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=76)<br>
-  Jingyu Zhou, Yunfeng Ma, **Shuai Jiang**, Yaonan Wang, and Min Liu*<br>
-  _IEEE Transactions on Circuits and Systems for Video Technology (T-CSVT)_, 2025 <font color="#8A2BE2">(In Minor Revision)</font><br>
-  [Code](https://github.com/zfinn1/CVDL)
 
 # 🎖 Honors and Awards
 - GENCA Scholarship, Hunan University, 2025.
