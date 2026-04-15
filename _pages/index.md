@@ -22,7 +22,7 @@ author_profile: true
 
 😃🌞♎️👫☕️🍵🎾🎧
 
-**I am currently a Ph.D. student major in Control Science and Engineering at [School of Artificial Intelligence and Robotics](http://robotics.hnu.edu.cn/) and [National Engineering Research Center for Robot Visual Perception and Control Technology](https://robot.hnu.edu.cn/), [Hunan University (HNU)](http://www-en.hnu.edu.cn/), working under the supervision of Prof. [Min Liu](https://robotics.hnu.edu.cn/info/1176/3087.htm) and Prof. [Yaonan Wang](https://robotics.hnu.edu.cn/info/1176/3098.htm). My research interest lies in robot vision, particularly in multimodal learning for industrial robots. Before entering Hunan University, I received my M.Eng. (supervised by Prof. [Kai Hu](https://jwxy.xtu.edu.cn/info/1147/2508.htm) and Prof. [Xieping Gao](https://rlc.hunnu.edu.cn/info/1062/2702.htm)) and B.S. degrees from [School of Computer Science](https://jwxy.xtu.edu.cn/), [Xiangtan University (XTU)](https://en.xtu.edu.cn/) in 2023 and 2020, and underwent over three-year research on medical image analysis. (Contact me: svyj@hnu.edu.cn)**
+**I am currently a Ph.D. student major in Control Science and Engineering at [School of Artificial Intelligence and Robotics](http://robotics.hnu.edu.cn/) and [National Engineering Research Center for Robot Visual Perception and Control Technology](https://robot.hnu.edu.cn/), [Hunan University (HNU)](http://www-en.hnu.edu.cn/), working under the supervision of Prof. [Min Liu](https://robotics.hnu.edu.cn/info/1176/3087.htm) and Prof. [Yaonan Wang](https://robotics.hnu.edu.cn/info/1176/3098.htm). My research interest lies in robot vision, particularly in multimodal learning for industrial robots. Before entering Hunan University, I received my M.Eng. (supervised by Prof. [Kai Hu](https://jwxy.xtu.edu.cn/info/1147/2508.htm) and Prof. [Xieping Gao](https://rlc.hunnu.edu.cn/info/1062/2702.htm)) and B.E. degrees from [School of Computer Science](https://jwxy.xtu.edu.cn/), [Xiangtan University (XTU)](https://en.xtu.edu.cn/) in 2023 and 2020, and underwent over three-year research on medical image analysis. (Contact me: svyj@hnu.edu.cn)**
 
 [Curriculum Vitae (English, Last Update: Mar. 1, 2026)](https://svyj.github.io/files/Curriculum_Vitae_of_SvyJ.pdf)
 
@@ -322,7 +322,7 @@ _IEEE Transactions on Automation Science and Engineering (T-ASE)_, 2025<br>
 # 📖 Educations
 - Sep. 2023 - Now, Hunan University, Ph.D. Candidate.
 - Oct. 2020 - Jun. 2023, Xiangtan University, M.E.
-- Sep. 2016 - Jun. 2020, Xiangtan University, B.S.
+- Sep. 2016 - Jun. 2020, Xiangtan University, B.E.
 
 
 
