@@ -101,7 +101,7 @@ _IEEE Transactions on Industrial Informatics (T-II)_, 2026<br>
 [Micro Surface Defect Inspection of Aero-Engine Blades via Dynamic Cross-Scale Semantic](https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=9424)<br>
 Kaijie Li†, **Shuai Jiang**†, Yao Lin, Jingyu Zhou, Hao Qu, Xiangfei Meng, Yaonan Wang, and Min Liu*<br>
 _IEEE Transactions on Industrial Informatics (T-II)_, 2026<br>
-[PDF (In Press)](https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=9424) | [Code (Coming Soon)](https://github.com/)
+[PDF (In Press)](https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=9424) | [Code](https://github.com/jinxsd/dcsanet)
 </div>
 </div>
 
