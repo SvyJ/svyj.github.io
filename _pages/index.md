@@ -211,7 +211,7 @@ _IEEE Transactions on Instrumentation and Measurement (T-IM)_, 2025<br>
 [3D Imaging Optical Path-Guided Viewpoint Planning Method for Free-Form Surface Inspection](https://ieeexplore.ieee.org/document/11271033)<br>
 Jingyu Zhou†, Yunfeng Ma†, Zhenhai Li, Min Liu*, **Shuai Jiang**, and Yaonan Wang<br>
 _IEEE/ASME Transactions on Mechatronics (T-Mech)_, 2025<br>
-[PDF](https://ieeexplore.ieee.org/document/11271033)
+[PDF](https://ieeexplore.ieee.org/document/11271033) | [Code](https://github.com/zfinn1/3-D_Imaging_Optical_Path-Guided_Viewpoint_Planning_Method_for_Free-Form_Surface_Inspection)
 </div>
 </div>
 
