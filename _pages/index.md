@@ -220,7 +220,7 @@ _IEEE/ASME Transactions on Mechatronics (T-Mech)_, 2025<br>
 [Efficient Feature Coupling for Industrial Few-shot Defect Segmentation](https://ieeexplore.ieee.org/document/11216352)<br>
 Yunfeng Ma, Min Liu*, **Shuai Jiang**, Jingyu Zhou, Yuan Bian, and Yaonan Wang<br>
 _IEEE/ASME Transactions on Mechatronics (T-Mech)_, 2025<br>
-[PDF](https://ieeexplore.ieee.org/document/11216352)
+[PDF](https://ieeexplore.ieee.org/document/11216352) | [Code](https://github.com/yif-ma/Few-Shot-Learning)
 </div>
 </div>
 
@@ -229,7 +229,7 @@ _IEEE/ASME Transactions on Mechatronics (T-Mech)_, 2025<br>
 [Searching Efficient Semantic Segmentation Architectures via Dynamic Path Selection](https://openreview.net/pdf?id=xXVEsGWSs8)<br>
 Yuxi Liu†, Min Liu†, **Shuai Jiang**, Yi Tang*, and Yaonan Wang<br>
 _The Thirty-ninth Annual Conference on Neural Information Processing Systems (NeurIPS)_, 2025<br>
-[PDF](https://openreview.net/pdf?id=xXVEsGWSs8)
+[PDF](https://openreview.net/pdf?id=xXVEsGWSs8) | [Code](https://github.com/Yuxi104/DPS)
 </div>
 </div>
 
@@ -265,7 +265,7 @@ _IEEE/ASME Transactions on Mechatronics (T-Mech)_, 2025<br>
 [Multi-Context Aggregation Network with Foreground Correction for Automated Few-Shot Defect Segmentation](https://ieeexplore.ieee.org/document/10942431)<br>
 Yunfeng Ma, Min Liu*, **Shuai Jiang**, Xueping Wang, Yuan Bian, and Yaonan Wang<br>
 _IEEE Transactions on Automation Science and Engineering (T-ASE)_, 2025<br>
-[PDF](https://ieeexplore.ieee.org/document/10942431)
+[PDF](https://ieeexplore.ieee.org/document/10942431) | [Code](https://github.com/yif-ma/Few-Shot-Learning)
 </div>
 </div>
 
