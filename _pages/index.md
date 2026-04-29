@@ -14,7 +14,7 @@ author_profile: true
 
 <style>
 .section-anchor {
-  scroll-margin-top: 90px; 
+  scroll-margin-top: 200px; 
 }
 </style>
 
