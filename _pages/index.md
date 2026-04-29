@@ -12,54 +12,6 @@ author_profile: true
 {% endif %}
 {% assign url = gsDataBaseUrl | append: "google-scholar-stats/gs_data_shieldsio.json" %}
 
-<!-- ===== Top Navigation Bar ===== -->
-<style>
-  .top-nav {
-    position: fixed;
-    top: 100px;
-    left: 0;
-    width: 100%;
-    background: rgba(255,255,255,0.95);
-    backdrop-filter: blur(8px);
-    border-bottom: 1px solid #eee;
-    z-index: 999;
-    padding: 10px 0;
-    text-align: center;
-  }
-
-  .top-nav a {
-    margin: 0 15px;
-    font-size: 15px;
-    color: #333;
-    text-decoration: none;
-    font-weight: 500;
-  }
-
-  .top-nav a:hover {
-    color: #007acc;
-  }
-
-  /* 防止导航栏遮住内容 */
-  body {
-    scroll-behavior: smooth;
-  }
-
-  .section-anchor {
-    position: relative;
-    top: -80px;
-    visibility: hidden;
-  }
-</style>
-
-<div class="top-nav">
-  <a href="#about-me">About</a>
-  <a href="#research">Research</a>
-  <a href="#updates">Updates</a>
-  <a href="#publications">Publications</a>
-  <a href="#services">Services</a>
-  <a href="#awards">Awards</a>
-  <a href="#education">Education</a>
-</div>
 
 😃🌞♎️👫☕️🍵🎾🎧
 
