@@ -21,10 +21,15 @@ author_profile: true
 
 🔔🔔 <strong style="color: red; font-size: 1.3em;"><u>I am currently seeking a tenure-track faculty position for Spring 2027.</u></strong>
 
+<div id="research_interests"></div>
+
 # 🔍 Research Interests
 - Industrial Multimodal Vision
 - Industrial Embodied Intelligence
 - Medical Image Analysis
+
+
+<div id="recent updates"></div>
 
 # 🔥 Recent Updates
 
@@ -74,6 +79,8 @@ author_profile: true
   <li><strong>[Oct. 2020]</strong> 🌟 Svy.J was awarded the "First Class Scholarship" with the rank of 1/70.</li>
 </ul></div>
 
+
+<div id="publications"></div>
 
 # 📘 Publications
 † Equal Contribution, * Corresponding Author
@@ -285,6 +292,9 @@ _IEEE Transactions on Automation Science and Engineering (T-ASE)_, 2025<br>
   Yunfeng Ma†, **Shuai Jiang**†, Min Liu*, Jingyu Zhou, Xueping Wang, and Yaonan Wang<br>
   _IEEE Transactions on Image Processing (T-IP)_, 2025<br>
 
+
+<div id="patents"></div>
+
 # 🛡️ Patents
 - Few-shot Learning based Method for Defect Detection of Aero-engine Blades<br>
   Min Liu, Xihang Cheng, Yunfeng Ma, **Shuai Jiang**, Xueping Wang, Haotian Wu, and Yaonan Wang<br>
@@ -294,13 +304,19 @@ _IEEE Transactions on Automation Science and Engineering (T-ASE)_, 2025<br>
   Min Liu, **Shuai Jiang**, Yuxi Liu, Yunfeng Ma, Xihang Cheng, and Yaonan Wang<br>
   _Chinese Patent App._ ZL202411525360.3, 2024<br>
 
-# 🎖 Honors and Awards
+
+<div id="awards"></div>
+
+# 🎖 Awards
 - GENCA Scholarship, Hunan University, 2025.
 - Excellent Graduates, Hunan Provincial Department of Education, 2023.
 - Excellent Graduates, Xiangtan University, 2023.
 - Principal Scholarship, Xiangtan University, 2023.
 - China National Scholarship, Ministry of Education of the People's Republic of China, 2022.
 - Special Scholarship, Xiangtan University, 2021 / 2022.
+
+
+<div id="services"></div>
 
 # 🌐 Services
 
@@ -320,6 +336,9 @@ _IEEE Transactions on Automation Science and Engineering (T-ASE)_, 2025<br>
 - [ACM International Conference on Multimedia (ACM MM)](https://acmmm.org/index.html), 2025
 - [IEEE International Conference on Acoustics, Speech, and Signal Processing (ICASSP)](https://ieeeicassp.org/), 2023
 - [IEEE International Conference on Multimedia and Expo (ICME)](https://ieeeicme.org/), 2022
+
+
+<div id="educations"></div>
 
 # 📖 Educations
 - Sep. 2023 - Now, Hunan University, Ph.D. Candidate.
