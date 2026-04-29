@@ -12,16 +12,6 @@ author_profile: true
 {% endif %}
 {% assign url = gsDataBaseUrl | append: "google-scholar-stats/gs_data_shieldsio.json" %}
 
-<style>
-html {
-  scroll-behavior: smooth;
-}
-
-h1, h2, h3, h4 {
-  scroll-margin-top: 100px !important;
-}
-</style>
-
 
 😃🌞♎️👫☕️🍵🎾🎧
 
@@ -31,15 +21,12 @@ h1, h2, h3, h4 {
 
 🔔🔔 <strong style="color: red; font-size: 1.3em;"><u>I am currently seeking a tenure-track faculty position for Spring 2027.</u></strong>
 
-<div id="research_interests" class="section-anchor"></div>
 
 # 🔍 Research Interests
 - Industrial Multimodal Vision
 - Industrial Embodied Intelligence
 - Medical Image Analysis
 
-
-<div id="recent updates" class="section-anchor"></div>
 
 # 🔥 Recent Updates
 
@@ -88,8 +75,6 @@ h1, h2, h3, h4 {
   <li><strong>[Dec. 2020]</strong> 🏆 Svy.J won the 3rd prize in the <i>4th ISICDM</i> in "Challenge 3: Segmentation of Pulmonary Tissues" with his teammates Tongtong Liu (Now a Ph.D. student at <a href="https://www.scut.edu.cn/">SCUT</a>) and Fucai Wu (Now a engineer at <a href="https://www.lusterinc.com/">LUSTER</a>). <a href="https://isicdm2020.imagecomputing.org/cn/Challenges.html">[ISICDM 2020]</a></li>
   <li><strong>[Oct. 2020]</strong> 🌟 Svy.J was awarded the "First Class Scholarship" with the rank of 1/70.</li>
 </ul></div>
-
-
 
 
 # 📘 Publications
@@ -303,8 +288,6 @@ _IEEE Transactions on Automation Science and Engineering (T-ASE)_, 2025<br>
   _IEEE Transactions on Image Processing (T-IP)_, 2025<br>
 
 
-<div id="patents" class="section-anchor"></div>
-
 # 🛡️ Patents
 - Few-shot Learning based Method for Defect Detection of Aero-engine Blades<br>
   Min Liu, Xihang Cheng, Yunfeng Ma, **Shuai Jiang**, Xueping Wang, Haotian Wu, and Yaonan Wang<br>
@@ -315,8 +298,6 @@ _IEEE Transactions on Automation Science and Engineering (T-ASE)_, 2025<br>
   _Chinese Patent App._ ZL202411525360.3, 2024<br>
 
 
-<div id="awards" class="section-anchor"></div>
-
 # 🎖 Awards
 - GENCA Scholarship, Hunan University, 2025.
 - Excellent Graduates, Hunan Provincial Department of Education, 2023.
@@ -325,8 +306,6 @@ _IEEE Transactions on Automation Science and Engineering (T-ASE)_, 2025<br>
 - China National Scholarship, Ministry of Education of the People's Republic of China, 2022.
 - Special Scholarship, Xiangtan University, 2021 / 2022.
 
-
-<div id="services" class="section-anchor"></div>
 
 # 🌐 Services
 
@@ -347,8 +326,6 @@ _IEEE Transactions on Automation Science and Engineering (T-ASE)_, 2025<br>
 - [IEEE International Conference on Acoustics, Speech, and Signal Processing (ICASSP)](https://ieeeicassp.org/), 2023
 - [IEEE International Conference on Multimedia and Expo (ICME)](https://ieeeicme.org/), 2022
 
-
-<div id="educations" class="section-anchor"></div>
 
 # 📖 Educations
 - Sep. 2023 - Now, Hunan University, Ph.D. Candidate.
