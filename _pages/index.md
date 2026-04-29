@@ -16,7 +16,7 @@ author_profile: true
 <style>
   .top-nav {
     position: fixed;
-    top: 0;
+    top: 100px;
     left: 0;
     width: 100%;
     background: rgba(255,255,255,0.95);
