@@ -295,7 +295,7 @@ _IEEE Transactions on Automation Science and Engineering (T-ASE)_, 2025<br>
 # 🛡️ Patents
 - Few-shot Learning based Method for Defect Detection of Aero-engine Blades<br>
   Min Liu, Xihang Cheng, Yunfeng Ma, **Shuai Jiang**, Xueping Wang, Haotian Wu, and Yaonan Wang<br>
-  _Chinese Patent App._ ZL202411525360.3, 2025<br>
+  _Chinese Patent App._ ZL202411948379.9, 2025<br>
   
 - Weakly Supervised Learning based Method for Defect Detection of Aero-engine Blades<br>
   Min Liu, **Shuai Jiang**, Yuxi Liu, Yunfeng Ma, Xihang Cheng, and Yaonan Wang<br>
