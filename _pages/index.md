@@ -12,9 +12,11 @@ author_profile: true
 {% endif %}
 {% assign url = gsDataBaseUrl | append: "google-scholar-stats/gs_data_shieldsio.json" %}
 
+<style>
 html {
-  scroll-padding-top: 100px;
+  scroll-padding-top: 52.5px;
 }
+</style>
 
 
 😃🌞♎️👫☕️🍵🎾🎧
