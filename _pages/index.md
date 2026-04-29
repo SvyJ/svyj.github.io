@@ -13,8 +13,8 @@ author_profile: true
 {% assign url = gsDataBaseUrl | append: "google-scholar-stats/gs_data_shieldsio.json" %}
 
 <style>
-html {
-  scroll-padding-top: 52.5px;
+.section-anchor {
+  scroll-margin-top: 90px; 
 }
 </style>
 
@@ -27,7 +27,7 @@ html {
 
 🔔🔔 <strong style="color: red; font-size: 1.3em;"><u>I am currently seeking a tenure-track faculty position for Spring 2027.</u></strong>
 
-<div id="research_interests"></div>
+<div id="research_interests" class="section-anchor"></div>
 
 # 🔍 Research Interests
 - Industrial Multimodal Vision
@@ -35,7 +35,7 @@ html {
 - Medical Image Analysis
 
 
-<div id="recent updates"></div>
+<div id="recent updates" class="section-anchor"></div>
 
 # 🔥 Recent Updates
 
@@ -86,7 +86,7 @@ html {
 </ul></div>
 
 
-<div id="publications"></div>
+<div id="publications" class="section-anchor"></div>
 
 # 📘 Publications
 † Equal Contribution, * Corresponding Author
@@ -299,7 +299,7 @@ _IEEE Transactions on Automation Science and Engineering (T-ASE)_, 2025<br>
   _IEEE Transactions on Image Processing (T-IP)_, 2025<br>
 
 
-<div id="patents"></div>
+<div id="patents" class="section-anchor"></div>
 
 # 🛡️ Patents
 - Few-shot Learning based Method for Defect Detection of Aero-engine Blades<br>
@@ -311,7 +311,7 @@ _IEEE Transactions on Automation Science and Engineering (T-ASE)_, 2025<br>
   _Chinese Patent App._ ZL202411525360.3, 2024<br>
 
 
-<div id="awards"></div>
+<div id="awards" class="section-anchor"></div>
 
 # 🎖 Awards
 - GENCA Scholarship, Hunan University, 2025.
@@ -322,7 +322,7 @@ _IEEE Transactions on Automation Science and Engineering (T-ASE)_, 2025<br>
 - Special Scholarship, Xiangtan University, 2021 / 2022.
 
 
-<div id="services"></div>
+<div id="services" class="section-anchor"></div>
 
 # 🌐 Services
 
@@ -344,7 +344,7 @@ _IEEE Transactions on Automation Science and Engineering (T-ASE)_, 2025<br>
 - [IEEE International Conference on Multimedia and Expo (ICME)](https://ieeeicme.org/), 2022
 
 
-<div id="educations"></div>
+<div id="educations" class="section-anchor"></div>
 
 # 📖 Educations
 - Sep. 2023 - Now, Hunan University, Ph.D. Candidate.
