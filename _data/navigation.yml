@@ -9,13 +9,13 @@
 
 main:
   - title: "Publications"
-    url: /#publications
+    url: /#-publications
 
   - title: "Services"
-    url: /#services
+    url: /#-services
 
   - title: "Awards"
-    url: /#awards
+    url: /#-awards
     
   - title: "Blogs"
     url: https://svyj.github.io/blogs
