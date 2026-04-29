@@ -13,8 +13,12 @@ author_profile: true
 {% assign url = gsDataBaseUrl | append: "google-scholar-stats/gs_data_shieldsio.json" %}
 
 <style>
-.section-anchor {
-  scroll-margin-top: 200px; 
+html {
+  scroll-behavior: smooth;
+}
+
+h1, h2, h3, h4 {
+  scroll-margin-top: 100px !important;
 }
 </style>
 
@@ -86,7 +90,7 @@ author_profile: true
 </ul></div>
 
 
-<div id="publications" class="section-anchor"></div>
+
 
 # 📘 Publications
 † Equal Contribution, * Corresponding Author
