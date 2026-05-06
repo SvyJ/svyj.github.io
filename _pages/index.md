@@ -45,7 +45,7 @@ author_profile: true
 <div class="scrollable"><ul>
   <li><strong>[Apr. 2026]</strong> 🎉 Our article on "Multi-View Multi-class Anomaly Detection" was accepted by <i>IEEE T-CSVT</i>. <a href="https://ieeexplore.ieee.org/document/11488626">[PDF]</a></li>
   <li><strong>[Apr. 2026]</strong> 🎉 Our article on "Micro Surface Defect Inspection" was accepted by <i>IEEE T-II</i>. <a href="https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=9424">[PDF (In Press)]</a></li>
-  <li><strong>[Apr. 2026]</strong> 🎉 Our article on "Few-shot Unified Multimodal Industrial Anomaly Detection" was accepted by <i>IEEE T-II</i>. <a href="https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=9424">[PDF (In Press)]</a></li>
+  <li><strong>[Apr. 2026]</strong> 🎉 Our article on "Few-shot Unified Multimodal Industrial Anomaly Detection" was accepted by <i>IEEE T-II</i>. <a href="https://ieeexplore.ieee.org/document/11505893">[PDF (In Press)]</a></li>
   <li><strong>[Feb. 2026]</strong> 🎉 Our article on "Point Cloud Registration" was accepted by <i>IEEE T-CSVT</i>. <a href="https://ieeexplore.ieee.org/document/11395294">[PDF]</a></li>
   <li><strong>[Jan. 2026]</strong> 🎉 Our article on "Training-free Unified Multimodal Anomaly Detection" was accepted by <i>IEEE T-PAMI</i>. <a href="https://ieeexplore.ieee.org/document/11367454">[PDF]</a></li>
   <li><strong>[Nov. 2025]</strong> 🎉 Our article on "Few-shot Defect Segmentation" was accepted by <i>IEEE T-II</i>. <a href="https://ieeexplore.ieee.org/document/11314672">[PDF]</a></li>
@@ -84,10 +84,10 @@ author_profile: true
 
 <div class='paper-box'><div class='paper-box-image'><div><div class="badge">T-II 2026</div><img src='images/pubs/unimf.png' alt="sym" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
-[Unified Multimodal Industrial Anomaly Detection via Few Normal Samples](https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=9424)<br>
+[Unified Multimodal Industrial Anomaly Detection via Few Normal Samples](https://ieeexplore.ieee.org/document/11505893)<br>
 **Shuai Jiang**, Yunfeng Ma, Jingyu Zhou, Yaonan Wang, and Min Liu*<br>
 _IEEE Transactions on Industrial Informatics (T-II)_, 2026<br>
-[PDF (In Press)](https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=9424) | [Code](https://github.com/SvyJ/UniMF)
+[PDF](https://ieeexplore.ieee.org/document/11505893) | [Code](https://github.com/SvyJ/UniMF)
 </div>
 </div>
 
