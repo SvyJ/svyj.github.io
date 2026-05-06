@@ -45,7 +45,7 @@ author_profile: true
 <div class="scrollable"><ul>
   <li><strong>[Apr. 2026]</strong> 🎉 Our article on "Multi-View Multi-class Anomaly Detection" was accepted by <i>IEEE T-CSVT</i>. <a href="https://ieeexplore.ieee.org/document/11488626">[PDF]</a></li>
   <li><strong>[Apr. 2026]</strong> 🎉 Our article on "Micro Surface Defect Inspection" was accepted by <i>IEEE T-II</i>. <a href="https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=9424">[PDF (In Press)]</a></li>
-  <li><strong>[Apr. 2026]</strong> 🎉 Our article on "Few-shot Unified Multimodal Industrial Anomaly Detection" was accepted by <i>IEEE T-II</i>. <a href="https://ieeexplore.ieee.org/document/11505893">[PDF (In Press)]</a></li>
+  <li><strong>[Apr. 2026]</strong> 🎉 Our article on "Few-shot Unified Multimodal Industrial Anomaly Detection" was accepted by <i>IEEE T-II</i>. <a href="https://ieeexplore.ieee.org/document/11505893">[PDF]</a></li>
   <li><strong>[Feb. 2026]</strong> 🎉 Our article on "Point Cloud Registration" was accepted by <i>IEEE T-CSVT</i>. <a href="https://ieeexplore.ieee.org/document/11395294">[PDF]</a></li>
   <li><strong>[Jan. 2026]</strong> 🎉 Our article on "Training-free Unified Multimodal Anomaly Detection" was accepted by <i>IEEE T-PAMI</i>. <a href="https://ieeexplore.ieee.org/document/11367454">[PDF]</a></li>
   <li><strong>[Nov. 2025]</strong> 🎉 Our article on "Few-shot Defect Segmentation" was accepted by <i>IEEE T-II</i>. <a href="https://ieeexplore.ieee.org/document/11314672">[PDF]</a></li>
