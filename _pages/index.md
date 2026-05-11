@@ -285,7 +285,7 @@ _IEEE Transactions on Automation Science and Engineering (T-ASE)_, 2025<br>
 
 - [COLA: Unsupervised Continual Learning for Zero-shot Multimodal Anomaly Detection](https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=83)<br>
   Yunfeng Ma†, **Shuai Jiang**†, Min Liu*, Jingyu Zhou, Xueping Wang, and Yaonan Wang<br>
-  _IEEE Transactions on Image Processing (T-IP)_, 2025<br>
+  _IEEE Transactions on Image Processing (T-IP)_, 2025 <font color="#8A2BE2">(In Major Revision)</font><br>
 
 
 # 🛡️ Patents
