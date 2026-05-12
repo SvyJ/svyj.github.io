@@ -305,6 +305,7 @@ _IEEE Transactions on Automation Science and Engineering (T-ASE)_, 2025<br>
 - Principal Scholarship, Xiangtan University, 2023.
 - China National Scholarship, Ministry of Education of the People's Republic of China, 2022.
 - Special Scholarship, Xiangtan University, 2021 / 2022.
+- Third Prize in the Challenge of Segmentation of Pulmonary Tissues, ISICDM, 2020.
 
 
 # 🌐 Services
