@@ -323,7 +323,7 @@ _IEEE Transactions on Automation Science and Engineering (T-ASE)_, 2025<br>
 
 # 🌐 Services
 
-## 📚 Journals Reviewers
+## 📚 Journals Reviewer
 - [IEEE Transactions on Industrial Informatics (T-II)](https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=9424)
 - [IEEE Transactions on Medical Imaging (T-MI)](https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=42)
 - [IEEE Transactions on Instrumentation and Measurement (T-IM)](https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=19)
@@ -332,7 +332,7 @@ _IEEE Transactions on Automation Science and Engineering (T-ASE)_, 2025<br>
 - [IEEE Access](https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=6287639)
 - [Robot Learning](https://www.elspub.com/journals/robot-learning)
   
-## 👥 Conferences
+## 👥 Conferences Reviewer
 - [Annual Conference on Neural Information Processing Systems (NeurIPS)](https://neurips.cc/), 2025
 - [IEEE/CVF Computer Vision and Pattern Recognition Conference (CVPR)](https://cvpr.thecvf.com/), 2025/ 2026
 - [IEEE/CVF International Conference on Computer Vision (ICCV)](https://iccv.thecvf.com/), 2025
