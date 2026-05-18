@@ -289,13 +289,26 @@ _IEEE Transactions on Automation Science and Engineering (T-ASE)_, 2025<br>
 
 
 # 🛡️ Patents
-- Few-shot Learning based Method for Defect Detection of Aero-engine Blades<br>
-  Min Liu, Xihang Cheng, Yunfeng Ma, **Shuai Jiang**, Xueping Wang, Haotian Wu, and Yaonan Wang<br>
-  _Chinese Patent App._ ZL202411948379.9, 2025<br>
-  
-- Weakly Supervised Learning based Method for Defect Detection of Aero-engine Blades<br>
+
+- Weakly Supervised-Learning based Method for Defect Detection of Aero-engine Blades<br>
   Min Liu, **Shuai Jiang**, Yuxi Liu, Yunfeng Ma, Xihang Cheng, and Yaonan Wang<br>
   _Chinese Patent App._ ZL202411525360.3, 2024<br>
+  
+- Few-shot Learning-based Method for Defect Detection of Aero-engine Blades<br>
+  Min Liu, Xihang Cheng, Yunfeng Ma, **Shuai Jiang**, Xueping Wang, Haotian Wu, and Yaonan Wang<br>
+  _Chinese Patent App._ ZL202411948379.9, 2025<br>
+
+- Multi-view Learning-based Method for Defect Detection of Aero-engine Blades<br>
+  Min Liu, Jingyu Zhou, Yunfeng Ma, **Shuai Jiang**, and Yaonan Wang<br>
+  _Chinese Patent App._ CN202510776273.3, 2025 <font color="#8A2BE2">(Under Substantive Review)</font><br>
+
+- Multi-View Dynamic Cross-Learning-based Method and System for Industrial Anomaly Detection<br>
+  Min Liu, Meng Gao, Yuxi Liu, Jingyu Zhou, Yunfeng Ma, **Shuai Jiang**, and Yaonan Wang<br>
+  _Chinese Patent App._ CN202511518675.X, 2025 <font color="#8A2BE2">(Under Substantive Review)</font><br>
+
+- Full-Coverage Optimal Viewpoint Planning Method for Complex Product Appearance<br>
+  Min Liu, Zhenhai Li, Jingyu Zhou, Jianqiao Luo, Yunfeng Ma, **Shuai Jiang**, and Yaonan Wang<br>
+  _Chinese Patent App._ ZL202511703125.5, 2025 <font color="#8A2BE2">(Under Substantive Review)</font><br>
 
 
 # 🎖 Awards
@@ -310,13 +323,14 @@ _IEEE Transactions on Automation Science and Engineering (T-ASE)_, 2025<br>
 
 # 🌐 Services
 
-## 📚 Journals
+## 📚 Journals Reviewers
 - [IEEE Transactions on Industrial Informatics (T-II)](https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=9424)
 - [IEEE Transactions on Medical Imaging (T-MI)](https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=42)
 - [IEEE Transactions on Instrumentation and Measurement (T-IM)](https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=19)
 - [Automation in Construction (AutoCon)](https://www.sciencedirect.com/journal/automation-in-construction)
-- [Scientific Reports (SR)](https://www.nature.com/srep/)
+- [Scientific Reports (SR)](https://www.nature.com/srep)
 - [IEEE Access](https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=6287639)
+- [Robot Learning](https://www.elspub.com/journals/robot-learning)
   
 ## 👥 Conferences
 - [Annual Conference on Neural Information Processing Systems (NeurIPS)](https://neurips.cc/), 2025
