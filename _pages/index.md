@@ -308,7 +308,7 @@ _IEEE Transactions on Automation Science and Engineering (T-ASE)_, 2025<br>
 
 - Full-Coverage Optimal Viewpoint Planning Method for Complex Product Appearance<br>
   Min Liu, Zhenhai Li, Jingyu Zhou, Jianqiao Luo, Yunfeng Ma, **Shuai Jiang**, and Yaonan Wang<br>
-  _Chinese Patent App._ ZL202511703125.5, 2025 <font color="#8A2BE2">(Under Substantive Review)</font><br>
+  _Chinese Patent App._ CN202511703125.5, 2025 <font color="#8A2BE2">(Under Substantive Review)</font><br>
 
 
 # 🎖 Awards
