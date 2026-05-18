@@ -325,7 +325,6 @@ _IEEE Transactions on Automation Science and Engineering (T-ASE)_, 2025<br>
 
 ## 📚 Journals Reviewer
 - [IEEE Transactions on Industrial Informatics (T-II)](https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=9424)
-- [IEEE Transactions on Medical Imaging (T-MI)](https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=42)
 - [IEEE Transactions on Instrumentation and Measurement (T-IM)](https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=19)
 - [Automation in Construction (AutoCon)](https://www.sciencedirect.com/journal/automation-in-construction)
 - [Scientific Reports (SR)](https://www.nature.com/srep)
