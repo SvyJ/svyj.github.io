@@ -42,7 +42,7 @@ author_profile: true
 
 ## 🎉 Nice News
 
-<div class="scrollable" style="max-height: 200px; overflow-y: auto; box-shadow: 0 4px 6px -2px rgba(0,0,0,0.1);"><ul>
+<div class="scrollable" style="max-height: 200px; overflow-y: auto; box-shadow: 0 10px 25px -5px rgba(0,0,0,0.05), 0 8px 10px -6px rgba(0,0,0,0.02);"><ul>
   <li><strong>[Apr. 2026]</strong> 🎉 Our article on "Multi-View Multi-class Anomaly Detection" was accepted by <i>IEEE T-CSVT</i>. <a href="https://ieeexplore.ieee.org/document/11488626">[PDF]</a></li>
   <li><strong>[Apr. 2026]</strong> 🎉 Our article on "Micro Surface Defect Inspection" was accepted by <i>IEEE T-II</i>. <a href="https://ieeexplore.ieee.org/document/11511818">[PDF]</a></li>
   <li><strong>[Apr. 2026]</strong> 🎉 Our article on "Few-shot Unified Multimodal Industrial Anomaly Detection" was accepted by <i>IEEE T-II</i>. <a href="https://ieeexplore.ieee.org/document/11505893">[PDF]</a></li>
