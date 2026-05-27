@@ -12,13 +12,6 @@ author_profile: true
 {% endif %}
 {% assign url = gsDataBaseUrl | append: "google-scholar-stats/gs_data_shieldsio.json" %}
 
-<style>
-.scrollable {
-  max-height: 150px;
-  overflow-y: auto;
-}
-</style>
-
 
 😃🌞♎️👫☕️🍵🎾🎧
 
@@ -39,7 +32,7 @@ author_profile: true
 
 ## 📝 Latest Works
 
-<div class="scrollable"><ul>
+<div class="scrollable" style="max-height: 200px; overflow-y: auto; box-shadow: 0 4px 6px -2px rgba(0,0,0,0.1);"><ul>
   <li><strong>[Mar. 2026]</strong> 📃 Our article on "Zero-shot Point Cloud Registration" was submitted to <i>IEEE T-ASE</i>.</li>
   <li><strong>[Mar. 2026]</strong> 📃 Our article on "Semi-supervised Anomaly Localization" was submitted to <i>IEEE T-II</i>.</li>
   <li><strong>[Jan. 2026]</strong> 📃 Our article on "Noise-robust Long-tail Multimodal Anomaly Detection" was submitted to <i>IEEE T-MM</i>.</li>
@@ -49,7 +42,7 @@ author_profile: true
 
 ## 🎉 Nice News
 
-<div class="scrollable"><ul>
+<div class="scrollable" style="max-height: 200px; overflow-y: auto; box-shadow: 0 4px 6px -2px rgba(0,0,0,0.1);"><ul>
   <li><strong>[Apr. 2026]</strong> 🎉 Our article on "Multi-View Multi-class Anomaly Detection" was accepted by <i>IEEE T-CSVT</i>. <a href="https://ieeexplore.ieee.org/document/11488626">[PDF]</a></li>
   <li><strong>[Apr. 2026]</strong> 🎉 Our article on "Micro Surface Defect Inspection" was accepted by <i>IEEE T-II</i>. <a href="https://ieeexplore.ieee.org/document/11511818">[PDF]</a></li>
   <li><strong>[Apr. 2026]</strong> 🎉 Our article on "Few-shot Unified Multimodal Industrial Anomaly Detection" was accepted by <i>IEEE T-II</i>. <a href="https://ieeexplore.ieee.org/document/11505893">[PDF]</a></li>
