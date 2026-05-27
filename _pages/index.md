@@ -32,7 +32,7 @@ author_profile: true
 
 ## 📝 Latest Works
 
-<div class="scrollable" style="max-height: 200px; overflow-y: auto; box-shadow: 0 4px 6px -2px rgba(0,0,0,0.1);"><ul>
+<div class="scrollable" style="max-height: 200px; overflow-y: auto; box-shadow: 0 6px 8px -4px rgba(0,0,0,0.1); border-radius: 8px; padding: 0 12px;"><ul>
   <li><strong>[Mar. 2026]</strong> 📃 Our article on "Zero-shot Point Cloud Registration" was submitted to <i>IEEE T-ASE</i>.</li>
   <li><strong>[Mar. 2026]</strong> 📃 Our article on "Semi-supervised Anomaly Localization" was submitted to <i>IEEE T-II</i>.</li>
   <li><strong>[Jan. 2026]</strong> 📃 Our article on "Noise-robust Long-tail Multimodal Anomaly Detection" was submitted to <i>IEEE T-MM</i>.</li>
