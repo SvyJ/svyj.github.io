@@ -11,11 +11,11 @@ main:
   - title: "Publications"
     url: /#-publications
 
-  - title: "Services"
-    url: /#-services
-
   - title: "Awards"
     url: /#-awards
+    
+  - title: "Services"
+    url: /#-services
     
   - title: "Blogs"
     url: https://svyj.github.io/blogs
