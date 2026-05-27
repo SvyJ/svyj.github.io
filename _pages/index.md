@@ -274,7 +274,7 @@ _IEEE Transactions on Automation Science and Engineering (T-ASE)_, 2025<br>
   Yiqiong Zhang, Xueping Wang, Yunfeng Ma, Yingmei He, **Shuai Jiang**, Yaonan Wang, and Min Liu*<br>
   _IEEE Transactions on Industrial Informatics_, 2026 <font color="#8A2BE2">(In Minor Revision)</font><br>
 
-- [Towards Noise-robust Long-tail Multimodal Industrial Anomaly Detection](https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=76)<br>
+- [Towards Noise-robust Long-tail Multimodal Anomaly Detection](https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=76)<br>
   **Shuai Jiang**, Yunfeng Ma, Jingyu Zhou, Yaonan Wang, and Min Liu*<br>
   _IEEE Transactions on Multimedia (T-MM)_, 2026<br>
   [Code](https://github.com/SvyJ/MDTS)
