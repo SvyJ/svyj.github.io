@@ -16,8 +16,6 @@ author_profile: true
 .scrollable {
   max-height: 150px;
   overflow-y: auto;
-  border: 1px solid #ccc;
-  padding: 8px;
 }
 </style>
 
