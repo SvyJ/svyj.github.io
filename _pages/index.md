@@ -264,26 +264,46 @@ _IEEE Transactions on Automation Science and Engineering (T-ASE)_, 2025<br>
 
 ## 📃 Manuscripts in Peer Review
 
-- [Z-REG: Domain-Robust Zero-shot Point Cloud Registration via Equivariance-Aware Stabilization](https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=8856)<br>
-  Jingyu Zhou, Yunfeng Ma, **Shuai Jiang**, Xueping Wang, Zekai Yao, Yaonan Wang, and Min Liu*<br>
-  _IEEE Transactions on Automation Science and Engineering (T-ASE)_, 2026<br>
-  
-- [SyDRA: Dual-Stream Synergistic Learning for Interference-Robust Anomaly Localization on Structure-Dominant Industrial Surfaces](https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=9424)<br>
-  Yiqiong Zhang, Xueping Wang, Yunfeng Ma, Yingmei He, **Shuai Jiang**, Yaonan Wang, and Min Liu*<br>
-  _IEEE Transactions on Industrial Informatics_, 2026 <font color="#8A2BE2">(In Minor Revision)</font><br>
+<div class='paper-box'><div class='paper-box-image'><div><div class="badge">T-ASE Under Review</div><img src='images/covers/tase_cover.png' alt="sym" width="100%"></div></div>
+<div class='paper-box-text' markdown="1">
+[Z-REG: Domain-Robust Zero-shot Point Cloud Registration via Equivariance-Aware Stabilization](https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=8856)<br>
+Jingyu Zhou, Yunfeng Ma, **Shuai Jiang**, Xueping Wang, Zekai Yao, Yaonan Wang, and Min Liu*<br>
+_IEEE Transactions on Automation Science and Engineering (T-ASE)_, 2026<br>
+</div>
+</div>
 
-- [Towards Noise-robust Long-tail Multimodal Anomaly Detection](https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=76)<br>
-  **Shuai Jiang**, Yunfeng Ma, Jingyu Zhou, Yaonan Wang, and Min Liu*<br>
-  _IEEE Transactions on Multimedia (T-MM)_, 2026<br>
-  [Code](https://github.com/SvyJ/MDTS)
-  
-- [Edge-guided Semantic Cross-Matching Network for Few-Shot Strip Steel Surface Defect Segmentation](https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=19)<br>
-  Zekai Yao†, Jiazheng Wang†, Yunfeng Ma, **Shuai Jiang**, Yingmei He, Yaonan Wang, and Min Liu*<br>
-  _IEEE Transactions on Instrumentation and Measurement (T-IM)_, 2025 <font color="#8A2BE2">(In Minor Revision)</font><br>
+<div class='paper-box'><div class='paper-box-image'><div><div class="badge">T-II Under Review</div><img src='images/covers/tii_cover.png' alt="sym" width="100%"></div></div>
+<div class='paper-box-text' markdown="1">
+[SyDRA: Dual-Stream Synergistic Learning for Interference-Robust Anomaly Localization on Structure-Dominant Industrial Surfaces](https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=9424)<br>
+Yiqiong Zhang, Xueping Wang, Yunfeng Ma, Yingmei He, **Shuai Jiang**, Yaonan Wang, and Min Liu*<br>
+_IEEE Transactions on Industrial Informatics (T-II)_, 2026 <font color="#8A2BE2">(In Minor Revision)</font><br>
+</div>
+</div>
 
-- [COLA: Unsupervised Continual Learning for Zero-shot Multimodal Anomaly Detection](https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=83)<br>
-  Yunfeng Ma†, **Shuai Jiang**†, Min Liu*, Jingyu Zhou, Xueping Wang, and Yaonan Wang<br>
-  _IEEE Transactions on Image Processing (T-IP)_, 2025 <font color="#8A2BE2">(In Major Revision)</font><br>
+<div class='paper-box'><div class='paper-box-image'><div><div class="badge">T-MM Under Review</div><img src='images/covers/tmm_cover.png' alt="sym" width="100%"></div></div>
+<div class='paper-box-text' markdown="1">
+[Towards Noise-robust Long-tail Multimodal Anomaly Detection](https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=76)<br>
+**Shuai Jiang**, Yunfeng Ma, Jingyu Zhou, Yaonan Wang, and Min Liu*<br>
+_IEEE Transactions on Multimedia (T-MM)_, 2026<br>
+[Code](https://github.com/SvyJ/MDTS)
+</div>
+</div>
+
+<div class='paper-box'><div class='paper-box-image'><div><div class="badge">T-IM Under Review</div><img src='images/covers/tim_cover.png' alt="sym" width="100%"></div></div>
+<div class='paper-box-text' markdown="1">
+[Edge-guided Semantic Cross-Matching Network for Few-Shot Strip Steel Surface Defect Segmentation](https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=19)<br>
+Zekai Yao†, Jiazheng Wang†, Yunfeng Ma, **Shuai Jiang**, Yingmei He, Yaonan Wang, and Min Liu*<br>
+_IEEE Transactions on Instrumentation and Measurement (T-IM)_, 2025 <font color="#8A2BE2">(In Minor Revision)</font><br>
+</div>
+</div>
+
+<div class='paper-box'><div class='paper-box-image'><div><div class="badge">T-IP Under Review</div><img src='images/covers/tip_cover.png' alt="sym" width="100%"></div></div>
+<div class='paper-box-text' markdown="1">
+[COLA: Unsupervised Continual Learning for Zero-shot Multimodal Anomaly Detection](https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=83)<br>
+Yunfeng Ma†, **Shuai Jiang**†, Min Liu*, Jingyu Zhou, Xueping Wang, and Yaonan Wang<br>
+_IEEE Transactions on Image Processing (T-IP)_, 2025 <font color="#8A2BE2">(In Major Revision)</font><br>
+</div>
+</div>
 
 
 # 🛡️ Patents
