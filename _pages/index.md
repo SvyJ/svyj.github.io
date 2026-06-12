@@ -145,7 +145,7 @@ _IEEE Transactions on Instrumentation and Measurement (T-IM)_, 2022<br>
 
 ## 📄 Co-authored Peer-Reviewed Publications
 
-<div class='paper-box'><div class='paper-box-image'><div><img src='images/covers/escm-net.png' alt="sym" width="100%"></div></div>
+<div class='paper-box'><div class='paper-box-image'><div><img src='images/pubs/escm-net.png' alt="sym" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
 [Edge-guided Semantic Cross-Matching Network for Few-Shot Strip Steel Surface Defect Segmentation](https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=19)<br>
 Zekai Yao†, Jiazheng Wang†, Yunfeng Ma, **Shuai Jiang**, Yingmei He, Yaonan Wang, and Min Liu*<br>
