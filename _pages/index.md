@@ -34,13 +34,13 @@ author_profile: true
   <li><strong>[Mar. 2026]</strong> 📃 Our article on "Zero-shot Point Cloud Registration" was submitted to <i>IEEE T-ASE</i>.</li>
   <li><strong>[Mar. 2026]</strong> 📃 Our article on "Semi-supervised Anomaly Localization" was submitted to <i>IEEE T-II</i>.</li>
   <li><strong>[Jan. 2026]</strong> 📃 Our article on "Noise-robust Long-tail Multimodal Anomaly Detection" was submitted to <i>IEEE T-MM</i>.</li>
-  <li><strong>[Sep. 2025]</strong> 📃 Our article on "Few-Shot Strip Steel Surface Defect Segmentation" was submitted to <i>IEEE T-IM</i>.</li>
   <li><strong>[Sep. 2025]</strong> 📃 Our article on "Continual Learning-based Multimodal Anomaly Detection" was submitted to <i>IEEE T-IP</i>.</li>
 </ul></div>
 
 ## 🎉 Nice News
 
 <div class="scrollable" style="max-height: 200px; overflow-y: auto; box-shadow: 0 10px 25px -5px rgba(0,0,0,0.05), 0 8px 10px -6px rgba(0,0,0,0.02);"><ul>
+  <li><strong>[Sep. 2025]</strong> 🎉 Our article on "Few-Shot Strip Steel Surface Defect Segmentation" was accepted by <i>IEEE T-IM</i>. <a href="https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=19">[PDF (In Press)]</a></li>
   <li><strong>[Apr. 2026]</strong> 🎉 Our article on "Multi-View Multi-class Anomaly Detection" was accepted by <i>IEEE T-CSVT</i>. <a href="https://ieeexplore.ieee.org/document/11488626">[PDF]</a></li>
   <li><strong>[Apr. 2026]</strong> 🎉 Our article on "Micro Surface Defect Inspection" was accepted by <i>IEEE T-II</i>. <a href="https://ieeexplore.ieee.org/document/11511818">[PDF]</a></li>
   <li><strong>[Apr. 2026]</strong> 🎉 Our article on "Few-shot Unified Multimodal Industrial Anomaly Detection" was accepted by <i>IEEE T-II</i>. <a href="https://ieeexplore.ieee.org/document/11505893">[PDF]</a></li>
@@ -144,6 +144,15 @@ _IEEE Transactions on Instrumentation and Measurement (T-IM)_, 2022<br>
 </div>
 
 ## 📄 Co-authored Peer-Reviewed Publications
+
+<div class='paper-box'><div class='paper-box-image'><div><img src='images/covers/escm-net.png' alt="sym" width="100%"></div></div>
+<div class='paper-box-text' markdown="1">
+[Edge-guided Semantic Cross-Matching Network for Few-Shot Strip Steel Surface Defect Segmentation](https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=19)<br>
+Zekai Yao†, Jiazheng Wang†, Yunfeng Ma, **Shuai Jiang**, Yingmei He, Yaonan Wang, and Min Liu*<br>
+_IEEE Transactions on Instrumentation and Measurement (T-IM)_, 2026<br>
+[PDF(In Press)](https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=19) | [Code (Comming Soon)](https://github.com)
+</div>
+</div>
 
 <div class='paper-box'><div class='paper-box-image'><div><div class="badge">T-CSVT 2026</div><img src='images/pubs/cvdl.png' alt="sym" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
@@ -286,14 +295,6 @@ _IEEE Transactions on Industrial Informatics (T-II)_, 2026 <font color="#8A2BE2"
 **Shuai Jiang**, Yunfeng Ma, Jingyu Zhou, Yaonan Wang, and Min Liu*<br>
 _IEEE Transactions on Multimedia (T-MM)_, 2026<br>
 [Code](https://github.com/SvyJ/MDTS)
-</div>
-</div>
-
-<div class='paper-box'><div class='paper-box-image'><div><img src='images/covers/tim_cover.png' alt="sym" width="100%"></div></div>
-<div class='paper-box-text' markdown="1">
-[Edge-guided Semantic Cross-Matching Network for Few-Shot Strip Steel Surface Defect Segmentation](https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=19)<br>
-Zekai Yao†, Jiazheng Wang†, Yunfeng Ma, **Shuai Jiang**, Yingmei He, Yaonan Wang, and Min Liu*<br>
-_IEEE Transactions on Instrumentation and Measurement (T-IM)_, 2025 <font color="#8A2BE2">(In Minor Revision)</font><br>
 </div>
 </div>
 
