@@ -19,9 +19,6 @@ author_profile: true
 
 [Curriculum Vitae (English)](https://svyj.github.io/files/Curriculum_Vitae_of_SvyJ.pdf) (Last Update: Jun. 12, 2026)
 
-[个人简历 (Chinese)](https://svyj.github.io/files/湖南大学_蒋帅.pdf) (Last Update: Jun. 12, 2026)
-
-
 # 🔍 Research Interests
 - Industrial Multimodal Vision
 - Industrial Embodied Intelligence
