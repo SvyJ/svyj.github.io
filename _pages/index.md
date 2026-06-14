@@ -39,7 +39,7 @@ author_profile: true
 ## 🎉 Nice News
 
 <div class="scrollable" style="max-height: 200px; overflow-y: auto; box-shadow: 0 10px 25px -5px rgba(0,0,0,0.05), 0 8px 10px -6px rgba(0,0,0,0.02);"><ul>
-  <li><strong>[Sep. 2025]</strong> 🎉 Our article on "Few-Shot Strip Steel Surface Defect Segmentation" was accepted by <i>IEEE T-IM</i>. <a href="https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=19">[PDF (In Press)]</a></li>
+  <li><strong>[Jun. 2026]</strong> 🎉 Our article on "Few-Shot Strip Steel Surface Defect Segmentation" was accepted by <i>IEEE T-IM</i>. <a href="https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=19">[PDF (In Press)]</a></li>
   <li><strong>[Apr. 2026]</strong> 🎉 Our article on "Multi-View Multi-class Anomaly Detection" was accepted by <i>IEEE T-CSVT</i>. <a href="https://ieeexplore.ieee.org/document/11488626">[PDF]</a></li>
   <li><strong>[Apr. 2026]</strong> 🎉 Our article on "Micro Surface Defect Inspection" was accepted by <i>IEEE T-II</i>. <a href="https://ieeexplore.ieee.org/document/11511818">[PDF]</a></li>
   <li><strong>[Apr. 2026]</strong> 🎉 Our article on "Few-shot Unified Multimodal Industrial Anomaly Detection" was accepted by <i>IEEE T-II</i>. <a href="https://ieeexplore.ieee.org/document/11505893">[PDF]</a></li>
@@ -276,7 +276,7 @@ _IEEE Transactions on Automation Science and Engineering (T-ASE)_, 2025<br>
 <div class='paper-box-text' markdown="1">
 [Z-REG: Domain-Robust Zero-shot Point Cloud Registration via Equivariance-Aware Stabilization](https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=8856)<br>
 Jingyu Zhou, Yunfeng Ma, **Shuai Jiang**, Xueping Wang, Zekai Yao, Yaonan Wang, and Min Liu*<br>
-_IEEE Transactions on Automation Science and Engineering (T-ASE)_, 2026<br>
+_IEEE Transactions on Automation Science and Engineering (T-ASE)_, 2026 <font color="#8A2BE2">(In Revision)</font><br>
 </div>
 </div>
 
