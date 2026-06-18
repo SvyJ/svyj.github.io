@@ -31,7 +31,6 @@ author_profile: true
 
 <div class="scrollable" style="max-height: 200px; overflow-y: auto; box-shadow: 0 10px 25px -5px rgba(0,0,0,0.05), 0 8px 10px -6px rgba(0,0,0,0.02);"><ul>
   <li><strong>[Mar. 2026]</strong> 📃 Our article on "Zero-shot Point Cloud Registration" was submitted to <i>IEEE T-ASE</i>.</li>
-  <li><strong>[Mar. 2026]</strong> 📃 Our article on "Semi-supervised Anomaly Localization" was submitted to <i>IEEE T-II</i>.</li>
   <li><strong>[Jan. 2026]</strong> 📃 Our article on "Noise-robust Long-tail Multimodal Anomaly Detection" was submitted to <i>IEEE T-MM</i>.</li>
   <li><strong>[Sep. 2025]</strong> 📃 Our article on "Continual Learning-based Multimodal Anomaly Detection" was submitted to <i>IEEE T-IP</i>.</li>
 </ul></div>
@@ -39,6 +38,7 @@ author_profile: true
 ## 🎉 Nice News
 
 <div class="scrollable" style="max-height: 200px; overflow-y: auto; box-shadow: 0 10px 25px -5px rgba(0,0,0,0.05), 0 8px 10px -6px rgba(0,0,0,0.02);"><ul>
+  <li><strong>[Jun. 2026]</strong> 🎉 Our article on "Semi-supervised Anomaly Localization" was accepted by <i>IEEE T-II</i>. <a href="https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=9424">[PDF (In Press)]</a></li>
   <li><strong>[Jun. 2026]</strong> 🎉 Our article on "Few-Shot Strip Steel Surface Defect Segmentation" was accepted by <i>IEEE T-IM</i>. <a href="https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=19">[PDF (In Press)]</a></li>
   <li><strong>[Apr. 2026]</strong> 🎉 Our article on "Multi-View Multi-class Anomaly Detection" was accepted by <i>IEEE T-CSVT</i>. <a href="https://ieeexplore.ieee.org/document/11488626">[PDF]</a></li>
   <li><strong>[Apr. 2026]</strong> 🎉 Our article on "Micro Surface Defect Inspection" was accepted by <i>IEEE T-II</i>. <a href="https://ieeexplore.ieee.org/document/11511818">[PDF]</a></li>
@@ -143,6 +143,15 @@ _IEEE Transactions on Instrumentation and Measurement (T-IM)_, 2022<br>
 </div>
 
 ## 📄 Co-authored Peer-Reviewed Publications
+
+<div class='paper-box'><div class='paper-box-image'><div><img src='images/covers/sydra.png' alt="sym" width="100%"></div></div>
+<div class='paper-box-text' markdown="1">
+[SyDRA: Dual-Stream Synergistic Learning for Interference-Robust Anomaly Localization on Structure-Dominant Industrial Surfaces](https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=9424)<br>
+Yiqiong Zhang, Xueping Wang, Yunfeng Ma, Yingmei He, **Shuai Jiang**, Yaonan Wang, and Min Liu*<br>
+_IEEE Transactions on Industrial Informatics (T-II)_, 2026<br>
+[PDF(In Press)](https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=9424) | [Code (Comming Soon)](https://github.com)
+</div>
+</div>
 
 <div class='paper-box'><div class='paper-box-image'><div><img src='images/pubs/escm-net.png' alt="sym" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
@@ -277,14 +286,6 @@ _IEEE Transactions on Automation Science and Engineering (T-ASE)_, 2025<br>
 [Z-REG: Domain-Robust Zero-shot Point Cloud Registration via Equivariance-Aware Stabilization](https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=8856)<br>
 Jingyu Zhou, Yunfeng Ma, **Shuai Jiang**, Xueping Wang, Zekai Yao, Yaonan Wang, and Min Liu*<br>
 _IEEE Transactions on Automation Science and Engineering (T-ASE)_, 2026 <font color="#8A2BE2">(In Revision)</font><br>
-</div>
-</div>
-
-<div class='paper-box'><div class='paper-box-image'><div><img src='images/covers/tii_cover.png' alt="sym" width="100%"></div></div>
-<div class='paper-box-text' markdown="1">
-[SyDRA: Dual-Stream Synergistic Learning for Interference-Robust Anomaly Localization on Structure-Dominant Industrial Surfaces](https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=9424)<br>
-Yiqiong Zhang, Xueping Wang, Yunfeng Ma, Yingmei He, **Shuai Jiang**, Yaonan Wang, and Min Liu*<br>
-_IEEE Transactions on Industrial Informatics (T-II)_, 2026 <font color="#8A2BE2">(In Minor Revision)</font><br>
 </div>
 </div>
 
