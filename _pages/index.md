@@ -144,7 +144,7 @@ _IEEE Transactions on Instrumentation and Measurement (T-IM)_, 2022<br>
 
 ## 📄 Co-authored Peer-Reviewed Publications
 
-<div class='paper-box'><div class='paper-box-image'><div><div class="badge">T-II 2026</div><img src='images/covers/sydra.png' alt="sym" width="100%"></div></div>
+<div class='paper-box'><div class='paper-box-image'><div><div class="badge">T-II 2026</div><img src='images/pubs/sydra.png' alt="sym" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
 [SyDRA: Dual-Stream Synergistic Learning for Interference-Robust Anomaly Localization on Structure-Dominant Industrial Surfaces](https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=9424)<br>
 Yiqiong Zhang, Xueping Wang, Yunfeng Ma, Yingmei He, **Shuai Jiang**, Yaonan Wang, and Min Liu*<br>
