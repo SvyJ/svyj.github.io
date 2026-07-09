@@ -346,6 +346,7 @@ _IEEE Transactions on Image Processing (T-IP)_, 2025 <font color="#8A2BE2">(In M
 - [IEEE Transactions on Industrial Informatics (T-II)](https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=9424)
 - [IEEE Transactions on Instrumentation and Measurement (T-IM)](https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=19)
 - [Automation in Construction (AutoCon)](https://www.sciencedirect.com/journal/automation-in-construction)
+- [‌Journal of Systems Architecture‌ (JSA)](https://www.sciencedirect.com/journal/journal-of-systems-architecture)
 - [Scientific Reports (SR)](https://www.nature.com/srep)
 - [IEEE Access](https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=6287639)
 - [Robot Learning](https://www.elspub.com/journals/robot-learning)
