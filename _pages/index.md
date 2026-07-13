@@ -345,6 +345,7 @@ _IEEE Transactions on Image Processing (T-IP)_, 2025 <font color="#8A2BE2">(In M
 ## 📚 Journals Reviewer
 - [IEEE Transactions on Industrial Informatics (T-II)](https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=9424)
 - [IEEE Transactions on Instrumentation and Measurement (T-IM)](https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=19)
+- [Neural Networks (NN)](https://www.sciencedirect.com/journal/neural-networks)
 - [Automation in Construction (AutoCon)](https://www.sciencedirect.com/journal/automation-in-construction)
 - [‌Journal of Systems Architecture‌ (JSA)](https://www.sciencedirect.com/journal/journal-of-systems-architecture)
 - [Scientific Reports (SR)](https://www.nature.com/srep)
