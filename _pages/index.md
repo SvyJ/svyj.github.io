@@ -30,9 +30,9 @@ author_profile: true
 ## 📝 Latest Works
 
 <div class="scrollable" style="max-height: 200px; overflow-y: auto; box-shadow: 0 10px 25px -5px rgba(0,0,0,0.05), 0 8px 10px -6px rgba(0,0,0,0.02);"><ul>
+  <li><strong>[Jul. 2026]</strong> 📃 Our article on "Continual Learning-based Multimodal Anomaly Detection" was submitted to <i>IEEE T-CSVT</i>.</li>
   <li><strong>[Mar. 2026]</strong> 📃 Our article on "Zero-shot Point Cloud Registration" was submitted to <i>IEEE T-ASE</i>.</li>
   <li><strong>[Jan. 2026]</strong> 📃 Our article on "Noise-robust Long-tail Multimodal Anomaly Detection" was submitted to <i>IEEE T-MM</i>.</li>
-  <li><strong>[Sep. 2025]</strong> 📃 Our article on "Continual Learning-based Multimodal Anomaly Detection" was submitted to <i>IEEE T-IP</i>.</li>
 </ul></div>
 
 ## 🎉 Nice News
@@ -281,6 +281,14 @@ _IEEE Transactions on Automation Science and Engineering (T-ASE)_, 2025<br>
 
 ## 📃 Manuscripts in Peer Review
 
+<div class='paper-box'><div class='paper-box-image'><div><img src='images/covers/tip_cover.png' alt="sym" width="100%"></div></div>
+<div class='paper-box-text' markdown="1">
+[COLA: Unsupervised Continual Learning for Zero-shot Multimodal Anomaly Detection](https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=76)<br>
+Yunfeng Ma†, **Shuai Jiang**†, Jingyu Zhou, and Yaonan Wang, Min Liu*<br>
+_IEEE Transactions on Circuits and Systems for Video Technology (T-CSVT)_, 2026<br>
+</div>
+</div>
+
 <div class='paper-box'><div class='paper-box-image'><div><img src='images/covers/tase_cover.png' alt="sym" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
 [Z-REG: Domain-Robust Zero-shot Point Cloud Registration via Equivariance-Aware Stabilization](https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=8856)<br>
@@ -295,14 +303,6 @@ _IEEE Transactions on Automation Science and Engineering (T-ASE)_, 2026 <font co
 **Shuai Jiang**, Yunfeng Ma, Jingyu Zhou, Yaonan Wang, and Min Liu*<br>
 _IEEE Transactions on Multimedia (T-MM)_, 2026<br>
 [Code](https://github.com/SvyJ/MDTS)
-</div>
-</div>
-
-<div class='paper-box'><div class='paper-box-image'><div><img src='images/covers/tip_cover.png' alt="sym" width="100%"></div></div>
-<div class='paper-box-text' markdown="1">
-[COLA: Unsupervised Continual Learning for Zero-shot Multimodal Anomaly Detection](https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=83)<br>
-Yunfeng Ma†, **Shuai Jiang**†, Min Liu*, Jingyu Zhou, Xueping Wang, and Yaonan Wang<br>
-_IEEE Transactions on Image Processing (T-IP)_, 2025 <font color="#8A2BE2">(In Major Revision)</font><br>
 </div>
 </div>
 
