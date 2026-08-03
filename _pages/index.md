@@ -30,6 +30,7 @@ author_profile: true
 ## 📝 Latest Works
 
 <div class="scrollable" style="max-height: 200px; overflow-y: auto; box-shadow: 0 10px 25px -5px rgba(0,0,0,0.05), 0 8px 10px -6px rgba(0,0,0,0.02);"><ul>
+  <li><strong>[Aug. 2026]</strong> 📃 Three papers on "Embodied Robotics" was submitted to <i>AAAI 2027</i>.</li>
   <li><strong>[Jul. 2026]</strong> 📃 Our article on "Continual Learning-based Multimodal Anomaly Detection" was submitted to <i>IEEE T-CSVT</i>.</li>
   <li><strong>[Mar. 2026]</strong> 📃 Our article on "Zero-shot Point Cloud Registration" was submitted to <i>IEEE T-ASE</i>.</li>
   <li><strong>[Jan. 2026]</strong> 📃 Our article on "Noise-robust Long-tail Multimodal Anomaly Detection" was submitted to <i>IEEE T-MM</i>.</li>
@@ -346,6 +347,7 @@ _IEEE Transactions on Multimedia (T-MM)_, 2026<br>
 - [IEEE Transactions on Industrial Informatics (T-II)](https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=9424)
 - [IEEE Transactions on Instrumentation and Measurement (T-IM)](https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=19)
 - [Neural Networks (NN)](https://www.sciencedirect.com/journal/neural-networks)
+- [Knowledge-Based Systems (KBS)](https://www.sciencedirect.com/journal/knowledge-based-systems)
 - [Automation in Construction (AutoCon)](https://www.sciencedirect.com/journal/automation-in-construction)
 - [‌Journal of Systems Architecture‌ (JSA)](https://www.sciencedirect.com/journal/journal-of-systems-architecture)
 - [Scientific Reports (SR)](https://www.nature.com/srep)
