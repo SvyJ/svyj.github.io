@@ -348,6 +348,7 @@ _IEEE Transactions on Multimedia (T-MM)_, 2026<br>
 
 ## 📚 Journals Reviewer
 - [IEEE Transactions on Industrial Informatics (T-II)](https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=9424)
+- [IEEE Transactions on Circuits and Systems for Video Technology (T-CSVT)](https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=76)
 - [IEEE Transactions on Instrumentation and Measurement (T-IM)](https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=19)
 - [Neural Networks (NN)](https://www.sciencedirect.com/journal/neural-networks)
 - [Knowledge-Based Systems (KBS)](https://www.sciencedirect.com/journal/knowledge-based-systems)
