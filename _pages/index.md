@@ -335,6 +335,7 @@ _IEEE Transactions on Multimedia (T-MM)_, 2026<br>
 
 
 # 🎖 Awards
+- China National Scholarship, Ministry of Education of the People's Republic of China, 2026.
 - GENCA Scholarship, Hunan University, 2025.
 - Excellent Graduates, Hunan Provincial Department of Education, 2023.
 - Excellent Graduates, Xiangtan University, 2023.
