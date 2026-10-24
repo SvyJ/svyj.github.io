@@ -39,6 +39,7 @@ Before entering Hunan University, I received my M.Eng. (supervised by Prof. [Kai
 ## 🎉 Nice News
 
 <div class="scrollable" style="max-height: 200px; overflow-y: auto; box-shadow: 0 10px 25px -5px rgba(0,0,0,0.05), 0 8px 10px -6px rgba(0,0,0,0.02);"><ul>
+  <li><strong>[Oct. 2026]</strong> 🌟 Svy.J was awarded the "China National Scholarship" for the second time.</li>
   <li><strong>[Aug. 2026]</strong> 🎉 Our article on "Zero-shot Point Cloud Registration" was accepted by <i>IEEE T-ASE</i>. <a href="https://ieeexplore.ieee.org/document/11664459/">[PDF]</a></li>
   <li><strong>[Jun. 2026]</strong> 🎉 Our article on "Semi-supervised Anomaly Localization" was accepted by <i>IEEE T-II</i>. <a href="https://ieeexplore.ieee.org/document/11664891/">[PDF]</a></li>
   <li><strong>[Jun. 2026]</strong> 🎉 Our article on "Few-Shot Strip Steel Surface Defect Segmentation" was accepted by <i>IEEE T-IM</i>. <a href="https://ieeexplore.ieee.org/document/11594064">[PDF]</a></li>
