@@ -31,6 +31,7 @@ Before entering Hunan University, I received my M.Eng. (supervised by Prof. [Kai
 ## 📝 Latest Works
 
 <div class="scrollable" style="max-height: 200px; overflow-y: auto; box-shadow: 0 10px 25px -5px rgba(0,0,0,0.05), 0 8px 10px -6px rgba(0,0,0,0.02);"><ul>
+  <li><strong>[Oct. 2026]</strong> 📃 Our article on "Industrial Anomaly Localization" was submitted to <i>IEEE T-II</i>.</li>
   <li><strong>[Aug. 2026]</strong> 📃 Three papers on "Embodied Robotics" was submitted to <i>AAAI 2027</i>.</li>
   <li><strong>[Jul. 2026]</strong> 📃 Our article on "Continual Learning-based Multimodal Anomaly Detection" was submitted to <i>IEEE T-CSVT</i>.</li>
   <li><strong>[Jan. 2026]</strong> 📃 Our article on "Noise-robust Long-tail Multimodal Anomaly Detection" was submitted to <i>IEEE T-MM</i>.</li>
