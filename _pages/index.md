@@ -354,6 +354,7 @@ _IEEE Transactions on Multimedia (T-MM)_, 2026<br>
 - [IEEE Transactions on Circuits and Systems for Video Technology (T-CSVT)](https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=76)
 - [IEEE Transactions on Instrumentation and Measurement (T-IM)](https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=19)
 - [Pattern Recognition (PR)](https://www.sciencedirect.com/journal/pattern-recognition)
+- [Engineering Applications of Artificial Intelligence (EAAI)](https://www.sciencedirect.com/journal/engineering-applications-of-artificial-intelligence)
 - [Neural Networks (NN)](https://www.sciencedirect.com/journal/neural-networks)
 - [Knowledge-Based Systems (KBS)](https://www.sciencedirect.com/journal/knowledge-based-systems)
 - [Automation in Construction (AutoCon)](https://www.sciencedirect.com/journal/automation-in-construction)
