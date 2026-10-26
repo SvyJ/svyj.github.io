@@ -357,6 +357,7 @@ _IEEE Transactions on Multimedia (T-MM)_, 2026<br>
 - [Engineering Applications of Artificial Intelligence (EAAI)](https://www.sciencedirect.com/journal/engineering-applications-of-artificial-intelligence)
 - [Neural Networks (NN)](https://www.sciencedirect.com/journal/neural-networks)
 - [Knowledge-Based Systems (KBS)](https://www.sciencedirect.com/journal/knowledge-based-systems)
+- [Neurocomputing (NeuCom)](https://www.sciencedirect.com/journal/neurocomputing)
 - [Automation in Construction (AutoCon)](https://www.sciencedirect.com/journal/automation-in-construction)
 - [‌Journal of Systems Architecture‌ (JSA)](https://www.sciencedirect.com/journal/journal-of-systems-architecture)
 - [Scientific Reports (SR)](https://www.nature.com/srep)
